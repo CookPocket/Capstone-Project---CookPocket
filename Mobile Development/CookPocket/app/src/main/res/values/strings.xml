@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Cook Pocket</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_search">Search</string>
+    <string name="title_list">List</string>
+    <string name="title_account">Account</string>
+    <string name="title_recipe">My Recipe</string>
+    <string name="title_top_favorite">Top Favorite</string>
 </resources>

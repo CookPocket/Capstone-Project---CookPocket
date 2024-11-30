@@ -7,4 +7,104 @@
     tools:context=".view.ui.account.AccountFragment">
 
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="63dp">
+
+        <Button
+            android:id="@+id/btn_store"
+            android:layout_width="205dp"
+            android:layout_height="46dp"
+            android:text="Toko Saya"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="-51dp"
+            tools:layout_editor_absoluteY="62dp" />
+
+        <ImageView
+            end
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end |center"
+            android:src="@drawable/baseline_logout_24" />
+
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profile_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@drawable/border_profile"
+        app:srcCompat="@drawable/baseline_account_circle_24"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="139dp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingStart="12dp"
+        tools:layout_editor_absoluteX="221dp"
+        tools:layout_editor_absoluteY="190dp">
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="Username" />
+
+        <TextView
+            android:id="@+id/gmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            tools:text="Username@gmail.com" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-100dp"
+        app:cardCornerRadius="50dp"
+        android:backgroundTint="@color/grey">
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/buttom_nav"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="-3dp"
+        tools:layout_editor_absoluteY="324dp">
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

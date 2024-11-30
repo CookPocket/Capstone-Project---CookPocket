@@ -7,4 +7,7 @@
     <string name="title_account">Account</string>
     <string name="title_recipe">My Recipe</string>
     <string name="title_top_favorite">Top Favorite</string>
+    <string name="food_image">Nama Makanan</string>
+    <string name="nama_makanan">Nama Makanan</string>
+    <string name="kolom_pencarian_untuk_menu">Kolom pencarian untuk menu</string>
 </resources>

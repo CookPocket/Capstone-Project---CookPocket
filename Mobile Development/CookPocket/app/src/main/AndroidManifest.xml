@@ -13,6 +13,9 @@
         android:theme="@style/Theme.CookPocket"
         tools:targetApi="31">
         <activity
+            android:name=".view.ui.account.AddItem"
+            android:exported="false" />
+        <activity
             android:name=".view.uiauth.SignupActivity"
             android:exported="false" />
         <activity

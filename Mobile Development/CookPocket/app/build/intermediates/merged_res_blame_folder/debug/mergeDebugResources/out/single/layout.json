@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "com.capstone.cookpocket.app-mergeDebugResources-49:/layout/fragment_home.xml",
+        "source": "com.capstone.cookpocket.app-main-52:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.capstone.cookpocket.app-mergeDebugResources-49:/layout/activity_order_ambil_sendiri.xml",
+        "source": "com.capstone.cookpocket.app-main-52:/layout/activity_order_ambil_sendiri.xml"
+    },
+    {
+        "merged": "com.capstone.cookpocket.app-mergeDebugResources-49:/layout/fragment_store.xml",
+        "source": "com.capstone.cookpocket.app-main-52:/layout/fragment_store.xml"
+    },
+    {
+        "merged": "com.capstone.cookpocket.app-mergeDebugResources-49:/layout/fragment_favorite.xml",
+        "source": "com.capstone.cookpocket.app-main-52:/layout/fragment_favorite.xml"
+    },
+    {
+        "merged": "com.capstone.cookpocket.app-mergeDebugResources-49:/layout/fragment_search.xml",
+        "source": "com.capstone.cookpocket.app-main-52:/layout/fragment_search.xml"
+    },
+    {
+        "merged": "com.capstone.cookpocket.app-mergeDebugResources-49:/layout/activity_adapter.xml",
+        "source": "com.capstone.cookpocket.app-main-52:/layout/activity_adapter.xml"
+    },
+    {
+        "merged": "com.capstone.cookpocket.app-mergeDebugResources-49:/layout/activity_detail_search.xml",
+        "source": "com.capstone.cookpocket.app-main-52:/layout/activity_detail_search.xml"
+    },
+    {
+        "merged": "com.capstone.cookpocket.app-mergeDebugResources-49:/layout/fragment_account.xml",
+        "source": "com.capstone.cookpocket.app-main-52:/layout/fragment_account.xml"
+    },
+    {
+        "merged": "com.capstone.cookpocket.app-mergeDebugResources-49:/layout/activity_order_antar.xml",
+        "source": "com.capstone.cookpocket.app-main-52:/layout/activity_order_antar.xml"
+    },
+    {
+        "merged": "com.capstone.cookpocket.app-mergeDebugResources-49:/layout/activity_main.xml",
+        "source": "com.capstone.cookpocket.app-main-52:/layout/activity_main.xml"
+    }
+]

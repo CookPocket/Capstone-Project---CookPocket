@@ -1,12 +1,15 @@
 package com.capstone.cookpocket.view.ui.list
 
-import androidx.fragment.app.viewModels
+import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import com.capstone.cookpocket.R
+import com.capstone.cookpocket.view.ui.main.MainActivity
 
 class FavoriteFragment : Fragment() {
 
@@ -16,16 +19,21 @@ class FavoriteFragment : Fragment() {
 
     private val viewModel: FavoriteViewModel by viewModels()
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-        // TODO: Use the ViewModel
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        return inflater.inflate(R.layout.fragment_favorite, container, false)
+        val view = inflater.inflate(R.layout.fragment_favorite, container, false)
+
+        val backButton = view.findViewById<ImageView>(R.id.iv_back)
+        backButton.setOnClickListener {
+            // Kembali ke MainActivity (home)
+            val intent = Intent(requireContext(), MainActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
+            startActivity(intent)
+            requireActivity().finish()
+        }
+
+        return view
     }
 }

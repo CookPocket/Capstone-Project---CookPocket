@@ -1,42 +1,62 @@
 [
     {
-        "merged": "com.capstone.cookpocket.app-mergeDebugResources-49:/layout/fragment_home.xml",
-        "source": "com.capstone.cookpocket.app-main-52:/layout/fragment_home.xml"
+        "merged": "C:\\Users\\iccan\\.gradle\\daemon\\8.9\\com.capstone.cookpocket.app-mergeDebugResources-3:\\layout\\activity_detail_search.xml",
+        "source": "C:\\Users\\iccan\\.gradle\\daemon\\8.9\\com.capstone.cookpocket.app-main-6:\\layout\\activity_detail_search.xml"
     },
     {
-        "merged": "com.capstone.cookpocket.app-mergeDebugResources-49:/layout/activity_order_ambil_sendiri.xml",
-        "source": "com.capstone.cookpocket.app-main-52:/layout/activity_order_ambil_sendiri.xml"
+        "merged": "C:\\Users\\iccan\\.gradle\\daemon\\8.9\\com.capstone.cookpocket.app-mergeDebugResources-3:\\layout\\activity_add_item.xml",
+        "source": "C:\\Users\\iccan\\.gradle\\daemon\\8.9\\com.capstone.cookpocket.app-main-6:\\layout\\activity_add_item.xml"
     },
     {
-        "merged": "com.capstone.cookpocket.app-mergeDebugResources-49:/layout/fragment_store.xml",
-        "source": "com.capstone.cookpocket.app-main-52:/layout/fragment_store.xml"
+        "merged": "C:\\Users\\iccan\\.gradle\\daemon\\8.9\\com.capstone.cookpocket.app-mergeDebugResources-3:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\iccan\\.gradle\\daemon\\8.9\\com.capstone.cookpocket.app-main-6:\\layout\\activity_login.xml"
     },
     {
-        "merged": "com.capstone.cookpocket.app-mergeDebugResources-49:/layout/fragment_favorite.xml",
-        "source": "com.capstone.cookpocket.app-main-52:/layout/fragment_favorite.xml"
+        "merged": "C:\\Users\\iccan\\.gradle\\daemon\\8.9\\com.capstone.cookpocket.app-mergeDebugResources-3:\\layout\\fragment_search.xml",
+        "source": "C:\\Users\\iccan\\.gradle\\daemon\\8.9\\com.capstone.cookpocket.app-main-6:\\layout\\fragment_search.xml"
     },
     {
-        "merged": "com.capstone.cookpocket.app-mergeDebugResources-49:/layout/fragment_search.xml",
-        "source": "com.capstone.cookpocket.app-main-52:/layout/fragment_search.xml"
+        "merged": "C:\\Users\\iccan\\.gradle\\daemon\\8.9\\com.capstone.cookpocket.app-mergeDebugResources-3:\\layout\\activity_adapter.xml",
+        "source": "C:\\Users\\iccan\\.gradle\\daemon\\8.9\\com.capstone.cookpocket.app-main-6:\\layout\\activity_adapter.xml"
     },
     {
-        "merged": "com.capstone.cookpocket.app-mergeDebugResources-49:/layout/activity_adapter.xml",
-        "source": "com.capstone.cookpocket.app-main-52:/layout/activity_adapter.xml"
+        "merged": "com.capstone.cookpocket.app-mergeDebugResources-3:/layout/fragment_home.xml",
+        "source": "com.capstone.cookpocket.app-main-6:/layout/fragment_home.xml"
     },
     {
-        "merged": "com.capstone.cookpocket.app-mergeDebugResources-49:/layout/activity_detail_search.xml",
-        "source": "com.capstone.cookpocket.app-main-52:/layout/activity_detail_search.xml"
+        "merged": "C:\\Users\\iccan\\.gradle\\daemon\\8.9\\com.capstone.cookpocket.app-mergeDebugResources-3:\\layout\\fragment_account.xml",
+        "source": "C:\\Users\\iccan\\.gradle\\daemon\\8.9\\com.capstone.cookpocket.app-main-6:\\layout\\fragment_account.xml"
     },
     {
-        "merged": "com.capstone.cookpocket.app-mergeDebugResources-49:/layout/fragment_account.xml",
-        "source": "com.capstone.cookpocket.app-main-52:/layout/fragment_account.xml"
+        "merged": "C:\\Users\\iccan\\.gradle\\daemon\\8.9\\com.capstone.cookpocket.app-mergeDebugResources-3:\\layout\\fragment_favorite.xml",
+        "source": "C:\\Users\\iccan\\.gradle\\daemon\\8.9\\com.capstone.cookpocket.app-main-6:\\layout\\fragment_favorite.xml"
     },
     {
-        "merged": "com.capstone.cookpocket.app-mergeDebugResources-49:/layout/activity_order_antar.xml",
-        "source": "com.capstone.cookpocket.app-main-52:/layout/activity_order_antar.xml"
+        "merged": "C:\\Users\\iccan\\.gradle\\daemon\\8.9\\com.capstone.cookpocket.app-mergeDebugResources-3:\\layout\\activity_order_antar.xml",
+        "source": "C:\\Users\\iccan\\.gradle\\daemon\\8.9\\com.capstone.cookpocket.app-main-6:\\layout\\activity_order_antar.xml"
     },
     {
-        "merged": "com.capstone.cookpocket.app-mergeDebugResources-49:/layout/activity_main.xml",
-        "source": "com.capstone.cookpocket.app-main-52:/layout/activity_main.xml"
+        "merged": "C:\\Users\\iccan\\.gradle\\daemon\\8.9\\com.capstone.cookpocket.app-mergeDebugResources-3:\\layout\\activity_signup.xml",
+        "source": "C:\\Users\\iccan\\.gradle\\daemon\\8.9\\com.capstone.cookpocket.app-main-6:\\layout\\activity_signup.xml"
+    },
+    {
+        "merged": "C:\\Users\\iccan\\.gradle\\daemon\\8.9\\com.capstone.cookpocket.app-mergeDebugResources-3:\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\iccan\\.gradle\\daemon\\8.9\\com.capstone.cookpocket.app-main-6:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\iccan\\.gradle\\daemon\\8.9\\com.capstone.cookpocket.app-mergeDebugResources-3:\\layout\\activity_notification.xml",
+        "source": "C:\\Users\\iccan\\.gradle\\daemon\\8.9\\com.capstone.cookpocket.app-main-6:\\layout\\activity_notification.xml"
+    },
+    {
+        "merged": "C:\\Users\\iccan\\.gradle\\daemon\\8.9\\com.capstone.cookpocket.app-mergeDebugResources-3:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\iccan\\.gradle\\daemon\\8.9\\com.capstone.cookpocket.app-main-6:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\iccan\\.gradle\\daemon\\8.9\\com.capstone.cookpocket.app-mergeDebugResources-3:\\layout\\activity_cart.xml",
+        "source": "C:\\Users\\iccan\\.gradle\\daemon\\8.9\\com.capstone.cookpocket.app-main-6:\\layout\\activity_cart.xml"
+    },
+    {
+        "merged": "C:\\Users\\iccan\\.gradle\\daemon\\8.9\\com.capstone.cookpocket.app-mergeDebugResources-3:\\layout\\activity_order_ambil_sendiri.xml",
+        "source": "C:\\Users\\iccan\\.gradle\\daemon\\8.9\\com.capstone.cookpocket.app-main-6:\\layout\\activity_order_ambil_sendiri.xml"
     }
 ]

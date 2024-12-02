@@ -12,14 +12,13 @@
         android:id="@+id/searchBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
         android:layout_marginTop="40dp"
-        app:hint="Cari ayam goreng"
+        android:contentDescription="@string/ayam_goreng"
         app:placeholderText="Cari menu di sini"
         app:navigationIcon="@drawable/ic_search_24" />
 
 
-
-    <!-- RecyclerView -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvRecipes"
         android:layout_width="match_parent"

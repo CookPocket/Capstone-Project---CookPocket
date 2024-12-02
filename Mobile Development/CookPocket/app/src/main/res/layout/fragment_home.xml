@@ -7,7 +7,6 @@
     android:background="@color/white"
     android:fillViewport="true">
 
-    <!-- Header Section -->
     <LinearLayout
         android:id="@+id/header"
         android:layout_width="match_parent"
@@ -84,7 +83,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="@string/title_recipe"
+        android:text="@string/title_category"
         android:textColor="@color/black"
         android:layout_marginStart="20dp"
         android:textSize="18sp"
@@ -93,36 +92,39 @@
         app:layout_constraintTop_toBottomOf="@id/header"
         tools:ignore="MissingConstraints" />
 
-    <!-- Horizontal Scrollable Cards -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/resepRecyclerView"
+    <com.google.android.material.search.SearchBar
+        android:id="@+id/searchBar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginEnd="18dp"
-        app:layout_constraintTop_toBottomOf="@id/resepLabel" />
+        android:layout_height="50dp"
+        android:backgroundTint="@color/grey_soft"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:navigationIcon="@drawable/ic_search_24"
+        app:placeholderText="Cari menu di sini"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
 
-    <!-- Top Favorite Section -->
+
+
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_height="450dp"
         android:background="@drawable/cardview_home"
+        android:clipToPadding="true"
         android:padding="16dp"
-        app:layout_constraintTop_toBottomOf="@id/resepRecyclerView">
+        app:layout_constraintBottom_toBottomOf="parent">
 
         <!-- TextView for Top Favorite Label -->
         <TextView
             android:id="@+id/topFavoriteLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/title_top_favorite"
+            android:layout_marginTop="20dp"
+            android:text="@string/title_resep_tersedia"
             android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginTop="20dp"
             tools:ignore="MissingConstraints" />
 
         <!-- RecyclerView for List of Top Favorites -->
@@ -130,10 +132,11 @@
             android:id="@+id/favoriteRecyclerView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/topFavoriteLabel"
-            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="16dp" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/topFavoriteLabel"
+            tools:listitem="@layout/activity_adapter" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

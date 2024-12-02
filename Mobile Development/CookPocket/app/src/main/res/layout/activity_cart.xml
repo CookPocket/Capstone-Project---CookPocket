@@ -6,10 +6,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".view.ui.list.FavoriteFragment">
+    tools:context=".view.ui.home.cart.CartActivity">
+
 
     <ImageView
-        android:id="@+id/iv_back"
+        android:id="@+id/iv_back_cart"
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_marginStart="15dp"
@@ -20,23 +21,21 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tv_favorite"
+        android:id="@+id/tv_cart"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        android:text="@string/favorite"
+        android:text="@string/Keranjang"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/iv_back"
+        app:layout_constraintTop_toBottomOf="@+id/iv_back_cart"
         tools:layout_editor_absoluteX="30dp" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/tv_favorite"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cart"
         tools:listitem="@layout/activity_adapter"/>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

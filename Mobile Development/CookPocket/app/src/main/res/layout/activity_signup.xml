@@ -27,7 +27,6 @@
             tools:ignore="ContentDescription" />
     </LinearLayout>
 
-    <!-- Title Text -->
     <TextView
         android:id="@+id/tv_title_login"
         android:layout_width="wrap_content"
@@ -39,13 +38,13 @@
         app:layout_constraintTop_toBottomOf="@id/background"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="10dp" />
 
     <!-- Username Input -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/ed_signup_username"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginTop="10dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
@@ -71,7 +70,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/ed_signup_email"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginTop="10dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
@@ -93,11 +92,36 @@
             android:textSize="16sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ed_signup_nohp"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:boxCornerRadiusBottomEnd="30dp"
+        app:boxCornerRadiusBottomStart="30dp"
+        app:boxCornerRadiusTopEnd="30dp"
+        app:boxCornerRadiusTopStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/ed_signup_email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_nohp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/no_hp"
+            android:inputType="phone"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
     <!-- Password Input -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/ed_signup_password"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginTop="10dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
@@ -106,7 +130,7 @@
         app:boxCornerRadiusTopEnd="30dp"
         app:boxCornerRadiusTopStart="30dp"
         app:endIconMode="password_toggle"
-        app:layout_constraintTop_toBottomOf="@id/ed_signup_email"
+        app:layout_constraintTop_toBottomOf="@id/ed_signup_nohp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
@@ -124,7 +148,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/ed_signup_confirm_password"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginTop="10dp"
         android:layout_marginStart="30dp"
         app:boxCornerRadiusBottomEnd="30dp"

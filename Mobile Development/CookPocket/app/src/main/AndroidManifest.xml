@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+xmlns:tools="http://schemas.android.com/tools">
 
     <application
         android:allowBackup="true"
@@ -13,7 +13,7 @@
         android:theme="@style/Theme.CookPocket"
         tools:targetApi="31">
         <activity
-            android:name=".view.ui.main.MainActivity"
+            android:name=".view.ui.adapter.AdapterActivity"
             android:exported="false" />
         <activity
             android:name=".view.ui.search.order.OrderAntarActivity"
@@ -25,11 +25,18 @@
             android:name=".view.uiauth.SignupActivity"
             android:exported="false" />
         <activity
+            android:name=".view.ui.home.cart.CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.ui.home.notif.NotificationActivity"
+            android:exported="false" />
+        <activity
             android:name=".view.uiauth.LoginActivity"
             android:exported="false" />
         <activity
             android:name=".view.ui.search.detail_search.DetailSearchActivity"
             android:exported="false" />
+
         <activity
             android:name=".view.ui.main.MainActivity"
             android:exported="true"
@@ -44,3 +51,5 @@
     </application>
 
 </manifest>
+
+

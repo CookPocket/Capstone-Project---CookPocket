@@ -17,22 +17,12 @@ class FavoriteFragment : Fragment() {
         fun newInstance() = FavoriteFragment()
     }
 
-    private val viewModel: FavoriteViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         val view = inflater.inflate(R.layout.fragment_favorite, container, false)
-
-        val backButton = view.findViewById<ImageView>(R.id.iv_back)
-        backButton.setOnClickListener {
-            // Kembali ke MainActivity (home)
-            val intent = Intent(requireContext(), MainActivity::class.java)
-            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
-            startActivity(intent)
-            requireActivity().finish()
-        }
 
         return view
     }

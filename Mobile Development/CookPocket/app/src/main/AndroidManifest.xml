@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -39,9 +41,7 @@ xmlns:tools="http://schemas.android.com/tools">
 
         <activity
             android:name=".view.ui.main.MainActivity"
-            android:exported="true"
-            android:label="@string/title_activity_main"
-            tools:ignore="DuplicateActivity">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -8,6 +8,8 @@
         android:minSdkVersion="24"
         android:targetSdkVersion="34" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <permission
         android:name="com.capstone.cookpocket.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
@@ -53,8 +55,7 @@
             android:exported="false" />
         <activity
             android:name="com.capstone.cookpocket.view.ui.main.MainActivity"
-            android:exported="true"
-            android:label="@string/title_activity_main" >
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

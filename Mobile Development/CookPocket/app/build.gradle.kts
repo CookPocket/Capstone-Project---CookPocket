@@ -54,5 +54,10 @@ dependencies {
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    implementation("com.google.android.material:material:1.9.0")
+    implementation(libs.material.v190)
+
+    // Retrofit dan Gson converter untuk API request dan response
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
+    implementation(libs.logging.interceptor)
 }

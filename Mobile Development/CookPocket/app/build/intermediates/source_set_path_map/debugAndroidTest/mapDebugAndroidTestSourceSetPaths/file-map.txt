@@ -1,5 +1,5 @@
-com.capstone.cookpocket.test.app-tracing-1.2.0-0 C:\Users\ACER\.gradle\caches\8.9\transforms\2128f87dc16b10bc6699e949bf8e7b19\transformed\tracing-1.2.0\res
-com.capstone.cookpocket.test.app-core-1.6.1-1 C:\Users\ACER\.gradle\caches\8.9\transforms\cc6f34b5fee38728bb618d0253bb5188\transformed\core-1.6.1\res
+com.capstone.cookpocket.test.app-core-1.6.1-0 C:\Users\ACER\.gradle\caches\8.9\transforms\9fd4413a03cb88557df46cea79ecce9c\transformed\core-1.6.1\res
+com.capstone.cookpocket.test.app-tracing-1.2.0-1 C:\Users\ACER\.gradle\caches\8.9\transforms\a324ace22780e694b8de2a27dc556825\transformed\tracing-1.2.0\res
 com.capstone.cookpocket.test.app-androidTest-2 D:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\build\generated\res\resValues\androidTest\debug
 com.capstone.cookpocket.test.app-mergeDebugAndroidTestResources-3 D:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
 com.capstone.cookpocket.test.app-mergeDebugAndroidTestResources-4 D:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir

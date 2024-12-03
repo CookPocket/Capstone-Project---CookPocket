@@ -7,11 +7,98 @@
     android:background="@color/white"
     tools:context=".view.ui.account.AccountFragment">
 
-    <TextView
+    <LinearLayout
+        android:id="@+id/ll_shop"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/background_toko_saya"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/baseline_store_24" />
+
+
+        <TextView
+            android:id="@+id/tv_btn_toko_saya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="4dp"
+            android:text="@string/toko_saya"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_profile"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="SAYA JAGOO NJIRR"
-        android:gravity="center"/>
+        android:layout_height="120dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/ll_shop"
+        tools:ignore="MissingConstraints">
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="80dp"
+            android:src="@drawable/place_holder_foto_profil" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp">
+
+            <TextView
+                android:id="@+id/tv_username_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Username"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_gmail_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Gmail"
+                android:textSize="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_username_account" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:background="@drawable/cardview_account"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+
+
+    </LinearLayout>
+
+
+
+    
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.capstone.cookpocket.app-mergeDebugResources-2:/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "outputFile": "com.capstone.cookpocket.app-mergeDebugResources-48:/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\iccan\\.gradle\\caches\\8.9\\transforms\\080e955c066e1554f3e7d6cf86871dce\\transformed\\material-1.12.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\ACER\\.gradle\\caches\\8.9\\transforms\\8dbc87e52b2abc8994b25569091bb4c8\\transformed\\material-1.12.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,10,11,12,13,14",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\iccan\\.gradle\\caches\\8.9\\transforms\\c0fb3939207c3f0d5b4b2c23bb2ba585\\transformed\\appcompat-1.7.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\ACER\\.gradle\\caches\\8.9\\transforms\\e729dbe3239b0db6332feeef77647c0a\\transformed\\appcompat-1.7.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

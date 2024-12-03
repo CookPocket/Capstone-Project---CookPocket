@@ -4,7 +4,7 @@
             "outputFile": "com.capstone.cookpocket.test.app-mergeDebugAndroidTestResources-3:/values/values.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ACER\\.gradle\\caches\\8.9\\transforms\\cc6f34b5fee38728bb618d0253bb5188\\transformed\\core-1.6.1\\res\\values\\values.xml",
+                    "source": "C:\\Users\\ACER\\.gradle\\caches\\8.9\\transforms\\9fd4413a03cb88557df46cea79ecce9c\\transformed\\core-1.6.1\\res\\values\\values.xml",
                     "from": {
                         "startLines": "4,11",
                         "startColumns": "0,0",

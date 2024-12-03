@@ -57,21 +57,21 @@ dependencies {
     implementation(libs.material.v190)
 
     // Retrofit dan Gson converter untuk API request dan response
-    implementation("com.squareup.retrofit2:retrofit:2.11.0")
-    implementation("com.squareup.retrofit2:converter-gson:2.11.0")
-    implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
+    implementation(libs.retrofit.v2110)
+    implementation(libs.converter.gson.v2110)
+    implementation(libs.logging.interceptor.v4120)
 
     // Kotlin Coroutines untuk asynchronous programming
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0")
+    implementation(libs.kotlinx.coroutines.android)
 
     // Lifecycle components untuk ViewModel dan LiveData
-    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.7")
-    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.8.7")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.7")
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    implementation(libs.androidx.lifecycle.livedata.ktx)
+    implementation(libs.androidx.lifecycle.runtime.ktx)
 
     // DataStore Preferences untuk penyimpanan data yang bersifat key-value
-    implementation("androidx.datastore:datastore-preferences:1.1.1")
+    implementation(libs.androidx.datastore.preferences)
 
     // Glide untuk pengelolaan gambar
-    implementation("com.github.bumptech.glide:glide:4.16.0")
+    implementation(libs.glide.v4160)
 }

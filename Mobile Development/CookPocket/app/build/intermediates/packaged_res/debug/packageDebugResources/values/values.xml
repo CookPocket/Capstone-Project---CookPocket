@@ -41,6 +41,7 @@
     <string name="title_list">List</string>
     <string name="title_resep_tersedia">Resep Tersedia</string>
     <string name="title_search">Search</string>
+    <string name="toko_saya">Toko Saya</string>
     <string name="tv_btn_signup">Daftar</string>
     <string name="username">Username</string>
     <style name="Base.Theme.CookPocket" parent="Theme.Material3.DayNight.NoActionBar">

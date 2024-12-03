@@ -9,138 +9,187 @@
 9        android:targetSdkVersion="34" />
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->D:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:5:5-67
-11-->D:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:5:22-64
+11-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:5:22-64
 12
 13    <permission
-13-->[androidx.core:core:1.15.0] C:\Users\ACER\.gradle\caches\8.9\transforms\4960b6c82812a9c3128c7505e80ab753\transformed\core-1.15.0\AndroidManifest.xml:22:5-24:47
+13-->[androidx.core:core:1.15.0] C:\Users\iccan\.gradle\caches\8.11.1\transforms\5a3ffbb2db0b21a3af8d6a87d54e5585\transformed\core-1.15.0\AndroidManifest.xml:22:5-24:47
 14        android:name="com.capstone.cookpocket.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-14-->[androidx.core:core:1.15.0] C:\Users\ACER\.gradle\caches\8.9\transforms\4960b6c82812a9c3128c7505e80ab753\transformed\core-1.15.0\AndroidManifest.xml:23:9-81
+14-->[androidx.core:core:1.15.0] C:\Users\iccan\.gradle\caches\8.11.1\transforms\5a3ffbb2db0b21a3af8d6a87d54e5585\transformed\core-1.15.0\AndroidManifest.xml:23:9-81
 15        android:protectionLevel="signature" />
-15-->[androidx.core:core:1.15.0] C:\Users\ACER\.gradle\caches\8.9\transforms\4960b6c82812a9c3128c7505e80ab753\transformed\core-1.15.0\AndroidManifest.xml:24:9-44
+15-->[androidx.core:core:1.15.0] C:\Users\iccan\.gradle\caches\8.11.1\transforms\5a3ffbb2db0b21a3af8d6a87d54e5585\transformed\core-1.15.0\AndroidManifest.xml:24:9-44
 16
 17    <uses-permission android:name="com.capstone.cookpocket.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-17-->[androidx.core:core:1.15.0] C:\Users\ACER\.gradle\caches\8.9\transforms\4960b6c82812a9c3128c7505e80ab753\transformed\core-1.15.0\AndroidManifest.xml:26:5-97
-17-->[androidx.core:core:1.15.0] C:\Users\ACER\.gradle\caches\8.9\transforms\4960b6c82812a9c3128c7505e80ab753\transformed\core-1.15.0\AndroidManifest.xml:26:22-94
+17-->[androidx.core:core:1.15.0] C:\Users\iccan\.gradle\caches\8.11.1\transforms\5a3ffbb2db0b21a3af8d6a87d54e5585\transformed\core-1.15.0\AndroidManifest.xml:26:5-97
+17-->[androidx.core:core:1.15.0] C:\Users\iccan\.gradle\caches\8.11.1\transforms\5a3ffbb2db0b21a3af8d6a87d54e5585\transformed\core-1.15.0\AndroidManifest.xml:26:22-94
 18
 19    <application
-19-->D:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:7:5-27:19
+19-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:7:5-51:19
 20        android:allowBackup="true"
-20-->D:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:8:9-35
+20-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:8:9-35
 21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-21-->[androidx.core:core:1.15.0] C:\Users\ACER\.gradle\caches\8.9\transforms\4960b6c82812a9c3128c7505e80ab753\transformed\core-1.15.0\AndroidManifest.xml:28:18-86
+21-->[androidx.core:core:1.15.0] C:\Users\iccan\.gradle\caches\8.11.1\transforms\5a3ffbb2db0b21a3af8d6a87d54e5585\transformed\core-1.15.0\AndroidManifest.xml:28:18-86
 22        android:dataExtractionRules="@xml/data_extraction_rules"
-22-->D:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:9:9-65
+22-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:9:9-65
 23        android:debuggable="true"
 24        android:extractNativeLibs="false"
 25        android:fullBackupContent="@xml/backup_rules"
-25-->D:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:10:9-54
+25-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:10:9-54
 26        android:icon="@mipmap/ic_launcher"
-26-->D:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:11:9-43
+26-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:11:9-43
 27        android:label="@string/app_name"
-27-->D:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:12:9-41
+27-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:12:9-41
 28        android:roundIcon="@mipmap/ic_launcher_round"
-28-->D:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:13:9-54
+28-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:13:9-54
 29        android:supportsRtl="true"
-29-->D:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:14:9-35
-30        android:theme="@style/Theme.CookPocket" >
-30-->D:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:15:9-48
-31        <activity
-31-->D:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:18:9-26:20
-32            android:name="com.capstone.cookpocket.view.ui.main.MainActivity"
-32-->D:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:19:13-54
-33            android:exported="true" >
-33-->D:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:20:13-36
-34            <intent-filter>
-34-->D:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:21:13-25:29
-35                <action android:name="android.intent.action.MAIN" />
-35-->D:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:22:17-69
-35-->D:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:22:25-66
-36
-37                <category android:name="android.intent.category.LAUNCHER" />
-37-->D:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:24:17-77
-37-->D:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:24:27-74
-38            </intent-filter>
-39        </activity>
-40
-41        <provider
-41-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ACER\.gradle\caches\8.9\transforms\e7f0cec129ea1b3f9ee89da72bd6fad9\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
-42            android:name="androidx.startup.InitializationProvider"
-42-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ACER\.gradle\caches\8.9\transforms\e7f0cec129ea1b3f9ee89da72bd6fad9\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
-43            android:authorities="com.capstone.cookpocket.androidx-startup"
-43-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ACER\.gradle\caches\8.9\transforms\e7f0cec129ea1b3f9ee89da72bd6fad9\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
-44            android:exported="false" >
-44-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ACER\.gradle\caches\8.9\transforms\e7f0cec129ea1b3f9ee89da72bd6fad9\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
-45            <meta-data
-45-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ACER\.gradle\caches\8.9\transforms\e7f0cec129ea1b3f9ee89da72bd6fad9\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
-46                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-46-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ACER\.gradle\caches\8.9\transforms\e7f0cec129ea1b3f9ee89da72bd6fad9\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
-47                android:value="androidx.startup" />
-47-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ACER\.gradle\caches\8.9\transforms\e7f0cec129ea1b3f9ee89da72bd6fad9\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
-48            <meta-data
-48-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\ACER\.gradle\caches\8.9\transforms\f09888bad463fb05775ea309ca087810\transformed\lifecycle-process-2.8.7\AndroidManifest.xml:29:13-31:52
-49                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-49-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\ACER\.gradle\caches\8.9\transforms\f09888bad463fb05775ea309ca087810\transformed\lifecycle-process-2.8.7\AndroidManifest.xml:30:17-78
-50                android:value="androidx.startup" />
-50-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\ACER\.gradle\caches\8.9\transforms\f09888bad463fb05775ea309ca087810\transformed\lifecycle-process-2.8.7\AndroidManifest.xml:31:17-49
-51            <meta-data
-51-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ACER\.gradle\caches\8.9\transforms\7aa45f04fd3c9ed794c5c7ed70be8e78\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
-52                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-52-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ACER\.gradle\caches\8.9\transforms\7aa45f04fd3c9ed794c5c7ed70be8e78\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
-53                android:value="androidx.startup" />
-53-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ACER\.gradle\caches\8.9\transforms\7aa45f04fd3c9ed794c5c7ed70be8e78\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
-54        </provider>
-55
-56        <uses-library
-56-->[androidx.window:window:1.0.0] C:\Users\ACER\.gradle\caches\8.9\transforms\3cb4424f757c05e6079819b4605b512c\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
-57            android:name="androidx.window.extensions"
-57-->[androidx.window:window:1.0.0] C:\Users\ACER\.gradle\caches\8.9\transforms\3cb4424f757c05e6079819b4605b512c\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
-58            android:required="false" />
-58-->[androidx.window:window:1.0.0] C:\Users\ACER\.gradle\caches\8.9\transforms\3cb4424f757c05e6079819b4605b512c\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
-59        <uses-library
-59-->[androidx.window:window:1.0.0] C:\Users\ACER\.gradle\caches\8.9\transforms\3cb4424f757c05e6079819b4605b512c\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
-60            android:name="androidx.window.sidecar"
-60-->[androidx.window:window:1.0.0] C:\Users\ACER\.gradle\caches\8.9\transforms\3cb4424f757c05e6079819b4605b512c\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
-61            android:required="false" />
-61-->[androidx.window:window:1.0.0] C:\Users\ACER\.gradle\caches\8.9\transforms\3cb4424f757c05e6079819b4605b512c\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
-62
-63        <receiver
-63-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ACER\.gradle\caches\8.9\transforms\7aa45f04fd3c9ed794c5c7ed70be8e78\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
-64            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-64-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ACER\.gradle\caches\8.9\transforms\7aa45f04fd3c9ed794c5c7ed70be8e78\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
-65            android:directBootAware="false"
-65-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ACER\.gradle\caches\8.9\transforms\7aa45f04fd3c9ed794c5c7ed70be8e78\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
-66            android:enabled="true"
-66-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ACER\.gradle\caches\8.9\transforms\7aa45f04fd3c9ed794c5c7ed70be8e78\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
-67            android:exported="true"
-67-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ACER\.gradle\caches\8.9\transforms\7aa45f04fd3c9ed794c5c7ed70be8e78\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
-68            android:permission="android.permission.DUMP" >
-68-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ACER\.gradle\caches\8.9\transforms\7aa45f04fd3c9ed794c5c7ed70be8e78\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
-69            <intent-filter>
-69-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ACER\.gradle\caches\8.9\transforms\7aa45f04fd3c9ed794c5c7ed70be8e78\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
-70                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-70-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ACER\.gradle\caches\8.9\transforms\7aa45f04fd3c9ed794c5c7ed70be8e78\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
-70-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ACER\.gradle\caches\8.9\transforms\7aa45f04fd3c9ed794c5c7ed70be8e78\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
-71            </intent-filter>
-72            <intent-filter>
-72-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ACER\.gradle\caches\8.9\transforms\7aa45f04fd3c9ed794c5c7ed70be8e78\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
-73                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-73-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ACER\.gradle\caches\8.9\transforms\7aa45f04fd3c9ed794c5c7ed70be8e78\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
-73-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ACER\.gradle\caches\8.9\transforms\7aa45f04fd3c9ed794c5c7ed70be8e78\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
-74            </intent-filter>
-75            <intent-filter>
-75-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ACER\.gradle\caches\8.9\transforms\7aa45f04fd3c9ed794c5c7ed70be8e78\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
-76                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-76-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ACER\.gradle\caches\8.9\transforms\7aa45f04fd3c9ed794c5c7ed70be8e78\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
-76-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ACER\.gradle\caches\8.9\transforms\7aa45f04fd3c9ed794c5c7ed70be8e78\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
-77            </intent-filter>
-78            <intent-filter>
-78-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ACER\.gradle\caches\8.9\transforms\7aa45f04fd3c9ed794c5c7ed70be8e78\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
-79                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-79-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ACER\.gradle\caches\8.9\transforms\7aa45f04fd3c9ed794c5c7ed70be8e78\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
-79-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ACER\.gradle\caches\8.9\transforms\7aa45f04fd3c9ed794c5c7ed70be8e78\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
-80            </intent-filter>
-81        </receiver>
-82    </application>
-83
-84</manifest>
+29-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:14:9-35
+30        android:testOnly="true"
+31        android:theme="@style/Theme.CookPocket" >
+31-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:15:9-48
+32        <activity
+32-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:17:9-19:40
+33            android:name="com.capstone.cookpocket.view.ui.adapter.AdapterActivity"
+33-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:18:13-60
+34            android:exported="false" />
+34-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:19:13-37
+35        <activity
+35-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:20:9-22:40
+36            android:name="com.capstone.cookpocket.view.ui.search.order.OrderAntarActivity"
+36-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:21:13-68
+37            android:exported="false" />
+37-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:22:13-37
+38        <activity
+38-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:23:9-25:40
+39            android:name="com.capstone.cookpocket.view.ui.search.order.OrderAmbilSendiriActivity"
+39-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:24:13-75
+40            android:exported="false" />
+40-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:25:13-37
+41        <activity
+41-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:26:9-28:40
+42            android:name="com.capstone.cookpocket.view.uiauth.SignupActivity"
+42-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:27:13-55
+43            android:exported="false" />
+43-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:28:13-37
+44        <activity
+44-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:29:9-31:40
+45            android:name="com.capstone.cookpocket.view.ui.home.cart.CartActivity"
+45-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:30:13-59
+46            android:exported="false" />
+46-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:31:13-37
+47        <activity
+47-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:32:9-34:40
+48            android:name="com.capstone.cookpocket.view.ui.home.notif.NotificationActivity"
+48-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:33:13-68
+49            android:exported="false" />
+49-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:34:13-37
+50        <activity
+50-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:35:9-37:40
+51            android:name="com.capstone.cookpocket.view.uiauth.LoginActivity"
+51-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:36:13-54
+52            android:exported="false" />
+52-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:37:13-37
+53        <activity
+53-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:38:9-40:40
+54            android:name="com.capstone.cookpocket.view.ui.search.detail_search.DetailSearchActivity"
+54-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:39:13-78
+55            android:exported="false" />
+55-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:40:13-37
+56        <activity
+56-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:42:9-50:20
+57            android:name="com.capstone.cookpocket.view.ui.main.MainActivity"
+57-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:43:13-54
+58            android:exported="true" >
+58-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:44:13-36
+59            <intent-filter>
+59-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:45:13-49:29
+60                <action android:name="android.intent.action.MAIN" />
+60-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:46:17-69
+60-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:46:25-66
+61
+62                <category android:name="android.intent.category.LAUNCHER" />
+62-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:48:17-77
+62-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:48:27-74
+63            </intent-filter>
+64        </activity>
+65
+66        <provider
+66-->[androidx.emoji2:emoji2:1.3.0] C:\Users\iccan\.gradle\caches\8.11.1\transforms\e4ffec82af5b1abc052201205a2cd775\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+67            android:name="androidx.startup.InitializationProvider"
+67-->[androidx.emoji2:emoji2:1.3.0] C:\Users\iccan\.gradle\caches\8.11.1\transforms\e4ffec82af5b1abc052201205a2cd775\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+68            android:authorities="com.capstone.cookpocket.androidx-startup"
+68-->[androidx.emoji2:emoji2:1.3.0] C:\Users\iccan\.gradle\caches\8.11.1\transforms\e4ffec82af5b1abc052201205a2cd775\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+69            android:exported="false" >
+69-->[androidx.emoji2:emoji2:1.3.0] C:\Users\iccan\.gradle\caches\8.11.1\transforms\e4ffec82af5b1abc052201205a2cd775\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+70            <meta-data
+70-->[androidx.emoji2:emoji2:1.3.0] C:\Users\iccan\.gradle\caches\8.11.1\transforms\e4ffec82af5b1abc052201205a2cd775\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+71                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+71-->[androidx.emoji2:emoji2:1.3.0] C:\Users\iccan\.gradle\caches\8.11.1\transforms\e4ffec82af5b1abc052201205a2cd775\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+72                android:value="androidx.startup" />
+72-->[androidx.emoji2:emoji2:1.3.0] C:\Users\iccan\.gradle\caches\8.11.1\transforms\e4ffec82af5b1abc052201205a2cd775\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+73            <meta-data
+73-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\iccan\.gradle\caches\8.11.1\transforms\3320729831fa55d353ad68779be29bbd\transformed\lifecycle-process-2.8.7\AndroidManifest.xml:29:13-31:52
+74                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+74-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\iccan\.gradle\caches\8.11.1\transforms\3320729831fa55d353ad68779be29bbd\transformed\lifecycle-process-2.8.7\AndroidManifest.xml:30:17-78
+75                android:value="androidx.startup" />
+75-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\iccan\.gradle\caches\8.11.1\transforms\3320729831fa55d353ad68779be29bbd\transformed\lifecycle-process-2.8.7\AndroidManifest.xml:31:17-49
+76            <meta-data
+76-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\iccan\.gradle\caches\8.11.1\transforms\7c62b712ff62ca7322a030dbc9a50ad4\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+77                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+77-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\iccan\.gradle\caches\8.11.1\transforms\7c62b712ff62ca7322a030dbc9a50ad4\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+78                android:value="androidx.startup" />
+78-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\iccan\.gradle\caches\8.11.1\transforms\7c62b712ff62ca7322a030dbc9a50ad4\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+79        </provider>
+80
+81        <uses-library
+81-->[androidx.window:window:1.0.0] C:\Users\iccan\.gradle\caches\8.11.1\transforms\1e535e1c2877eddca100843d01b50c1c\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+82            android:name="androidx.window.extensions"
+82-->[androidx.window:window:1.0.0] C:\Users\iccan\.gradle\caches\8.11.1\transforms\1e535e1c2877eddca100843d01b50c1c\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+83            android:required="false" />
+83-->[androidx.window:window:1.0.0] C:\Users\iccan\.gradle\caches\8.11.1\transforms\1e535e1c2877eddca100843d01b50c1c\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+84        <uses-library
+84-->[androidx.window:window:1.0.0] C:\Users\iccan\.gradle\caches\8.11.1\transforms\1e535e1c2877eddca100843d01b50c1c\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+85            android:name="androidx.window.sidecar"
+85-->[androidx.window:window:1.0.0] C:\Users\iccan\.gradle\caches\8.11.1\transforms\1e535e1c2877eddca100843d01b50c1c\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+86            android:required="false" />
+86-->[androidx.window:window:1.0.0] C:\Users\iccan\.gradle\caches\8.11.1\transforms\1e535e1c2877eddca100843d01b50c1c\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+87
+88        <receiver
+88-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\iccan\.gradle\caches\8.11.1\transforms\7c62b712ff62ca7322a030dbc9a50ad4\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+89            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+89-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\iccan\.gradle\caches\8.11.1\transforms\7c62b712ff62ca7322a030dbc9a50ad4\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+90            android:directBootAware="false"
+90-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\iccan\.gradle\caches\8.11.1\transforms\7c62b712ff62ca7322a030dbc9a50ad4\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+91            android:enabled="true"
+91-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\iccan\.gradle\caches\8.11.1\transforms\7c62b712ff62ca7322a030dbc9a50ad4\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+92            android:exported="true"
+92-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\iccan\.gradle\caches\8.11.1\transforms\7c62b712ff62ca7322a030dbc9a50ad4\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+93            android:permission="android.permission.DUMP" >
+93-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\iccan\.gradle\caches\8.11.1\transforms\7c62b712ff62ca7322a030dbc9a50ad4\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+94            <intent-filter>
+94-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\iccan\.gradle\caches\8.11.1\transforms\7c62b712ff62ca7322a030dbc9a50ad4\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+95                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+95-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\iccan\.gradle\caches\8.11.1\transforms\7c62b712ff62ca7322a030dbc9a50ad4\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+95-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\iccan\.gradle\caches\8.11.1\transforms\7c62b712ff62ca7322a030dbc9a50ad4\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+96            </intent-filter>
+97            <intent-filter>
+97-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\iccan\.gradle\caches\8.11.1\transforms\7c62b712ff62ca7322a030dbc9a50ad4\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+98                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+98-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\iccan\.gradle\caches\8.11.1\transforms\7c62b712ff62ca7322a030dbc9a50ad4\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+98-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\iccan\.gradle\caches\8.11.1\transforms\7c62b712ff62ca7322a030dbc9a50ad4\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+99            </intent-filter>
+100            <intent-filter>
+100-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\iccan\.gradle\caches\8.11.1\transforms\7c62b712ff62ca7322a030dbc9a50ad4\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+101                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+101-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\iccan\.gradle\caches\8.11.1\transforms\7c62b712ff62ca7322a030dbc9a50ad4\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+101-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\iccan\.gradle\caches\8.11.1\transforms\7c62b712ff62ca7322a030dbc9a50ad4\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+102            </intent-filter>
+103            <intent-filter>
+103-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\iccan\.gradle\caches\8.11.1\transforms\7c62b712ff62ca7322a030dbc9a50ad4\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+104                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+104-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\iccan\.gradle\caches\8.11.1\transforms\7c62b712ff62ca7322a030dbc9a50ad4\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+104-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\iccan\.gradle\caches\8.11.1\transforms\7c62b712ff62ca7322a030dbc9a50ad4\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+105            </intent-filter>
+106        </receiver>
+107    </application>
+108
+109</manifest>

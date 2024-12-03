@@ -24,7 +24,7 @@ xmlns:tools="http://schemas.android.com/tools">
             android:name=".view.ui.search.order.OrderAmbilSendiriActivity"
             android:exported="false" />
         <activity
-            android:name=".view.uiauth.SignupActivity"
+            android:name=".view.uiauth.SignUp.SignupActivity"
             android:exported="false" />
         <activity
             android:name=".view.ui.home.cart.CartActivity"
@@ -33,7 +33,7 @@ xmlns:tools="http://schemas.android.com/tools">
             android:name=".view.ui.home.notif.NotificationActivity"
             android:exported="false" />
         <activity
-            android:name=".view.uiauth.LoginActivity"
+            android:name=".view.uiauth.Login.LoginActivity"
             android:exported="false" />
         <activity
             android:name=".view.ui.search.detail_search.DetailSearchActivity"

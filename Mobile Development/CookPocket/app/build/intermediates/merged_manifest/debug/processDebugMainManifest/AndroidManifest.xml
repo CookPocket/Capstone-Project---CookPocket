@@ -39,7 +39,7 @@
             android:name="com.capstone.cookpocket.view.ui.search.order.OrderAmbilSendiriActivity"
             android:exported="false" />
         <activity
-            android:name="com.capstone.cookpocket.view.uiauth.SignupActivity"
+            android:name="com.capstone.cookpocket.view.uiauth.signup.SignupActivity"
             android:exported="false" />
         <activity
             android:name="com.capstone.cookpocket.view.ui.home.cart.CartActivity"
@@ -48,13 +48,7 @@
             android:name="com.capstone.cookpocket.view.ui.home.notif.NotificationActivity"
             android:exported="false" />
         <activity
-            android:name="com.capstone.cookpocket.view.uiauth.LoginActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.capstone.cookpocket.view.ui.search.detail_search.DetailSearchActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.capstone.cookpocket.view.ui.main.MainActivity"
+            android:name="com.capstone.cookpocket.view.uiauth.login.LoginActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -62,6 +56,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.capstone.cookpocket.view.ui.search.detail_search.DetailSearchActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.capstone.cookpocket.view.ui.main.MainActivity"
+            android:exported="false" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"

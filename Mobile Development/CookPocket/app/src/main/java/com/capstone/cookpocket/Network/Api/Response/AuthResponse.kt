@@ -1,6 +1,5 @@
 package com.capstone.cookpocket.Network.Api.Response
 
-
 import com.google.gson.annotations.SerializedName
 
 data class User(

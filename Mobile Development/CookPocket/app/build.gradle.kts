@@ -60,4 +60,9 @@ dependencies {
     implementation(libs.retrofit)
     implementation(libs.converter.gson)
     implementation(libs.logging.interceptor)
+
+    // DataStore Preferences untuk penyimpanan data yang bersifat key-value
+    implementation(libs.androidx.datastore.preferences)
+    // Glide untuk pengelolaan gambar
+    implementation(libs.glide)
 }

@@ -34,4 +34,5 @@
     <string name="Keranjang">Keranjang</string>
     <string name="ayam_goreng">Ayam goreng</string>
     <string name="notifikasi">Notifikasi</string>
+    <string name="konfirmasi_password">Konfirmasi Password</string>
 </resources>

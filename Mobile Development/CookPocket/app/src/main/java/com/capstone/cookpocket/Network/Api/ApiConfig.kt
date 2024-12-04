@@ -1,4 +1,3 @@
 package com.capstone.cookpocket.Network.Api
 
-object ApiConfig {
-}
+object ApiConfig

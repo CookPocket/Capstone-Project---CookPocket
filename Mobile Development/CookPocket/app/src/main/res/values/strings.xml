@@ -32,7 +32,11 @@
     <string name="bahan_bahan">Bahan - Bahan</string>
     <string name="langkah_pembuatan">Langkah Pembuatan</string>
     <string name="Keranjang">Keranjang</string>
-    <string name="ayam_goreng">Ayam goreng</string>
+    <string name="cari_menu">Cari Menu</string>
     <string name="notifikasi">Notifikasi</string>
     <string name="toko_saya">Toko Saya</string>
+    <string name="makanan_tradisional">Makanan Tradisional</string>
+    <string name="makanan_berat">Makanan Berat</string>
+    <string name="makanan_sehat">Makanan Sehat</string>
+    <string name="konfirmasi_pesanan">Konfirmasi Pesanan</string>
 </resources>

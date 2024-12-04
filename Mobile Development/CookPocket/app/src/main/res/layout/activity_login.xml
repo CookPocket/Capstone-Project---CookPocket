@@ -58,14 +58,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <com.google.android.material.textfield.TextInputEditText
+        <com.capstone.cookpocket.view.uiauth.CostumView.Email
             android:id="@+id/ed_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/email"
             android:inputType="textEmailAddress"
+            android:ems="10"
             android:textColor="@color/black"
-            android:textSize="16sp"/>
+            android:textSize="16sp"
+            android:padding="20dp"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <!-- Password Input -->
@@ -85,14 +87,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <com.google.android.material.textfield.TextInputEditText
+        <com.capstone.cookpocket.view.uiauth.CostumView.Password
             android:id="@+id/ed_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/passsword"
             android:inputType="textPassword"
             android:textColor="@color/black"
-            android:textSize="16sp"/>
+            android:textSize="16sp"
+            android:padding="20dp"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <!-- Login Button -->
@@ -101,6 +104,7 @@
         android:layout_width="300dp"
         android:layout_height="60dp"
         android:text="@string/btn_login"
+        android:textColor="@color/white"
         android:layout_marginTop="30dp"
         android:layout_marginStart="20dp"
         android:textSize="20sp"
@@ -121,12 +125,12 @@
         android:text="@string/desc_title_login"
         android:textColor="@color/black"
         android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@id/textView"
+        app:layout_constraintEnd_toStartOf="@id/tv_btn_signup"
         app:layout_constraintTop_toBottomOf="@id/btn_login"
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tv_btn_signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"

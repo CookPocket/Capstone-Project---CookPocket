@@ -25,6 +25,7 @@ xmlns:tools="http://schemas.android.com/tools">
             android:exported="false" />
         <activity
             android:name=".view.uiauth.SignUp.SignupActivity"
+            android:windowSoftInputMode="adjustResize"
             android:exported="false" />
         <activity
             android:name=".view.ui.home.cart.CartActivity"
@@ -34,13 +35,6 @@ xmlns:tools="http://schemas.android.com/tools">
             android:exported="false" />
         <activity
             android:name=".view.uiauth.Login.LoginActivity"
-            android:exported="false" />
-        <activity
-            android:name=".view.ui.search.detail_search.DetailSearchActivity"
-            android:exported="false" />
-
-        <activity
-            android:name=".view.ui.main.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -48,6 +42,13 @@ xmlns:tools="http://schemas.android.com/tools">
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".view.ui.search.detail_search.DetailSearchActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".view.ui.main.MainActivity"
+            android:exported="true"/>
     </application>
 </manifest>
 

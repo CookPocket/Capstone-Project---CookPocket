@@ -61,5 +61,16 @@ dependencies {
     implementation(libs.converter.gson)
     implementation(libs.logging.interceptor)
 
+    // Lifecycle components untuk ViewModel dan LiveData
+    implementation(libs.androidx.lifecycle.viewmodel.ktx.v261)
+    implementation(libs.androidx.lifecycle.livedata.ktx.v261)
+    implementation(libs.androidx.lifecycle.runtime.ktx)
+
+    // DataStore Preferences untuk penyimpanan data yang bersifat key-value
+    implementation(libs.androidx.datastore.preferences)
+
+    // Glide untuk pengelolaan gambar
+    implementation(libs.glide)
+
 
 }

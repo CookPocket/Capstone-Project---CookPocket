@@ -66,8 +66,8 @@
 40-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:25:13-37
 41        <activity
 41-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:26:9-28:40
-42            android:name="com.capstone.cookpocket.view.uiauth.SignupActivity"
-42-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:27:13-55
+42            android:name="com.capstone.cookpocket.view.uiauth.SignUp.SignupActivity"
+42-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:27:13-62
 43            android:exported="false" />
 43-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:28:13-37
 44        <activity
@@ -84,8 +84,8 @@
 49-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:34:13-37
 50        <activity
 50-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:35:9-37:40
-51            android:name="com.capstone.cookpocket.view.uiauth.LoginActivity"
-51-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:36:13-54
+51            android:name="com.capstone.cookpocket.view.uiauth.Login.LoginActivity"
+51-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:36:13-60
 52            android:exported="false" />
 52-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:37:13-37
 53        <activity

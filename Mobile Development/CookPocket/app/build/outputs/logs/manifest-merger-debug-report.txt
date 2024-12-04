@@ -144,12 +144,12 @@ ADDED from C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\sr
 		ADDED from C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:25:13-37
 	android:name
 		ADDED from C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:24:13-75
-activity#com.capstone.cookpocket.view.uiauth.SignupActivity
+activity#com.capstone.cookpocket.view.uiauth.SignUp.SignupActivity
 ADDED from C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:26:9-28:40
 	android:exported
 		ADDED from C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:28:13-37
 	android:name
-		ADDED from C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:27:13-55
+		ADDED from C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:27:13-62
 activity#com.capstone.cookpocket.view.ui.home.cart.CartActivity
 ADDED from C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:29:9-31:40
 	android:exported
@@ -162,12 +162,12 @@ ADDED from C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\sr
 		ADDED from C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:34:13-37
 	android:name
 		ADDED from C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:33:13-68
-activity#com.capstone.cookpocket.view.uiauth.LoginActivity
+activity#com.capstone.cookpocket.view.uiauth.Login.LoginActivity
 ADDED from C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:35:9-37:40
 	android:exported
 		ADDED from C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:37:13-37
 	android:name
-		ADDED from C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:36:13-54
+		ADDED from C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:36:13-60
 activity#com.capstone.cookpocket.view.ui.search.detail_search.DetailSearchActivity
 ADDED from C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:38:9-40:40
 	android:exported

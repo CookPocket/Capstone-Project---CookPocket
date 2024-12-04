@@ -1,4 +1,4 @@
-package com.capstone.cookpocket.Network.Api.Response
+package com.capstone.cookpocket.Network.Response
 
 
 import com.google.gson.annotations.SerializedName

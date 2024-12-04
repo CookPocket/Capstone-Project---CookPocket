@@ -81,7 +81,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         lifecycleScope.launch {
             val userPreferences = UserPreferences.getInstance(requireContext())
             val userName = userPreferences.userName.firstOrNull()
-            binding.HomeUserName.text = userName ?: ""
+            binding.userName.text = userName ?: ""
         }
     }
 

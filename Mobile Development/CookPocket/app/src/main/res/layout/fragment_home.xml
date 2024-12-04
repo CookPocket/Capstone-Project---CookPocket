@@ -37,13 +37,13 @@
             tools:ignore="RtlSymmetry">
 
             <TextView
-                android:id="@+id/userName"
+                android:id="@+id/HomeUserName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                tools:text="User Name" />
+                android:text="@string/usernameHome" />
 
             <TextView
                 android:id="@+id/location"

@@ -44,6 +44,7 @@
     <string name="toko_saya">Toko Saya</string>
     <string name="tv_btn_signup">Daftar</string>
     <string name="username">Username</string>
+    <string name="usernameHome">Username</string>
     <style name="Base.Theme.CookPocket" parent="Theme.Material3.DayNight.NoActionBar">
         
         

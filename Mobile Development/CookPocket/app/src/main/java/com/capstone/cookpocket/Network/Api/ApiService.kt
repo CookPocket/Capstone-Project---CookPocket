@@ -1,7 +1,10 @@
 package com.capstone.cookpocket.Network.Api
 
+import com.capstone.cookpocket.Network.Response.FileUploadResponse
 import com.capstone.cookpocket.Network.Response.LoginResponse
 import com.capstone.cookpocket.Network.Response.RegisterResponse
+import com.capstone.cookpocket.Network.Response.StoryDetailResponse
+import com.capstone.cookpocket.Network.Response.StoryResponse
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
 import retrofit2.http.Field
@@ -29,18 +32,18 @@ interface ApiService {
         @Field("password") password: String
     ): LoginResponse
 
-//    @GET("stories")
-//    suspend fun getAllStories(): StoryResponse
-//
-//    @GET("stories/{id}")
-//    suspend fun getStoryDetail(
-//        @Path("id") id: String
-//    ): StoryDetailResponse
-//
-//    @Multipart
-//    @POST("stories")
-//    suspend fun uploadStory(
-//        @Part photo: MultipartBody.Part,
-//        @Part("description") description: RequestBody
-//    ): FileUploadResponse
+    @GET("stories")
+    suspend fun getAllStories(): StoryResponse
+
+    @GET("stories/{id}")
+    suspend fun getStoryDetail(
+        @Path("id") id: String
+    ): StoryDetailResponse
+
+    @Multipart
+    @POST("stories")
+    suspend fun uploadStory(
+        @Part photo: MultipartBody.Part,
+        @Part("description") description: RequestBody
+    ): FileUploadResponse
 }

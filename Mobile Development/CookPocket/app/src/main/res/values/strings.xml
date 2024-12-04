@@ -36,4 +36,13 @@
     <string name="notifikasi">Notifikasi</string>
     <string name="toko_saya">Toko Saya</string>
     <string name="usernameHome">Username</string>
+    <string name="cari_menu">Mau menu apa hari ini?</string>
+    <string name="makanan_berat">Makanan Berat</string>
+    <string name="makanan_tradisional">Makanan Tradisional</string>
+    <string name="makanan_sehat">Makanan Sehat</string>
+    <string name="konfirmasi_pesanan">Konfirmasi Pesanan</string>
+    <string name="Username">Username</string>
+    <string name="pemisah">|</string>
+    <string name="no_telephone">No Telpon</string>
+    <string name="deskripsi_alamat">Alamat Lengkap</string>
 </resources>

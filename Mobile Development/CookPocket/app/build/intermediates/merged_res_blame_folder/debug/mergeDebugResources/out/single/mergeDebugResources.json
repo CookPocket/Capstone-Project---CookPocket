@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-debug-4:\\drawable_baseline_favorite_24.xml.flat",
+        "source": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-6:\\drawable\\baseline_favorite_24.xml"
+    },
+    {
         "merged": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-debug-4:\\mipmap-hdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-6:\\mipmap-hdpi\\ic_launcher.webp"
     },
@@ -132,6 +136,10 @@
         "source": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-6:\\drawable\\buttom_nav.xml"
     },
     {
+        "merged": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-debug-4:\\drawable_baseline_favorite_border_24.xml.flat",
+        "source": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-6:\\drawable\\baseline_favorite_border_24.xml"
+    },
+    {
         "merged": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-debug-4:\\layout_activity_cart.xml.flat",
         "source": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-6:\\layout\\activity_cart.xml"
     },
@@ -200,6 +208,10 @@
         "source": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-6:\\layout\\activity_order_antar.xml"
     },
     {
+        "merged": "com.capstone.cookpocket.app-debug-4:/layout_fragment_search.xml.flat",
+        "source": "com.capstone.cookpocket.app-main-6:/layout/fragment_search.xml"
+    },
+    {
         "merged": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-debug-4:\\layout_fragment_favorite.xml.flat",
         "source": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-6:\\layout\\fragment_favorite.xml"
     },
@@ -210,9 +222,5 @@
     {
         "merged": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-debug-4:\\drawable_ic_launcher_foreground.xml.flat",
         "source": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-6:\\drawable\\ic_launcher_foreground.xml"
-    },
-    {
-        "merged": "com.capstone.cookpocket.app-debug-4:/layout_activity_detail_search.xml.flat",
-        "source": "com.capstone.cookpocket.app-main-6:/layout/activity_detail_search.xml"
     }
 ]

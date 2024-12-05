@@ -6,11 +6,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.SearchView;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.capstone.cookpocket.R;
-import com.google.android.material.search.SearchBar;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -20,11 +21,16 @@ public final class FragmentSearchBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final SearchBar searchBar;
+  public final RecyclerView rvSearch;
 
-  private FragmentSearchBinding(@NonNull ConstraintLayout rootView, @NonNull SearchBar searchBar) {
+  @NonNull
+  public final SearchView searchView;
+
+  private FragmentSearchBinding(@NonNull ConstraintLayout rootView, @NonNull RecyclerView rvSearch,
+      @NonNull SearchView searchView) {
     this.rootView = rootView;
-    this.searchBar = searchBar;
+    this.rvSearch = rvSearch;
+    this.searchView = searchView;
   }
 
   @Override
@@ -54,13 +60,19 @@ public final class FragmentSearchBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.searchBar;
-      SearchBar searchBar = ViewBindings.findChildViewById(rootView, id);
-      if (searchBar == null) {
+      id = R.id.rv_search;
+      RecyclerView rvSearch = ViewBindings.findChildViewById(rootView, id);
+      if (rvSearch == null) {
         break missingId;
       }
 
-      return new FragmentSearchBinding((ConstraintLayout) rootView, searchBar);
+      id = R.id.searchView;
+      SearchView searchView = ViewBindings.findChildViewById(rootView, id);
+      if (searchView == null) {
+        break missingId;
+      }
+
+      return new FragmentSearchBinding((ConstraintLayout) rootView, rvSearch, searchView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

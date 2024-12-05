@@ -9,13 +9,13 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.SearchView;
 import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.capstone.cookpocket.R;
-import com.google.android.material.search.SearchBar;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -61,7 +61,7 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final TextView resepLabel;
 
   @NonNull
-  public final SearchBar searchBar;
+  public final SearchView searchBar;
 
   @NonNull
   public final TextView topFavoriteLabel;
@@ -75,7 +75,7 @@ public final class FragmentHomeBinding implements ViewBinding {
       @NonNull RecyclerView favoriteRecyclerView, @NonNull LinearLayout header,
       @NonNull ImageView ivKeranjang, @NonNull ImageView ivNotifikasi,
       @NonNull LinearLayout llCategory, @NonNull TextView location, @NonNull ImageView profileImage,
-      @NonNull TextView resepLabel, @NonNull SearchBar searchBar,
+      @NonNull TextView resepLabel, @NonNull SearchView searchBar,
       @NonNull TextView topFavoriteLabel, @NonNull TextView userName) {
     this.rootView = rootView;
     this.constraintLayout = constraintLayout;
@@ -195,7 +195,7 @@ public final class FragmentHomeBinding implements ViewBinding {
       }
 
       id = R.id.searchBar;
-      SearchBar searchBar = ViewBindings.findChildViewById(rootView, id);
+      SearchView searchBar = ViewBindings.findChildViewById(rootView, id);
       if (searchBar == null) {
         break missingId;
       }

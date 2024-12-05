@@ -3,21 +3,25 @@
     <color name="black">#FF000000</color>
     <color name="grey">#ADADAD</color>
     <color name="grey_soft">#D3D1D1</color>
+    <color name="ic_launcher_background">#E78819</color>
     <color name="orange">#ff9500</color>
     <color name="orange_soft">#ffb35a</color>
-    <color name="orange_soft_nav">#FAC78A</color>
+    <color name="orange_soft_nav">#FFE1B8</color>
     <color name="white">#FFFFFFFF</color>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <string name="Keranjang">Keranjang</string>
     <string name="Username">Username</string>
+    <string name="_0">0</string>
     <string name="add_my_cart">add my cart</string>
     <string name="alamat_pengiriman">Alamat Pengiriman</string>
+    <string name="ambil_sendiri">Ambil Sendiri</string>
     <string name="app_name">Cook Pocket</string>
     <string name="ayam_goreng">Ayam goreng</string>
     <string name="back">Back</string>
     <string name="bahan_bahan">Bahan - Bahan</string>
     <string name="btn_login">Login</string>
+    <string name="buat_pesanan">Buat Pesanan</string>
     <string name="cari_menu">Mau menu apa hari ini?</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="daftar">Daftar</string>
@@ -28,6 +32,7 @@
     <string name="favorit">Favorit</string>
     <string name="favorite">Favorite</string>
     <string name="food_image">Nama Makanan</string>
+    <string name="harga_makanan">harga makanan</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="kolom_pencarian_untuk_menu">Kolom pencarian untuk menu</string>
     <string name="konfirmasi_pesanan">Konfirmasi Pesanan</string>
@@ -44,6 +49,8 @@
     <string name="password">Password</string>
     <string name="pemisah">|</string>
     <string name="pesan">Pesan</string>
+    <string name="pesan_antar">Pesan Antar</string>
+    <string name="rp_0">Rp. 0</string>
     <string name="title_account">Account</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="title_category">Kategori</string>
@@ -52,7 +59,10 @@
     <string name="title_list">List</string>
     <string name="title_resep_tersedia">Resep Tersedia</string>
     <string name="title_search">Search</string>
+    <string name="toko_mitra">Toko Mitra</string>
     <string name="toko_saya">Toko Saya</string>
+    <string name="total_biaya_pengiriman">Total Biaya Pengiriman</string>
+    <string name="total_pesanan">Total Pesanan</string>
     <string name="tv_btn_signup">Daftar</string>
     <string name="username">Username</string>
     <string name="usernameHome">Username</string>
@@ -60,7 +70,8 @@
         
         
         <item name="colorPrimary">@color/orange</item>
-        <item name="colorOnPrimary">@color/orange_soft</item>
+        <item name="colorContainer">@color/orange_soft</item>
+        <item name="colorSecondaryContainer">@color/orange_soft_nav</item>
 
     </style>
     <style name="Theme.CookPocket" parent="Base.Theme.CookPocket"/>

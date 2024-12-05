@@ -80,5 +80,7 @@ dependencies {
 
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.2")
 
+    implementation("com.google.android.material:material:1.9.0")
+
 
 }

@@ -4,7 +4,9 @@
         
         
         <item name="colorPrimary">@color/orange</item>
-        <item name="colorOnPrimary">@color/orange_soft</item>
+        <item name="colorContainer">@color/orange_soft</item>
+        <item name="colorSecondaryContainer">@color/orange_soft_nav</item>
+
 
     </style>
 </resources>

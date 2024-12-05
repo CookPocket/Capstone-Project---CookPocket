@@ -4,10 +4,12 @@ package com.capstone.cookpocket.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.capstone.cookpocket.R;
@@ -23,12 +25,26 @@ public final class FragmentFavoriteBinding implements ViewBinding {
   public final ConstraintLayout main;
 
   @NonNull
+  public final TextView noFavoritesText;
+
+  @NonNull
+  public final ProgressBar progresbarFavorite;
+
+  @NonNull
+  public final RecyclerView rvFavorite;
+
+  @NonNull
   public final TextView tvFavorite;
 
   private FragmentFavoriteBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ConstraintLayout main, @NonNull TextView tvFavorite) {
+      @NonNull ConstraintLayout main, @NonNull TextView noFavoritesText,
+      @NonNull ProgressBar progresbarFavorite, @NonNull RecyclerView rvFavorite,
+      @NonNull TextView tvFavorite) {
     this.rootView = rootView;
     this.main = main;
+    this.noFavoritesText = noFavoritesText;
+    this.progresbarFavorite = progresbarFavorite;
+    this.rvFavorite = rvFavorite;
     this.tvFavorite = tvFavorite;
   }
 
@@ -61,13 +77,32 @@ public final class FragmentFavoriteBinding implements ViewBinding {
     missingId: {
       ConstraintLayout main = (ConstraintLayout) rootView;
 
+      id = R.id.no_favorites_text;
+      TextView noFavoritesText = ViewBindings.findChildViewById(rootView, id);
+      if (noFavoritesText == null) {
+        break missingId;
+      }
+
+      id = R.id.progresbar_favorite;
+      ProgressBar progresbarFavorite = ViewBindings.findChildViewById(rootView, id);
+      if (progresbarFavorite == null) {
+        break missingId;
+      }
+
+      id = R.id.rv_favorite;
+      RecyclerView rvFavorite = ViewBindings.findChildViewById(rootView, id);
+      if (rvFavorite == null) {
+        break missingId;
+      }
+
       id = R.id.tv_favorite;
       TextView tvFavorite = ViewBindings.findChildViewById(rootView, id);
       if (tvFavorite == null) {
         break missingId;
       }
 
-      return new FragmentFavoriteBinding((ConstraintLayout) rootView, main, tvFavorite);
+      return new FragmentFavoriteBinding((ConstraintLayout) rootView, main, noFavoritesText,
+          progresbarFavorite, rvFavorite, tvFavorite);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

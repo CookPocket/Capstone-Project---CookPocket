@@ -9,6 +9,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
@@ -22,6 +23,18 @@ public final class ActivityOrderAntarBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final ImageView btnMinus;
+
+  @NonNull
+  public final ImageView btnPlus;
+
+  @NonNull
+  public final CardView cvTambahKurang;
+
+  @NonNull
+  public final ImageView imgFood;
+
+  @NonNull
   public final ImageView ivBack;
 
   @NonNull
@@ -31,16 +44,46 @@ public final class ActivityOrderAntarBinding implements ViewBinding {
   public final LinearLayout llAlamatPengiriman;
 
   @NonNull
+  public final LinearLayout llBiayaPengiriman;
+
+  @NonNull
   public final LinearLayout llBtnOrderAntar;
 
   @NonNull
   public final LinearLayout llDeskripsiAlamat;
 
   @NonNull
+  public final LinearLayout llTokoMitra;
+
+  @NonNull
+  public final LinearLayout llTotalPesanan;
+
+  @NonNull
+  public final LinearLayout llTotalSemua;
+
+  @NonNull
   public final ConstraintLayout main;
 
   @NonNull
+  public final TextView totalBiayaPengiriman;
+
+  @NonNull
+  public final TextView totalPesanan;
+
+  @NonNull
+  public final TextView totalSemua;
+
+  @NonNull
   public final TextView tvAlamatUser;
+
+  @NonNull
+  public final TextView tvBiayaPengiriman;
+
+  @NonNull
+  public final TextView tvHargaMakanan;
+
+  @NonNull
+  public final TextView tvNamaMakanan;
 
   @NonNull
   public final TextView tvNoTelpUser;
@@ -49,24 +92,62 @@ public final class ActivityOrderAntarBinding implements ViewBinding {
   public final TextView tvOrderAntar;
 
   @NonNull
+  public final TextView tvQuantity;
+
+  @NonNull
+  public final TextView tvTokoMitra;
+
+  @NonNull
+  public final TextView tvTotalPesanan;
+
+  @NonNull
+  public final TextView tvTotalSemua;
+
+  @NonNull
   public final TextView tvUsernameUser;
 
-  private ActivityOrderAntarBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView ivBack,
-      @NonNull LinearLayout linearLayout3, @NonNull LinearLayout llAlamatPengiriman,
+  private ActivityOrderAntarBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView btnMinus,
+      @NonNull ImageView btnPlus, @NonNull CardView cvTambahKurang, @NonNull ImageView imgFood,
+      @NonNull ImageView ivBack, @NonNull LinearLayout linearLayout3,
+      @NonNull LinearLayout llAlamatPengiriman, @NonNull LinearLayout llBiayaPengiriman,
       @NonNull LinearLayout llBtnOrderAntar, @NonNull LinearLayout llDeskripsiAlamat,
-      @NonNull ConstraintLayout main, @NonNull TextView tvAlamatUser,
-      @NonNull TextView tvNoTelpUser, @NonNull TextView tvOrderAntar,
+      @NonNull LinearLayout llTokoMitra, @NonNull LinearLayout llTotalPesanan,
+      @NonNull LinearLayout llTotalSemua, @NonNull ConstraintLayout main,
+      @NonNull TextView totalBiayaPengiriman, @NonNull TextView totalPesanan,
+      @NonNull TextView totalSemua, @NonNull TextView tvAlamatUser,
+      @NonNull TextView tvBiayaPengiriman, @NonNull TextView tvHargaMakanan,
+      @NonNull TextView tvNamaMakanan, @NonNull TextView tvNoTelpUser,
+      @NonNull TextView tvOrderAntar, @NonNull TextView tvQuantity, @NonNull TextView tvTokoMitra,
+      @NonNull TextView tvTotalPesanan, @NonNull TextView tvTotalSemua,
       @NonNull TextView tvUsernameUser) {
     this.rootView = rootView;
+    this.btnMinus = btnMinus;
+    this.btnPlus = btnPlus;
+    this.cvTambahKurang = cvTambahKurang;
+    this.imgFood = imgFood;
     this.ivBack = ivBack;
     this.linearLayout3 = linearLayout3;
     this.llAlamatPengiriman = llAlamatPengiriman;
+    this.llBiayaPengiriman = llBiayaPengiriman;
     this.llBtnOrderAntar = llBtnOrderAntar;
     this.llDeskripsiAlamat = llDeskripsiAlamat;
+    this.llTokoMitra = llTokoMitra;
+    this.llTotalPesanan = llTotalPesanan;
+    this.llTotalSemua = llTotalSemua;
     this.main = main;
+    this.totalBiayaPengiriman = totalBiayaPengiriman;
+    this.totalPesanan = totalPesanan;
+    this.totalSemua = totalSemua;
     this.tvAlamatUser = tvAlamatUser;
+    this.tvBiayaPengiriman = tvBiayaPengiriman;
+    this.tvHargaMakanan = tvHargaMakanan;
+    this.tvNamaMakanan = tvNamaMakanan;
     this.tvNoTelpUser = tvNoTelpUser;
     this.tvOrderAntar = tvOrderAntar;
+    this.tvQuantity = tvQuantity;
+    this.tvTokoMitra = tvTokoMitra;
+    this.tvTotalPesanan = tvTotalPesanan;
+    this.tvTotalSemua = tvTotalSemua;
     this.tvUsernameUser = tvUsernameUser;
   }
 
@@ -97,6 +178,30 @@ public final class ActivityOrderAntarBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btn_minus;
+      ImageView btnMinus = ViewBindings.findChildViewById(rootView, id);
+      if (btnMinus == null) {
+        break missingId;
+      }
+
+      id = R.id.btn_plus;
+      ImageView btnPlus = ViewBindings.findChildViewById(rootView, id);
+      if (btnPlus == null) {
+        break missingId;
+      }
+
+      id = R.id.cv_tambah_kurang;
+      CardView cvTambahKurang = ViewBindings.findChildViewById(rootView, id);
+      if (cvTambahKurang == null) {
+        break missingId;
+      }
+
+      id = R.id.img_food;
+      ImageView imgFood = ViewBindings.findChildViewById(rootView, id);
+      if (imgFood == null) {
+        break missingId;
+      }
+
       id = R.id.iv_back;
       ImageView ivBack = ViewBindings.findChildViewById(rootView, id);
       if (ivBack == null) {
@@ -115,6 +220,12 @@ public final class ActivityOrderAntarBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.ll_biaya_pengiriman;
+      LinearLayout llBiayaPengiriman = ViewBindings.findChildViewById(rootView, id);
+      if (llBiayaPengiriman == null) {
+        break missingId;
+      }
+
       id = R.id.ll_btn_order_antar;
       LinearLayout llBtnOrderAntar = ViewBindings.findChildViewById(rootView, id);
       if (llBtnOrderAntar == null) {
@@ -127,11 +238,65 @@ public final class ActivityOrderAntarBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.ll_toko_mitra;
+      LinearLayout llTokoMitra = ViewBindings.findChildViewById(rootView, id);
+      if (llTokoMitra == null) {
+        break missingId;
+      }
+
+      id = R.id.ll_total_pesanan;
+      LinearLayout llTotalPesanan = ViewBindings.findChildViewById(rootView, id);
+      if (llTotalPesanan == null) {
+        break missingId;
+      }
+
+      id = R.id.ll_total_semua;
+      LinearLayout llTotalSemua = ViewBindings.findChildViewById(rootView, id);
+      if (llTotalSemua == null) {
+        break missingId;
+      }
+
       ConstraintLayout main = (ConstraintLayout) rootView;
+
+      id = R.id.total_biaya_pengiriman;
+      TextView totalBiayaPengiriman = ViewBindings.findChildViewById(rootView, id);
+      if (totalBiayaPengiriman == null) {
+        break missingId;
+      }
+
+      id = R.id.total_pesanan;
+      TextView totalPesanan = ViewBindings.findChildViewById(rootView, id);
+      if (totalPesanan == null) {
+        break missingId;
+      }
+
+      id = R.id.total_semua;
+      TextView totalSemua = ViewBindings.findChildViewById(rootView, id);
+      if (totalSemua == null) {
+        break missingId;
+      }
 
       id = R.id.tv_alamat_user;
       TextView tvAlamatUser = ViewBindings.findChildViewById(rootView, id);
       if (tvAlamatUser == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_biaya_pengiriman;
+      TextView tvBiayaPengiriman = ViewBindings.findChildViewById(rootView, id);
+      if (tvBiayaPengiriman == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_harga_makanan;
+      TextView tvHargaMakanan = ViewBindings.findChildViewById(rootView, id);
+      if (tvHargaMakanan == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_nama_makanan;
+      TextView tvNamaMakanan = ViewBindings.findChildViewById(rootView, id);
+      if (tvNamaMakanan == null) {
         break missingId;
       }
 
@@ -147,15 +312,42 @@ public final class ActivityOrderAntarBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tv_quantity;
+      TextView tvQuantity = ViewBindings.findChildViewById(rootView, id);
+      if (tvQuantity == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_toko_mitra;
+      TextView tvTokoMitra = ViewBindings.findChildViewById(rootView, id);
+      if (tvTokoMitra == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_total_pesanan;
+      TextView tvTotalPesanan = ViewBindings.findChildViewById(rootView, id);
+      if (tvTotalPesanan == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_total_semua;
+      TextView tvTotalSemua = ViewBindings.findChildViewById(rootView, id);
+      if (tvTotalSemua == null) {
+        break missingId;
+      }
+
       id = R.id.tv_username_user;
       TextView tvUsernameUser = ViewBindings.findChildViewById(rootView, id);
       if (tvUsernameUser == null) {
         break missingId;
       }
 
-      return new ActivityOrderAntarBinding((ConstraintLayout) rootView, ivBack, linearLayout3,
-          llAlamatPengiriman, llBtnOrderAntar, llDeskripsiAlamat, main, tvAlamatUser, tvNoTelpUser,
-          tvOrderAntar, tvUsernameUser);
+      return new ActivityOrderAntarBinding((ConstraintLayout) rootView, btnMinus, btnPlus,
+          cvTambahKurang, imgFood, ivBack, linearLayout3, llAlamatPengiriman, llBiayaPengiriman,
+          llBtnOrderAntar, llDeskripsiAlamat, llTokoMitra, llTotalPesanan, llTotalSemua, main,
+          totalBiayaPengiriman, totalPesanan, totalSemua, tvAlamatUser, tvBiayaPengiriman,
+          tvHargaMakanan, tvNamaMakanan, tvNoTelpUser, tvOrderAntar, tvQuantity, tvTokoMitra,
+          tvTotalPesanan, tvTotalSemua, tvUsernameUser);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -17,7 +17,6 @@
         android:background="@drawable/buttom_nav"
         app:labelVisibilityMode="unlabeled"
         app:itemIconTint="@color/orange"
-        android:backgroundTint="@color/orange_soft_nav"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

@@ -46,4 +46,5 @@
     <string name="no_telephone">No Telpon</string>
     <string name="deskripsi_alamat">Alamat Lengkap</string>
     <string name="alamat_pengiriman">Alamat Pengiriman</string>
+    <string name="no_item_fav">Tidak ada item favorite</string>
 </resources>

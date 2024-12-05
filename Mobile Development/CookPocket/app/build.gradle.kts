@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("kotlin-parcelize")
+    id("kotlin-kapt")
 }
 
 android {
@@ -71,6 +73,12 @@ dependencies {
 
     // Glide untuk pengelolaan gambar
     implementation(libs.glide)
+
+    implementation("androidx.room:room-runtime:2.5.2") // Room runtime library
+    kapt("androidx.room:room-compiler:2.5.2")          // Room annotation processor
+    implementation("androidx.room:room-ktx:2.5.2")    // Room Kotlin extensions
+
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.2")
 
 
 }

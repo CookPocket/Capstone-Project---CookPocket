@@ -14,6 +14,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.capstone.cookpocket.Network.UserPreferences
 import com.capstone.cookpocket.R
 import com.capstone.cookpocket.databinding.FragmentHomeBinding
+import com.capstone.cookpocket.view.ui.home.cart.CartActivity
+import com.capstone.cookpocket.view.ui.home.notif.NotificationActivity
 import com.capstone.cookpocket.view.ui.search.detail_search.DetailSearchActivity
 import com.capstone.cookpocket.view.uiauth.Login.LoginActivity
 import kotlinx.coroutines.flow.firstOrNull
@@ -64,6 +66,16 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
         // Ambil data cerita dari ViewModel
         homeViewModel.fetchStories()
+
+        binding.ivKeranjang.setOnClickListener {
+            val intent = Intent(requireContext(), CartActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.ivNotifikasi.setOnClickListener {
+            val intent = Intent(requireContext(), NotificationActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun checkTokenAndNavigate() {

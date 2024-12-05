@@ -1,5 +1,6 @@
 package com.capstone.cookpocket.Network.Response
 
+
 import com.google.gson.annotations.SerializedName
 
 data class StoryResponse(

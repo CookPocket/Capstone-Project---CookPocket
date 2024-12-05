@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.capstone.cookpocket.Network.UserPreferences
 import com.capstone.cookpocket.R
 import com.capstone.cookpocket.databinding.FragmentHomeBinding
+import com.capstone.cookpocket.view.ui.adapter.AdapterActivity
 import com.capstone.cookpocket.view.ui.home.cart.CartActivity
 import com.capstone.cookpocket.view.ui.home.notif.NotificationActivity
 import com.capstone.cookpocket.view.ui.search.detail_search.DetailSearchActivity
@@ -34,7 +35,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
     }
 
     private val cookPocketHomeAdapter by lazy {
-        CookPocketHomeAdapter { storyItem, imageView, textView ->
+        AdapterActivity { storyItem, imageView, textView ->
             val intent = Intent(requireContext(), DetailSearchActivity::class.java).apply {
                 putExtra("STORY_NAME", storyItem.name)
                 putExtra("STORY_DESCRIPTION", storyItem.description)
@@ -139,4 +140,5 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         super.onDestroyView()
         _binding = null
     }
+
 }

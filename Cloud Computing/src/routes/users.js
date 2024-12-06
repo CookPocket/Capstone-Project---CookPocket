@@ -5,6 +5,9 @@ const router = express.Router();
 //menambahkan data pengguna atau user baru
 router.post('/auth/register', userController.createNewUsers);
 
+//for login user
+router.post('/auth/login', userController.createNewUsers);
+
 //Mendapatkan semua pengguna/user
 router.get('/user', userController.getAllUser);
 

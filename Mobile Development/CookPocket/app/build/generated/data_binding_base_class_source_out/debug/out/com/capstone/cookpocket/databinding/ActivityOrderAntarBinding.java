@@ -30,6 +30,9 @@ public final class ActivityOrderAntarBinding implements ViewBinding {
   public final ImageView btnPlus;
 
   @NonNull
+  public final CardView cvBtnAmbilSendiri;
+
+  @NonNull
   public final CardView cvTambahKurang;
 
   @NonNull
@@ -111,14 +114,15 @@ public final class ActivityOrderAntarBinding implements ViewBinding {
   public final TextView tvUsernameUser;
 
   private ActivityOrderAntarBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView btnMinus,
-      @NonNull ImageView btnPlus, @NonNull CardView cvTambahKurang, @NonNull ImageView imgFood,
-      @NonNull ImageView ivBack, @NonNull LinearLayout linearLayout3,
-      @NonNull LinearLayout llAlamatPengiriman, @NonNull LinearLayout llBiayaPengiriman,
-      @NonNull LinearLayout llBtnOrderAntar, @NonNull LinearLayout llDeskripsiAlamat,
-      @NonNull LinearLayout llTokoMitra, @NonNull LinearLayout llTotalPesanan,
-      @NonNull LinearLayout llTotalSemua, @NonNull ConstraintLayout main,
-      @NonNull ProgressBar progresbarAntar, @NonNull TextView totalBiayaPengiriman,
-      @NonNull TextView totalPesanan, @NonNull TextView totalSemua, @NonNull TextView tvAlamatUser,
+      @NonNull ImageView btnPlus, @NonNull CardView cvBtnAmbilSendiri,
+      @NonNull CardView cvTambahKurang, @NonNull ImageView imgFood, @NonNull ImageView ivBack,
+      @NonNull LinearLayout linearLayout3, @NonNull LinearLayout llAlamatPengiriman,
+      @NonNull LinearLayout llBiayaPengiriman, @NonNull LinearLayout llBtnOrderAntar,
+      @NonNull LinearLayout llDeskripsiAlamat, @NonNull LinearLayout llTokoMitra,
+      @NonNull LinearLayout llTotalPesanan, @NonNull LinearLayout llTotalSemua,
+      @NonNull ConstraintLayout main, @NonNull ProgressBar progresbarAntar,
+      @NonNull TextView totalBiayaPengiriman, @NonNull TextView totalPesanan,
+      @NonNull TextView totalSemua, @NonNull TextView tvAlamatUser,
       @NonNull TextView tvBiayaPengiriman, @NonNull TextView tvHargaMakanan,
       @NonNull TextView tvNamaMakanan, @NonNull TextView tvNoTelpUser,
       @NonNull TextView tvOrderAntar, @NonNull TextView tvQuantity, @NonNull TextView tvTokoMitra,
@@ -127,6 +131,7 @@ public final class ActivityOrderAntarBinding implements ViewBinding {
     this.rootView = rootView;
     this.btnMinus = btnMinus;
     this.btnPlus = btnPlus;
+    this.cvBtnAmbilSendiri = cvBtnAmbilSendiri;
     this.cvTambahKurang = cvTambahKurang;
     this.imgFood = imgFood;
     this.ivBack = ivBack;
@@ -192,6 +197,12 @@ public final class ActivityOrderAntarBinding implements ViewBinding {
       id = R.id.btn_plus;
       ImageView btnPlus = ViewBindings.findChildViewById(rootView, id);
       if (btnPlus == null) {
+        break missingId;
+      }
+
+      id = R.id.cv_btn_Ambil_Sendiri;
+      CardView cvBtnAmbilSendiri = ViewBindings.findChildViewById(rootView, id);
+      if (cvBtnAmbilSendiri == null) {
         break missingId;
       }
 
@@ -354,11 +365,11 @@ public final class ActivityOrderAntarBinding implements ViewBinding {
       }
 
       return new ActivityOrderAntarBinding((ConstraintLayout) rootView, btnMinus, btnPlus,
-          cvTambahKurang, imgFood, ivBack, linearLayout3, llAlamatPengiriman, llBiayaPengiriman,
-          llBtnOrderAntar, llDeskripsiAlamat, llTokoMitra, llTotalPesanan, llTotalSemua, main,
-          progresbarAntar, totalBiayaPengiriman, totalPesanan, totalSemua, tvAlamatUser,
-          tvBiayaPengiriman, tvHargaMakanan, tvNamaMakanan, tvNoTelpUser, tvOrderAntar, tvQuantity,
-          tvTokoMitra, tvTotalPesanan, tvTotalSemua, tvUsernameUser);
+          cvBtnAmbilSendiri, cvTambahKurang, imgFood, ivBack, linearLayout3, llAlamatPengiriman,
+          llBiayaPengiriman, llBtnOrderAntar, llDeskripsiAlamat, llTokoMitra, llTotalPesanan,
+          llTotalSemua, main, progresbarAntar, totalBiayaPengiriman, totalPesanan, totalSemua,
+          tvAlamatUser, tvBiayaPengiriman, tvHargaMakanan, tvNamaMakanan, tvNoTelpUser,
+          tvOrderAntar, tvQuantity, tvTokoMitra, tvTotalPesanan, tvTotalSemua, tvUsernameUser);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -68,11 +68,11 @@ class SearchFragment : Fragment() {
     }
 
     private fun observeViewModel() {
-        searchViewModel.stories.observe(viewLifecycleOwner) { stories ->
-            stories?.let {
-                adapter.setStories(it)
-            }
-        }
+//        searchViewModel.stories.observe(viewLifecycleOwner) { stories ->
+//            stories?.let {
+//                adapter.setStories(it)
+//            }
+//        }
 
         searchViewModel.errorMessage.observe(viewLifecycleOwner) { errorMessage ->
             errorMessage?.let { showToast(it) }

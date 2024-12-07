@@ -30,7 +30,7 @@ public final class ActivityDetailSearchBinding implements ViewBinding {
   public final ImageView imageViewCart;
 
   @NonNull
-  public final ImageView ivBack;
+  public final ImageView ivBackDetailSearch;
 
   @NonNull
   public final ImageView ivFavorite;
@@ -60,15 +60,16 @@ public final class ActivityDetailSearchBinding implements ViewBinding {
   public final TextView tvJudul;
 
   private ActivityDetailSearchBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button buttonPesan, @NonNull ImageView imageViewCart, @NonNull ImageView ivBack,
-      @NonNull ImageView ivFavorite, @NonNull ImageView ivMainImage, @NonNull TextView labelBahan,
+      @NonNull Button buttonPesan, @NonNull ImageView imageViewCart,
+      @NonNull ImageView ivBackDetailSearch, @NonNull ImageView ivFavorite,
+      @NonNull ImageView ivMainImage, @NonNull TextView labelBahan,
       @NonNull TextView labelPembuatan, @NonNull LinearLayout linearLayout,
       @NonNull ProgressBar progresbarDetailSearch, @NonNull TextView tvDeskripsiBahan,
       @NonNull TextView tvDeskripsiPembuatan, @NonNull TextView tvJudul) {
     this.rootView = rootView;
     this.buttonPesan = buttonPesan;
     this.imageViewCart = imageViewCart;
-    this.ivBack = ivBack;
+    this.ivBackDetailSearch = ivBackDetailSearch;
     this.ivFavorite = ivFavorite;
     this.ivMainImage = ivMainImage;
     this.labelBahan = labelBahan;
@@ -119,9 +120,9 @@ public final class ActivityDetailSearchBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.iv_back;
-      ImageView ivBack = ViewBindings.findChildViewById(rootView, id);
-      if (ivBack == null) {
+      id = R.id.iv_back_detail_search;
+      ImageView ivBackDetailSearch = ViewBindings.findChildViewById(rootView, id);
+      if (ivBackDetailSearch == null) {
         break missingId;
       }
 
@@ -180,8 +181,8 @@ public final class ActivityDetailSearchBinding implements ViewBinding {
       }
 
       return new ActivityDetailSearchBinding((ConstraintLayout) rootView, buttonPesan,
-          imageViewCart, ivBack, ivFavorite, ivMainImage, labelBahan, labelPembuatan, linearLayout,
-          progresbarDetailSearch, tvDeskripsiBahan, tvDeskripsiPembuatan, tvJudul);
+          imageViewCart, ivBackDetailSearch, ivFavorite, ivMainImage, labelBahan, labelPembuatan,
+          linearLayout, progresbarDetailSearch, tvDeskripsiBahan, tvDeskripsiPembuatan, tvJudul);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

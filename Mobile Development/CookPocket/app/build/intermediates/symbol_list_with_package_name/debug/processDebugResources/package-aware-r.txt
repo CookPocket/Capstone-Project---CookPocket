@@ -3521,11 +3521,13 @@ id invisible
 id inward
 id italic
 id item_touch_helper_previous_elevation
-id iv_back
 id iv_back_addres
+id iv_back_ambil_sendiri
+id iv_back_antar
 id iv_back_cart
 id iv_back_change_notelp
 id iv_back_change_password
+id iv_back_detail_search
 id iv_back_detail_store
 id iv_back_email
 id iv_back_notif
@@ -4004,7 +4006,6 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_adapter
 layout activity_adapter_cart
-layout activity_add_item
 layout activity_add_product
 layout activity_cart
 layout activity_change_addres

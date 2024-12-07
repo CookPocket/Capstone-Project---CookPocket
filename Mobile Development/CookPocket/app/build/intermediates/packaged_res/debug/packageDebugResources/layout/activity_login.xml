@@ -11,12 +11,11 @@
     <!-- Background with Logo -->
     <LinearLayout
         android:id="@+id/background"
-        android:layout_width="300dp"
+        android:layout_width="320dp"
         android:layout_height="200dp"
         android:background="@drawable/background_login_signup"
         android:orientation="vertical"
         app:layout_constraintTop_toTopOf="parent"
-
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="50dp">
 

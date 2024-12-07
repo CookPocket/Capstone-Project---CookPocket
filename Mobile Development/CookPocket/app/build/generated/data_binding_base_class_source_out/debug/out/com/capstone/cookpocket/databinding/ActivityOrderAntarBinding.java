@@ -36,7 +36,7 @@ public final class ActivityOrderAntarBinding implements ViewBinding {
   public final ImageView imgFood;
 
   @NonNull
-  public final ImageView ivBack;
+  public final ImageView ivBackAntar;
 
   @NonNull
   public final LinearLayout linearLayout3;
@@ -112,7 +112,7 @@ public final class ActivityOrderAntarBinding implements ViewBinding {
 
   private ActivityOrderAntarBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView btnMinus,
       @NonNull ImageView btnPlus, @NonNull CardView cvTambahKurang, @NonNull ImageView imgFood,
-      @NonNull ImageView ivBack, @NonNull LinearLayout linearLayout3,
+      @NonNull ImageView ivBackAntar, @NonNull LinearLayout linearLayout3,
       @NonNull LinearLayout llAlamatPengiriman, @NonNull LinearLayout llBiayaPengiriman,
       @NonNull LinearLayout llBtnOrderAntar, @NonNull LinearLayout llDeskripsiAlamat,
       @NonNull LinearLayout llTokoMitra, @NonNull LinearLayout llTotalPesanan,
@@ -129,7 +129,7 @@ public final class ActivityOrderAntarBinding implements ViewBinding {
     this.btnPlus = btnPlus;
     this.cvTambahKurang = cvTambahKurang;
     this.imgFood = imgFood;
-    this.ivBack = ivBack;
+    this.ivBackAntar = ivBackAntar;
     this.linearLayout3 = linearLayout3;
     this.llAlamatPengiriman = llAlamatPengiriman;
     this.llBiayaPengiriman = llBiayaPengiriman;
@@ -207,9 +207,9 @@ public final class ActivityOrderAntarBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.iv_back;
-      ImageView ivBack = ViewBindings.findChildViewById(rootView, id);
-      if (ivBack == null) {
+      id = R.id.iv_back_antar;
+      ImageView ivBackAntar = ViewBindings.findChildViewById(rootView, id);
+      if (ivBackAntar == null) {
         break missingId;
       }
 
@@ -354,11 +354,11 @@ public final class ActivityOrderAntarBinding implements ViewBinding {
       }
 
       return new ActivityOrderAntarBinding((ConstraintLayout) rootView, btnMinus, btnPlus,
-          cvTambahKurang, imgFood, ivBack, linearLayout3, llAlamatPengiriman, llBiayaPengiriman,
-          llBtnOrderAntar, llDeskripsiAlamat, llTokoMitra, llTotalPesanan, llTotalSemua, main,
-          progresbarAntar, totalBiayaPengiriman, totalPesanan, totalSemua, tvAlamatUser,
-          tvBiayaPengiriman, tvHargaMakanan, tvNamaMakanan, tvNoTelpUser, tvOrderAntar, tvQuantity,
-          tvTokoMitra, tvTotalPesanan, tvTotalSemua, tvUsernameUser);
+          cvTambahKurang, imgFood, ivBackAntar, linearLayout3, llAlamatPengiriman,
+          llBiayaPengiriman, llBtnOrderAntar, llDeskripsiAlamat, llTokoMitra, llTotalPesanan,
+          llTotalSemua, main, progresbarAntar, totalBiayaPengiriman, totalPesanan, totalSemua,
+          tvAlamatUser, tvBiayaPengiriman, tvHargaMakanan, tvNamaMakanan, tvNoTelpUser,
+          tvOrderAntar, tvQuantity, tvTokoMitra, tvTotalPesanan, tvTotalSemua, tvUsernameUser);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -4,16 +4,16 @@
         "source": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-60:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-debug-58:\\layout_activity_cart.xml.flat",
-        "source": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-60:\\layout\\activity_cart.xml"
+        "merged": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-debug-58:\\drawable_baseline_favorite_border_24.xml.flat",
+        "source": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-60:\\drawable\\baseline_favorite_border_24.xml"
     },
     {
         "merged": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-debug-58:\\layout_fragment_search.xml.flat",
         "source": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-60:\\layout\\fragment_search.xml"
     },
     {
-        "merged": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-debug-58:\\drawable_baseline_favorite_border_24.xml.flat",
-        "source": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-60:\\drawable\\baseline_favorite_border_24.xml"
+        "merged": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-debug-58:\\layout_activity_cart.xml.flat",
+        "source": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-60:\\layout\\activity_cart.xml"
     },
     {
         "merged": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-debug-58:\\layout_activity_change_no_telp.xml.flat",
@@ -86,6 +86,10 @@
     {
         "merged": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-debug-58:\\layout_activity_add_item.xml.flat",
         "source": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-60:\\layout\\activity_add_item.xml"
+    },
+    {
+        "merged": "com.capstone.cookpocket.app-debug-58:/layout_activity_login.xml.flat",
+        "source": "com.capstone.cookpocket.app-main-60:/layout/activity_login.xml"
     },
     {
         "merged": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-debug-58:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
@@ -200,10 +204,6 @@
         "source": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-60:\\drawable\\background_search_home.xml"
     },
     {
-        "merged": "com.capstone.cookpocket.app-debug-58:/layout_activity_main.xml.flat",
-        "source": "com.capstone.cookpocket.app-main-60:/layout/activity_main.xml"
-    },
-    {
         "merged": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-debug-58:\\menu_bottom_nav_menu.xml.flat",
         "source": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-60:\\menu\\bottom_nav_menu.xml"
     },
@@ -234,6 +234,10 @@
     {
         "merged": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-debug-58:\\drawable_baseline_favorite_24.xml.flat",
         "source": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-60:\\drawable\\baseline_favorite_24.xml"
+    },
+    {
+        "merged": "com.capstone.cookpocket.app-debug-58:/layout_activity_detail_search.xml.flat",
+        "source": "com.capstone.cookpocket.app-main-60:/layout/activity_detail_search.xml"
     },
     {
         "merged": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-debug-58:\\layout_activity_change_addres.xml.flat",
@@ -280,12 +284,20 @@
         "source": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-60:\\drawable\\place_holder_foto_profil.xml"
     },
     {
+        "merged": "com.capstone.cookpocket.app-debug-58:/layout_activity_order_ambil_sendiri.xml.flat",
+        "source": "com.capstone.cookpocket.app-main-60:/layout/activity_order_ambil_sendiri.xml"
+    },
+    {
         "merged": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-debug-58:\\layout_fragment_detail_store.xml.flat",
         "source": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-60:\\layout\\fragment_detail_store.xml"
     },
     {
         "merged": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-debug-58:\\mipmap-mdpi_ic_launcher_foreground.webp.flat",
         "source": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-60:\\mipmap-mdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.capstone.cookpocket.app-debug-58:/layout_activity_order_antar.xml.flat",
+        "source": "com.capstone.cookpocket.app-main-60:/layout/activity_order_antar.xml"
     },
     {
         "merged": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-debug-58:\\drawable_background_login_signup.xml.flat",

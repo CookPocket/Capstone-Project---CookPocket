@@ -10,7 +10,7 @@
 
 
     <ImageView
-        android:id="@+id/iv_back"
+        android:id="@+id/iv_back_ambil_sendiri"
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_marginStart="15dp"
@@ -34,7 +34,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_back"
+        app:layout_constraintTop_toBottomOf="@+id/iv_back_ambil_sendiri"
         tools:ignore="MissingConstraints" />
 
     <LinearLayout

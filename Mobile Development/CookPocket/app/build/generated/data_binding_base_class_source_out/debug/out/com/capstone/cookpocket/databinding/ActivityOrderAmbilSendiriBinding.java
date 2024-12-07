@@ -36,7 +36,7 @@ public final class ActivityOrderAmbilSendiriBinding implements ViewBinding {
   public final ImageView imgFood;
 
   @NonNull
-  public final ImageView ivBack;
+  public final ImageView ivBackAmbilSendiri;
 
   @NonNull
   public final LinearLayout linearLayout3;
@@ -103,12 +103,13 @@ public final class ActivityOrderAmbilSendiriBinding implements ViewBinding {
 
   private ActivityOrderAmbilSendiriBinding(@NonNull ConstraintLayout rootView,
       @NonNull ImageView btnMinus, @NonNull ImageView btnPlus, @NonNull CardView cvTambahKurang,
-      @NonNull ImageView imgFood, @NonNull ImageView ivBack, @NonNull LinearLayout linearLayout3,
-      @NonNull LinearLayout llAlamatPengiriman, @NonNull LinearLayout llBtnOrderAntar,
-      @NonNull LinearLayout llDeskripsiAlamat, @NonNull LinearLayout llTokoMitra,
-      @NonNull LinearLayout llTotalPesanan, @NonNull LinearLayout llTotalSemua,
-      @NonNull ConstraintLayout main, @NonNull ProgressBar progresbarAmbilSendiri,
-      @NonNull TextView totalPesanan, @NonNull TextView totalSemua, @NonNull TextView tvAlamatUser,
+      @NonNull ImageView imgFood, @NonNull ImageView ivBackAmbilSendiri,
+      @NonNull LinearLayout linearLayout3, @NonNull LinearLayout llAlamatPengiriman,
+      @NonNull LinearLayout llBtnOrderAntar, @NonNull LinearLayout llDeskripsiAlamat,
+      @NonNull LinearLayout llTokoMitra, @NonNull LinearLayout llTotalPesanan,
+      @NonNull LinearLayout llTotalSemua, @NonNull ConstraintLayout main,
+      @NonNull ProgressBar progresbarAmbilSendiri, @NonNull TextView totalPesanan,
+      @NonNull TextView totalSemua, @NonNull TextView tvAlamatUser,
       @NonNull TextView tvHargaMakanan, @NonNull TextView tvNamaMakanan,
       @NonNull TextView tvNoTelpUser, @NonNull TextView tvOrderAntar, @NonNull TextView tvQuantity,
       @NonNull TextView tvTokoMitra, @NonNull TextView tvTotalPesanan,
@@ -118,7 +119,7 @@ public final class ActivityOrderAmbilSendiriBinding implements ViewBinding {
     this.btnPlus = btnPlus;
     this.cvTambahKurang = cvTambahKurang;
     this.imgFood = imgFood;
-    this.ivBack = ivBack;
+    this.ivBackAmbilSendiri = ivBackAmbilSendiri;
     this.linearLayout3 = linearLayout3;
     this.llAlamatPengiriman = llAlamatPengiriman;
     this.llBtnOrderAntar = llBtnOrderAntar;
@@ -193,9 +194,9 @@ public final class ActivityOrderAmbilSendiriBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.iv_back;
-      ImageView ivBack = ViewBindings.findChildViewById(rootView, id);
-      if (ivBack == null) {
+      id = R.id.iv_back_ambil_sendiri;
+      ImageView ivBackAmbilSendiri = ViewBindings.findChildViewById(rootView, id);
+      if (ivBackAmbilSendiri == null) {
         break missingId;
       }
 
@@ -322,8 +323,8 @@ public final class ActivityOrderAmbilSendiriBinding implements ViewBinding {
       }
 
       return new ActivityOrderAmbilSendiriBinding((ConstraintLayout) rootView, btnMinus, btnPlus,
-          cvTambahKurang, imgFood, ivBack, linearLayout3, llAlamatPengiriman, llBtnOrderAntar,
-          llDeskripsiAlamat, llTokoMitra, llTotalPesanan, llTotalSemua, main,
+          cvTambahKurang, imgFood, ivBackAmbilSendiri, linearLayout3, llAlamatPengiriman,
+          llBtnOrderAntar, llDeskripsiAlamat, llTokoMitra, llTotalPesanan, llTotalSemua, main,
           progresbarAmbilSendiri, totalPesanan, totalSemua, tvAlamatUser, tvHargaMakanan,
           tvNamaMakanan, tvNoTelpUser, tvOrderAntar, tvQuantity, tvTokoMitra, tvTotalPesanan,
           tvTotalSemua, tvUsernameUser);

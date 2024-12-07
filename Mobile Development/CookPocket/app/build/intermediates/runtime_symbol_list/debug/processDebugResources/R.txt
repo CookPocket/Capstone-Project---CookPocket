@@ -3520,11 +3520,13 @@ int id invisible 0x7f08010a
 int id inward 0x7f08010b
 int id italic 0x7f08010c
 int id item_touch_helper_previous_elevation 0x7f08010d
-int id iv_back 0x7f08010e
 int id iv_back_addres 0x7f08029d
+int id iv_back_ambil_sendiri 0x7f0802b8
+int id iv_back_antar 0x7f0802b9
 int id iv_back_cart 0x7f08010f
 int id iv_back_change_notelp 0x7f08029e
 int id iv_back_change_password 0x7f08029f
+int id iv_back_detail_search 0x7f0802ba
 int id iv_back_detail_store 0x7f0802a0
 int id iv_back_email 0x7f0802a1
 int id iv_back_notif 0x7f080110
@@ -4003,7 +4005,6 @@ int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
 int layout activity_adapter 0x7f0b001c
 int layout activity_adapter_cart 0x7f0b0082
-int layout activity_add_item 0x7f0b001d
 int layout activity_add_product 0x7f0b0083
 int layout activity_cart 0x7f0b001e
 int layout activity_change_addres 0x7f0b0084

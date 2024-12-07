@@ -15,6 +15,9 @@
         android:theme="@style/Theme.CookPocket"
         tools:targetApi="31">
         <activity
+            android:name=".view.ui.adapter.AdapterCartActivity"
+            android:exported="false" />
+        <activity
             android:name=".view.ui.account.change.ChangeAddresActivity"
             android:exported="false" />
         <activity

@@ -7,5 +7,6 @@
     <color name="orange_soft_nav">#FFE1B8</color>
     <color name="grey">#ADADAD</color>
     <color name="grey_soft">#D3D1D1</color>
+    <color name="grey_soft_smooth">#E9E7E7</color>
 
 </resources>

@@ -6,7 +6,7 @@
     <string name="title_favorite">Favorite</string>
     <string name="title_account">Account</string>
     <string name="title_category">Kategori</string>
-    <string name="title_resep_tersedia">Resep Tersedia</string>
+    <string name="title_resep_tersedia">Rekomendasi Resep</string>
     <string name="food_image">Nama Makanan</string>
     <string name="nama_makanan">Nama Makanan</string>
     <string name="kolom_pencarian_untuk_menu">Kolom pencarian untuk menu</string>
@@ -85,4 +85,8 @@
     <string name="kecamatan">Kecamatan</string>
     <string name="kabupaten">Kabupaten</string>
     <string name="provinsi">Provinsi</string>
+    <string name="reset">Hapus</string>
+    <string name="submit">Pesan</string>
+    <string name="plus">Plus\n</string>
+    <string name="minus">Minus</string>
 </resources>

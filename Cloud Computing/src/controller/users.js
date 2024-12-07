@@ -61,7 +61,7 @@ const createNewUsers = async (req, res) => {
         await modelTableUser.createNewUser(body);
         res.status(201).json({
             status:'success',
-            message: 'New users successfully added',
+            message: 'users successfully created',
             data: body
         })
         

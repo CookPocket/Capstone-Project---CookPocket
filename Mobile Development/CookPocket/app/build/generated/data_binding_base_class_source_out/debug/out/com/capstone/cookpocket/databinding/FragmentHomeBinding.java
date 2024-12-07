@@ -25,9 +25,6 @@ public final class FragmentHomeBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final ConstraintLayout constraintLayout;
-
-  @NonNull
   public final CardView cvBtnMakananBerat;
 
   @NonNull
@@ -41,6 +38,9 @@ public final class FragmentHomeBinding implements ViewBinding {
 
   @NonNull
   public final LinearLayout header;
+
+  @NonNull
+  public final ImageView imageView;
 
   @NonNull
   public final ImageView ivKeranjang;
@@ -70,20 +70,19 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final TextView userName;
 
   private FragmentHomeBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ConstraintLayout constraintLayout, @NonNull CardView cvBtnMakananBerat,
-      @NonNull CardView cvBtnMakananSehat, @NonNull CardView cvBtnMakananTradisional,
-      @NonNull RecyclerView favoriteRecyclerView, @NonNull LinearLayout header,
-      @NonNull ImageView ivKeranjang, @NonNull ImageView ivNotifikasi,
-      @NonNull LinearLayout llCategory, @NonNull TextView location, @NonNull ImageView profileImage,
-      @NonNull TextView resepLabel, @NonNull SearchView searchBar,
+      @NonNull CardView cvBtnMakananBerat, @NonNull CardView cvBtnMakananSehat,
+      @NonNull CardView cvBtnMakananTradisional, @NonNull RecyclerView favoriteRecyclerView,
+      @NonNull LinearLayout header, @NonNull ImageView imageView, @NonNull ImageView ivKeranjang,
+      @NonNull ImageView ivNotifikasi, @NonNull LinearLayout llCategory, @NonNull TextView location,
+      @NonNull ImageView profileImage, @NonNull TextView resepLabel, @NonNull SearchView searchBar,
       @NonNull TextView topFavoriteLabel, @NonNull TextView userName) {
     this.rootView = rootView;
-    this.constraintLayout = constraintLayout;
     this.cvBtnMakananBerat = cvBtnMakananBerat;
     this.cvBtnMakananSehat = cvBtnMakananSehat;
     this.cvBtnMakananTradisional = cvBtnMakananTradisional;
     this.favoriteRecyclerView = favoriteRecyclerView;
     this.header = header;
+    this.imageView = imageView;
     this.ivKeranjang = ivKeranjang;
     this.ivNotifikasi = ivNotifikasi;
     this.llCategory = llCategory;
@@ -122,12 +121,6 @@ public final class FragmentHomeBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.constraintLayout;
-      ConstraintLayout constraintLayout = ViewBindings.findChildViewById(rootView, id);
-      if (constraintLayout == null) {
-        break missingId;
-      }
-
       id = R.id.cv_btn_makanan_berat;
       CardView cvBtnMakananBerat = ViewBindings.findChildViewById(rootView, id);
       if (cvBtnMakananBerat == null) {
@@ -155,6 +148,12 @@ public final class FragmentHomeBinding implements ViewBinding {
       id = R.id.header;
       LinearLayout header = ViewBindings.findChildViewById(rootView, id);
       if (header == null) {
+        break missingId;
+      }
+
+      id = R.id.imageView;
+      ImageView imageView = ViewBindings.findChildViewById(rootView, id);
+      if (imageView == null) {
         break missingId;
       }
 
@@ -212,10 +211,10 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentHomeBinding((ConstraintLayout) rootView, constraintLayout,
-          cvBtnMakananBerat, cvBtnMakananSehat, cvBtnMakananTradisional, favoriteRecyclerView,
-          header, ivKeranjang, ivNotifikasi, llCategory, location, profileImage, resepLabel,
-          searchBar, topFavoriteLabel, userName);
+      return new FragmentHomeBinding((ConstraintLayout) rootView, cvBtnMakananBerat,
+          cvBtnMakananSehat, cvBtnMakananTradisional, favoriteRecyclerView, header, imageView,
+          ivKeranjang, ivNotifikasi, llCategory, location, profileImage, resepLabel, searchBar,
+          topFavoriteLabel, userName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
             setOf(
                 R.id.navigation_home,
                 R.id.navigation_search,
-                R.id.navigation_list,
+                R.id. navigation_Favorite,
                 R.id.navigation_account
             )
         )

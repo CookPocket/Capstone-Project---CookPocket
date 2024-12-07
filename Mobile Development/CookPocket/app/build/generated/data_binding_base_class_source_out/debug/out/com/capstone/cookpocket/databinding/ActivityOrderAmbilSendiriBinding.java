@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -62,6 +63,9 @@ public final class ActivityOrderAmbilSendiriBinding implements ViewBinding {
   public final ConstraintLayout main;
 
   @NonNull
+  public final ProgressBar progresbarAmbilSendiri;
+
+  @NonNull
   public final TextView totalPesanan;
 
   @NonNull
@@ -103,12 +107,12 @@ public final class ActivityOrderAmbilSendiriBinding implements ViewBinding {
       @NonNull LinearLayout llAlamatPengiriman, @NonNull LinearLayout llBtnOrderAntar,
       @NonNull LinearLayout llDeskripsiAlamat, @NonNull LinearLayout llTokoMitra,
       @NonNull LinearLayout llTotalPesanan, @NonNull LinearLayout llTotalSemua,
-      @NonNull ConstraintLayout main, @NonNull TextView totalPesanan, @NonNull TextView totalSemua,
-      @NonNull TextView tvAlamatUser, @NonNull TextView tvHargaMakanan,
-      @NonNull TextView tvNamaMakanan, @NonNull TextView tvNoTelpUser,
-      @NonNull TextView tvOrderAntar, @NonNull TextView tvQuantity, @NonNull TextView tvTokoMitra,
-      @NonNull TextView tvTotalPesanan, @NonNull TextView tvTotalSemua,
-      @NonNull TextView tvUsernameUser) {
+      @NonNull ConstraintLayout main, @NonNull ProgressBar progresbarAmbilSendiri,
+      @NonNull TextView totalPesanan, @NonNull TextView totalSemua, @NonNull TextView tvAlamatUser,
+      @NonNull TextView tvHargaMakanan, @NonNull TextView tvNamaMakanan,
+      @NonNull TextView tvNoTelpUser, @NonNull TextView tvOrderAntar, @NonNull TextView tvQuantity,
+      @NonNull TextView tvTokoMitra, @NonNull TextView tvTotalPesanan,
+      @NonNull TextView tvTotalSemua, @NonNull TextView tvUsernameUser) {
     this.rootView = rootView;
     this.btnMinus = btnMinus;
     this.btnPlus = btnPlus;
@@ -123,6 +127,7 @@ public final class ActivityOrderAmbilSendiriBinding implements ViewBinding {
     this.llTotalPesanan = llTotalPesanan;
     this.llTotalSemua = llTotalSemua;
     this.main = main;
+    this.progresbarAmbilSendiri = progresbarAmbilSendiri;
     this.totalPesanan = totalPesanan;
     this.totalSemua = totalSemua;
     this.tvAlamatUser = tvAlamatUser;
@@ -238,6 +243,12 @@ public final class ActivityOrderAmbilSendiriBinding implements ViewBinding {
 
       ConstraintLayout main = (ConstraintLayout) rootView;
 
+      id = R.id.progresbar_ambil_sendiri;
+      ProgressBar progresbarAmbilSendiri = ViewBindings.findChildViewById(rootView, id);
+      if (progresbarAmbilSendiri == null) {
+        break missingId;
+      }
+
       id = R.id.total_pesanan;
       TextView totalPesanan = ViewBindings.findChildViewById(rootView, id);
       if (totalPesanan == null) {
@@ -312,9 +323,10 @@ public final class ActivityOrderAmbilSendiriBinding implements ViewBinding {
 
       return new ActivityOrderAmbilSendiriBinding((ConstraintLayout) rootView, btnMinus, btnPlus,
           cvTambahKurang, imgFood, ivBack, linearLayout3, llAlamatPengiriman, llBtnOrderAntar,
-          llDeskripsiAlamat, llTokoMitra, llTotalPesanan, llTotalSemua, main, totalPesanan,
-          totalSemua, tvAlamatUser, tvHargaMakanan, tvNamaMakanan, tvNoTelpUser, tvOrderAntar,
-          tvQuantity, tvTokoMitra, tvTotalPesanan, tvTotalSemua, tvUsernameUser);
+          llDeskripsiAlamat, llTokoMitra, llTotalPesanan, llTotalSemua, main,
+          progresbarAmbilSendiri, totalPesanan, totalSemua, tvAlamatUser, tvHargaMakanan,
+          tvNamaMakanan, tvNoTelpUser, tvOrderAntar, tvQuantity, tvTokoMitra, tvTotalPesanan,
+          tvTotalSemua, tvUsernameUser);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

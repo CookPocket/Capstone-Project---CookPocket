@@ -130,6 +130,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Username"
+            android:textColor="@color/black"
             android:textSize="15sp"
             android:textStyle="bold" />
 
@@ -138,6 +139,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="50dp"
             android:gravity="center"
+            android:textColor="@color/black"
             android:text="@string/pemisah"
             android:textSize="15sp"
             android:textStyle="bold" />
@@ -147,6 +149,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="50dp"
+            android:textColor="@color/black"
             android:text="@string/no_telephone"
             android:textSize="15sp"
             android:textStyle="bold" />
@@ -158,6 +161,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:textColor="@color/black"
         android:gravity="center"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
         tools:ignore="MissingConstraints">
@@ -167,8 +171,8 @@
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:text="@string/deskripsi_alamat"
-            android:textSize="15sp"
-            android:textStyle="bold" />
+            android:textColor="@color/black"
+            android:textSize="15sp" />
 
     </LinearLayout>
 
@@ -192,6 +196,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginStart="10dp"
+            android:textColor="@color/black"
             android:text="@string/toko_mitra"
             android:textStyle="bold" />
     </LinearLayout>
@@ -231,6 +236,7 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="35dp"
                 android:text="@string/nama_makanan"
+                android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toEndOf="@+id/img_food"
@@ -243,6 +249,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:text="@string/rp_0"
+                android:textColor="@color/black"
                 android:textSize="15sp"
                 app:layout_constraintStart_toEndOf="@+id/img_food"
                 app:layout_constraintTop_toBottomOf="@+id/tv_nama_makanan" />
@@ -269,6 +276,7 @@
                 android:layout_marginBottom="7dp"
                 android:gravity="center"
                 android:text="@string/_0"
+                android:textColor="@color/black"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/btn_plus" />
@@ -308,6 +316,7 @@
                 android:text="@string/total_pesanan"
                 android:layout_marginStart="30dp"
                 android:textSize="16sp"
+                android:textColor="@color/black"
                 app:layout_constraintStart_toStartOf="parent"
                 tools:ignore="MissingConstraints" />
 
@@ -317,6 +326,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/rp_0"
                 android:textSize="16sp"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:layout_marginEnd="30dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -346,6 +356,7 @@
                 android:layout_marginStart="30dp"
                 android:textSize="16sp"
                 android:textStyle="bold"
+                android:textColor="@color/black"
                 app:layout_constraintStart_toStartOf="parent"
                 tools:ignore="MissingConstraints" />
 
@@ -357,6 +368,7 @@
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:layout_marginEnd="30dp"
+                android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="parent"
                 tools:ignore="MissingConstraints" />
 
@@ -383,6 +395,7 @@
                 android:text="@string/total_biaya_pengiriman"
                 android:layout_marginStart="30dp"
                 android:textSize="16sp"
+                android:textColor="@color/black"
                 app:layout_constraintStart_toStartOf="parent"
                 tools:ignore="MissingConstraints" />
 
@@ -393,6 +406,7 @@
                 android:text="@string/rp_0"
                 android:textSize="16sp"
                 android:textStyle="bold"
+                android:textColor="@color/black"
                 android:layout_marginEnd="30dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 tools:ignore="MissingConstraints" />
@@ -417,6 +431,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ll_total_semua" />
 
+
+
+    <ProgressBar
+        android:id="@+id/progresbar_antar"
+        android:layout_width="50dp"
+        android:visibility="gone"
+        android:layout_height="50dp"
+        android:progressTint="@color/orange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

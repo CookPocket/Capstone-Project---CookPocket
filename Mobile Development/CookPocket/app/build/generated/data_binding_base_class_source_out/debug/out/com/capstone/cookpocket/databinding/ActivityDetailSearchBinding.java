@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -47,6 +48,9 @@ public final class ActivityDetailSearchBinding implements ViewBinding {
   public final LinearLayout linearLayout;
 
   @NonNull
+  public final ProgressBar progresbarDetailSearch;
+
+  @NonNull
   public final TextView tvDeskripsiBahan;
 
   @NonNull
@@ -59,8 +63,8 @@ public final class ActivityDetailSearchBinding implements ViewBinding {
       @NonNull Button buttonPesan, @NonNull ImageView imageViewCart, @NonNull ImageView ivBack,
       @NonNull ImageView ivFavorite, @NonNull ImageView ivMainImage, @NonNull TextView labelBahan,
       @NonNull TextView labelPembuatan, @NonNull LinearLayout linearLayout,
-      @NonNull TextView tvDeskripsiBahan, @NonNull TextView tvDeskripsiPembuatan,
-      @NonNull TextView tvJudul) {
+      @NonNull ProgressBar progresbarDetailSearch, @NonNull TextView tvDeskripsiBahan,
+      @NonNull TextView tvDeskripsiPembuatan, @NonNull TextView tvJudul) {
     this.rootView = rootView;
     this.buttonPesan = buttonPesan;
     this.imageViewCart = imageViewCart;
@@ -70,6 +74,7 @@ public final class ActivityDetailSearchBinding implements ViewBinding {
     this.labelBahan = labelBahan;
     this.labelPembuatan = labelPembuatan;
     this.linearLayout = linearLayout;
+    this.progresbarDetailSearch = progresbarDetailSearch;
     this.tvDeskripsiBahan = tvDeskripsiBahan;
     this.tvDeskripsiPembuatan = tvDeskripsiPembuatan;
     this.tvJudul = tvJudul;
@@ -150,6 +155,12 @@ public final class ActivityDetailSearchBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.progresbar_detail_search;
+      ProgressBar progresbarDetailSearch = ViewBindings.findChildViewById(rootView, id);
+      if (progresbarDetailSearch == null) {
+        break missingId;
+      }
+
       id = R.id.tv_deskripsi_bahan;
       TextView tvDeskripsiBahan = ViewBindings.findChildViewById(rootView, id);
       if (tvDeskripsiBahan == null) {
@@ -170,7 +181,7 @@ public final class ActivityDetailSearchBinding implements ViewBinding {
 
       return new ActivityDetailSearchBinding((ConstraintLayout) rootView, buttonPesan,
           imageViewCart, ivBack, ivFavorite, ivMainImage, labelBahan, labelPembuatan, linearLayout,
-          tvDeskripsiBahan, tvDeskripsiPembuatan, tvJudul);
+          progresbarDetailSearch, tvDeskripsiBahan, tvDeskripsiPembuatan, tvJudul);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

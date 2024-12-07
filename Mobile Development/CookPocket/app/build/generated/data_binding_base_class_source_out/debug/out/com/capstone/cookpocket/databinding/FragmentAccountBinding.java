@@ -4,6 +4,7 @@ package com.capstone.cookpocket.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -21,13 +22,34 @@ public final class FragmentAccountBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final ImageView arrowAlamat;
+
+  @NonNull
+  public final ImageView arrowGantiEmail;
+
+  @NonNull
+  public final ImageView arrowGantiNotelp;
+
+  @NonNull
+  public final ImageView arrowGantiSandi;
+
+  @NonNull
+  public final ImageView arrowGantiUsername;
+
+  @NonNull
+  public final ImageView btnLogout;
+
+  @NonNull
+  public final ImageView imageView2;
+
+  @NonNull
+  public final ImageView imgAccount;
+
+  @NonNull
+  public final LinearLayout llBtnShop;
+
+  @NonNull
   public final LinearLayout llProfile;
-
-  @NonNull
-  public final LinearLayout llShop;
-
-  @NonNull
-  public final TextView tvBtnTokoSaya;
 
   @NonNull
   public final TextView tvGmailAccount;
@@ -35,14 +57,23 @@ public final class FragmentAccountBinding implements ViewBinding {
   @NonNull
   public final TextView tvUsernameAccount;
 
-  private FragmentAccountBinding(@NonNull ConstraintLayout rootView,
-      @NonNull LinearLayout llProfile, @NonNull LinearLayout llShop,
-      @NonNull TextView tvBtnTokoSaya, @NonNull TextView tvGmailAccount,
-      @NonNull TextView tvUsernameAccount) {
+  private FragmentAccountBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView arrowAlamat,
+      @NonNull ImageView arrowGantiEmail, @NonNull ImageView arrowGantiNotelp,
+      @NonNull ImageView arrowGantiSandi, @NonNull ImageView arrowGantiUsername,
+      @NonNull ImageView btnLogout, @NonNull ImageView imageView2, @NonNull ImageView imgAccount,
+      @NonNull LinearLayout llBtnShop, @NonNull LinearLayout llProfile,
+      @NonNull TextView tvGmailAccount, @NonNull TextView tvUsernameAccount) {
     this.rootView = rootView;
+    this.arrowAlamat = arrowAlamat;
+    this.arrowGantiEmail = arrowGantiEmail;
+    this.arrowGantiNotelp = arrowGantiNotelp;
+    this.arrowGantiSandi = arrowGantiSandi;
+    this.arrowGantiUsername = arrowGantiUsername;
+    this.btnLogout = btnLogout;
+    this.imageView2 = imageView2;
+    this.imgAccount = imgAccount;
+    this.llBtnShop = llBtnShop;
     this.llProfile = llProfile;
-    this.llShop = llShop;
-    this.tvBtnTokoSaya = tvBtnTokoSaya;
     this.tvGmailAccount = tvGmailAccount;
     this.tvUsernameAccount = tvUsernameAccount;
   }
@@ -74,21 +105,63 @@ public final class FragmentAccountBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.arrow_alamat;
+      ImageView arrowAlamat = ViewBindings.findChildViewById(rootView, id);
+      if (arrowAlamat == null) {
+        break missingId;
+      }
+
+      id = R.id.arrow_ganti_email;
+      ImageView arrowGantiEmail = ViewBindings.findChildViewById(rootView, id);
+      if (arrowGantiEmail == null) {
+        break missingId;
+      }
+
+      id = R.id.arrow_ganti_notelp;
+      ImageView arrowGantiNotelp = ViewBindings.findChildViewById(rootView, id);
+      if (arrowGantiNotelp == null) {
+        break missingId;
+      }
+
+      id = R.id.arrow_ganti_sandi;
+      ImageView arrowGantiSandi = ViewBindings.findChildViewById(rootView, id);
+      if (arrowGantiSandi == null) {
+        break missingId;
+      }
+
+      id = R.id.arrow_ganti_username;
+      ImageView arrowGantiUsername = ViewBindings.findChildViewById(rootView, id);
+      if (arrowGantiUsername == null) {
+        break missingId;
+      }
+
+      id = R.id.btn_logout;
+      ImageView btnLogout = ViewBindings.findChildViewById(rootView, id);
+      if (btnLogout == null) {
+        break missingId;
+      }
+
+      id = R.id.imageView2;
+      ImageView imageView2 = ViewBindings.findChildViewById(rootView, id);
+      if (imageView2 == null) {
+        break missingId;
+      }
+
+      id = R.id.img_account;
+      ImageView imgAccount = ViewBindings.findChildViewById(rootView, id);
+      if (imgAccount == null) {
+        break missingId;
+      }
+
+      id = R.id.ll_btn_shop;
+      LinearLayout llBtnShop = ViewBindings.findChildViewById(rootView, id);
+      if (llBtnShop == null) {
+        break missingId;
+      }
+
       id = R.id.ll_profile;
       LinearLayout llProfile = ViewBindings.findChildViewById(rootView, id);
       if (llProfile == null) {
-        break missingId;
-      }
-
-      id = R.id.ll_shop;
-      LinearLayout llShop = ViewBindings.findChildViewById(rootView, id);
-      if (llShop == null) {
-        break missingId;
-      }
-
-      id = R.id.tv_btn_toko_saya;
-      TextView tvBtnTokoSaya = ViewBindings.findChildViewById(rootView, id);
-      if (tvBtnTokoSaya == null) {
         break missingId;
       }
 
@@ -104,8 +177,9 @@ public final class FragmentAccountBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentAccountBinding((ConstraintLayout) rootView, llProfile, llShop,
-          tvBtnTokoSaya, tvGmailAccount, tvUsernameAccount);
+      return new FragmentAccountBinding((ConstraintLayout) rootView, arrowAlamat, arrowGantiEmail,
+          arrowGantiNotelp, arrowGantiSandi, arrowGantiUsername, btnLogout, imageView2, imgAccount,
+          llBtnShop, llProfile, tvGmailAccount, tvUsernameAccount);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

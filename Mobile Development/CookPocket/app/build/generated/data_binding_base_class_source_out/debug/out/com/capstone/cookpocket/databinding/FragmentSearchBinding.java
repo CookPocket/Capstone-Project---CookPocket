@@ -4,6 +4,7 @@ package com.capstone.cookpocket.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ProgressBar;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.SearchView;
@@ -21,14 +22,19 @@ public final class FragmentSearchBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final ProgressBar progresbarSearch;
+
+  @NonNull
   public final RecyclerView rvSearch;
 
   @NonNull
   public final SearchView searchView;
 
-  private FragmentSearchBinding(@NonNull ConstraintLayout rootView, @NonNull RecyclerView rvSearch,
+  private FragmentSearchBinding(@NonNull ConstraintLayout rootView,
+      @NonNull ProgressBar progresbarSearch, @NonNull RecyclerView rvSearch,
       @NonNull SearchView searchView) {
     this.rootView = rootView;
+    this.progresbarSearch = progresbarSearch;
     this.rvSearch = rvSearch;
     this.searchView = searchView;
   }
@@ -60,6 +66,12 @@ public final class FragmentSearchBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.progresbar_search;
+      ProgressBar progresbarSearch = ViewBindings.findChildViewById(rootView, id);
+      if (progresbarSearch == null) {
+        break missingId;
+      }
+
       id = R.id.rv_search;
       RecyclerView rvSearch = ViewBindings.findChildViewById(rootView, id);
       if (rvSearch == null) {
@@ -72,7 +84,8 @@ public final class FragmentSearchBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentSearchBinding((ConstraintLayout) rootView, rvSearch, searchView);
+      return new FragmentSearchBinding((ConstraintLayout) rootView, progresbarSearch, rvSearch,
+          searchView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

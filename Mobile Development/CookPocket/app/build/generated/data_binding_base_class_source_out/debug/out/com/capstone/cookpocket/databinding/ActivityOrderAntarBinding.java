@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -65,6 +66,9 @@ public final class ActivityOrderAntarBinding implements ViewBinding {
   public final ConstraintLayout main;
 
   @NonNull
+  public final ProgressBar progresbarAntar;
+
+  @NonNull
   public final TextView totalBiayaPengiriman;
 
   @NonNull
@@ -113,8 +117,8 @@ public final class ActivityOrderAntarBinding implements ViewBinding {
       @NonNull LinearLayout llBtnOrderAntar, @NonNull LinearLayout llDeskripsiAlamat,
       @NonNull LinearLayout llTokoMitra, @NonNull LinearLayout llTotalPesanan,
       @NonNull LinearLayout llTotalSemua, @NonNull ConstraintLayout main,
-      @NonNull TextView totalBiayaPengiriman, @NonNull TextView totalPesanan,
-      @NonNull TextView totalSemua, @NonNull TextView tvAlamatUser,
+      @NonNull ProgressBar progresbarAntar, @NonNull TextView totalBiayaPengiriman,
+      @NonNull TextView totalPesanan, @NonNull TextView totalSemua, @NonNull TextView tvAlamatUser,
       @NonNull TextView tvBiayaPengiriman, @NonNull TextView tvHargaMakanan,
       @NonNull TextView tvNamaMakanan, @NonNull TextView tvNoTelpUser,
       @NonNull TextView tvOrderAntar, @NonNull TextView tvQuantity, @NonNull TextView tvTokoMitra,
@@ -135,6 +139,7 @@ public final class ActivityOrderAntarBinding implements ViewBinding {
     this.llTotalPesanan = llTotalPesanan;
     this.llTotalSemua = llTotalSemua;
     this.main = main;
+    this.progresbarAntar = progresbarAntar;
     this.totalBiayaPengiriman = totalBiayaPengiriman;
     this.totalPesanan = totalPesanan;
     this.totalSemua = totalSemua;
@@ -258,6 +263,12 @@ public final class ActivityOrderAntarBinding implements ViewBinding {
 
       ConstraintLayout main = (ConstraintLayout) rootView;
 
+      id = R.id.progresbar_antar;
+      ProgressBar progresbarAntar = ViewBindings.findChildViewById(rootView, id);
+      if (progresbarAntar == null) {
+        break missingId;
+      }
+
       id = R.id.total_biaya_pengiriman;
       TextView totalBiayaPengiriman = ViewBindings.findChildViewById(rootView, id);
       if (totalBiayaPengiriman == null) {
@@ -345,9 +356,9 @@ public final class ActivityOrderAntarBinding implements ViewBinding {
       return new ActivityOrderAntarBinding((ConstraintLayout) rootView, btnMinus, btnPlus,
           cvTambahKurang, imgFood, ivBack, linearLayout3, llAlamatPengiriman, llBiayaPengiriman,
           llBtnOrderAntar, llDeskripsiAlamat, llTokoMitra, llTotalPesanan, llTotalSemua, main,
-          totalBiayaPengiriman, totalPesanan, totalSemua, tvAlamatUser, tvBiayaPengiriman,
-          tvHargaMakanan, tvNamaMakanan, tvNoTelpUser, tvOrderAntar, tvQuantity, tvTokoMitra,
-          tvTotalPesanan, tvTotalSemua, tvUsernameUser);
+          progresbarAntar, totalBiayaPengiriman, totalPesanan, totalSemua, tvAlamatUser,
+          tvBiayaPengiriman, tvHargaMakanan, tvNamaMakanan, tvNoTelpUser, tvOrderAntar, tvQuantity,
+          tvTokoMitra, tvTotalPesanan, tvTotalSemua, tvUsernameUser);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

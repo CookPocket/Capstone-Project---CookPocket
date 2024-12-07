@@ -15,6 +15,12 @@
         android:theme="@style/Theme.CookPocket"
         tools:targetApi="31">
         <activity
+            android:name=".view.ui.store.AddProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.ui.store.StoreActivity"
+            android:exported="false" />
+        <activity
             android:name=".view.ui.adapter.AdapterCartActivity"
             android:exported="false" />
         <activity
@@ -66,6 +72,7 @@
             android:exported="false" />
         <activity
             android:name=".view.ui.main.MainActivity"
+            android:windowSoftInputMode="adjustPan"
             android:exported="true" />
     </application>
 

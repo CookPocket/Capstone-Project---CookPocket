@@ -89,4 +89,6 @@
     <string name="submit">Pesan</string>
     <string name="plus">Plus\n</string>
     <string name="minus">Minus</string>
+    <string name="produk">Produk</string>
+    <string name="hapus">Hapus</string>
 </resources>

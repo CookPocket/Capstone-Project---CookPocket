@@ -23,6 +23,11 @@
           <theme>@style/Theme.CookPocket</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_add_product.xml">
+        <config>
+          <theme>@style/Theme.CookPocket</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_cart.xml">
         <config>
           <theme>@style/Theme.CookPocket</theme>
@@ -88,7 +93,22 @@
           <theme>@style/Theme.CookPocket</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_store.xml">
+        <config>
+          <theme>@style/Theme.CookPocket</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_store_detail.xml">
+        <config>
+          <theme>@style/Theme.CookPocket</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_account.xml">
+        <config>
+          <theme>@style/Theme.CookPocket</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_detail_store.xml">
         <config>
           <theme>@style/Theme.CookPocket</theme>
         </config>
@@ -124,14 +144,33 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34fb0742-3df1-457a-ad90-d857d20dc037" name="Changes" comment="penambahan xml fitur account">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/capstone/cookpocket/view/ui/adapter/AdapterCartActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_adapter_cart.xml" afterDir="false" />
+    <list default="true" id="34fb0742-3df1-457a-ad90-d857d20dc037" name="Changes" comment="penambahan adapter cart">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/capstone/cookpocket/view/ui/store/AddProductActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/capstone/cookpocket/view/ui/store/StoreActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/capstone/cookpocket/view/ui/store/detail_store/DetailStoreFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/baseline_add_white_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_product.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_store.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_detail_store.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/navEditor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/navEditor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/processDebugResources/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/processDebugResources/R.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/capstone/cookpocket/view/ui/main/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/capstone/cookpocket/view/ui/main/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_adapter.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_adapter.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_adapter_cart.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_adapter_cart.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_cart.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_cart.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_account.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_account.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_search.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_search.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/problems/problems-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/problems/problems-report.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +180,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=C:\Users\ACER\.android\avd\Pixel_4_XL_API_28.avd)]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=PhysicalDevice, isTemplate=false, identifier=serial=6355f9c1)]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -224,15 +263,18 @@
       <recent name="C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\java\com\capstone\cookpocket\Net" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.capstone.cookpocket.view.ui.store.detail_store" />
+      <recent name="com.capstone.cookpocket.view.ui.store" />
       <recent name="com.capstone.cookpocket.view.ui.home" />
       <recent name="com.capstone.cookpocket.Net.Api" />
       <recent name="com.capstone.cookpocket.view.uiauth.SignUp" />
-      <recent name="com.capstone.cookpocket.view.uiauth.Login" />
     </key>
     <key name="android.template.939052446">
       <recent name="com.capstone.cookpocket.view.ui.account.change" />
     </key>
     <key name="android.template.-529146069">
+      <recent name="com.capstone.cookpocket.view.ui.store" />
+      <recent name="com.capstone.cookpocket.view.ui.store.add_recipe" />
       <recent name="com.capstone.cookpocket.view.ui.adapter" />
     </key>
     <key name="android.template.1995199946">
@@ -500,7 +542,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733481689273</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="penambahan adapter cart">
+      <option name="closed" value="true" />
+      <created>1733557291276</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1733557291276</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -535,6 +585,7 @@
     <MESSAGE value="Penambahan XML order" />
     <MESSAGE value="perbaikan search dan home xml" />
     <MESSAGE value="penambahan xml fitur account" />
-    <option name="LAST_COMMIT_MESSAGE" value="penambahan xml fitur account" />
+    <MESSAGE value="penambahan adapter cart" />
+    <option name="LAST_COMMIT_MESSAGE" value="penambahan adapter cart" />
   </component>
 </project>

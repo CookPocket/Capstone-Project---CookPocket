@@ -30,6 +30,30 @@
         android:testOnly="true"
         android:theme="@style/Theme.CookPocket" >
         <activity
+            android:name="com.capstone.cookpocket.view.ui.store.AddProductActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.capstone.cookpocket.view.ui.store.StoreActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.capstone.cookpocket.view.ui.adapter.AdapterCartActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.capstone.cookpocket.view.ui.account.change.ChangeAddresActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.capstone.cookpocket.view.ui.account.change.ChangePasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.capstone.cookpocket.view.ui.account.change.ChangeNoTelpActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.capstone.cookpocket.view.ui.account.change.ChangeEmailActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.capstone.cookpocket.view.ui.account.change.ChangeUsernameActivity"
+            android:exported="false" />
+        <activity
             android:name="com.capstone.cookpocket.view.ui.adapter.AdapterActivity"
             android:exported="false" />
         <activity
@@ -62,7 +86,8 @@
             android:exported="false" />
         <activity
             android:name="com.capstone.cookpocket.view.ui.main.MainActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"

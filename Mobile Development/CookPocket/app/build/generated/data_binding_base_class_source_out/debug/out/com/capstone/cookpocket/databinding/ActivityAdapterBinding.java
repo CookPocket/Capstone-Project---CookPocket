@@ -9,7 +9,6 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.capstone.cookpocket.R;
@@ -19,7 +18,7 @@ import java.lang.String;
 
 public final class ActivityAdapterBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final CardView rootView;
 
   @NonNull
   public final CardView cardViewRecipe;
@@ -33,23 +32,18 @@ public final class ActivityAdapterBinding implements ViewBinding {
   @NonNull
   public final ImageView img;
 
-  @NonNull
-  public final ConstraintLayout main;
-
-  private ActivityAdapterBinding(@NonNull ConstraintLayout rootView,
-      @NonNull CardView cardViewRecipe, @NonNull TextView foodDescription,
-      @NonNull TextView foodName, @NonNull ImageView img, @NonNull ConstraintLayout main) {
+  private ActivityAdapterBinding(@NonNull CardView rootView, @NonNull CardView cardViewRecipe,
+      @NonNull TextView foodDescription, @NonNull TextView foodName, @NonNull ImageView img) {
     this.rootView = rootView;
     this.cardViewRecipe = cardViewRecipe;
     this.foodDescription = foodDescription;
     this.foodName = foodName;
     this.img = img;
-    this.main = main;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public CardView getRoot() {
     return rootView;
   }
 
@@ -74,11 +68,7 @@ public final class ActivityAdapterBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.cardViewRecipe;
-      CardView cardViewRecipe = ViewBindings.findChildViewById(rootView, id);
-      if (cardViewRecipe == null) {
-        break missingId;
-      }
+      CardView cardViewRecipe = (CardView) rootView;
 
       id = R.id.foodDescription;
       TextView foodDescription = ViewBindings.findChildViewById(rootView, id);
@@ -98,10 +88,8 @@ public final class ActivityAdapterBinding implements ViewBinding {
         break missingId;
       }
 
-      ConstraintLayout main = (ConstraintLayout) rootView;
-
-      return new ActivityAdapterBinding((ConstraintLayout) rootView, cardViewRecipe,
-          foodDescription, foodName, img, main);
+      return new ActivityAdapterBinding((CardView) rootView, cardViewRecipe, foodDescription,
+          foodName, img);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

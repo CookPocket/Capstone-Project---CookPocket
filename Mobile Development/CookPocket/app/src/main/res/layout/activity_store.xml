@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".view.ui.store.StoreActivity">
+
+
+
+
+    <ImageView
+        android:id="@+id/iv_back_store"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/back"
+        android:src="@drawable/ic_arrow_back_ios_new_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btn_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_logout_35"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_profile"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_back_store"
+        tools:ignore="MissingConstraints">
+
+
+        <ImageView
+            android:id="@+id/img_account"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="80dp"
+            android:src="@drawable/place_holder_foto_profil" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp">
+
+            <TextView
+                android:id="@+id/tv_username_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/username_account"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_gmail_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/gmail"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_username_account" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_store"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/cardview_account"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_profile" />
+
+    <TextView
+        android:id="@+id/header_store"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/produk"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_store" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_store"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_store"
+        tools:listitem="@layout/activity_adapter" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:layout_marginEnd="30dp"
+        app:backgroundTint="@color/orange"
+        android:tint="@color/white"
+        android:src="@drawable/baseline_add_white_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

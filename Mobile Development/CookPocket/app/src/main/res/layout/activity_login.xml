@@ -117,32 +117,39 @@
 
     <!-- Sign Up Text -->
 
-    <TextView
-
-        android:id="@+id/desc_title_login"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
-        android:text="@string/desc_title_login"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@id/tv_btn_signup"
-        app:layout_constraintTop_toBottomOf="@id/btn_login"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/tv_btn_signup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
-        android:text="@string/tv_btn_signup"
-        android:textColor="@color/orange"
-        android:textSize="16sp"
-        android:layout_marginEnd="120dp"
-        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_login"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/desc_title_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/desc_title_login"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_btn_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_btn_signup"
+            android:textColor="@color/orange"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="MissingConstraints" />
+
+
+    </LinearLayout>
+
 
     <!-- Progress Bar -->
     <ProgressBar

@@ -14,6 +14,7 @@
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_marginStart="15dp"
+        android:textColor="@color/black"
         android:layout_marginTop="40dp"
         android:contentDescription="@string/back"
         android:src="@drawable/ic_arrow_back_ios_new_24"
@@ -130,6 +131,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Username"
+            android:textColor="@color/black"
             android:textSize="15sp"
             android:textStyle="bold" />
 
@@ -138,6 +140,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="50dp"
             android:gravity="center"
+            android:textColor="@color/black"
             android:text="@string/pemisah"
             android:textSize="15sp"
             android:textStyle="bold" />
@@ -149,6 +152,7 @@
             android:layout_marginStart="50dp"
             android:text="@string/no_telephone"
             android:textSize="15sp"
+            android:textColor="@color/black"
             android:textStyle="bold" />
 
     </LinearLayout>
@@ -165,10 +169,10 @@
         <TextView
             android:id="@+id/tv_alamat_user"
             android:layout_width="300dp"
+            android:textColor="@color/black"
             android:layout_height="wrap_content"
             android:text="@string/deskripsi_alamat"
-            android:textSize="15sp"
-            android:textStyle="bold" />
+            android:textSize="15sp" />
 
     </LinearLayout>
 
@@ -192,6 +196,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginStart="10dp"
+            android:textColor="@color/black"
             android:text="@string/toko_mitra"
             android:textStyle="bold" />
     </LinearLayout>
@@ -308,6 +313,7 @@
                 android:text="@string/total_pesanan"
                 android:layout_marginStart="30dp"
                 android:textSize="16sp"
+                android:textColor="@color/black"
                 app:layout_constraintStart_toStartOf="parent"
                 tools:ignore="MissingConstraints" />
 
@@ -317,7 +323,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/rp_0"
                 android:textSize="16sp"
-                android:textStyle="bold"
+                android:textColor="@color/black"
                 android:layout_marginEnd="30dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 tools:ignore="MissingConstraints" />
@@ -343,6 +349,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/total_pesanan"
+                android:textColor="@color/black"
                 android:layout_marginStart="30dp"
                 android:textSize="16sp"
                 android:textStyle="bold"
@@ -356,6 +363,7 @@
                 android:text="@string/rp_0"
                 android:textSize="16sp"
                 android:textStyle="bold"
+                android:textColor="@color/black"
                 android:layout_marginEnd="30dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 tools:ignore="MissingConstraints" />
@@ -381,6 +389,17 @@
         app:layout_constraintTop_toBottomOf="@+id/ll_total_semua" />
 
 
+
+    <ProgressBar
+        android:id="@+id/progresbar_ambil_sendiri"
+        android:layout_width="50dp"
+        android:visibility="gone"
+        android:layout_height="50dp"
+        android:progressTint="@color/orange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

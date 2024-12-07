@@ -5,20 +5,18 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
+import com.bumptech.glide.Glide  // Corrected import
 import com.capstone.cookpocket.Network.Response.ListStoryItem
 import com.capstone.cookpocket.databinding.ActivityAdapterBinding
 
-
-class AdapterActivity (
+class AdapterActivity(
     private val onItemClick: (ListStoryItem, ImageView, TextView) -> Unit
 ) : RecyclerView.Adapter<AdapterActivity.StoryViewHolder>() {
 
-    private val stories = mutableListOf<ListStoryItem>()
+    private var stories = mutableListOf<ListStoryItem>()
 
-    fun setStories(newStories: List<ListStoryItem>) {
-        stories.clear()
-        stories.addAll(newStories)
+    fun submitList(newEvents: List<ListStoryItem>) {
+        stories = newEvents.toMutableList()
         notifyDataSetChanged()
     }
 
@@ -32,11 +30,12 @@ class AdapterActivity (
     }
 
     override fun getItemCount(): Int = stories.size
+
     inner class StoryViewHolder(private val binding: ActivityAdapterBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
-        val imageView = binding.img
-        val textView = binding.foodName
+        val imageView: ImageView = binding.img
+        val textView: TextView = binding.foodName
 
         fun bind(story: ListStoryItem) {
             binding.foodName.text = story.name
@@ -47,7 +46,7 @@ class AdapterActivity (
                 .into(binding.img)
 
             binding.root.setOnClickListener {
-                onItemClick(story, binding.img, binding.foodName)
+                onItemClick(story, imageView, textView)
             }
         }
     }

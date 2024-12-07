@@ -1,6 +1,6 @@
-com.capstone.cookpocket.test.app-core-1.6.1-0 C:\Users\ACER\.gradle\caches\8.9\transforms\9fd4413a03cb88557df46cea79ecce9c\transformed\core-1.6.1\res
-com.capstone.cookpocket.test.app-tracing-1.2.0-1 C:\Users\ACER\.gradle\caches\8.9\transforms\a324ace22780e694b8de2a27dc556825\transformed\tracing-1.2.0\res
-com.capstone.cookpocket.test.app-androidTest-2 D:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\build\generated\res\resValues\androidTest\debug
-com.capstone.cookpocket.test.app-mergeDebugAndroidTestResources-3 D:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
-com.capstone.cookpocket.test.app-mergeDebugAndroidTestResources-4 D:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
-com.capstone.cookpocket.test.app-debugAndroidTest-5 D:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources
+com.capstone.cookpocket.test.app-androidTest-0 C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\build\generated\res\resValues\androidTest\debug
+com.capstone.cookpocket.test.app-mergeDebugAndroidTestResources-1 C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.capstone.cookpocket.test.app-mergeDebugAndroidTestResources-2 C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.capstone.cookpocket.test.app-debugAndroidTest-3 C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources
+com.capstone.cookpocket.test.app-tracing-1.2.0-4 C:\Users\iccan\.jdks\caches\8.11.1\transforms\0166719ae66c0cbdb946673d22130fb7\transformed\tracing-1.2.0\res
+com.capstone.cookpocket.test.app-core-1.6.1-5 C:\Users\iccan\.jdks\caches\8.11.1\transforms\383a9a39a217244eff6724733198c870\transformed\core-1.6.1\res

@@ -83,18 +83,18 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         lifecycleScope.launch {
             val userPreferences = UserPreferences.getInstance(requireContext())
             val token = userPreferences.token.firstOrNull()
+
+            // Jika token tidak ada, arahkan ke LoginActivity
             if (token.isNullOrEmpty()) {
                 Log.d("HomeFragment", "Token tidak ditemukan. Arahkan ke Login.")
                 val intent = Intent(requireContext(), LoginActivity::class.java)
                 startActivity(intent)
-                requireActivity().finish()
+                requireActivity().finish() // Pastikan aktivitas saat ini ditutup
+            } else {
+                // Ambil username dan set ke UI
+                val userName = userPreferences.userName.firstOrNull()
+                binding.userName.text = userName ?: ""
             }
-        }
-
-        lifecycleScope.launch {
-            val userPreferences = UserPreferences.getInstance(requireContext())
-            val userName = userPreferences.userName.firstOrNull()
-            binding.userName.text = userName ?: ""
         }
     }
 
@@ -108,7 +108,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
     private fun observeViewModel() {
         homeViewModel.stories.observe(viewLifecycleOwner) { stories ->
             if (stories != null) {
-                cookPocketHomeAdapter.setStories(stories)
+                cookPocketHomeAdapter.submitList(stories)
             }
         }
 
@@ -126,9 +126,10 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
             Toast.makeText(requireContext(), "Logout berhasil", Toast.LENGTH_SHORT).show()
 
+            // Setelah logout, arahkan ke LoginActivity
             val intent = Intent(requireContext(), LoginActivity::class.java)
             startActivity(intent)
-            requireActivity().finish()
+            requireActivity().finish() // Menutup aktivitas saat ini
         }
     }
 
@@ -140,5 +141,4 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         super.onDestroyView()
         _binding = null
     }
-
 }

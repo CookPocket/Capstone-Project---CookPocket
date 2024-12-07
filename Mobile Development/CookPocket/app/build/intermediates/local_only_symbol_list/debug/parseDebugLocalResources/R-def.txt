@@ -75,9 +75,11 @@ id change_password_new_confirm
 id change_password_old
 id change_provinsi
 id change_username
+id cv_btn_Ambil_Sendiri
 id cv_btn_makanan_berat
 id cv_btn_makanan_sehat
 id cv_btn_makanan_tradisional
+id cv_btn_order_antar
 id cv_change_email
 id cv_change_notelp
 id cv_tambah_kurang

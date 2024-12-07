@@ -2,10 +2,10 @@
 //
 //import androidx.lifecycle.ViewModel
 //import androidx.lifecycle.ViewModelProvider
-//import com.capstone.cookpocket.Network.Room.FavoriteItemDao
+//import com.capstone.cookpocket.Database.FavoriteItemDao
 //import com.capstone.cookpocket.view.ui.list.FavoriteViewModel
 //
-//class DetailSearchViewModelFactory ( private val dao: FavoriteItemDao) : ViewModelProvider.Factory {
+//class DetailSearchViewModelFactory( private val dao: FavoriteItemDao) : ViewModelProvider.Factory {
 //    @Suppress("UNCHECKED_CAST")
 //    override fun <T : ViewModel> create(modelClass: Class<T>): T {
 //        if (modelClass.isAssignableFrom(DetailSearchViewModel::class.java)) {

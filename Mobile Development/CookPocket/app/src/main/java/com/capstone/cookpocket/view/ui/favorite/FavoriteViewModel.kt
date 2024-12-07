@@ -2,19 +2,14 @@
 //
 //import androidx.lifecycle.LiveData
 //import androidx.lifecycle.ViewModel
-//import androidx.lifecycle.viewModelScope
-//import com.capstone.cookpocket.Network.Room.FavoriteItem
-//import com.capstone.cookpocket.Network.Room.FavoriteItemDao
-//import kotlinx.coroutines.launch
+//import com.capstone.cookpocket.Database.FavoriteItem
+//import com.capstone.cookpocket.Database.FavoriteItemDao
 //
-//class FavoriteViewModel(private val dao: FavoriteItemDao) : ViewModel() {
-//    fun getFavoriteEvents(): LiveData<List<FavoriteItem>> {
-//        return dao.getAllFavorites()
-//    }
-//    fun removeFavorite(event: FavoriteItem) {
-//        viewModelScope.launch {
-//            dao.deleteFavorite(event)
-//        }
+//class FavoriteViewModel(private val favoriteItemDao: FavoriteItemDao) : ViewModel() {
+//
+//    // Mengambil semua data favorit
+//    fun getAllFavorites(): LiveData<List<FavoriteItem>> {
+//        return favoriteItemDao.getAllFavorites()
 //    }
 //
 //}

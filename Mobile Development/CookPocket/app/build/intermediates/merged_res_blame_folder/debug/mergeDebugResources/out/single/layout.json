@@ -1,110 +1,102 @@
 [
     {
-        "merged": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-57:\\layout\\activity_notification.xml",
-        "source": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-60:\\layout\\activity_notification.xml"
+        "merged": "com.capstone.cookpocket.app-mergeDebugResources-3:/layout/activity_order_antar.xml",
+        "source": "com.capstone.cookpocket.app-main-6:/layout/activity_order_antar.xml"
     },
     {
-        "merged": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-57:\\layout\\activity_order_ambil_sendiri.xml",
-        "source": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-60:\\layout\\activity_order_ambil_sendiri.xml"
+        "merged": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-3:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-6:\\layout\\activity_login.xml"
     },
     {
-        "merged": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-57:\\layout\\activity_change_email.xml",
-        "source": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-60:\\layout\\activity_change_email.xml"
+        "merged": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-3:\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-6:\\layout\\fragment_home.xml"
     },
     {
-        "merged": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-57:\\layout\\fragment_favorite.xml",
-        "source": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-60:\\layout\\fragment_favorite.xml"
+        "merged": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-3:\\layout\\activity_order_ambil_sendiri.xml",
+        "source": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-6:\\layout\\activity_order_ambil_sendiri.xml"
     },
     {
-        "merged": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-57:\\layout\\activity_order_antar.xml",
-        "source": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-60:\\layout\\activity_order_antar.xml"
+        "merged": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-3:\\layout\\activity_add_item.xml",
+        "source": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-6:\\layout\\activity_add_item.xml"
     },
     {
-        "merged": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-57:\\layout\\activity_detail_search.xml",
-        "source": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-60:\\layout\\activity_detail_search.xml"
+        "merged": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-3:\\layout\\fragment_search.xml",
+        "source": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-6:\\layout\\fragment_search.xml"
     },
     {
-        "merged": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-57:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-60:\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-3:\\layout\\activity_change_email.xml",
+        "source": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-6:\\layout\\activity_change_email.xml"
     },
     {
-        "merged": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-57:\\layout\\activity_adapter_cart.xml",
-        "source": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-60:\\layout\\activity_adapter_cart.xml"
+        "merged": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-3:\\layout\\activity_change_password.xml",
+        "source": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-6:\\layout\\activity_change_password.xml"
     },
     {
-        "merged": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-57:\\layout\\activity_change_no_telp.xml",
-        "source": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-60:\\layout\\activity_change_no_telp.xml"
+        "merged": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-3:\\layout\\activity_adapter_cart.xml",
+        "source": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-6:\\layout\\activity_adapter_cart.xml"
     },
     {
-        "merged": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-57:\\layout\\activity_change_password.xml",
-        "source": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-60:\\layout\\activity_change_password.xml"
+        "merged": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-3:\\layout\\fragment_favorite.xml",
+        "source": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-6:\\layout\\fragment_favorite.xml"
     },
     {
-        "merged": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-57:\\layout\\fragment_account.xml",
-        "source": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-60:\\layout\\fragment_account.xml"
+        "merged": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-3:\\layout\\activity_cart.xml",
+        "source": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-6:\\layout\\activity_cart.xml"
     },
     {
-        "merged": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-57:\\layout\\activity_adapter.xml",
-        "source": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-60:\\layout\\activity_adapter.xml"
+        "merged": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-3:\\layout\\activity_store.xml",
+        "source": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-6:\\layout\\activity_store.xml"
     },
     {
-        "merged": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-57:\\layout\\activity_login.xml",
-        "source": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-60:\\layout\\activity_login.xml"
+        "merged": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-3:\\layout\\activity_change_no_telp.xml",
+        "source": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-6:\\layout\\activity_change_no_telp.xml"
     },
     {
-        "merged": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-57:\\layout\\fragment_detail_store.xml",
-        "source": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-60:\\layout\\fragment_detail_store.xml"
+        "merged": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-3:\\layout\\fragment_detail_store.xml",
+        "source": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-6:\\layout\\fragment_detail_store.xml"
     },
     {
-        "merged": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-57:\\layout\\fragment_search.xml",
-        "source": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-60:\\layout\\fragment_search.xml"
+        "merged": "com.capstone.cookpocket.app-mergeDebugResources-3:/layout/activity_order_ambil_sendiri.xml",
+        "source": "com.capstone.cookpocket.app-main-6:/layout/activity_order_ambil_sendiri.xml"
     },
     {
-        "merged": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-57:\\layout\\activity_cart.xml",
-        "source": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-60:\\layout\\activity_cart.xml"
+        "merged": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-3:\\layout\\activity_add_product.xml",
+        "source": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-6:\\layout\\activity_add_product.xml"
     },
     {
-        "merged": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-57:\\layout\\activity_signup.xml",
-        "source": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-60:\\layout\\activity_signup.xml"
+        "merged": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-3:\\layout\\activity_signup.xml",
+        "source": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-6:\\layout\\activity_signup.xml"
     },
     {
-        "merged": "com.capstone.cookpocket.app-mergeDebugResources-57:/layout/activity_detail_search.xml",
-        "source": "com.capstone.cookpocket.app-main-60:/layout/activity_detail_search.xml"
+        "merged": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-3:\\layout\\activity_notification.xml",
+        "source": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-6:\\layout\\activity_notification.xml"
     },
     {
-        "merged": "com.capstone.cookpocket.app-mergeDebugResources-57:/layout/activity_login.xml",
-        "source": "com.capstone.cookpocket.app-main-60:/layout/activity_login.xml"
+        "merged": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-3:\\layout\\activity_adapter.xml",
+        "source": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-6:\\layout\\activity_adapter.xml"
     },
     {
-        "merged": "com.capstone.cookpocket.app-mergeDebugResources-57:/layout/activity_order_antar.xml",
-        "source": "com.capstone.cookpocket.app-main-60:/layout/activity_order_antar.xml"
+        "merged": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-3:\\layout\\fragment_account.xml",
+        "source": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-6:\\layout\\fragment_account.xml"
     },
     {
-        "merged": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-57:\\layout\\activity_add_item.xml",
-        "source": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-60:\\layout\\activity_add_item.xml"
+        "merged": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-3:\\layout\\activity_change_addres.xml",
+        "source": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-6:\\layout\\activity_change_addres.xml"
     },
     {
-        "merged": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-57:\\layout\\activity_change_username.xml",
-        "source": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-60:\\layout\\activity_change_username.xml"
+        "merged": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-3:\\layout\\activity_order_antar.xml",
+        "source": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-6:\\layout\\activity_order_antar.xml"
     },
     {
-        "merged": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-57:\\layout\\fragment_home.xml",
-        "source": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-60:\\layout\\fragment_home.xml"
+        "merged": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-3:\\layout\\activity_detail_search.xml",
+        "source": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-6:\\layout\\activity_detail_search.xml"
     },
     {
-        "merged": "com.capstone.cookpocket.app-mergeDebugResources-57:/layout/activity_order_ambil_sendiri.xml",
-        "source": "com.capstone.cookpocket.app-main-60:/layout/activity_order_ambil_sendiri.xml"
+        "merged": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-3:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-6:\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-57:\\layout\\activity_add_product.xml",
-        "source": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-60:\\layout\\activity_add_product.xml"
-    },
-    {
-        "merged": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-57:\\layout\\activity_change_addres.xml",
-        "source": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-60:\\layout\\activity_change_addres.xml"
-    },
-    {
-        "merged": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-57:\\layout\\activity_store.xml",
-        "source": "C:\\Users\\ACER\\.gradle\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-60:\\layout\\activity_store.xml"
+        "merged": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-3:\\layout\\activity_change_username.xml",
+        "source": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-6:\\layout\\activity_change_username.xml"
     }
 ]

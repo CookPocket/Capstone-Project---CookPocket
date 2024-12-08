@@ -1,20 +1,20 @@
 {
-    "logs": [
+  "logs": [
+    {
+      "outputFile": "com.capstone.cookpocket.app-mergeDebugResources-2:/values-v16/values-v16.xml",
+      "map": [
         {
-            "outputFile": "com.capstone.cookpocket.app-mergeDebugResources-2:/values-v16/values-v16.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\iccan\\.jdks\\caches\\8.11.1\\transforms\\0643e59c8887e55b60b6a5b85f790067\\transformed\\appcompat-1.7.0\\res\\values-v16\\values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "5",
-                        "endColumns": "12",
-                        "endOffsets": "223"
-                    }
-                }
-            ]
+          "source": "C:\\Users\\iccan\\.jdks\\caches\\8.11.1\\transforms\\0643e59c8887e55b60b6a5b85f790067\\transformed\\appcompat-1.7.0\\res\\values-v16\\values-v16.xml",
+          "from": {
+            "startLines": "2",
+            "startColumns": "4",
+            "startOffsets": "55",
+            "endLines": "5",
+            "endColumns": "12",
+            "endOffsets": "223"
+          }
         }
-    ]
+      ]
+    }
+  ]
 }

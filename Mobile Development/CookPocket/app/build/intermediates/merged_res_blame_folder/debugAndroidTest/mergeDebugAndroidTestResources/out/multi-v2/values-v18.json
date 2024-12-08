@@ -1,28 +1,28 @@
 {
-    "logs": [
+  "logs": [
+    {
+      "outputFile": "com.capstone.cookpocket.test.app-mergeDebugAndroidTestResources-1:/values-v18/values-v18.xml",
+      "map": [
         {
-            "outputFile": "com.capstone.cookpocket.test.app-mergeDebugAndroidTestResources-3:/values-v18/values-v18.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\ACER\\.gradle\\caches\\8.9\\transforms\\cc6f34b5fee38728bb618d0253bb5188\\transformed\\core-1.6.1\\res\\values-v18\\values.xml",
-                    "from": {
-                        "startLines": "4,12",
-                        "startColumns": "0,0",
-                        "startOffsets": "146,562",
-                        "endLines": "11,19",
-                        "endColumns": "8,8",
-                        "endOffsets": "561,975"
-                    },
-                    "to": {
-                        "startLines": "2,10",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,475",
-                        "endLines": "9,17",
-                        "endColumns": "8,8",
-                        "endOffsets": "470,888"
-                    }
-                }
-            ]
+          "source": "C:\\Users\\iccan\\.jdks\\caches\\8.11.1\\transforms\\383a9a39a217244eff6724733198c870\\transformed\\core-1.6.1\\res\\values-v18\\values.xml",
+          "from": {
+            "startLines": "4,12",
+            "startColumns": "0,0",
+            "startOffsets": "146,562",
+            "endLines": "11,19",
+            "endColumns": "8,8",
+            "endOffsets": "561,975"
+          },
+          "to": {
+            "startLines": "2,10",
+            "startColumns": "4,4",
+            "startOffsets": "55,475",
+            "endLines": "9,17",
+            "endColumns": "8,8",
+            "endOffsets": "470,888"
+          }
         }
-    ]
+      ]
+    }
+  ]
 }

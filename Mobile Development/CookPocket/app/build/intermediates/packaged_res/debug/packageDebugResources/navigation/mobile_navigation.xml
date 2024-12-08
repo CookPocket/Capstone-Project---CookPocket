@@ -18,9 +18,9 @@
         tools:layout="@layout/fragment_search" />
 
     <fragment
-        android:id="@+id/navigation_list"
-        android:name="com.capstone.cookpocket.view.ui.list.FavoriteFragment"
-        android:label="@string/title_list"
+        android:id="@+id/navigation_Favorite"
+        android:name="com.capstone.cookpocket.view.ui.favorite.FavoriteFragment"
+        android:label="@string/title_favorite"
         tools:layout="@layout/fragment_favorite" />
 
     <fragment

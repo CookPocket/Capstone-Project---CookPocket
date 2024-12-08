@@ -4,6 +4,9 @@
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
         <item name="colorPrimary">@color/orange</item>
+        <item name="colorContainer">@color/orange_soft</item>
+        <item name="colorSecondaryContainer">@color/orange_soft_nav</item>
+
     </style>
 
     <style name="Theme.CookPocket" parent="Base.Theme.CookPocket" />

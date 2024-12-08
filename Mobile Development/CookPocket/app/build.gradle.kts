@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("kotlin-parcelize")
+    id("kotlin-kapt")
 }
 
 android {
@@ -54,4 +56,33 @@ dependencies {
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation(libs.material.v190)
+
+    // Retrofit dan Gson converter untuk API request dan response
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
+    implementation(libs.logging.interceptor)
+
+    // Lifecycle components untuk ViewModel dan LiveData
+    implementation(libs.androidx.lifecycle.viewmodel.ktx.v261)
+    implementation(libs.androidx.lifecycle.livedata.ktx.v261)
+    implementation(libs.androidx.lifecycle.runtime.ktx)
+
+    // DataStore Preferences untuk penyimpanan data yang bersifat key-value
+    implementation(libs.androidx.datastore.preferences)
+
+    // Glide untuk pengelolaan gambar
+    implementation(libs.glide)
+
+    implementation("androidx.room:room-runtime:2.5.2") // Room runtime library
+    kapt("androidx.room:room-compiler:2.5.2")          // Room annotation processor
+    implementation("androidx.room:room-ktx:2.5.2")    // Room Kotlin extensions
+
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.2")
+
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.8.0")
+
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+
 }

@@ -8,6 +8,8 @@
         android:minSdkVersion="24"
         android:targetSdkVersion="34" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <permission
         android:name="com.capstone.cookpocket.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
@@ -25,32 +27,79 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/Theme.CookPocket" >
         <activity
-            android:name="com.capstone.cookpocket.view.ui.search.order.OrderAmbilSendiriActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.capstone.cookpocket.view.ui.search.order.OrderAntarActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.capstone.cookpocket.view.ui.search.order.OrderPickupActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.capstone.cookpocket.view.ui.search.order.OrderCodActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.capstone.cookpocket.view.ui.search.detail_search.DetailSearchActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.capstone.cookpocket.view.ui.MainActivity"
-            android:exported="false"
-            android:label="@string/title_activity_main" >
+            android:name="com.capstone.cookpocket.view.ui.main.SplashActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.capstone.cookpocket.view.ui.store.DetailProductActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.capstone.cookpocket.view.ui.search.order.OderFinishActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.capstone.cookpocket.view.ui.adapter.AdapterNotifActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.capstone.cookpocket.view.ui.store.AddProductActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.capstone.cookpocket.view.ui.store.StoreActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.capstone.cookpocket.view.ui.adapter.AdapterCartActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.capstone.cookpocket.view.ui.account.change.ChangeAddresActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.capstone.cookpocket.view.ui.account.change.ChangePasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.capstone.cookpocket.view.ui.account.change.ChangeNoTelpActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.capstone.cookpocket.view.ui.account.change.ChangeEmailActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.capstone.cookpocket.view.ui.account.change.ChangeUsernameActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.capstone.cookpocket.view.ui.adapter.AdapterActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.capstone.cookpocket.view.ui.search.order.OrderAntarActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.capstone.cookpocket.view.ui.search.order.OrderAmbilSendiriActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.capstone.cookpocket.view.uiauth.SignUp.SignupActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.capstone.cookpocket.view.ui.home.cart.CartActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.capstone.cookpocket.view.ui.home.notif.NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.capstone.cookpocket.view.uiauth.Login.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.capstone.cookpocket.view.ui.search.detail_search.DetailSearchActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.capstone.cookpocket.view.ui.main.MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"
@@ -73,6 +122,11 @@
         <uses-library
             android:name="androidx.window.sidecar"
             android:required="false" />
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:directBootAware="true"
+            android:exported="false" />
 
         <receiver
             android:name="androidx.profileinstaller.ProfileInstallReceiver"

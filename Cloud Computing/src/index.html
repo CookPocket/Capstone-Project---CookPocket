@@ -1,0 +1,53 @@
+<!--
+
+FILE INI DIGUNAKAN UNTUK TESTING FITUR CHAT MENGGUNAKAN CLIENT-SIDE
+
+
+-->>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Client</title>
+</head>
+
+<body>
+    <h1>Real-Time Chat</h1>
+    <div id="chat"></div>
+    <input id="message" type="text" placeholder="Type a message..." />
+    <button onclick="sendMessage()">Send</button>
+
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+    <script>
+        const socket = io("http://localhost:5000");
+
+        socket.on("connect", () => {
+            console.log("Connected to WebSocket server");
+        });
+
+        socket.on("message", (data) => {
+            const chat = document.getElementById("chat");
+            const newMessage = document.createElement("div");
+            newMessage.textContent = `${data.sender_id}: ${data.message}`;
+            chat.appendChild(newMessage);
+        });
+
+        function sendMessage() {
+            const messageInput = document.getElementById("message");
+            const message = messageInput.value;
+
+            socket.emit("chatMessage", {
+                senderId: 1,
+                receiverId: 2,
+                message: message
+            });
+
+            messageInput.value = "";
+        }
+    </script>
+</body>
+
+</html>

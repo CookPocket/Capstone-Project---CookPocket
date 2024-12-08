@@ -3,5 +3,10 @@
     <style name="Base.Theme.CookPocket" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">@color/orange</item>
+        <item name="colorContainer">@color/orange_soft</item>
+        <item name="colorSecondaryContainer">@color/orange_soft_nav</item>
+
+
     </style>
 </resources>

@@ -260,12 +260,19 @@ string buat_pesanan
 string cari_menu
 string change_username
 string confirm_password
+string confirm_save_address
+string confirmation
 string daftar
 string desc_login
 string desc_title_login
 string deskripsi_alamat
 string email
 string email_saat_ini
+string error_empty_address
+string error_empty_kabupaten
+string error_empty_kecamatan
+string error_empty_kelurahan
+string error_empty_provinsi
 string favorit
 string favorite
 string food_image
@@ -295,6 +302,7 @@ string masukkan_kata_sandi_terbaru
 string masukkan_password_lama_anda
 string minus
 string nama_makanan
+string no
 string no_hp
 string no_item_fav
 string no_telephone
@@ -312,6 +320,7 @@ string reset
 string rp_0
 string simpan
 string submit
+string success_save_address
 string title_account
 string title_activity_main
 string title_category
@@ -333,6 +342,7 @@ string ubah_username
 string username
 string usernameHome
 string username_account
+string yes
 style Base.Theme.CookPocket
 style Theme.CookPocket
 xml backup_rules

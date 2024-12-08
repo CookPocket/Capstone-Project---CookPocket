@@ -4185,6 +4185,8 @@ string character_counter_overflowed_content_description
 string character_counter_pattern
 string clear_text_end_icon_content_description
 string confirm_password
+string confirm_save_address
+string confirmation
 string daftar
 string desc_login
 string desc_title_login
@@ -4193,6 +4195,11 @@ string dest_title
 string email
 string email_saat_ini
 string error_a11y_label
+string error_empty_address
+string error_empty_kabupaten
+string error_empty_kecamatan
+string error_empty_kelurahan
+string error_empty_provinsi
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
@@ -4331,6 +4338,7 @@ string mtrl_timepicker_confirm
 string nama_makanan
 string nav_app_bar_navigate_up_description
 string nav_app_bar_open_drawer_description
+string no
 string no_hp
 string no_item_fav
 string no_telephone
@@ -4360,6 +4368,7 @@ string side_sheet_behavior
 string simpan
 string status_bar_notification_info_overflow
 string submit
+string success_save_address
 string title_account
 string title_activity_main
 string title_category
@@ -4381,6 +4390,7 @@ string ubah_username
 string username
 string usernameHome
 string username_account
+string yes
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

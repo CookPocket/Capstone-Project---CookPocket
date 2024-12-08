@@ -1,9 +1,5 @@
 [
     {
-        "merged": "com.capstone.cookpocket.app-mergeDebugResources-3:/layout/activity_order_antar.xml",
-        "source": "com.capstone.cookpocket.app-main-6:/layout/activity_order_antar.xml"
-    },
-    {
         "merged": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-3:\\layout\\activity_login.xml",
         "source": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-6:\\layout\\activity_login.xml"
     },
@@ -56,10 +52,6 @@
         "source": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-6:\\layout\\fragment_detail_store.xml"
     },
     {
-        "merged": "com.capstone.cookpocket.app-mergeDebugResources-3:/layout/activity_order_ambil_sendiri.xml",
-        "source": "com.capstone.cookpocket.app-main-6:/layout/activity_order_ambil_sendiri.xml"
-    },
-    {
         "merged": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-3:\\layout\\activity_add_product.xml",
         "source": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-6:\\layout\\activity_add_product.xml"
     },
@@ -98,5 +90,9 @@
     {
         "merged": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-3:\\layout\\activity_change_username.xml",
         "source": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-6:\\layout\\activity_change_username.xml"
+    },
+    {
+        "merged": "com.capstone.cookpocket.app-mergeDebugResources-3:/layout/activity_store.xml",
+        "source": "com.capstone.cookpocket.app-main-6:/layout/activity_store.xml"
     }
 ]

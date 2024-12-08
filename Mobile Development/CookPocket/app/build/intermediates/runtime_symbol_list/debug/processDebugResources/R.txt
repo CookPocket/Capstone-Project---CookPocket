@@ -4184,6 +4184,8 @@ int string character_counter_overflowed_content_description 0x7f11003c
 int string character_counter_pattern 0x7f11003d
 int string clear_text_end_icon_content_description 0x7f11003e
 int string confirm_password 0x7f11003f
+int string confirm_save_address 0x7f110104
+int string confirmation 0x7f110105
 int string daftar 0x7f110040
 int string desc_login 0x7f110041
 int string desc_title_login 0x7f110042
@@ -4192,6 +4194,11 @@ int string dest_title 0x7f110044
 int string email 0x7f110045
 int string email_saat_ini 0x7f110046
 int string error_a11y_label 0x7f110047
+int string error_empty_address 0x7f110106
+int string error_empty_kabupaten 0x7f110107
+int string error_empty_kecamatan 0x7f110108
+int string error_empty_kelurahan 0x7f110109
+int string error_empty_provinsi 0x7f11010a
 int string error_icon_content_description 0x7f110048
 int string exposed_dropdown_menu_content_description 0x7f110049
 int string fab_transformation_scrim_behavior 0x7f11004a
@@ -4330,6 +4337,7 @@ int string mtrl_timepicker_confirm 0x7f1100ce
 int string nama_makanan 0x7f1100cf
 int string nav_app_bar_navigate_up_description 0x7f1100d0
 int string nav_app_bar_open_drawer_description 0x7f1100d1
+int string no 0x7f11010b
 int string no_hp 0x7f1100d2
 int string no_item_fav 0x7f1100d3
 int string no_telephone 0x7f1100d4
@@ -4359,6 +4367,7 @@ int string side_sheet_behavior 0x7f1100eb
 int string simpan 0x7f1100ec
 int string status_bar_notification_info_overflow 0x7f1100ed
 int string submit 0x7f1100ee
+int string success_save_address 0x7f11010c
 int string title_account 0x7f1100ef
 int string title_activity_main 0x7f1100f0
 int string title_category 0x7f1100f1
@@ -4380,6 +4389,7 @@ int string ubah_username 0x7f110100
 int string username 0x7f110101
 int string usernameHome 0x7f110102
 int string username_account 0x7f110103
+int string yes 0x7f11010d
 int style AlertDialog_AppCompat 0x7f120000
 int style AlertDialog_AppCompat_Light 0x7f120001
 int style Animation_AppCompat_Dialog 0x7f120002

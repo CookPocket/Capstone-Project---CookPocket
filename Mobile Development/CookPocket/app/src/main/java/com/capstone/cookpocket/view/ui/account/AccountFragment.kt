@@ -15,30 +15,66 @@ import androidx.lifecycle.lifecycleScope
 import androidx.appcompat.app.AlertDialog
 import com.capstone.cookpocket.Network.UserPreferences
 import com.capstone.cookpocket.R
+import com.capstone.cookpocket.databinding.FragmentAccountBinding
+import com.capstone.cookpocket.view.ui.account.change.ChangeAddresActivity
+import com.capstone.cookpocket.view.ui.account.change.ChangeEmailActivity
+import com.capstone.cookpocket.view.ui.account.change.ChangeNoTelpActivity
+import com.capstone.cookpocket.view.ui.account.change.ChangePasswordActivity
+import com.capstone.cookpocket.view.ui.account.change.ChangeUsernameActivity
 import com.capstone.cookpocket.view.uiauth.Login.LoginActivity
 import kotlinx.coroutines.launch
 
 class AccountFragment : Fragment() {
 
+    private var _binding: FragmentAccountBinding? = null
+    private val binding get() = _binding!!
+
+    private val viewModel: AccountViewModel by viewModels()
+
     companion object {
         fun newInstance() = AccountFragment()
     }
-
-    private val viewModel: AccountViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val binding = inflater.inflate(R.layout.fragment_account, container, false)
+        _binding = FragmentAccountBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
         // Inisialisasi button logout
-        val btnLogout: ImageView = binding.findViewById(R.id.btn_logout)
-        btnLogout.setOnClickListener {
+        binding.btnLogout.setOnClickListener {
             showLogoutConfirmationDialog()
         }
 
-        return binding
+        // Inisialisasi elemen lain di layout (contoh pengaturan klik listener)
+        binding.arrowGantiUsername.setOnClickListener {
+            val intent = Intent(requireContext(), ChangeUsernameActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.arrowGantiEmail.setOnClickListener {
+            val intent = Intent(requireContext(), ChangeEmailActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.arrowGantiNotelp.setOnClickListener {
+            val intent = Intent(requireContext(), ChangeNoTelpActivity::class.java)
+            startActivity(intent)
+        }
+        binding.arrowGantiSandi.setOnClickListener {
+            val intent = Intent(requireContext(), ChangePasswordActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.arrowAlamat.setOnClickListener {
+            val intent = Intent(requireContext(), ChangeAddresActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun showLogoutConfirmationDialog() {
@@ -63,7 +99,6 @@ class AccountFragment : Fragment() {
         dialog.show()
     }
 
-
     private fun logout() {
         lifecycleScope.launch {
             try {
@@ -80,5 +115,10 @@ class AccountFragment : Fragment() {
                 Toast.makeText(requireContext(), "Logout gagal, coba lagi", Toast.LENGTH_SHORT).show()
             }
         }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }

@@ -96,4 +96,17 @@
     <string name="pesanan_sedang_di_proses">Pesanan sedang di Proses</string>
     <string name="cook_pocket">Cook Pocket</string>
     <string name="versi">Versi 1.0</string>
+
+<!--    Alamat-->
+    <string name="error_empty_address">Alamat rumah harus diisi</string>
+    <string name="error_empty_kelurahan">Kelurahan harus diisi</string>
+    <string name="error_empty_kecamatan">Kecamatan harus diisi</string>
+    <string name="error_empty_kabupaten">Kabupaten harus diisi</string>
+    <string name="error_empty_provinsi">Provinsi harus diisi</string>
+    <string name="confirmation">Konfirmasi</string>
+    <string name="confirm_save_address">Apakah Anda yakin ingin menyimpan alamat ini?</string>
+    <string name="success_save_address">Alamat berhasil diperbarui</string>
+    <string name="yes">Ya</string>
+    <string name="no">Tidak</string>
+
 </resources>

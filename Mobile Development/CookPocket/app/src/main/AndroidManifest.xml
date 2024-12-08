@@ -13,9 +13,27 @@
         android:theme="@style/Theme.CookPocket"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".view.ui.account.AddItem"
+            android:exported="false" />
+        <activity
+            android:name=".view.uiauth.SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.uiauth.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.ui.search.order.OrderAmbilSendiriActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.ui.search.order.OrderAntarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.ui.search.detail_search.DetailSearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.ui.MainActivity"
             android:exported="true"
-            android:label="@string/app_name">
+            android:label="@string/title_activity_main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

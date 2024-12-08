@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "CookPocket"
+rootProject.name = "Cook Pocket"
 include(":app")
  

@@ -29,19 +29,14 @@
     <string name="cari_menu">Mau menu apa hari ini?</string>
     <string name="change_username">username</string>
     <string name="confirm_password">Confirm Password</string>
-    <string name="confirm_save_address">Apakah Anda yakin ingin menyimpan alamat ini?</string>
-    <string name="confirmation">Konfirmasi</string>
+    <string name="cook_pocket">Cook Pocket</string>
     <string name="daftar">Daftar</string>
     <string name="desc_login">Login Akun Kamu Yuk!</string>
     <string name="desc_title_login">Belum Punya Akun?</string>
     <string name="deskripsi_alamat">Alamat Lengkap</string>
+    <string name="deskripsi_makanan_yang_menarik_dan_informatif">Deskripsi makanan yang menarik dan informatif.</string>
     <string name="email">Email</string>
     <string name="email_saat_ini">Email Saat ini</string>
-    <string name="error_empty_address">Alamat rumah harus diisi</string>
-    <string name="error_empty_kabupaten">Kabupaten harus diisi</string>
-    <string name="error_empty_kecamatan">Kecamatan harus diisi</string>
-    <string name="error_empty_kelurahan">Kelurahan harus diisi</string>
-    <string name="error_empty_provinsi">Provinsi harus diisi</string>
     <string name="favorit">Favorit</string>
     <string name="favorite">Favorite</string>
     <string name="food_image">Nama Makanan</string>
@@ -71,7 +66,6 @@
     <string name="masukkan_password_lama_anda">Masukkan Password Lama anda</string>
     <string name="minus">Minus</string>
     <string name="nama_makanan">Nama Makanan</string>
-    <string name="no">Tidak</string>
     <string name="no_hp">No Telphone</string>
     <string name="no_item_fav">Tidak ada item favorite</string>
     <string name="no_telephone">No Telpon</string>
@@ -82,6 +76,8 @@
     <string name="pemisah">|</string>
     <string name="pesan">Pesan</string>
     <string name="pesan_antar">Pesan Antar</string>
+    <string name="pesanan_sedang_di_proses">Pesanan sedang di Proses</string>
+    <string name="pesanan_selesai">Pesanan Selesai</string>
     <string name="plus">Plus\n</string>
     <string name="produk">Produk</string>
     <string name="provinsi">Provinsi</string>
@@ -89,7 +85,6 @@
     <string name="rp_0">Rp. 0</string>
     <string name="simpan">Simpan</string>
     <string name="submit">Pesan</string>
-    <string name="success_save_address">Alamat berhasil diperbarui</string>
     <string name="title_account">Account</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="title_category">Kategori</string>
@@ -111,7 +106,7 @@
     <string name="username">Username</string>
     <string name="usernameHome">Username</string>
     <string name="username_account">Username</string>
-    <string name="yes">Ya</string>
+    <string name="versi">Versi 1.0</string>
     <style name="Base.Theme.CookPocket" parent="Theme.Material3.DayNight.NoActionBar">
         
         

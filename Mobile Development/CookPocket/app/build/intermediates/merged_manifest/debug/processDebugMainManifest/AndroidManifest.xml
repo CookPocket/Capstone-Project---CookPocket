@@ -30,6 +30,24 @@
         android:testOnly="true"
         android:theme="@style/Theme.CookPocket" >
         <activity
+            android:name="com.capstone.cookpocket.view.ui.main.SplashActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.capstone.cookpocket.view.ui.store.DetailProductActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.capstone.cookpocket.view.ui.search.order.OderFinishActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.capstone.cookpocket.view.ui.adapter.AdapterNotifActivity"
+            android:exported="false" />
+        <activity
             android:name="com.capstone.cookpocket.view.ui.store.AddProductActivity"
             android:exported="false" />
         <activity
@@ -74,13 +92,7 @@
             android:exported="false" />
         <activity
             android:name="com.capstone.cookpocket.view.uiauth.Login.LoginActivity"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="false" />
         <activity
             android:name="com.capstone.cookpocket.view.ui.search.detail_search.DetailSearchActivity"
             android:exported="false" />

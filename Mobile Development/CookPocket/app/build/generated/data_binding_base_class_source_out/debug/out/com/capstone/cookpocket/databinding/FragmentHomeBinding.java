@@ -61,7 +61,7 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final TextView resepLabel;
 
   @NonNull
-  public final SearchView searchBar;
+  public final SearchView searchBarHome;
 
   @NonNull
   public final TextView topFavoriteLabel;
@@ -74,8 +74,9 @@ public final class FragmentHomeBinding implements ViewBinding {
       @NonNull CardView cvBtnMakananTradisional, @NonNull RecyclerView favoriteRecyclerView,
       @NonNull LinearLayout header, @NonNull ImageView imageView, @NonNull ImageView ivKeranjang,
       @NonNull ImageView ivNotifikasi, @NonNull LinearLayout llCategory, @NonNull TextView location,
-      @NonNull ImageView profileImage, @NonNull TextView resepLabel, @NonNull SearchView searchBar,
-      @NonNull TextView topFavoriteLabel, @NonNull TextView userName) {
+      @NonNull ImageView profileImage, @NonNull TextView resepLabel,
+      @NonNull SearchView searchBarHome, @NonNull TextView topFavoriteLabel,
+      @NonNull TextView userName) {
     this.rootView = rootView;
     this.cvBtnMakananBerat = cvBtnMakananBerat;
     this.cvBtnMakananSehat = cvBtnMakananSehat;
@@ -89,7 +90,7 @@ public final class FragmentHomeBinding implements ViewBinding {
     this.location = location;
     this.profileImage = profileImage;
     this.resepLabel = resepLabel;
-    this.searchBar = searchBar;
+    this.searchBarHome = searchBarHome;
     this.topFavoriteLabel = topFavoriteLabel;
     this.userName = userName;
   }
@@ -193,9 +194,9 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.searchBar;
-      SearchView searchBar = ViewBindings.findChildViewById(rootView, id);
-      if (searchBar == null) {
+      id = R.id.searchBar_home;
+      SearchView searchBarHome = ViewBindings.findChildViewById(rootView, id);
+      if (searchBarHome == null) {
         break missingId;
       }
 
@@ -213,7 +214,7 @@ public final class FragmentHomeBinding implements ViewBinding {
 
       return new FragmentHomeBinding((ConstraintLayout) rootView, cvBtnMakananBerat,
           cvBtnMakananSehat, cvBtnMakananTradisional, favoriteRecyclerView, header, imageView,
-          ivKeranjang, ivNotifikasi, llCategory, location, profileImage, resepLabel, searchBar,
+          ivKeranjang, ivNotifikasi, llCategory, location, profileImage, resepLabel, searchBarHome,
           topFavoriteLabel, userName);
     }
     String missingId = rootView.getResources().getResourceName(id);

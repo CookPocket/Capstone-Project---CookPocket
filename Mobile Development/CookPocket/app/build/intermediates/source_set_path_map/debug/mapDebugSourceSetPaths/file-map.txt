@@ -1,61 +1,61 @@
-com.capstone.cookpocket.app-pngs-0 C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\build\generated\res\pngs\debug
-com.capstone.cookpocket.app-resValues-1 C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\build\generated\res\resValues\debug
-com.capstone.cookpocket.app-packageDebugResources-2 C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.capstone.cookpocket.app-packageDebugResources-3 C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.capstone.cookpocket.app-debug-4 C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\build\intermediates\merged_res\debug\mergeDebugResources
-com.capstone.cookpocket.app-debug-5 C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\debug\res
-com.capstone.cookpocket.app-main-6 C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\res
-com.capstone.cookpocket.app-tracing-1.2.0-7 C:\Users\iccan\.jdks\caches\8.11.1\transforms\0166719ae66c0cbdb946673d22130fb7\transformed\tracing-1.2.0\res
-com.capstone.cookpocket.app-coordinatorlayout-1.1.0-8 C:\Users\iccan\.jdks\caches\8.11.1\transforms\05d2080dfd5af337cb42edc4127571e4\transformed\coordinatorlayout-1.1.0\res
-com.capstone.cookpocket.app-appcompat-1.7.0-9 C:\Users\iccan\.jdks\caches\8.11.1\transforms\0643e59c8887e55b60b6a5b85f790067\transformed\appcompat-1.7.0\res
-com.capstone.cookpocket.app-lifecycle-process-2.8.7-10 C:\Users\iccan\.jdks\caches\8.11.1\transforms\088f395539c205c2f9a56e1f75bef05d\transformed\lifecycle-process-2.8.7\res
-com.capstone.cookpocket.app-navigation-common-ktx-2.8.4-11 C:\Users\iccan\.jdks\caches\8.11.1\transforms\0aa4cc09880a970a3beca61c93107e75\transformed\navigation-common-ktx-2.8.4\res
-com.capstone.cookpocket.app-emoji2-1.3.0-12 C:\Users\iccan\.jdks\caches\8.11.1\transforms\0aed117d377f08c9f4acf91169be3d40\transformed\emoji2-1.3.0\res
-com.capstone.cookpocket.app-fragment-ktx-1.6.2-13 C:\Users\iccan\.jdks\caches\8.11.1\transforms\0d50ee6d7784673c83e915600a2ab404\transformed\fragment-ktx-1.6.2\res
-com.capstone.cookpocket.app-activity-1.9.3-14 C:\Users\iccan\.jdks\caches\8.11.1\transforms\0da2b088ac587e736fb0df2f27ffcf83\transformed\activity-1.9.3\res
-com.capstone.cookpocket.app-profileinstaller-1.4.0-15 C:\Users\iccan\.jdks\caches\8.11.1\transforms\157262eeee39a79ce95be22e7e684d26\transformed\profileinstaller-1.4.0\res
-com.capstone.cookpocket.app-core-runtime-2.2.0-16 C:\Users\iccan\.jdks\caches\8.11.1\transforms\16698059d7959ae836d775c7ad325c23\transformed\core-runtime-2.2.0\res
-com.capstone.cookpocket.app-datastore-release-17 C:\Users\iccan\.jdks\caches\8.11.1\transforms\2042b162f2ae9484d16eaf86ceee166a\transformed\datastore-release\res
-com.capstone.cookpocket.app-lifecycle-viewmodel-release-18 C:\Users\iccan\.jdks\caches\8.11.1\transforms\243ae155c148e79ec1dd6e57dccfcf84\transformed\lifecycle-viewmodel-release\res
-com.capstone.cookpocket.app-emoji2-views-helper-1.3.0-19 C:\Users\iccan\.jdks\caches\8.11.1\transforms\2d0a9e4b74934ce6149dec3e41668b25\transformed\emoji2-views-helper-1.3.0\res
-com.capstone.cookpocket.app-room-ktx-2.5.2-20 C:\Users\iccan\.jdks\caches\8.11.1\transforms\2e894138daf3670385f501bf251d4a77\transformed\room-ktx-2.5.2\res
-com.capstone.cookpocket.app-fragment-1.6.2-21 C:\Users\iccan\.jdks\caches\8.11.1\transforms\2fad360abd67045cd07638a1622e791a\transformed\fragment-1.6.2\res
-com.capstone.cookpocket.app-core-ktx-1.15.0-22 C:\Users\iccan\.jdks\caches\8.11.1\transforms\3d548d77992e8066b9fba4a7ac7d26fe\transformed\core-ktx-1.15.0\res
-com.capstone.cookpocket.app-activity-ktx-1.9.3-23 C:\Users\iccan\.jdks\caches\8.11.1\transforms\45314f4bd665431f7a6040c286fb171a\transformed\activity-ktx-1.9.3\res
-com.capstone.cookpocket.app-navigation-ui-2.8.4-24 C:\Users\iccan\.jdks\caches\8.11.1\transforms\4557b8bf0dc47efb00d95332c719d1d3\transformed\navigation-ui-2.8.4\res
-com.capstone.cookpocket.app-room-runtime-2.5.2-25 C:\Users\iccan\.jdks\caches\8.11.1\transforms\54b45d79057eb67d1f7de616add5beb7\transformed\room-runtime-2.5.2\res
-com.capstone.cookpocket.app-transition-1.5.0-26 C:\Users\iccan\.jdks\caches\8.11.1\transforms\5d51d1f178c48344334b4daa67369e7e\transformed\transition-1.5.0\res
-com.capstone.cookpocket.app-annotation-experimental-1.4.1-27 C:\Users\iccan\.jdks\caches\8.11.1\transforms\64fd6e211e46627598f490be68cb9eb4\transformed\annotation-experimental-1.4.1\res
-com.capstone.cookpocket.app-media-1.0.0-28 C:\Users\iccan\.jdks\caches\8.11.1\transforms\6a88f5733e9a4379d989d01283a0ae78\transformed\media-1.0.0\res
-com.capstone.cookpocket.app-datastore-preferences-release-29 C:\Users\iccan\.jdks\caches\8.11.1\transforms\6cef6bde9b481ad076efeb53fe87befe\transformed\datastore-preferences-release\res
-com.capstone.cookpocket.app-viewpager2-1.0.0-30 C:\Users\iccan\.jdks\caches\8.11.1\transforms\6fd178beda687d2fc5f4e06408c43f6f\transformed\viewpager2-1.0.0\res
-com.capstone.cookpocket.app-appcompat-resources-1.7.0-31 C:\Users\iccan\.jdks\caches\8.11.1\transforms\77477e46c619d92c322093d85cabc435\transformed\appcompat-resources-1.7.0\res
-com.capstone.cookpocket.app-navigation-runtime-2.8.4-32 C:\Users\iccan\.jdks\caches\8.11.1\transforms\796ece4ab4d35efb2731628f95c2912b\transformed\navigation-runtime-2.8.4\res
-com.capstone.cookpocket.app-window-1.0.0-33 C:\Users\iccan\.jdks\caches\8.11.1\transforms\7d8ca230d2957b9d09408e5f657d25b7\transformed\window-1.0.0\res
-com.capstone.cookpocket.app-drawerlayout-1.1.1-34 C:\Users\iccan\.jdks\caches\8.11.1\transforms\8627289411e39528c33bc8c65cdd6e81\transformed\drawerlayout-1.1.1\res
-com.capstone.cookpocket.app-lifecycle-viewmodel-ktx-2.8.7-35 C:\Users\iccan\.jdks\caches\8.11.1\transforms\871127b17ca14c68315a95f55ab77774\transformed\lifecycle-viewmodel-ktx-2.8.7\res
-com.capstone.cookpocket.app-lifecycle-livedata-ktx-2.8.7-36 C:\Users\iccan\.jdks\caches\8.11.1\transforms\8a5231c722f40f2e97e4030977b19a6f\transformed\lifecycle-livedata-ktx-2.8.7\res
-com.capstone.cookpocket.app-sqlite-framework-2.3.1-37 C:\Users\iccan\.jdks\caches\8.11.1\transforms\8afb6d1308670ee96f44fe36e3a17c5e\transformed\sqlite-framework-2.3.1\res
-com.capstone.cookpocket.app-navigation-fragment-ktx-2.8.4-38 C:\Users\iccan\.jdks\caches\8.11.1\transforms\991ea4cc4defd061cce19e921e1f9f44\transformed\navigation-fragment-ktx-2.8.4\res
-com.capstone.cookpocket.app-glide-4.16.0-39 C:\Users\iccan\.jdks\caches\8.11.1\transforms\9b1e01e033c01baeda7613ac91059b9e\transformed\glide-4.16.0\res
-com.capstone.cookpocket.app-navigation-runtime-ktx-2.8.4-40 C:\Users\iccan\.jdks\caches\8.11.1\transforms\9d03140aec1741e64ebd6711fdc595ca\transformed\navigation-runtime-ktx-2.8.4\res
-com.capstone.cookpocket.app-recyclerview-1.1.0-41 C:\Users\iccan\.jdks\caches\8.11.1\transforms\a0db03be6c3d3f4f488d7887e4d112e3\transformed\recyclerview-1.1.0\res
-com.capstone.cookpocket.app-cardview-1.0.0-42 C:\Users\iccan\.jdks\caches\8.11.1\transforms\a818530d23b919451c01247ba37a6fac\transformed\cardview-1.0.0\res
-com.capstone.cookpocket.app-lifecycle-livedata-2.8.7-43 C:\Users\iccan\.jdks\caches\8.11.1\transforms\a8ac6104baa457ce66eee569b27ec1bb\transformed\lifecycle-livedata-2.8.7\res
-com.capstone.cookpocket.app-constraintlayout-2.2.0-44 C:\Users\iccan\.jdks\caches\8.11.1\transforms\aa22eee2eee7cad31885d6921ecb5912\transformed\constraintlayout-2.2.0\res
-com.capstone.cookpocket.app-datastore-core-release-45 C:\Users\iccan\.jdks\caches\8.11.1\transforms\b11edc85922e6d775916e8decddf6f5e\transformed\datastore-core-release\res
-com.capstone.cookpocket.app-lifecycle-runtime-ktx-release-46 C:\Users\iccan\.jdks\caches\8.11.1\transforms\b55e2f6caea33cfe6cc0404a3bed28a6\transformed\lifecycle-runtime-ktx-release\res
-com.capstone.cookpocket.app-lifecycle-viewmodel-savedstate-2.8.7-47 C:\Users\iccan\.jdks\caches\8.11.1\transforms\c0e051443e67ce804f4941106c637f14\transformed\lifecycle-viewmodel-savedstate-2.8.7\res
-com.capstone.cookpocket.app-material-1.12.0-48 C:\Users\iccan\.jdks\caches\8.11.1\transforms\c6ab39ae13f14abaf93100aef6ad8239\transformed\material-1.12.0\res
-com.capstone.cookpocket.app-sqlite-2.3.1-49 C:\Users\iccan\.jdks\caches\8.11.1\transforms\d0480469e609f17774cb7cebd0bad4bc\transformed\sqlite-2.3.1\res
-com.capstone.cookpocket.app-savedstate-ktx-1.2.1-50 C:\Users\iccan\.jdks\caches\8.11.1\transforms\d05781627433e54f41438303cc82d555\transformed\savedstate-ktx-1.2.1\res
-com.capstone.cookpocket.app-lifecycle-livedata-core-ktx-2.8.7-51 C:\Users\iccan\.jdks\caches\8.11.1\transforms\d66c48c7fa2cc4d4ab6099f5025fa5c3\transformed\lifecycle-livedata-core-ktx-2.8.7\res
-com.capstone.cookpocket.app-lifecycle-livedata-core-2.8.7-52 C:\Users\iccan\.jdks\caches\8.11.1\transforms\d8e3efb749beac02349b33706eeef944\transformed\lifecycle-livedata-core-2.8.7\res
-com.capstone.cookpocket.app-navigation-fragment-2.8.4-53 C:\Users\iccan\.jdks\caches\8.11.1\transforms\da3a5eb19bfbc37914b9b2e9ed68a23c\transformed\navigation-fragment-2.8.4\res
-com.capstone.cookpocket.app-slidingpanelayout-1.2.0-54 C:\Users\iccan\.jdks\caches\8.11.1\transforms\e17c2427f11ed8b0194addb06dc700c0\transformed\slidingpanelayout-1.2.0\res
-com.capstone.cookpocket.app-navigation-common-2.8.4-55 C:\Users\iccan\.jdks\caches\8.11.1\transforms\e73dbdef9af1c415b4db33cbe6e8e7a7\transformed\navigation-common-2.8.4\res
-com.capstone.cookpocket.app-core-1.15.0-56 C:\Users\iccan\.jdks\caches\8.11.1\transforms\e79fc68a057088e90eb6397706dbcce3\transformed\core-1.15.0\res
-com.capstone.cookpocket.app-navigation-ui-ktx-2.8.4-57 C:\Users\iccan\.jdks\caches\8.11.1\transforms\ea5c77011ac42406d574c57ffc9de6e5\transformed\navigation-ui-ktx-2.8.4\res
-com.capstone.cookpocket.app-lifecycle-runtime-release-58 C:\Users\iccan\.jdks\caches\8.11.1\transforms\f23f41fa2de549b5a602ee3a3abb5cf6\transformed\lifecycle-runtime-release\res
-com.capstone.cookpocket.app-startup-runtime-1.1.1-59 C:\Users\iccan\.jdks\caches\8.11.1\transforms\f305f837a0e415b5ea366936e34a34df\transformed\startup-runtime-1.1.1\res
-com.capstone.cookpocket.app-savedstate-1.2.1-60 C:\Users\iccan\.jdks\caches\8.11.1\transforms\f9d92d4cfaea1884ee615131239ba459\transformed\savedstate-1.2.1\res
+com.capstone.cookpocket.app-tracing-1.2.0-0 C:\Users\ACER\.gradle\caches\8.11.1\transforms\0166719ae66c0cbdb946673d22130fb7\transformed\tracing-1.2.0\res
+com.capstone.cookpocket.app-coordinatorlayout-1.1.0-1 C:\Users\ACER\.gradle\caches\8.11.1\transforms\05d2080dfd5af337cb42edc4127571e4\transformed\coordinatorlayout-1.1.0\res
+com.capstone.cookpocket.app-appcompat-1.7.0-2 C:\Users\ACER\.gradle\caches\8.11.1\transforms\0643e59c8887e55b60b6a5b85f790067\transformed\appcompat-1.7.0\res
+com.capstone.cookpocket.app-lifecycle-process-2.8.7-3 C:\Users\ACER\.gradle\caches\8.11.1\transforms\088f395539c205c2f9a56e1f75bef05d\transformed\lifecycle-process-2.8.7\res
+com.capstone.cookpocket.app-navigation-common-ktx-2.8.4-4 C:\Users\ACER\.gradle\caches\8.11.1\transforms\0aa4cc09880a970a3beca61c93107e75\transformed\navigation-common-ktx-2.8.4\res
+com.capstone.cookpocket.app-emoji2-1.3.0-5 C:\Users\ACER\.gradle\caches\8.11.1\transforms\0aed117d377f08c9f4acf91169be3d40\transformed\emoji2-1.3.0\res
+com.capstone.cookpocket.app-fragment-ktx-1.6.2-6 C:\Users\ACER\.gradle\caches\8.11.1\transforms\0d50ee6d7784673c83e915600a2ab404\transformed\fragment-ktx-1.6.2\res
+com.capstone.cookpocket.app-activity-1.9.3-7 C:\Users\ACER\.gradle\caches\8.11.1\transforms\0da2b088ac587e736fb0df2f27ffcf83\transformed\activity-1.9.3\res
+com.capstone.cookpocket.app-profileinstaller-1.4.0-8 C:\Users\ACER\.gradle\caches\8.11.1\transforms\157262eeee39a79ce95be22e7e684d26\transformed\profileinstaller-1.4.0\res
+com.capstone.cookpocket.app-core-runtime-2.2.0-9 C:\Users\ACER\.gradle\caches\8.11.1\transforms\16698059d7959ae836d775c7ad325c23\transformed\core-runtime-2.2.0\res
+com.capstone.cookpocket.app-datastore-release-10 C:\Users\ACER\.gradle\caches\8.11.1\transforms\2042b162f2ae9484d16eaf86ceee166a\transformed\datastore-release\res
+com.capstone.cookpocket.app-lifecycle-viewmodel-release-11 C:\Users\ACER\.gradle\caches\8.11.1\transforms\243ae155c148e79ec1dd6e57dccfcf84\transformed\lifecycle-viewmodel-release\res
+com.capstone.cookpocket.app-emoji2-views-helper-1.3.0-12 C:\Users\ACER\.gradle\caches\8.11.1\transforms\2d0a9e4b74934ce6149dec3e41668b25\transformed\emoji2-views-helper-1.3.0\res
+com.capstone.cookpocket.app-room-ktx-2.5.2-13 C:\Users\ACER\.gradle\caches\8.11.1\transforms\2e894138daf3670385f501bf251d4a77\transformed\room-ktx-2.5.2\res
+com.capstone.cookpocket.app-fragment-1.6.2-14 C:\Users\ACER\.gradle\caches\8.11.1\transforms\2fad360abd67045cd07638a1622e791a\transformed\fragment-1.6.2\res
+com.capstone.cookpocket.app-core-ktx-1.15.0-15 C:\Users\ACER\.gradle\caches\8.11.1\transforms\3d548d77992e8066b9fba4a7ac7d26fe\transformed\core-ktx-1.15.0\res
+com.capstone.cookpocket.app-activity-ktx-1.9.3-16 C:\Users\ACER\.gradle\caches\8.11.1\transforms\45314f4bd665431f7a6040c286fb171a\transformed\activity-ktx-1.9.3\res
+com.capstone.cookpocket.app-navigation-ui-2.8.4-17 C:\Users\ACER\.gradle\caches\8.11.1\transforms\4557b8bf0dc47efb00d95332c719d1d3\transformed\navigation-ui-2.8.4\res
+com.capstone.cookpocket.app-room-runtime-2.5.2-18 C:\Users\ACER\.gradle\caches\8.11.1\transforms\54b45d79057eb67d1f7de616add5beb7\transformed\room-runtime-2.5.2\res
+com.capstone.cookpocket.app-transition-1.5.0-19 C:\Users\ACER\.gradle\caches\8.11.1\transforms\5d51d1f178c48344334b4daa67369e7e\transformed\transition-1.5.0\res
+com.capstone.cookpocket.app-annotation-experimental-1.4.1-20 C:\Users\ACER\.gradle\caches\8.11.1\transforms\64fd6e211e46627598f490be68cb9eb4\transformed\annotation-experimental-1.4.1\res
+com.capstone.cookpocket.app-media-1.0.0-21 C:\Users\ACER\.gradle\caches\8.11.1\transforms\6a88f5733e9a4379d989d01283a0ae78\transformed\media-1.0.0\res
+com.capstone.cookpocket.app-datastore-preferences-release-22 C:\Users\ACER\.gradle\caches\8.11.1\transforms\6cef6bde9b481ad076efeb53fe87befe\transformed\datastore-preferences-release\res
+com.capstone.cookpocket.app-viewpager2-1.0.0-23 C:\Users\ACER\.gradle\caches\8.11.1\transforms\6fd178beda687d2fc5f4e06408c43f6f\transformed\viewpager2-1.0.0\res
+com.capstone.cookpocket.app-appcompat-resources-1.7.0-24 C:\Users\ACER\.gradle\caches\8.11.1\transforms\77477e46c619d92c322093d85cabc435\transformed\appcompat-resources-1.7.0\res
+com.capstone.cookpocket.app-navigation-runtime-2.8.4-25 C:\Users\ACER\.gradle\caches\8.11.1\transforms\796ece4ab4d35efb2731628f95c2912b\transformed\navigation-runtime-2.8.4\res
+com.capstone.cookpocket.app-window-1.0.0-26 C:\Users\ACER\.gradle\caches\8.11.1\transforms\7d8ca230d2957b9d09408e5f657d25b7\transformed\window-1.0.0\res
+com.capstone.cookpocket.app-drawerlayout-1.1.1-27 C:\Users\ACER\.gradle\caches\8.11.1\transforms\8627289411e39528c33bc8c65cdd6e81\transformed\drawerlayout-1.1.1\res
+com.capstone.cookpocket.app-lifecycle-viewmodel-ktx-2.8.7-28 C:\Users\ACER\.gradle\caches\8.11.1\transforms\871127b17ca14c68315a95f55ab77774\transformed\lifecycle-viewmodel-ktx-2.8.7\res
+com.capstone.cookpocket.app-lifecycle-livedata-ktx-2.8.7-29 C:\Users\ACER\.gradle\caches\8.11.1\transforms\8a5231c722f40f2e97e4030977b19a6f\transformed\lifecycle-livedata-ktx-2.8.7\res
+com.capstone.cookpocket.app-sqlite-framework-2.3.1-30 C:\Users\ACER\.gradle\caches\8.11.1\transforms\8afb6d1308670ee96f44fe36e3a17c5e\transformed\sqlite-framework-2.3.1\res
+com.capstone.cookpocket.app-navigation-fragment-ktx-2.8.4-31 C:\Users\ACER\.gradle\caches\8.11.1\transforms\991ea4cc4defd061cce19e921e1f9f44\transformed\navigation-fragment-ktx-2.8.4\res
+com.capstone.cookpocket.app-glide-4.16.0-32 C:\Users\ACER\.gradle\caches\8.11.1\transforms\9b1e01e033c01baeda7613ac91059b9e\transformed\glide-4.16.0\res
+com.capstone.cookpocket.app-navigation-runtime-ktx-2.8.4-33 C:\Users\ACER\.gradle\caches\8.11.1\transforms\9d03140aec1741e64ebd6711fdc595ca\transformed\navigation-runtime-ktx-2.8.4\res
+com.capstone.cookpocket.app-recyclerview-1.1.0-34 C:\Users\ACER\.gradle\caches\8.11.1\transforms\a0db03be6c3d3f4f488d7887e4d112e3\transformed\recyclerview-1.1.0\res
+com.capstone.cookpocket.app-cardview-1.0.0-35 C:\Users\ACER\.gradle\caches\8.11.1\transforms\a818530d23b919451c01247ba37a6fac\transformed\cardview-1.0.0\res
+com.capstone.cookpocket.app-lifecycle-livedata-2.8.7-36 C:\Users\ACER\.gradle\caches\8.11.1\transforms\a8ac6104baa457ce66eee569b27ec1bb\transformed\lifecycle-livedata-2.8.7\res
+com.capstone.cookpocket.app-constraintlayout-2.2.0-37 C:\Users\ACER\.gradle\caches\8.11.1\transforms\aa22eee2eee7cad31885d6921ecb5912\transformed\constraintlayout-2.2.0\res
+com.capstone.cookpocket.app-datastore-core-release-38 C:\Users\ACER\.gradle\caches\8.11.1\transforms\b11edc85922e6d775916e8decddf6f5e\transformed\datastore-core-release\res
+com.capstone.cookpocket.app-lifecycle-runtime-ktx-release-39 C:\Users\ACER\.gradle\caches\8.11.1\transforms\b55e2f6caea33cfe6cc0404a3bed28a6\transformed\lifecycle-runtime-ktx-release\res
+com.capstone.cookpocket.app-lifecycle-viewmodel-savedstate-2.8.7-40 C:\Users\ACER\.gradle\caches\8.11.1\transforms\c0e051443e67ce804f4941106c637f14\transformed\lifecycle-viewmodel-savedstate-2.8.7\res
+com.capstone.cookpocket.app-material-1.12.0-41 C:\Users\ACER\.gradle\caches\8.11.1\transforms\c6ab39ae13f14abaf93100aef6ad8239\transformed\material-1.12.0\res
+com.capstone.cookpocket.app-sqlite-2.3.1-42 C:\Users\ACER\.gradle\caches\8.11.1\transforms\d0480469e609f17774cb7cebd0bad4bc\transformed\sqlite-2.3.1\res
+com.capstone.cookpocket.app-savedstate-ktx-1.2.1-43 C:\Users\ACER\.gradle\caches\8.11.1\transforms\d05781627433e54f41438303cc82d555\transformed\savedstate-ktx-1.2.1\res
+com.capstone.cookpocket.app-lifecycle-livedata-core-ktx-2.8.7-44 C:\Users\ACER\.gradle\caches\8.11.1\transforms\d66c48c7fa2cc4d4ab6099f5025fa5c3\transformed\lifecycle-livedata-core-ktx-2.8.7\res
+com.capstone.cookpocket.app-lifecycle-livedata-core-2.8.7-45 C:\Users\ACER\.gradle\caches\8.11.1\transforms\d8e3efb749beac02349b33706eeef944\transformed\lifecycle-livedata-core-2.8.7\res
+com.capstone.cookpocket.app-navigation-fragment-2.8.4-46 C:\Users\ACER\.gradle\caches\8.11.1\transforms\da3a5eb19bfbc37914b9b2e9ed68a23c\transformed\navigation-fragment-2.8.4\res
+com.capstone.cookpocket.app-slidingpanelayout-1.2.0-47 C:\Users\ACER\.gradle\caches\8.11.1\transforms\e17c2427f11ed8b0194addb06dc700c0\transformed\slidingpanelayout-1.2.0\res
+com.capstone.cookpocket.app-navigation-common-2.8.4-48 C:\Users\ACER\.gradle\caches\8.11.1\transforms\e73dbdef9af1c415b4db33cbe6e8e7a7\transformed\navigation-common-2.8.4\res
+com.capstone.cookpocket.app-core-1.15.0-49 C:\Users\ACER\.gradle\caches\8.11.1\transforms\e79fc68a057088e90eb6397706dbcce3\transformed\core-1.15.0\res
+com.capstone.cookpocket.app-navigation-ui-ktx-2.8.4-50 C:\Users\ACER\.gradle\caches\8.11.1\transforms\ea5c77011ac42406d574c57ffc9de6e5\transformed\navigation-ui-ktx-2.8.4\res
+com.capstone.cookpocket.app-lifecycle-runtime-release-51 C:\Users\ACER\.gradle\caches\8.11.1\transforms\f23f41fa2de549b5a602ee3a3abb5cf6\transformed\lifecycle-runtime-release\res
+com.capstone.cookpocket.app-startup-runtime-1.1.1-52 C:\Users\ACER\.gradle\caches\8.11.1\transforms\f305f837a0e415b5ea366936e34a34df\transformed\startup-runtime-1.1.1\res
+com.capstone.cookpocket.app-savedstate-1.2.1-53 C:\Users\ACER\.gradle\caches\8.11.1\transforms\f9d92d4cfaea1884ee615131239ba459\transformed\savedstate-1.2.1\res
+com.capstone.cookpocket.app-pngs-54 D:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\build\generated\res\pngs\debug
+com.capstone.cookpocket.app-resValues-55 D:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\build\generated\res\resValues\debug
+com.capstone.cookpocket.app-packageDebugResources-56 D:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.capstone.cookpocket.app-packageDebugResources-57 D:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.capstone.cookpocket.app-debug-58 D:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.capstone.cookpocket.app-debug-59 D:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\debug\res
+com.capstone.cookpocket.app-main-60 D:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\res

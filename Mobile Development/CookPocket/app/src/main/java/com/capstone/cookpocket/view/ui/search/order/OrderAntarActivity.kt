@@ -22,7 +22,7 @@ class OrderAntarActivity : AppCompatActivity() {
         // Menampilkan detail cerita di UI
         displayStoryDetails(storyName, storyDescription, storyPhoto)
 
-        binding.ivBack.setOnClickListener {
+        binding.ivBackAntar .setOnClickListener {
             val intent = Intent(this, DetailSearchActivity::class.java)
             intent.putExtra("STORY_NAME", storyName)
             intent.putExtra("STORY_DESCRIPTION", storyDescription)

@@ -6,10 +6,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.capstone.cookpocket.R;
@@ -19,7 +19,7 @@ import java.lang.String;
 
 public final class FragmentAccountBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final ScrollView rootView;
 
   @NonNull
   public final ImageView arrowAlamat;
@@ -57,7 +57,7 @@ public final class FragmentAccountBinding implements ViewBinding {
   @NonNull
   public final TextView tvUsernameAccount;
 
-  private FragmentAccountBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView arrowAlamat,
+  private FragmentAccountBinding(@NonNull ScrollView rootView, @NonNull ImageView arrowAlamat,
       @NonNull ImageView arrowGantiEmail, @NonNull ImageView arrowGantiNotelp,
       @NonNull ImageView arrowGantiSandi, @NonNull ImageView arrowGantiUsername,
       @NonNull ImageView btnLogout, @NonNull ImageView imageView2, @NonNull ImageView imgAccount,
@@ -80,7 +80,7 @@ public final class FragmentAccountBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public ScrollView getRoot() {
     return rootView;
   }
 
@@ -177,7 +177,7 @@ public final class FragmentAccountBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentAccountBinding((ConstraintLayout) rootView, arrowAlamat, arrowGantiEmail,
+      return new FragmentAccountBinding((ScrollView) rootView, arrowAlamat, arrowGantiEmail,
           arrowGantiNotelp, arrowGantiSandi, arrowGantiUsername, btnLogout, imageView2, imgAccount,
           llBtnShop, llProfile, tvGmailAccount, tvUsernameAccount);
     }

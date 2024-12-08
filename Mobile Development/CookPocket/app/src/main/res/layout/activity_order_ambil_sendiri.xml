@@ -10,7 +10,7 @@
 
 
     <ImageView
-        android:id="@+id/iv_back"
+        android:id="@+id/iv_back_ambil_sendiri"
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_marginStart="15dp"
@@ -34,7 +34,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_back"
+        app:layout_constraintTop_toBottomOf="@+id/iv_back_ambil_sendiri"
         tools:ignore="MissingConstraints" />
 
     <LinearLayout
@@ -118,45 +118,7 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/linearLayout3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:gravity="center"
-        app:layout_constraintTop_toBottomOf="@+id/ll_alamat_pengiriman"
-        tools:ignore="MissingConstraints">
 
-        <TextView
-            android:id="@+id/tv_username_user"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Username"
-            android:textColor="@color/black"
-            android:textSize="15sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
-            android:gravity="center"
-            android:textColor="@color/black"
-            android:text="@string/pemisah"
-            android:textSize="15sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/tv_no_telp_user"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
-            android:text="@string/no_telephone"
-            android:textSize="15sp"
-            android:textColor="@color/black"
-            android:textStyle="bold" />
-
-    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/ll_deskripsi_alamat"
@@ -164,7 +126,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:gravity="center"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/ll_alamat_pengiriman"
         tools:ignore="MissingConstraints">
 
         <TextView
@@ -209,7 +171,7 @@
         android:layout_marginTop="17dp"
         android:layout_marginEnd="20dp"
         android:layout_marginStart="20dp"
-        android:backgroundTint="@color/grey_soft"
+        android:backgroundTint="@color/grey_soft_smooth"
         app:cardCornerRadius="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

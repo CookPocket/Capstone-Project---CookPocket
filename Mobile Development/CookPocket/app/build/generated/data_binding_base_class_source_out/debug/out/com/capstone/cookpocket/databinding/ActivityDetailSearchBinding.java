@@ -57,6 +57,9 @@ public final class ActivityDetailSearchBinding implements ViewBinding {
   public final TextView tvDeskripsiPembuatan;
 
   @NonNull
+  public final TextView tvHargaDetailSearch;
+
+  @NonNull
   public final TextView tvJudul;
 
   private ActivityDetailSearchBinding(@NonNull ConstraintLayout rootView,
@@ -65,7 +68,8 @@ public final class ActivityDetailSearchBinding implements ViewBinding {
       @NonNull ImageView ivMainImage, @NonNull TextView labelBahan,
       @NonNull TextView labelPembuatan, @NonNull LinearLayout linearLayout,
       @NonNull ProgressBar progresbarDetailSearch, @NonNull TextView tvDeskripsiBahan,
-      @NonNull TextView tvDeskripsiPembuatan, @NonNull TextView tvJudul) {
+      @NonNull TextView tvDeskripsiPembuatan, @NonNull TextView tvHargaDetailSearch,
+      @NonNull TextView tvJudul) {
     this.rootView = rootView;
     this.buttonPesan = buttonPesan;
     this.imageViewCart = imageViewCart;
@@ -78,6 +82,7 @@ public final class ActivityDetailSearchBinding implements ViewBinding {
     this.progresbarDetailSearch = progresbarDetailSearch;
     this.tvDeskripsiBahan = tvDeskripsiBahan;
     this.tvDeskripsiPembuatan = tvDeskripsiPembuatan;
+    this.tvHargaDetailSearch = tvHargaDetailSearch;
     this.tvJudul = tvJudul;
   }
 
@@ -174,6 +179,12 @@ public final class ActivityDetailSearchBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tv_harga_detail_search;
+      TextView tvHargaDetailSearch = ViewBindings.findChildViewById(rootView, id);
+      if (tvHargaDetailSearch == null) {
+        break missingId;
+      }
+
       id = R.id.tv_judul;
       TextView tvJudul = ViewBindings.findChildViewById(rootView, id);
       if (tvJudul == null) {
@@ -182,7 +193,8 @@ public final class ActivityDetailSearchBinding implements ViewBinding {
 
       return new ActivityDetailSearchBinding((ConstraintLayout) rootView, buttonPesan,
           imageViewCart, ivBackDetailSearch, ivFavorite, ivMainImage, labelBahan, labelPembuatan,
-          linearLayout, progresbarDetailSearch, tvDeskripsiBahan, tvDeskripsiPembuatan, tvJudul);
+          linearLayout, progresbarDetailSearch, tvDeskripsiBahan, tvDeskripsiPembuatan,
+          tvHargaDetailSearch, tvJudul);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

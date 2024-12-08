@@ -17,7 +17,7 @@
         <ImageView
             android:id="@+id/img"
             android:layout_width="130dp"
-            android:layout_height="140dp"
+            android:layout_height="100dp"
             android:background="@drawable/placeholder_foto_makanan"
             android:scaleType="centerCrop"
             android:contentDescription="@string/food_image"
@@ -47,7 +47,7 @@
             android:id="@+id/foodDescription"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Deskripsi makanan yang menarik dan informatif."
+            android:text="@string/deskripsi_makanan_yang_menarik_dan_informatif"
             android:textColor="@android:color/black"
             android:textSize="14sp"
             android:maxLines="3"

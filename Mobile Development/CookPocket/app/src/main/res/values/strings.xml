@@ -91,4 +91,9 @@
     <string name="minus">Minus</string>
     <string name="produk">Produk</string>
     <string name="hapus">Hapus</string>
+    <string name="deskripsi_makanan_yang_menarik_dan_informatif">Deskripsi makanan yang menarik dan informatif.</string>
+    <string name="pesanan_selesai">Pesanan Selesai</string>
+    <string name="pesanan_sedang_di_proses">Pesanan sedang di Proses</string>
+    <string name="cook_pocket">Cook Pocket</string>
+    <string name="versi">Versi 1.0</string>
 </resources>

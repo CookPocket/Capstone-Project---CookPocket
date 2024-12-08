@@ -15,6 +15,7 @@ import com.bumptech.glide.Glide
 import com.capstone.cookpocket.R
 
 import com.capstone.cookpocket.databinding.ActivityDetailSearchBinding
+import com.capstone.cookpocket.view.ui.home.HomeFragment
 import com.capstone.cookpocket.view.ui.search.order.OrderAntarActivity
 import kotlinx.coroutines.launch
 
@@ -57,8 +58,9 @@ class DetailSearchActivity : AppCompatActivity() {
             intent.putExtra("STORY_PHOTO", storyPhoto)
             startActivity(intent)
         }
-        binding.ivBack.setOnClickListener{
-            onBackPressed()
+        binding.ivBackDetailSearch.setOnClickListener{
+            val intent = Intent(this, HomeFragment::class.java)
+            startActivity(intent)
         }
     }
 

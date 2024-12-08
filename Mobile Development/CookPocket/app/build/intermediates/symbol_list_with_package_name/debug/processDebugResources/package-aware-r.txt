@@ -27,6 +27,7 @@ anim design_bottom_sheet_slide_in
 anim design_bottom_sheet_slide_out
 anim design_snackbar_in
 anim design_snackbar_out
+anim fade_in
 anim fragment_fast_out_extra_slow_in
 anim linear_indeterminate_line1_head_interpolator
 anim linear_indeterminate_line1_tail_interpolator
@@ -47,6 +48,8 @@ anim nav_default_enter_anim
 anim nav_default_exit_anim
 anim nav_default_pop_enter_anim
 anim nav_default_pop_exit_anim
+anim scale_up
+anim translate_up
 animator design_appbar_state_list_animator
 animator design_fab_hide_motion_spec
 animator design_fab_show_motion_spec
@@ -3064,6 +3067,7 @@ drawable background_card
 drawable background_login_signup
 drawable background_search
 drawable background_search_home
+drawable background_splash
 drawable background_toko_saya
 drawable baseline_add_24
 drawable baseline_add_white_24
@@ -3072,6 +3076,7 @@ drawable baseline_favorite_border_24
 drawable baseline_favorite_nav_24
 drawable baseline_keyboard_arrow_right_24
 drawable baseline_location_on_24
+drawable baseline_logout_24
 drawable baseline_logout_35
 drawable baseline_mines
 drawable baseline_store_24
@@ -3198,6 +3203,7 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable place_holder_foto_profil
 drawable placeholder_foto_makanan
+drawable pop_up
 drawable rounded_image_background
 drawable test_level_drawable
 drawable tooltip_frame_dark
@@ -3305,15 +3311,19 @@ id beginOnFirstDraw
 id beginning
 id below
 id bestChoice
+id bg_logo
 id blocking
 id bottom
 id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btnNo
+id btnYes
 id btn_login
 id btn_logout
 id btn_minus
+id btn_pesanan_selesai
 id btn_plus
 id btn_signup
 id btn_simpan_email
@@ -3323,6 +3333,7 @@ id btn_simpan_username
 id button
 id buttonPanel
 id button_pesan
+id button_pesan_store
 id cache_measures
 id callMeasure
 id cancel_action
@@ -3494,6 +3505,7 @@ id header_change_email
 id header_change_notelp
 id header_change_password
 id header_change_username
+id header_order_finish
 id header_store
 id header_title
 id hide_ime_id
@@ -3535,6 +3547,7 @@ id iv_back_email
 id iv_back_notif
 id iv_back_store
 id iv_back_username
+id iv_detail_store
 id iv_favorite
 id iv_keranjang
 id iv_main_image
@@ -3543,7 +3556,9 @@ id iv_store
 id jumpToEnd
 id jumpToStart
 id label_bahan
+id label_bahan_store
 id label_pembuatan
+id label_pembuatan_store
 id labeled
 id layout
 id left
@@ -3568,6 +3583,7 @@ id ll_total_pesanan
 id ll_total_semua
 id locale
 id location
+id logo_app
 id ltr
 id m3_side_sheet
 id main
@@ -3632,6 +3648,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id name_app
 id nav_controller_view_tag
 id nav_host_fragment_activity_main
 id nav_host_fragment_container
@@ -3734,7 +3751,7 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollable
-id searchBar
+id searchBar_home
 id searchView
 id search_badge
 id search_bar
@@ -3843,6 +3860,8 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvMessage
+id tvTitle
 id tv_alamat_user
 id tv_biaya_pengiriman
 id tv_btn_signup
@@ -3850,11 +3869,16 @@ id tv_cart
 id tv_change_email
 id tv_change_notelp
 id tv_deskripsi_bahan
+id tv_deskripsi_bahan_store
 id tv_deskripsi_pembuatan
+id tv_deskripsi_pembuatan_store
 id tv_favorite
 id tv_gmail_account
+id tv_harga_detail_search
 id tv_harga_makanan
+id tv_harga_store
 id tv_judul
+id tv_judul_store
 id tv_nama_makanan
 id tv_no_telp_user
 id tv_notfikasi
@@ -4008,6 +4032,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_adapter
 layout activity_adapter_cart
+layout activity_adapter_notif
 layout activity_add_product
 layout activity_cart
 layout activity_change_addres
@@ -4015,13 +4040,16 @@ layout activity_change_email
 layout activity_change_no_telp
 layout activity_change_password
 layout activity_change_username
+layout activity_detail_product
 layout activity_detail_search
 layout activity_login
 layout activity_main
 layout activity_notification
+layout activity_oder_finish
 layout activity_order_ambil_sendiri
 layout activity_order_antar
 layout activity_signup
+layout activity_splash
 layout activity_store
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -4039,8 +4067,8 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout dialog_logout
 layout fragment_account
-layout fragment_detail_store
 layout fragment_favorite
 layout fragment_home
 layout fragment_search
@@ -4186,10 +4214,12 @@ string character_counter_overflowed_content_description
 string character_counter_pattern
 string clear_text_end_icon_content_description
 string confirm_password
+string cook_pocket
 string daftar
 string desc_login
 string desc_title_login
 string deskripsi_alamat
+string deskripsi_makanan_yang_menarik_dan_informatif
 string dest_title
 string email
 string email_saat_ini
@@ -4347,6 +4377,8 @@ string path_password_strike_through
 string pemisah
 string pesan
 string pesan_antar
+string pesanan_sedang_di_proses
+string pesanan_selesai
 string plus
 string produk
 string provinsi
@@ -4382,6 +4414,7 @@ string ubah_username
 string username
 string usernameHome
 string username_account
+string versi
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

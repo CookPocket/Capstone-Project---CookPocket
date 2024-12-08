@@ -29,10 +29,12 @@
     <string name="cari_menu">Mau menu apa hari ini?</string>
     <string name="change_username">username</string>
     <string name="confirm_password">Confirm Password</string>
+    <string name="cook_pocket">Cook Pocket</string>
     <string name="daftar">Daftar</string>
     <string name="desc_login">Login Akun Kamu Yuk!</string>
     <string name="desc_title_login">Belum Punya Akun?</string>
     <string name="deskripsi_alamat">Alamat Lengkap</string>
+    <string name="deskripsi_makanan_yang_menarik_dan_informatif">Deskripsi makanan yang menarik dan informatif.</string>
     <string name="email">Email</string>
     <string name="email_saat_ini">Email Saat ini</string>
     <string name="favorit">Favorit</string>
@@ -74,6 +76,8 @@
     <string name="pemisah">|</string>
     <string name="pesan">Pesan</string>
     <string name="pesan_antar">Pesan Antar</string>
+    <string name="pesanan_sedang_di_proses">Pesanan sedang di Proses</string>
+    <string name="pesanan_selesai">Pesanan Selesai</string>
     <string name="plus">Plus\n</string>
     <string name="produk">Produk</string>
     <string name="provinsi">Provinsi</string>
@@ -102,6 +106,7 @@
     <string name="username">Username</string>
     <string name="usernameHome">Username</string>
     <string name="username_account">Username</string>
+    <string name="versi">Versi 1.0</string>
     <style name="Base.Theme.CookPocket" parent="Theme.Material3.DayNight.NoActionBar">
         
         

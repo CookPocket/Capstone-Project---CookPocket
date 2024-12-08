@@ -24,7 +24,7 @@ class OrderAmbilSendiriActivity : AppCompatActivity() {
         displayStoryDetails(storyName, storyDescription, storyPhoto)
 
         // Tombol untuk kembali ke halaman sebelumnya
-        binding.ivBack.setOnClickListener {
+        binding.ivBackAmbilSendiri.setOnClickListener {
             val intent = Intent(this, DetailSearchActivity::class.java)
             intent.putExtra("STORY_NAME", storyName)
             intent.putExtra("STORY_DESCRIPTION", storyDescription)

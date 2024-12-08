@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
@@ -41,19 +42,27 @@ class AccountFragment : Fragment() {
     }
 
     private fun showLogoutConfirmationDialog() {
-        AlertDialog.Builder(requireContext())
-            .setTitle("Konfirmasi Logout")
-            .setMessage("Apakah Anda yakin ingin keluar?")
-            .setPositiveButton("Ya") { dialog, _ ->
-                dialog.dismiss()
-                logout()
-            }
-            .setNegativeButton("Tidak") { dialog, _ ->
-                dialog.dismiss()
-            }
+        val customView = LayoutInflater.from(requireContext()).inflate(R.layout.dialog_logout, null)
+
+        val dialog = AlertDialog.Builder(requireContext())
+            .setView(customView)
             .create()
-            .show()
+
+        customView.findViewById<TextView>(R.id.tvTitle).text = "Konfirmasi Logout"
+        customView.findViewById<TextView>(R.id.tvMessage).text = "Apakah Anda yakin ingin keluar?"
+
+        customView.findViewById<Button>(R.id.btnYes).setOnClickListener {
+            dialog.dismiss()
+            logout()
+        }
+
+        customView.findViewById<Button>(R.id.btnNo).setOnClickListener {
+            dialog.dismiss()
+        }
+
+        dialog.show()
     }
+
 
     private fun logout() {
         lifecycleScope.launch {

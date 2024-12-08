@@ -39,10 +39,7 @@ public final class ActivityOrderAmbilSendiriBinding implements ViewBinding {
   public final ImageView imgFood;
 
   @NonNull
-  public final ImageView ivBack;
-
-  @NonNull
-  public final LinearLayout linearLayout3;
+  public final ImageView ivBackAmbilSendiri;
 
   @NonNull
   public final LinearLayout llAlamatPengiriman;
@@ -84,9 +81,6 @@ public final class ActivityOrderAmbilSendiriBinding implements ViewBinding {
   public final TextView tvNamaMakanan;
 
   @NonNull
-  public final TextView tvNoTelpUser;
-
-  @NonNull
   public final TextView tvOrderAntar;
 
   @NonNull
@@ -101,30 +95,25 @@ public final class ActivityOrderAmbilSendiriBinding implements ViewBinding {
   @NonNull
   public final TextView tvTotalSemua;
 
-  @NonNull
-  public final TextView tvUsernameUser;
-
   private ActivityOrderAmbilSendiriBinding(@NonNull ConstraintLayout rootView,
       @NonNull ImageView btnMinus, @NonNull ImageView btnPlus, @NonNull CardView cvBtnOrderAntar,
-      @NonNull CardView cvTambahKurang, @NonNull ImageView imgFood, @NonNull ImageView ivBack,
-      @NonNull LinearLayout linearLayout3, @NonNull LinearLayout llAlamatPengiriman,
+      @NonNull CardView cvTambahKurang, @NonNull ImageView imgFood,
+      @NonNull ImageView ivBackAmbilSendiri, @NonNull LinearLayout llAlamatPengiriman,
       @NonNull LinearLayout llBtnOrderAntar, @NonNull LinearLayout llDeskripsiAlamat,
       @NonNull LinearLayout llTokoMitra, @NonNull LinearLayout llTotalPesanan,
       @NonNull LinearLayout llTotalSemua, @NonNull ConstraintLayout main,
       @NonNull ProgressBar progresbarAmbilSendiri, @NonNull TextView totalPesanan,
       @NonNull TextView totalSemua, @NonNull TextView tvAlamatUser,
       @NonNull TextView tvHargaMakanan, @NonNull TextView tvNamaMakanan,
-      @NonNull TextView tvNoTelpUser, @NonNull TextView tvOrderAntar, @NonNull TextView tvQuantity,
-      @NonNull TextView tvTokoMitra, @NonNull TextView tvTotalPesanan,
-      @NonNull TextView tvTotalSemua, @NonNull TextView tvUsernameUser) {
+      @NonNull TextView tvOrderAntar, @NonNull TextView tvQuantity, @NonNull TextView tvTokoMitra,
+      @NonNull TextView tvTotalPesanan, @NonNull TextView tvTotalSemua) {
     this.rootView = rootView;
     this.btnMinus = btnMinus;
     this.btnPlus = btnPlus;
     this.cvBtnOrderAntar = cvBtnOrderAntar;
     this.cvTambahKurang = cvTambahKurang;
     this.imgFood = imgFood;
-    this.ivBack = ivBack;
-    this.linearLayout3 = linearLayout3;
+    this.ivBackAmbilSendiri = ivBackAmbilSendiri;
     this.llAlamatPengiriman = llAlamatPengiriman;
     this.llBtnOrderAntar = llBtnOrderAntar;
     this.llDeskripsiAlamat = llDeskripsiAlamat;
@@ -138,13 +127,11 @@ public final class ActivityOrderAmbilSendiriBinding implements ViewBinding {
     this.tvAlamatUser = tvAlamatUser;
     this.tvHargaMakanan = tvHargaMakanan;
     this.tvNamaMakanan = tvNamaMakanan;
-    this.tvNoTelpUser = tvNoTelpUser;
     this.tvOrderAntar = tvOrderAntar;
     this.tvQuantity = tvQuantity;
     this.tvTokoMitra = tvTokoMitra;
     this.tvTotalPesanan = tvTotalPesanan;
     this.tvTotalSemua = tvTotalSemua;
-    this.tvUsernameUser = tvUsernameUser;
   }
 
   @Override
@@ -204,15 +191,9 @@ public final class ActivityOrderAmbilSendiriBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.iv_back;
-      ImageView ivBack = ViewBindings.findChildViewById(rootView, id);
-      if (ivBack == null) {
-        break missingId;
-      }
-
-      id = R.id.linearLayout3;
-      LinearLayout linearLayout3 = ViewBindings.findChildViewById(rootView, id);
-      if (linearLayout3 == null) {
+      id = R.id.iv_back_ambil_sendiri;
+      ImageView ivBackAmbilSendiri = ViewBindings.findChildViewById(rootView, id);
+      if (ivBackAmbilSendiri == null) {
         break missingId;
       }
 
@@ -290,12 +271,6 @@ public final class ActivityOrderAmbilSendiriBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tv_no_telp_user;
-      TextView tvNoTelpUser = ViewBindings.findChildViewById(rootView, id);
-      if (tvNoTelpUser == null) {
-        break missingId;
-      }
-
       id = R.id.tv_order_antar;
       TextView tvOrderAntar = ViewBindings.findChildViewById(rootView, id);
       if (tvOrderAntar == null) {
@@ -326,18 +301,11 @@ public final class ActivityOrderAmbilSendiriBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tv_username_user;
-      TextView tvUsernameUser = ViewBindings.findChildViewById(rootView, id);
-      if (tvUsernameUser == null) {
-        break missingId;
-      }
-
       return new ActivityOrderAmbilSendiriBinding((ConstraintLayout) rootView, btnMinus, btnPlus,
-          cvBtnOrderAntar, cvTambahKurang, imgFood, ivBack, linearLayout3, llAlamatPengiriman,
+          cvBtnOrderAntar, cvTambahKurang, imgFood, ivBackAmbilSendiri, llAlamatPengiriman,
           llBtnOrderAntar, llDeskripsiAlamat, llTokoMitra, llTotalPesanan, llTotalSemua, main,
           progresbarAmbilSendiri, totalPesanan, totalSemua, tvAlamatUser, tvHargaMakanan,
-          tvNamaMakanan, tvNoTelpUser, tvOrderAntar, tvQuantity, tvTokoMitra, tvTotalPesanan,
-          tvTotalSemua, tvUsernameUser);
+          tvNamaMakanan, tvOrderAntar, tvQuantity, tvTokoMitra, tvTotalPesanan, tvTotalSemua);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

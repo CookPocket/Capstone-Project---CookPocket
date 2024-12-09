@@ -1,8 +1,5 @@
-<<<<<<<< HEAD:Mobile Development/CookPocket/app/src/main/java/com/capstone/cookpocket/view/ui/MainActivity.kt
-package com.capstone.cookpocket.view.ui
-========
 package com.capstone.cookpocket.view.ui.main
->>>>>>>> main:Mobile Development/CookPocket/app/src/main/java/com/capstone/cookpocket/view/ui/main/MainActivity.kt
+
 
 import android.content.Intent
 import android.os.Bundle
@@ -28,19 +25,14 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment_activity_main)
         val appBarConfiguration = AppBarConfiguration(
             setOf(
-<<<<<<<< HEAD:Mobile Development/CookPocket/app/src/main/java/com/capstone/cookpocket/view/ui/MainActivity.kt
-                R.id.navigation_home, R.id.navigation_search, R.id.navigation_list, R.id.navigation_account
-========
                 R.id.navigation_home,
                 R.id.navigation_search,
                 R.id. navigation_Favorite,
                 R.id.navigation_account
->>>>>>>> main:Mobile Development/CookPocket/app/src/main/java/com/capstone/cookpocket/view/ui/main/MainActivity.kt
             )
         )
-
         // Menghubungkan BottomNavigationView dengan NavController
         navView.setupWithNavController(navController)
 
-    }
+        }
 }

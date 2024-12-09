@@ -234,6 +234,4 @@
         app:layout_constraintTop_toBottomOf="@id/topFavoriteLabel"
         tools:listitem="@layout/activity_adapter" />
 
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

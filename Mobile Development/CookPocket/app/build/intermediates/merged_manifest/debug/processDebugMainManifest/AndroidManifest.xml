@@ -33,9 +33,6 @@
             android:name="com.capstone.cookpocket.view.ui.adapter.AdapterAddProductActivity"
             android:exported="false" />
         <activity
-            android:name="com.capstone.cookpocket.view.ui.adapter.AdapterStoreActivity"
-            android:exported="false" />
-        <activity
             android:name="com.capstone.cookpocket.view.ui.main.SplashActivity"
             android:exported="true" >
             <intent-filter>

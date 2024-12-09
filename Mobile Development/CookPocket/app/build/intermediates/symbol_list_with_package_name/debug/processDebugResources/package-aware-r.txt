@@ -3063,6 +3063,7 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable ayam_goren
 drawable background_card
 drawable background_login_signup
 drawable background_search
@@ -3205,6 +3206,7 @@ drawable notify_panel_notification_icon_bg
 drawable place_holder_foto_profil
 drawable placeholder_foto_makanan
 drawable pop_up
+drawable rendang
 drawable rounded_image_background
 drawable test_level_drawable
 drawable tooltip_frame_dark

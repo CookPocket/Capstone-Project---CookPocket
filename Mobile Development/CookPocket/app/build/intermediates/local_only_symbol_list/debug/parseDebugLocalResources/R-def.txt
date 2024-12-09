@@ -14,6 +14,7 @@ color orange_soft_nav
 color white
 dimen activity_horizontal_margin
 dimen activity_vertical_margin
+drawable ayam_goren
 drawable background_card
 drawable background_login_signup
 drawable background_search
@@ -52,6 +53,7 @@ drawable logo_cook_pocket
 drawable place_holder_foto_profil
 drawable placeholder_foto_makanan
 drawable pop_up
+drawable rendang
 drawable rounded_image_background
 id arrow_alamat
 id arrow_ganti_email

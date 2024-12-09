@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
-    <color name="grey">#ADADAD</color>
-    <color name="grey_soft">#D3D1D1</color>
-    <color name="grey_soft_smooth">#E9E7E7</color>
+    <color name="grey">#c0bfbc</color>
+    <color name="grey_soft">#deddda</color>
+    <color name="grey_soft_smooth">#f6f5f4</color>
     <color name="ic_launcher_background">#E78819</color>
-    <color name="orange">#ff9500</color>
-    <color name="orange_soft">#ffb35a</color>
-    <color name="orange_soft_nav">#FFE1B8</color>
+    <color name="orange">#ff891f</color>
+    <color name="orange_soft">#FF9D3B</color>
+    <color name="orange_soft_nav">#FFE3C8</color>
     <color name="white">#FFFFFFFF</color>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
@@ -20,8 +20,10 @@
     <string name="alamat_pengiriman">Alamat Pengiriman</string>
     <string name="alamat_rumah">Alamat Rumah</string>
     <string name="ambil_sendiri">Ambil Sendiri</string>
+    <string name="apakah_anda_yakin_ingin_keluar">Apakah Anda yakin ingin keluar?</string>
     <string name="app_name">Cook Pocket</string>
     <string name="ayam_goreng">Ayam goreng</string>
+    <string name="baca_resep">Baca Resep</string>
     <string name="back">Back</string>
     <string name="bahan_bahan">Bahan - Bahan</string>
     <string name="btn_login">Login</string>
@@ -36,6 +38,7 @@
     <string name="desc_login">Login Akun Kamu Yuk!</string>
     <string name="desc_title_login">Belum Punya Akun?</string>
     <string name="deskripsi_alamat">Alamat Lengkap</string>
+    <string name="deskripsi_makanan">Deskripsi makanan</string>
     <string name="deskripsi_makanan_yang_menarik_dan_informatif">Deskripsi makanan yang menarik dan informatif.</string>
     <string name="email">Email</string>
     <string name="email_saat_ini">Email Saat ini</string>
@@ -62,6 +65,7 @@
     <string name="kecamatan">Kecamatan</string>
     <string name="kelurahan">Kelurahan</string>
     <string name="kolom_pencarian_untuk_menu">Kolom pencarian untuk menu</string>
+    <string name="konfirmasi_logout">Konfirmasi Logout</string>
     <string name="konfirmasi_pesanan">Konfirmasi Pesanan</string>
     <string name="langkah_pembuatan">Langkah Pembuatan</string>
     <string name="makanan_berat">Makanan Berat</string>
@@ -89,11 +93,15 @@
     <string name="plus">Plus\n</string>
     <string name="produk">Produk</string>
     <string name="provinsi">Provinsi</string>
+    <string name="resep_siap_pesan">Resep Siap Pesan</string>
     <string name="reset">Hapus</string>
     <string name="rp_0">Rp. 0</string>
     <string name="simpan">Simpan</string>
     <string name="submit">Pesan</string>
     <string name="success_save_address">Alamat berhasil diperbarui</string>
+    <string name="tambah">Tambah</string>
+    <string name="tambah_produk">Tambah Produk</string>
+    <string name="tidak">Tidak</string>
     <string name="title_account">Account</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="title_category">Kategori</string>
@@ -116,6 +124,7 @@
     <string name="usernameHome">Username</string>
     <string name="username_account">Username</string>
     <string name="versi">Versi 1.0</string>
+    <string name="ya">Ya</string>
     <string name="yes">Ya</string>
     <style name="Base.Theme.CookPocket" parent="Theme.Material3.DayNight.NoActionBar">
         

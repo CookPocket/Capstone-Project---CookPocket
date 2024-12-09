@@ -45,7 +45,7 @@ class SplashActivity : AppCompatActivity() {
         // Navigasi setelah delay
         Handler(Looper.getMainLooper()).postDelayed({
             navigateToHome()
-        }, 2000) // Delay 2 detik
+        }, 3000) // Delay 2 detik
     }
 
     private fun navigateToHome() {

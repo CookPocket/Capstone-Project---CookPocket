@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".view.ui.account.change.ChangeAddresActivity">
 
     <!-- Tombol Back -->
@@ -14,6 +15,9 @@
         android:layout_height="24dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="40dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
         android:contentDescription="@string/back"
         android:src="@drawable/ic_arrow_back_ios_new_24"
         app:layout_constraintStart_toStartOf="parent"

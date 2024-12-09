@@ -17,6 +17,7 @@ import com.capstone.cookpocket.databinding.FragmentHomeBinding
 import com.capstone.cookpocket.view.ui.adapter.AdapterActivity
 import com.capstone.cookpocket.view.ui.home.cart.CartActivity
 import com.capstone.cookpocket.view.ui.home.notif.NotificationActivity
+import com.capstone.cookpocket.view.ui.search.SearchFragment
 import com.capstone.cookpocket.view.ui.search.detail_search.DetailSearchActivity
 import com.capstone.cookpocket.view.uiauth.Login.LoginActivity
 import kotlinx.coroutines.flow.firstOrNull
@@ -77,6 +78,14 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
             val intent = Intent(requireContext(), NotificationActivity::class.java)
             startActivity(intent)
         }
+        binding.searchBarHome.setOnClickListener {
+            val searchFragment = SearchFragment()
+            requireActivity().supportFragmentManager.beginTransaction()
+                .replace(R.id.searchView, searchFragment) // Ganti fragment_container dengan ID container di layout utama
+                .addToBackStack(null) // Menambahkan ke backstack untuk navigasi kembali
+                .commit()
+        }
+
     }
 
     private fun checkTokenAndNavigate() {

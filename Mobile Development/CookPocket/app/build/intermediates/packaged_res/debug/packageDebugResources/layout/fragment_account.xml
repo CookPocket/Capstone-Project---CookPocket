@@ -16,8 +16,12 @@
             android:id="@+id/btn_logout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="55dp"
+            android:layout_marginTop="50dp"
             android:layout_marginEnd="20dp"
+            android:padding="6dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
             android:src="@drawable/baseline_logout_24"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -63,14 +67,25 @@
             app:layout_constraintTop_toBottomOf="@+id/ll_btn_shop"
             tools:ignore="MissingConstraints">
 
-
-            <ImageView
-                android:id="@+id/img_account"
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:layout_gravity="center"
-                android:layout_marginStart="80dp"
-                android:src="@drawable/place_holder_foto_profil" />
+                android:layout_marginStart="95dp"
+                android:background="@drawable/place_holder_foto_profil">
+
+
+                <ImageView
+                    android:id="@+id/img_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/baseline_photo_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -154,6 +169,9 @@
                     android:layout_gravity="end"
                     android:layout_marginTop="11dp"
                     android:layout_marginEnd="13dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
                     android:src="@drawable/baseline_keyboard_arrow_right_24" />
 
             </androidx.cardview.widget.CardView>
@@ -182,6 +200,9 @@
                     android:layout_gravity="end"
                     android:layout_marginTop="11dp"
                     android:layout_marginEnd="13dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
                     android:src="@drawable/baseline_keyboard_arrow_right_24" />
 
             </androidx.cardview.widget.CardView>
@@ -210,6 +231,9 @@
                     android:layout_gravity="end"
                     android:layout_marginTop="11dp"
                     android:layout_marginEnd="13dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
                     android:src="@drawable/baseline_keyboard_arrow_right_24" />
 
             </androidx.cardview.widget.CardView>
@@ -236,6 +260,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="end"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
                     android:layout_marginTop="11dp"
                     android:layout_marginEnd="13dp"
                     android:src="@drawable/baseline_keyboard_arrow_right_24" />
@@ -266,6 +293,9 @@
                     android:layout_gravity="end"
                     android:layout_marginTop="11dp"
                     android:layout_marginEnd="13dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
                     android:src="@drawable/baseline_keyboard_arrow_right_24" />
 
             </androidx.cardview.widget.CardView>

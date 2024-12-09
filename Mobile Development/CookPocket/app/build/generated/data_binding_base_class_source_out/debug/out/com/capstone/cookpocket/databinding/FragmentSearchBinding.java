@@ -4,7 +4,9 @@ package com.capstone.cookpocket.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.SearchView;
@@ -22,21 +24,39 @@ public final class FragmentSearchBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final ImageView backgroundList;
+
+  @NonNull
   public final ProgressBar progresbarSearch;
 
   @NonNull
-  public final RecyclerView rvSearch;
+  public final RecyclerView rvSearchBacaResep;
+
+  @NonNull
+  public final RecyclerView rvSearchSiapPesan;
 
   @NonNull
   public final SearchView searchView;
 
+  @NonNull
+  public final TextView tvHeaderBacaResep;
+
+  @NonNull
+  public final TextView tvHeaderSiapPesan;
+
   private FragmentSearchBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ProgressBar progresbarSearch, @NonNull RecyclerView rvSearch,
-      @NonNull SearchView searchView) {
+      @NonNull ImageView backgroundList, @NonNull ProgressBar progresbarSearch,
+      @NonNull RecyclerView rvSearchBacaResep, @NonNull RecyclerView rvSearchSiapPesan,
+      @NonNull SearchView searchView, @NonNull TextView tvHeaderBacaResep,
+      @NonNull TextView tvHeaderSiapPesan) {
     this.rootView = rootView;
+    this.backgroundList = backgroundList;
     this.progresbarSearch = progresbarSearch;
-    this.rvSearch = rvSearch;
+    this.rvSearchBacaResep = rvSearchBacaResep;
+    this.rvSearchSiapPesan = rvSearchSiapPesan;
     this.searchView = searchView;
+    this.tvHeaderBacaResep = tvHeaderBacaResep;
+    this.tvHeaderSiapPesan = tvHeaderSiapPesan;
   }
 
   @Override
@@ -66,15 +86,27 @@ public final class FragmentSearchBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.background_list;
+      ImageView backgroundList = ViewBindings.findChildViewById(rootView, id);
+      if (backgroundList == null) {
+        break missingId;
+      }
+
       id = R.id.progresbar_search;
       ProgressBar progresbarSearch = ViewBindings.findChildViewById(rootView, id);
       if (progresbarSearch == null) {
         break missingId;
       }
 
-      id = R.id.rv_search;
-      RecyclerView rvSearch = ViewBindings.findChildViewById(rootView, id);
-      if (rvSearch == null) {
+      id = R.id.rv_search_baca_resep;
+      RecyclerView rvSearchBacaResep = ViewBindings.findChildViewById(rootView, id);
+      if (rvSearchBacaResep == null) {
+        break missingId;
+      }
+
+      id = R.id.rv_search_siap_pesan;
+      RecyclerView rvSearchSiapPesan = ViewBindings.findChildViewById(rootView, id);
+      if (rvSearchSiapPesan == null) {
         break missingId;
       }
 
@@ -84,8 +116,21 @@ public final class FragmentSearchBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentSearchBinding((ConstraintLayout) rootView, progresbarSearch, rvSearch,
-          searchView);
+      id = R.id.tv_header_baca_resep;
+      TextView tvHeaderBacaResep = ViewBindings.findChildViewById(rootView, id);
+      if (tvHeaderBacaResep == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_header_siap_pesan;
+      TextView tvHeaderSiapPesan = ViewBindings.findChildViewById(rootView, id);
+      if (tvHeaderSiapPesan == null) {
+        break missingId;
+      }
+
+      return new FragmentSearchBinding((ConstraintLayout) rootView, backgroundList,
+          progresbarSearch, rvSearchBacaResep, rvSearchSiapPesan, searchView, tvHeaderBacaResep,
+          tvHeaderSiapPesan);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

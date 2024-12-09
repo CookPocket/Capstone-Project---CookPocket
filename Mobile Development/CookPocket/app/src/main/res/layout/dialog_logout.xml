@@ -10,7 +10,7 @@
         android:id="@+id/tvTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Konfirmasi Logout"
+        android:text="@string/konfirmasi_logout"
         android:textAppearance="?attr/textAppearanceHeadline6"
         android:gravity="center"
         android:paddingBottom="8dp" />
@@ -19,7 +19,7 @@
         android:id="@+id/tvMessage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Apakah Anda yakin ingin keluar?"
+        android:text="@string/apakah_anda_yakin_ingin_keluar"
         android:gravity="center"
         android:paddingBottom="16dp" />
 
@@ -33,13 +33,13 @@
             android:id="@+id/btnNo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tidak" />
+            android:text="@string/tidak" />
 
         <Button
             android:id="@+id/btnYes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ya"
+            android:text="@string/ya"
             android:layout_marginStart="8dp" />
     </LinearLayout>
 </LinearLayout>

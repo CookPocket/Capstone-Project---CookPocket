@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.capstone.cookpocket.R
 import com.capstone.cookpocket.databinding.FragmentSearchBinding
@@ -15,17 +16,13 @@ import com.capstone.cookpocket.view.ui.adapter.AdapterActivity
 import com.capstone.cookpocket.view.ui.search.detail_search.DetailSearchActivity
 import kotlinx.coroutines.flow.firstOrNull
 import kotlinx.coroutines.launch
-
-class SearchFragment : Fragment() {
+class SearchFragment : Fragment(R.layout.fragment_search) {
 
     private var _binding: FragmentSearchBinding? = null
     private val binding get() = _binding!!
 
     private val searchViewModel: SearchViewModel by lazy {
-        ViewModelProvider(
-            this,
-            SearchViewModelFactory(requireContext())
-        ).get(SearchViewModel::class.java)
+        ViewModelProvider(this, SearchViewModelFactory(requireContext())).get(SearchViewModel::class.java)
     }
 
     private val adapter by lazy {
@@ -53,7 +50,7 @@ class SearchFragment : Fragment() {
         // Konfigurasi RecyclerView
         setupRecyclerView()
 
-        // Observasi data dari ViewModel dan tampilkan di adapter
+        // Observasi data dari ViewModel
         observeViewModel()
 
         // Ambil data cerita dari ViewModel
@@ -61,19 +58,26 @@ class SearchFragment : Fragment() {
     }
 
     private fun setupRecyclerView() {
-        binding.rvSearch.apply {
+        binding.rvSearchSiapPesan.apply {
+            layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
+            adapter = this@SearchFragment.adapter
+
+        }
+        binding.rvSearchBacaResep.apply {
             layoutManager = LinearLayoutManager(requireContext())
             adapter = this@SearchFragment.adapter
         }
     }
 
     private fun observeViewModel() {
-//        searchViewModel.stories.observe(viewLifecycleOwner) { stories ->
-//            stories?.let {
-//                adapter.setStories(it)
-//            }
-//        }
+        // Observasi data dari ViewModel
+        searchViewModel.stories.observe(viewLifecycleOwner) { stories ->
+            stories?.let {
+                adapter.submitList(it)
+            }
+        }
 
+        // Menangani error dari ViewModel
         searchViewModel.errorMessage.observe(viewLifecycleOwner) { errorMessage ->
             errorMessage?.let { showToast(it) }
         }
@@ -85,7 +89,6 @@ class SearchFragment : Fragment() {
 
     override fun onDestroyView() {
         super.onDestroyView()
-        _binding = null
-    }
+        _binding = null  // Menghindari memory leak dengan null binding
+        }
 }
-

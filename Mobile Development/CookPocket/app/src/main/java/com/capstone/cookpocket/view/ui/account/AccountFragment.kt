@@ -1,6 +1,8 @@
 package com.capstone.cookpocket.view.ui.account
 
 import android.content.Intent
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -21,6 +23,7 @@ import com.capstone.cookpocket.view.ui.account.change.ChangeEmailActivity
 import com.capstone.cookpocket.view.ui.account.change.ChangeNoTelpActivity
 import com.capstone.cookpocket.view.ui.account.change.ChangePasswordActivity
 import com.capstone.cookpocket.view.ui.account.change.ChangeUsernameActivity
+import com.capstone.cookpocket.view.ui.store.StoreActivity
 import com.capstone.cookpocket.view.uiauth.Login.LoginActivity
 import kotlinx.coroutines.launch
 
@@ -75,6 +78,10 @@ class AccountFragment : Fragment() {
             val intent = Intent(requireContext(), ChangeAddresActivity::class.java)
             startActivity(intent)
         }
+        binding.llBtnShop.setOnClickListener {
+            val intent = Intent(requireContext(), StoreActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun showLogoutConfirmationDialog() {
@@ -83,6 +90,8 @@ class AccountFragment : Fragment() {
         val dialog = AlertDialog.Builder(requireContext())
             .setView(customView)
             .create()
+
+        dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
 
         customView.findViewById<TextView>(R.id.tvTitle).text = "Konfirmasi Logout"
         customView.findViewById<TextView>(R.id.tvMessage).text = "Apakah Anda yakin ingin keluar?"

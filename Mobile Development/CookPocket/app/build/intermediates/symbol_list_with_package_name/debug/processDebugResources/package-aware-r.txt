@@ -3070,6 +3070,7 @@ drawable background_search_home
 drawable background_splash
 drawable background_toko_saya
 drawable baseline_add_24
+drawable baseline_add_shopping_cart_24
 drawable baseline_add_white_24
 drawable baseline_favorite_24
 drawable baseline_favorite_border_24
@@ -3077,8 +3078,8 @@ drawable baseline_favorite_nav_24
 drawable baseline_keyboard_arrow_right_24
 drawable baseline_location_on_24
 drawable baseline_logout_24
-drawable baseline_logout_35
 drawable baseline_mines
+drawable baseline_photo_24
 drawable baseline_store_24
 drawable baseline_store_white_24
 drawable btn_add
@@ -3305,6 +3306,7 @@ id autoCompleteToEnd
 id autoCompleteToStart
 id axisRelative
 id background
+id background_list
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3323,8 +3325,10 @@ id btnYes
 id btn_login
 id btn_logout
 id btn_minus
+id btn_minus_add_product
 id btn_pesanan_selesai
 id btn_plus
+id btn_plus_add_product
 id btn_signup
 id btn_simpan_email
 id btn_simpan_notelp
@@ -3332,6 +3336,7 @@ id btn_simpan_password
 id btn_simpan_username
 id button
 id buttonPanel
+id button_add_product
 id button_pesan
 id button_pesan_store
 id cache_measures
@@ -3339,6 +3344,7 @@ id callMeasure
 id cancel_action
 id cancel_button
 id cardViewRecipe
+id cardview_store
 id carryVelocity
 id center
 id centerCrop
@@ -3470,6 +3476,7 @@ id escape
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id fab_add_product
 id fade
 id favoriteRecyclerView
 id fill
@@ -3485,7 +3492,9 @@ id fixed
 id flip
 id floating
 id foodDescription
+id foodDescription_add_product
 id foodName
+id foodName_add_product
 id forever
 id fragment_container_view_tag
 id frost
@@ -3500,6 +3509,7 @@ id group_divider
 id grouping
 id groups
 id header
+id header_add_store
 id header_change_addres
 id header_change_email
 id header_change_notelp
@@ -3526,6 +3536,7 @@ id imageView2
 id imageView_cart
 id img
 id img_account
+id img_add_product
 id img_food
 id immediateStop
 id included
@@ -3535,6 +3546,7 @@ id invisible
 id inward
 id italic
 id item_touch_helper_previous_elevation
+id iv_back_add_product
 id iv_back_addres
 id iv_back_ambil_sendiri
 id iv_back_antar
@@ -3739,7 +3751,8 @@ id rounded
 id row_index_key
 id rtl
 id rv_favorite
-id rv_search
+id rv_search_baca_resep
+id rv_search_siap_pesan
 id rv_store
 id save_non_transition_alpha
 id save_overlay_view
@@ -3752,6 +3765,7 @@ id scrollIndicatorUp
 id scrollView
 id scrollable
 id searchBar_home
+id searchBar_store
 id searchView
 id search_badge
 id search_bar
@@ -3877,6 +3891,8 @@ id tv_gmail_account
 id tv_harga_detail_search
 id tv_harga_makanan
 id tv_harga_store
+id tv_header_baca_resep
+id tv_header_siap_pesan
 id tv_judul
 id tv_judul_store
 id tv_nama_makanan
@@ -3884,6 +3900,7 @@ id tv_no_telp_user
 id tv_notfikasi
 id tv_order_antar
 id tv_quantity
+id tv_quantity_add_product
 id tv_title_login
 id tv_toko_mitra
 id tv_total_pesanan
@@ -4031,6 +4048,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_adapter
+layout activity_adapter_add_product
 layout activity_adapter_cart
 layout activity_adapter_notif
 layout activity_add_product
@@ -4187,9 +4205,11 @@ string alamat_pengiriman
 string alamat_rumah
 string ambil_sendiri
 string androidx_startup
+string apakah_anda_yakin_ingin_keluar
 string app_name
 string appbar_scrolling_view_behavior
 string ayam_goreng
+string baca_resep
 string back
 string bahan_bahan
 string bottom_sheet_behavior
@@ -4221,6 +4241,7 @@ string daftar
 string desc_login
 string desc_title_login
 string deskripsi_alamat
+string deskripsi_makanan
 string deskripsi_makanan_yang_menarik_dan_informatif
 string dest_title
 string email
@@ -4256,6 +4277,7 @@ string kata_sandi_lama
 string kecamatan
 string kelurahan
 string kolom_pencarian_untuk_menu
+string konfirmasi_logout
 string konfirmasi_pesanan
 string langkah_pembuatan
 string m3_exceed_max_badge_text_suffix
@@ -4390,6 +4412,7 @@ string pesanan_selesai
 string plus
 string produk
 string provinsi
+string resep_siap_pesan
 string reset
 string rp_0
 string search_menu_title
@@ -4402,6 +4425,9 @@ string simpan
 string status_bar_notification_info_overflow
 string submit
 string success_save_address
+string tambah
+string tambah_produk
+string tidak
 string title_account
 string title_activity_main
 string title_category
@@ -4424,6 +4450,7 @@ string username
 string usernameHome
 string username_account
 string versi
+string ya
 string yes
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light

@@ -2,11 +2,11 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="orange">#ff9500</color>
-    <color name="orange_soft">#ffb35a</color>
-    <color name="orange_soft_nav">#FFE1B8</color>
-    <color name="grey">#ADADAD</color>
-    <color name="grey_soft">#D3D1D1</color>
-    <color name="grey_soft_smooth">#E9E7E7</color>
+    <color name="orange">#ff891f</color>
+    <color name="orange_soft">#FF9D3B</color>
+    <color name="orange_soft_nav">#FFE3C8</color>
+    <color name="grey">#c0bfbc</color>
+    <color name="grey_soft">#deddda</color>
+    <color name="grey_soft_smooth">#f6f5f4</color>
 
 </resources>

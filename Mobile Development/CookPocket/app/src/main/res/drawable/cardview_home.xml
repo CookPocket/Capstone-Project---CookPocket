@@ -3,7 +3,7 @@
     android:shape="rectangle">
 
     <!-- Warna isi -->
-    <solid android:color="#ffb35a" />
+    <solid android:color="@color/orange_soft" />
 
     <!-- Sudut lengkung -->
     <corners

@@ -33,6 +33,7 @@ class OrderAmbilSendiriActivity : AppCompatActivity() {
         }
         binding.cvBtnOrderAntar.setOnClickListener{
             onBackPressed()
+            overridePendingTransition(0, 0)
         }
     }
 

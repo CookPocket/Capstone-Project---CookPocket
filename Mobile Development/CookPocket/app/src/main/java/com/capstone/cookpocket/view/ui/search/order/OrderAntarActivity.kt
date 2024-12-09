@@ -37,6 +37,7 @@ class OrderAntarActivity : AppCompatActivity() {
             intent.putExtra("STORY_DESCRIPTION", storyDescription)
             intent.putExtra("STORY_PHOTO", storyPhoto)
             startActivity(intent)
+            overridePendingTransition(0, 0)
         }
     }
 

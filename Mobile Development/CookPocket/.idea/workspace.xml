@@ -164,115 +164,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34fb0742-3df1-457a-ad90-d857d20dc037" name="Changes" comment="penambahan add product dan modif search">
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_6_2024_6_41_PM_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_6_2024_6_41_PM__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/capstone/cookpocket/databinding/ActivityAdapterAddProductBinding.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/capstone/cookpocket/databinding/ActivityChangeUsernameBinding.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/capstone/cookpocket/databinding/ActivityStoreBinding.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/capstone/cookpocket/databinding/DialogLogoutBinding.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/data_binding_layout_info_type_merge/debug/mergeDebugResources/out/activity_change_no_telp-layout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/data_binding_layout_info_type_merge/debug/mergeDebugResources/out/activity_change_password-layout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/data_binding_layout_info_type_merge/debug/mergeDebugResources/out/activity_detail_product-layout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/data_binding_layout_info_type_package/debug/packageDebugResources/out/activity_change_email-layout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/data_binding_layout_info_type_package/debug/packageDebugResources/out/activity_change_username-layout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/jar_e7092c179e0f9acafb2f862219902f2209706b1bd4f16b590f2f7ace5c56db33_bucket_0/graph.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/jar_e7092c179e0f9acafb2f862219902f2209706b1bd4f16b590f2f7ace5c56db33_bucket_4/graph.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/dexBuilderDebug/out/currentProject/jar_e7092c179e0f9acafb2f862219902f2209706b1bd4f16b590f2f7ace5c56db33_bucket_5/graph.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/2TPMJFuxyY86STGyxZ_kpJmynFg=" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/3ILnw5VqJKPyLhG2hBBm4nFEWt8=" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/6QOtlmCdXSUdXlWMlvGUIQjh5EQ=" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/BuzM1SnfK1aOI3TG588YriTypE8=" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/G1hVFrZ4VkWDiyWJE5cKiKaji44=" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/H9PBv92AOhdCduO2jWtRCk_IE84=" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/JQzNT+pjoqYzp1zdUnWOxDq_IxY=" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/ME7AGsZ1_mkCBT9Zrdi0HUoIGFU=" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/RMy8vY5XITDlet99EdiaYIbRh94=" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/VbDfeI6YJf6EC8ywbrejZlySXQE=" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/Xt3q7Bk9foujJ6RS2mvbYihiP+U=" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/Y9n95q5KUGdtH7BahZJ5B21hxD8=" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/Yfg28pv6Iap7cn3i1ESq9RbTIdU=" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/Zkj40iGYI8+aSUCoM5Kbj1MfWbw=" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/bNvgAkSPQxH1AOusQKrokRrNZJI=" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/eKGdjIHgDkaiJB+uPAHbukQpktk=" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/faFlQfU4WFOF2Rp2fdG3lkcaMzA=" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/gc4qvjrh2nu2cqZ3I6kA7ufLX6s=" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/jWSq8kBo40YbjWpW+Qa3frvyhzE=" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/k3mSG16MJS30Dn0SzZtiNqRKinA=" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/kVJ0J7ohdAkCX5MFtWOyYAYbNY8=" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/lLo0PAHgQ0VNS+RnWIUUoEdXFOM=" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/oLC3g7fcXJ7GTJxzhpQ81ixlXuQ=" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/p5dbPnGGTzMkPTNldU4oMy2nmeY=" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/qR+WlExKLlXyfIyGSzh2peXdfaI=" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/rfl1T8D3oUzB6DWsTHEPXuS5JWs=" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/rnTp_yR97_w7NozvB+OINjO5qWM=" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/sEhblcpCla7owSHXAxX4KTZHOY8=" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/slSSHgVzRfuH9q2yQYLwJ99WAzU=" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/xn72BeeBV+b8TIBbspbc0K_J2_I=" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/yWnkboqQmNX19f5XNauQMfMpfkQ=" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/stripped.dir/layout/fragment_search.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/capstone/cookpocket/databinding/ActivityAdapterAddProductBinding.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/capstone/cookpocket/databinding/ActivityChangeAddresBinding.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/capstone/cookpocket/databinding/ActivityChangeNoTelpBinding.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/capstone/cookpocket/databinding/ActivityChangePasswordBinding.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/capstone/cookpocket/databinding/ActivityChangeUsernameBinding.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/capstone/cookpocket/databinding/ActivityOderFinishBinding.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res/debug/mergeDebugResources/anim_fade_in.xml.flat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res/debug/mergeDebugResources/anim_scale_up.xml.flat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res/debug/mergeDebugResources/drawable_baseline_add_shopping_cart_24.xml.flat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res/debug/mergeDebugResources/drawable_baseline_keyboard_arrow_right_24.xml.flat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res/debug/mergeDebugResources/drawable_baseline_logout_24.xml.flat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res/debug/mergeDebugResources/layout_activity_change_addres.xml.flat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res/debug/mergeDebugResources/layout_activity_change_email.xml.flat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res/debug/mergeDebugResources/layout_activity_change_no_telp.xml.flat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res/debug/mergeDebugResources/layout_activity_change_password.xml.flat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res/debug/mergeDebugResources/layout_activity_detail_product.xml.flat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res/debug/mergeDebugResources/layout_activity_splash.xml.flat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/packaged_res/debug/packageDebugResources/drawable/background_splash.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/packaged_res/debug/packageDebugResources/drawable/baseline_add_shopping_cart_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/packaged_res/debug/packageDebugResources/drawable/baseline_keyboard_arrow_right_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/packaged_res/debug/packageDebugResources/layout/activity_adapter_cart.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/packaged_res/debug/packageDebugResources/layout/activity_adapter_notif.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/packaged_res/debug/packageDebugResources/layout/activity_change_addres.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/packaged_res/debug/packageDebugResources/layout/activity_store.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/com/capstone/cookpocket/Network/UserPreferences$clearUserImageUrl$2.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/com/capstone/cookpocket/Network/UserPreferences$saveUserImageUrl$2.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/com/capstone/cookpocket/Network/UserPreferences$special$$inlined$map$3$2.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/com/capstone/cookpocket/Network/UserPreferences$special$$inlined$map$4$2$1.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/com/capstone/cookpocket/Network/UserPreferences$special$$inlined$map$4.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/com/capstone/cookpocket/view/ui/account/change/ChangeEmailActivity$changeEmail$1.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/com/capstone/cookpocket/view/ui/account/change/ChangeEmailActivity$onCreate$$inlined$addTextChangedListener$default$1.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/com/capstone/cookpocket/view/ui/account/change/ChangeEmailActivity.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/com/capstone/cookpocket/view/ui/account/change/ChangeNoTelpActivity.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/com/capstone/cookpocket/view/ui/account/change/ChangeUsernameActivity.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/db2c52844f9f6e4998eaeeaa0a9d77a5ae5b47a0492aa0295e14ab2fde48f750_3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/db2c52844f9f6e4998eaeeaa0a9d77a5ae5b47a0492aa0295e14ab2fde48f750_6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/db2c52844f9f6e4998eaeeaa0a9d77a5ae5b47a0492aa0295e14ab2fde48f750_7.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.values" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/kotlin/kaptGenerateStubsDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.values" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/capstone/cookpocket/view/ui/account/change/ChangeAddresActivity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/capstone/cookpocket/view/ui/adapter/AdapterAddProductActivity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/capstone/cookpocket/view/ui/adapter/AdapterNotifActivity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/capstone/cookpocket/view/ui/main/SplashActivity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/capstone/cookpocket/view/ui/search/order/OderFinishActivity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/capstone/cookpocket/view/ui/store/AddProductActivity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/incrementalData/debug/com/capstone/cookpocket/view/ui/store/DetailProductActivity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/capstone/cookpocket/view/ui/account/change/ChangeEmailActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/capstone/cookpocket/view/ui/account/change/ChangeNoTelpActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/capstone/cookpocket/view/ui/account/change/ChangeUsernameActivity.kapt_metadata" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/capstone/cookpocket/view/ui/adapter/AdapterCartActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/capstone/cookpocket/view/ui/adapter/AdapterNotifActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/capstone/cookpocket/view/ui/main/SplashActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/capstone/cookpocket/view/ui/search/order/OderFinishActivity.kapt_metadata" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/capstone/cookpocket/view/ui/store/AddProductActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/capstone/cookpocket/view/ui/store/AddProductActivity.kapt_metadata" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/capstone/cookpocket/view/ui/store/DetailProductActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/capstone/cookpocket/view/ui/account/AccountViewModelFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/capstone/cookpocket/view/ui/account/change/ChangeNoTelpActivity$changeNoTelp$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/capstone/cookpocket/view/ui/adapter/AdapterNotifActivity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/capstone/cookpocket/view/ui/main/SplashActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="34fb0742-3df1-457a-ad90-d857d20dc037" name="Changes" comment="penambahan add product dan modif search" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -692,7 +584,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733734782656</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="penambahan add product dan modif search">
+      <option name="closed" value="true" />
+      <created>1733735725667</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1733735725667</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -4,4 +4,10 @@ const router = express.Router();
 
 router.get('/search', productController.getProducts);
 
+router.get('/category/makanan-berat', productController.getProductById);
+
+router.get('/category/makanan-tradisional', productController.getProductById);
+
+router.get('/category/makanan-sehat', productController.getProductById)
+
 module.exports = router;

@@ -58,9 +58,9 @@ const deleteUser = (userId) => {
 
 // Fungsi untuk insert data pengguna baru
 const createUser = async (userData) => {
-    const { name, email, password } = userData;
-    const query = 'INSERT INTO user (name, email, password) VALUES (?, ?, ?)';
-    const [result] = await configDB.execute(query, [name, email, password]);
+    const { name, email, password, noTelp } = userData;
+    const query = 'INSERT INTO user (name, email, password, noTelp) VALUES (?, ?, ?, ?)';
+    const [result] = await configDB.execute(query, [name, email, password, noTelp]);
     return result;
 };
 

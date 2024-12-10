@@ -100,11 +100,16 @@ const deletedUser = async (req, res) => {
 
 const registerUsers = async (req, res) => {
     try {
-        const { name, email, password } = req.body;
+        const { name, email, password, confirmPassword, noTelp } = req.body;
 
         // Validasi input
-        if (!name || !email || !password) {
+        if (!name || !email || !password || !confirmPassword || noTelp) {
             return res.status(422).json({ message: 'Please fill in all fields' });
+        }
+
+        // Validasi apakah password dan confirmPassword cocok
+        if (password !== confirmPassword) {
+            return res.status(422).json({ message: 'Passwords do not match' });
         }
 
         // Cek apakah email sudah terdaftar
@@ -124,6 +129,7 @@ const registerUsers = async (req, res) => {
         return res.status(500).json({ message: error.message });
     }
 };
+
 
 const loginUser = async (req, res) => {
     try {

@@ -1,12 +1,16 @@
 const express = require('express');
 const userController = require('../controller/users');
+const userMiddleware = require('../middleware/users.js');
 const router = express.Router();
 
 //menambahkan data pengguna atau user baru
-router.post('/auth/register', userController.createNewUsers);
+router.post('/auth/register', userController.registerUsers);
 
 //for login user
-router.post('/auth/login', userController.createNewUsers);
+router.post('/auth/login', userController.loginUser);
+
+//authenticate user
+router.get('/auth', userMiddleware.ensureAuthenticated, userController.getCurrentUser);
 
 //Mendapatkan semua pengguna/user
 router.get('/user', userController.getAllUser);

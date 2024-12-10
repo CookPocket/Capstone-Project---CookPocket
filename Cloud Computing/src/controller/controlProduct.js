@@ -3,7 +3,7 @@ const productModel = require('../models/modelProduct');
 const getProducts = async (req, res) => {
     const { search, page = 1, limit = 10 } = req.query; 
     if (!search) {
-        return res.status(400).json({ message: 'Query pencarian tidak boleh kosong!' });
+        return res.status(400).json({ message: 'pencarian tidak boleh kosong!' });
     }
 
     const offset = (page -1) * limit;

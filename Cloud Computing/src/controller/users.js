@@ -240,13 +240,19 @@ const updateUserAccount = async (req, res) => {
     const userId = req.user.id_user;
 
     try {
-        // Validasi input
+        // Validasi input: Pastikan name, email, dan noTelp tidak kosong
         if (!name || !email || !noTelp) {
             return res.status(422).json({ error: true, message: 'Name, email, and phone number are required' });
         }
 
-        // Siapkan data untuk update
-        const updateData = {};
+        // Siapkan data untuk update, pastikan nilai yang kosong tidak dikirimkan sebagai null
+        const updateData = {
+            name: name || null,
+            email: email || null, // Pastikan email tidak null
+            noTelp: noTelp || null,
+            address: address || null,
+            city: city || null
+        };
 
         // Jika password baru ada, hash dan update password
         if (password) {
@@ -254,19 +260,8 @@ const updateUserAccount = async (req, res) => {
             updateData.password = hashedPassword;
         }
 
-        // Jika address atau city ada, update alamat
-        if (address || city) {
-            updateData.address = address;
-            updateData.city = city;
-        }
-
-        // Update name, email, noTelp
-        updateData.name = name;
-        updateData.email = email;
-        updateData.noTelp = noTelp;
-
         // Update user account di database
-        await modelTableUser.updateUserAccount(userId, updateData);
+        const result = await modelTableUser.updateUserAccount(userId, updateData);
 
         return res.status(200).json({
             error: false,

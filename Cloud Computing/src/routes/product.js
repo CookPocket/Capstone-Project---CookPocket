@@ -11,6 +11,6 @@ router.get('/category/makanan-tradisional', productController.getProductById);
 
 router.get('/category/makanan-sehat', productController.getProductById);
 
-router.get('/add-recipe', userMiddleware.ensureAuthenticated, productController.addRecipe);
+router.post('/add-recipe', userMiddleware.ensureAuthenticated, productController.addRecipe);
 
 module.exports = router;

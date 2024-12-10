@@ -20,17 +20,28 @@ const getProductByCategory = async (id_category, offset, limit, sortBy, order) =
 }
 
 const createRecipe = async (recipeData) => {
-    const { name, ingredients, steps, image_url } = recipeData;
+    const { name, ingredient, steps, image_url, price } = recipeData;
 
-    const query = 'INSERT INTO recipes (name, ingredients, steps, image_url) VALUES (?, ?, ?, ?)';
+    // Menyusun query untuk insert data
+    const query = 'INSERT INTO product (name, ingredient, steps, image_url, price) VALUES (?, ?, ?, ?, ?)';
+    
     try {
-        const [result] = await configDB.execute(query, [name, ingredients, steps, image_url]);
+        const [result] = await db.execute(query, [
+            name,
+            ingredient,
+            steps,
+            image_url && image_url.trim() !== "" ? image_url : null, // Set image_url ke null jika kosong
+            price !== undefined ? price : 0,  // Set price ke 0 jika tidak diberikan
+        ]);
+        
+        // Mengembalikan hasil berupa id_product jika berhasil
         return result;
     } catch (error) {
         console.error('Database query failed:', error.message);
         throw new Error('Database query failed');
     }
 };
+
 
 module.exports = {
     searchProducts,

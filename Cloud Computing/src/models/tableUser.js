@@ -79,10 +79,22 @@ const updateUserAccount = async (userId, updateData) => {
         SET name = ?, email = ?, noTelp = ?, password = ?, address = ?, city = ?
         WHERE id_user = ?`;
 
-    const [result] = await configDB.execute(query, [name, email, noTelp, password || null, address || null, city || null, userId]);
+    // Ganti undefined dengan null
+    const params = [
+        name !== undefined ? name : null,
+        email !== undefined ? email : null,
+        noTelp !== undefined ? noTelp : null,
+        password !== undefined ? password : null,
+        address !== undefined ? address : null,
+        city !== undefined ? city : null,
+        userId
+    ];
+
+    const [result] = await configDB.execute(query, params);
 
     return result;
 };
+
 
 module.exports = { 
     getAllUser, 

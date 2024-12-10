@@ -64,24 +64,24 @@ const getProductById = async (req, res) => {
 }
 
 const addRecipe = async (req, res) => {
-    const { name, ingredients, steps, image_url } = req.body;
+    const { name, ingredient, steps, image_url } = req.body;
 
     try {
         // Validasi input
-        if (!name || !ingredients || !steps) {
+        if (!name || !ingredient || !steps) {
             return res.status(422).json({
                 error: true,
-                message: 'name, bahan, dan langkah tidak boleh kosong',
+                message: 'Name, bahan, dan langkah tidak boleh kosong',
             });
         }
 
         // Simpan resep baru ke database
-        const result = await productModel.createRecipe({ name, ingredients, steps, image_url });
+        const result = await productModel.createRecipe({ name, ingredient, steps, image_url });
 
         return res.status(201).json({
             error: false,
             message: 'Resep berhasil ditambahkan',
-            recipeId: result.insertId, // ID resep yang baru saja ditambahkan
+            recipeId: result.insertId, // Menggunakan insertId untuk mendapatkan id_product
         });
     } catch (error) {
         return res.status(500).json({

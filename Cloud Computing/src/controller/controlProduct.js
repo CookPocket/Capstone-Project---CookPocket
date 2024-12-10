@@ -63,8 +63,38 @@ const getProductById = async (req, res) => {
     }
 }
 
+const addRecipe = async (req, res) => {
+    const { name, ingredients, steps, image_url } = req.body;
+
+    try {
+        // Validasi input
+        if (!name || !ingredients || !steps) {
+            return res.status(422).json({
+                error: true,
+                message: 'name, bahan, dan langkah tidak boleh kosong',
+            });
+        }
+
+        // Simpan resep baru ke database
+        const result = await productModel.createRecipe({ name, ingredients, steps, image_url });
+
+        return res.status(201).json({
+            error: false,
+            message: 'Resep berhasil ditambahkan',
+            recipeId: result.insertId, // ID resep yang baru saja ditambahkan
+        });
+    } catch (error) {
+        return res.status(500).json({
+            error: true,
+            message: 'Gagal menambahkan resep',
+            serverMessage: error.message,
+        });
+    }
+};
+
 module.exports = {
     getProducts,
-    getProductById
+    getProductById,
+    addRecipe
 }
 

@@ -99,51 +99,83 @@ const deletedUser = async (req, res) => {
 }
 
 const registerUsers = async (req, res) => {
-    try {
-        const { name, email, password, noTelp } = req.body;
+    const { name, email, password, noTelp } = req.body;
 
+    try {
         // Validasi input
         if (!name || !email || !password || !noTelp) {
-            return res.status(422).json({ message: 'Please fill in all fields' });
+            return res.status(422).json({
+                status: 'Failed',
+                message: 'Please fill in all fields',
+            });
         }
 
         // Cek apakah email sudah terdaftar
         const existingUser = await modelTableUser.findUserByEmail(email);
         if (existingUser) {
-            return res.status(409).json({ message: 'Email already taken' });
+            return res.status(409).json({
+                status: 'Failed',
+                message: 'Email already taken',
+            });
         }
 
         // Hash password
         const hashedPassword = await bcrypt.hash(password, 10);
 
         // Simpan pengguna baru ke database
-        await modelTableUser.createUser({ name, email, password: hashedPassword, noTelp });
+        await modelTableUser.createUser({
+            name,
+            email,
+            password: hashedPassword,
+            noTelp,
+        });
 
-        return res.status(201).json({ message: 'User registered successfully' });
+        return res.status(201).json({
+            status: 'Success',
+            message: 'User registered successfully',
+            data: {
+                name,
+                email,
+                noTelp,
+            },
+        });
     } catch (error) {
-        return res.status(500).json({ message: error.message });
+        return res.status(500).json({
+            status: 'Failed',
+            message: 'Registration failed',
+            serverMessage: error.message,
+        });
     }
 };
 
 
 const loginUser = async (req, res) => {
-    try {
-        const { email, password } = req.body;
+    const { email, password } = req.body;
 
+    try {
         if (!email || !password) {
-            return res.status(422).json({ error: true, message: 'Please fill in all fields' });
+            return res.status(422).json({
+                error: true,
+                message: 'Please fill in all fields',
+            });
         }
 
         const user = await modelTableUser.findUserByEmail(email); // Mencari user berdasarkan email
 
         if (!user) {
-            return res.status(401).json({ error: true, message: 'Email or password is invalid' });
+            return res.status(401).json({
+                error: true,
+                message: 'Email or password is invalid',
+            });
         }
 
         const passwordMatch = await bcrypt.compare(password, user.password); // Verifikasi password
 
         if (!passwordMatch) {
-            return res.status(401).json({ error: true, message: 'Email or password is invalid' });
+            return res.status(401).json({
+                error: true,
+                message: 'Email or password is invalid',
+            });
         }
 
         // Jika password benar, buat JWT token
@@ -155,17 +187,22 @@ const loginUser = async (req, res) => {
 
         return res.status(200).json({
             error: false,
-            message: 'success',
+            message: 'Login successful',
             loginResult: {
                 userId: user.id_user, // Menggunakan `id_user` sesuai struktur database
                 name: user.name,
-                token: accessToken
-            }
+                token: accessToken,
+            },
         });
     } catch (error) {
-        return res.status(500).json({ error: true, message: error.message });
+        return res.status(500).json({
+            error: true,
+            message: 'Login failed',
+            serverMessage: error.message,
+        });
     }
 };
+
 
 
 const getCurrentUser = async (req, res) => {
@@ -175,15 +212,72 @@ const getCurrentUser = async (req, res) => {
 
         // Jika user tidak ditemukan
         if (!user) {
-            return res.status(404).json({ message: 'User not found' });
+            return res.status(404).json({
+                error: true,
+                message: 'User not found',
+            });
         }
 
         return res.status(200).json({
-            name: user.name,
-            email: user.email,
+            error: false,
+            message: 'User found',
+            data: {
+                name: user.name,
+                email: user.email,
+            },
         });
     } catch (error) {
-        return res.status(500).json({ message: error.message });
+        return res.status(500).json({
+            error: true,
+            message: 'Failed to retrieve user data',
+            serverMessage: error.message,
+        });
+    }
+};
+
+const updateUserAccount = async (req, res) => {
+    const { name, email, noTelp, password, address, city } = req.body;
+    const userId = req.user.id_user;
+
+    try {
+        // Validasi input
+        if (!name || !email || !noTelp) {
+            return res.status(422).json({ error: true, message: 'Name, email, and phone number are required' });
+        }
+
+        // Siapkan data untuk update
+        const updateData = {};
+
+        // Jika password baru ada, hash dan update password
+        if (password) {
+            const hashedPassword = await bcrypt.hash(password, 10);
+            updateData.password = hashedPassword;
+        }
+
+        // Jika address atau city ada, update alamat
+        if (address || city) {
+            updateData.address = address;
+            updateData.city = city;
+        }
+
+        // Update name, email, noTelp
+        updateData.name = name;
+        updateData.email = email;
+        updateData.noTelp = noTelp;
+
+        // Update user account di database
+        await modelTableUser.updateUserAccount(userId, updateData);
+
+        return res.status(200).json({
+            error: false,
+            message: 'User account updated successfully',
+            data: updateData
+        });
+    } catch (error) {
+        return res.status(500).json({
+            error: true,
+            message: error.message
+        });
     }
 };
 
@@ -195,5 +289,5 @@ module.exports = {
     deletedUser,
     registerUsers,
     loginUser,
-    getCurrentUser
+    getCurrentUser,
 }

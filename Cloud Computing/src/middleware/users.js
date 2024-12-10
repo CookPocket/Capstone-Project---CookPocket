@@ -22,7 +22,6 @@ const ensureAuthenticated = async (req, res, next) => {
         // Menyimpan ID pengguna yang terverifikasi di req.user
         req.user = { id_user: decodedAccessToken.userId }; // Pastikan sesuai dengan struktur token Anda
 
-        // Lanjutkan ke handler berikutnya
         next();
     } catch (error) {
         // Menangani error token

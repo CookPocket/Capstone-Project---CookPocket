@@ -19,8 +19,22 @@ const getProductByCategory = async (id_category, offset, limit, sortBy, order) =
     return data;
 }
 
+const createRecipe = async (recipeData) => {
+    const { name, ingredients, steps, image_url } = recipeData;
+
+    const query = 'INSERT INTO recipes (name, ingredients, steps, image_url) VALUES (?, ?, ?, ?)';
+    try {
+        const [result] = await configDB.execute(query, [name, ingredients, steps, image_url]);
+        return result;
+    } catch (error) {
+        console.error('Database query failed:', error.message);
+        throw new Error('Database query failed');
+    }
+};
+
 module.exports = {
     searchProducts,
     getProductByCategory,
+    createRecipe
 
 }

@@ -9,7 +9,8 @@ router.post('/auth/register', userController.registerUsers);
 //for login user
 router.post('/auth/login', userController.loginUser);
 
-//authenticate user
+/*testing authenticate user
+contoh menggunakan protected route*/
 router.get('/auth', userMiddleware.ensureAuthenticated, userController.getCurrentUser);
 
 //Mendapatkan semua pengguna/user

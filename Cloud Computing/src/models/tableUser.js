@@ -71,6 +71,19 @@ const findUserByEmail = async (email) => {
     return rows[0];
 };
 
+const updateUserAccount = async (userId, updateData) => {
+    const { name, email, noTelp, password, address, city } = updateData;
+
+    const query = `
+        UPDATE user
+        SET name = ?, email = ?, noTelp = ?, password = ?, address = ?, city = ?
+        WHERE id_user = ?`;
+
+    const [result] = await configDB.execute(query, [name, email, noTelp, password || null, address || null, city || null, userId]);
+
+    return result;
+};
+
 module.exports = { 
     getAllUser, 
     getUserById,
@@ -78,4 +91,5 @@ module.exports = {
     deleteUser,
     createUser,
     findUserByEmail,
+    updateUserAccount,
 }

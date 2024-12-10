@@ -290,4 +290,5 @@ module.exports = {
     registerUsers,
     loginUser,
     getCurrentUser,
+    updateUserAccount
 }

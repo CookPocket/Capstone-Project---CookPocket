@@ -1,6 +1,7 @@
 const express = require('express');
 const userController = require('../controller/users');
 const userMiddleware = require('../middleware/users.js');
+const { route } = require('./chat.js');
 const router = express.Router();
 
 //menambahkan data pengguna atau user baru
@@ -25,5 +26,8 @@ router.patch('/user/:userId', userController.updateUserById);
 
 //Delete user berdasarkan Id
 router.delete('/user/:userId', userController.deletedUser);
+
+//Update Account by User
+router.put('/user/update', userMiddleware.ensureAuthenticated, userController.updateUserAccount);
 
 module.exports = router;

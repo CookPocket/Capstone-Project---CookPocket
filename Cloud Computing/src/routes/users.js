@@ -1,7 +1,6 @@
 const express = require('express');
 const userController = require('../controller/users');
 const userMiddleware = require('../middleware/users.js');
-const { route } = require('./chat.js');
 const router = express.Router();
 
 //menambahkan data pengguna atau user baru

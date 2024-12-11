@@ -10,6 +10,7 @@ const routesChat = require('./routes/chat.js');
 
 const routesCart = require('./routes/cart.js');
 const routesProduct = require('./routes/product.js')
+const routesOrder = require('./routes/order.js');
 
 const routesUsers = require('./routes/users');
 const logsRequest = require('./middleware/logs.js');
@@ -25,8 +26,11 @@ app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 //path login/register
 app.use('/api', routesUsers);
+
 app.use('/api/products', routesProduct);
 app.use('/api/cart', routesCart);
+app.use('/order', routesOrder)
+
 //path fitur chat
 app.use('/api/chat', routesChat);
 

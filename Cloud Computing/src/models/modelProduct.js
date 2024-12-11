@@ -43,9 +43,20 @@ const createRecipe = async (recipeData) => {
 };
 
 
+const getProductById = async (productId) => {
+    try {
+        const sqlQuery = 'SELECT * FROM product WHERE id_product = ?';
+        const [data] = await db.execute(sqlQuery, [productId]);
+        return data.length ? data[0] : null;
+    } catch (error) {
+        throw error;
+    }
+}
+
 module.exports = {
     searchProducts,
     getProductByCategory,
-    createRecipe
+    createRecipe,
+    getProductById
 
 }

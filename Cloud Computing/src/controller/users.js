@@ -235,47 +235,6 @@ const getCurrentUser = async (req, res) => {
     }
 };
 
-const updateUserAccount = async (req, res) => {
-    const { name, email, noTelp, password, address, city } = req.body;
-    const userId = req.user.id_user;
-
-    try {
-        // Validasi input: Pastikan name, email, dan noTelp tidak kosong
-        if (!name || !email || !noTelp) {
-            return res.status(422).json({ error: true, message: 'Name, email, and phone number are required' });
-        }
-
-        // Siapkan data untuk update, pastikan nilai yang kosong tidak dikirimkan sebagai null
-        const updateData = {
-            name: name || null,
-            email: email || null, // Pastikan email tidak null
-            noTelp: noTelp || null,
-            address: address || null,
-            city: city || null
-        };
-
-        // Jika password baru ada, hash dan update password
-        if (password) {
-            const hashedPassword = await bcrypt.hash(password, 10);
-            updateData.password = hashedPassword;
-        }
-
-        // Update user account di database
-        const result = await modelTableUser.updateUserAccount(userId, updateData);
-
-        return res.status(200).json({
-            error: false,
-            message: 'User account updated successfully',
-            data: updateData
-        });
-    } catch (error) {
-        return res.status(500).json({
-            error: true,
-            message: error.message
-        });
-    }
-};
-
 const logoutUser = async (req, res) => {
     const authorization = req.headers.authorization;
 
@@ -320,6 +279,85 @@ const logoutUser = async (req, res) => {
     }
 };
 
+// Update name
+const updateUserName = async (req, res) => {
+    const { name } = req.body;
+    const userId = req.user.id_user;
+
+    try {
+        await modelTableUser.updateUserName(userId, name);
+        res.status(200).json({ message: 'Name updated successfully' });
+    } catch (error) {
+        res.status(500).json({ error: true, message: error.message });
+    }
+};
+
+// Update email
+const updateUserEmail = async (req, res) => {
+    const { email } = req.body;
+    const userId = req.user.id_user;
+
+    try {
+        await modelTableUser.updateUserEmail(userId, email);
+        res.status(200).json({ message: 'Email updated successfully' });
+    } catch (error) {
+        res.status(500).json({ error: true, message: error.message });
+    }
+};
+
+// Update phone number
+const updateUserPhone = async (req, res) => {
+    const { noTelp } = req.body;
+    const userId = req.user.id_user;
+
+    try {
+        await modelTableUser.updateUserPhone(userId, noTelp);
+        res.status(200).json({ message: 'Phone number updated successfully' });
+    } catch (error) {
+        res.status(500).json({ error: true, message: error.message });
+    }
+};
+
+// Update password
+const updateUserPassword = async (req, res) => {
+    const { password } = req.body;
+    const userId = req.user.id_user;
+
+    try {
+        const hashedPassword = await bcrypt.hash(password, 10);
+        await modelTableUser.updateUserPassword(userId, hashedPassword);
+        res.status(200).json({ message: 'Password updated successfully' });
+    } catch (error) {
+        res.status(500).json({ error: true, message: error.message });
+    }
+};
+
+// Update address
+const updateUserAddress = async (req, res) => {
+    const { address } = req.body;
+    const userId = req.user.id_user;
+
+    try {
+        await modelTableUser.updateUserAddress(userId, address);
+        res.status(200).json({ message: 'Address updated successfully' });
+    } catch (error) {
+        res.status(500).json({ error: true, message: error.message });
+    }
+};
+
+// Update city
+const updateUserCity = async (req, res) => {
+    const { city } = req.body;
+    const userId = req.user.id_user;
+
+    try {
+        await modelTableUser.updateUserCity(userId, city);
+        res.status(200).json({ message: 'City updated successfully' });
+    } catch (error) {
+        res.status(500).json({ error: true, message: error.message });
+    }
+};
+
 module.exports = {
     getAllUser,
     findUserById,
@@ -328,6 +366,11 @@ module.exports = {
     registerUsers,
     loginUser,
     getCurrentUser,
-    updateUserAccount,
-    logoutUser
+    logoutUser,
+    updateUserName,
+    updateUserPassword,
+    updateUserEmail,
+    updateUserPhone,
+    updateUserAddress,
+    updateUserCity
 }

@@ -71,30 +71,6 @@ const findUserByEmail = async (email) => {
     return rows[0];
 };
 
-const updateUserAccount = async (userId, updateData) => {
-    const { name, email, noTelp, password, address, city } = updateData;
-
-    const query = `
-        UPDATE user
-        SET name = ?, email = ?, noTelp = ?, password = ?, address = ?, city = ?
-        WHERE id_user = ?`;
-
-    // Ganti undefined dengan null
-    const params = [
-        name !== undefined ? name : null,
-        email !== undefined ? email : null,
-        noTelp !== undefined ? noTelp : null,
-        password !== undefined ? password : null,
-        address !== undefined ? address : null,
-        city !== undefined ? city : null,
-        userId
-    ];
-
-    const [result] = await configDB.execute(query, params);
-
-    return result;
-};
-
 const addTokenToBlacklist = async (token) => {
     const query = 'INSERT INTO token_blacklist (token) VALUES (?)';
     await configDB.execute(query, [token]);
@@ -106,6 +82,42 @@ const isTokenBlacklisted = async (token) => {
     return rows[0].count > 0;
 };
 
+// Update user name
+const updateUserName = async (userId, name) => {
+    const query = `UPDATE user SET name = ? WHERE id_user = ?`;
+    await configDB.execute(query, [name, userId]);
+};
+
+// Update user email
+const updateUserEmail = async (userId, email) => {
+    const query = `UPDATE user SET email = ? WHERE id_user = ?`;
+    await configDB.execute(query, [email, userId]);
+};
+
+// Update user phone number
+const updateUserPhone = async (userId, noTelp) => {
+    const query = `UPDATE user SET noTelp = ? WHERE id_user = ?`;
+    await configDB.execute(query, [noTelp, userId]);
+};
+
+// Update user password
+const updateUserPassword = async (userId, hashedPassword) => {
+    const query = `UPDATE user SET password = ? WHERE id_user = ?`;
+    await configDB.execute(query, [hashedPassword, userId]);
+};
+
+// Update user address
+const updateUserAddress = async (userId, address) => {
+    const query = `UPDATE user SET address = ? WHERE id_user = ?`;
+    await configDB.execute(query, [address, userId]);
+};
+
+// Update user city
+const updateUserCity = async (userId, city) => {
+    const query = `UPDATE user SET city = ? WHERE id_user = ?`;
+    await configDB.execute(query, [city, userId]);
+};
+
 module.exports = { 
     getAllUser, 
     getUserById,
@@ -115,5 +127,11 @@ module.exports = {
     findUserByEmail,
     updateUserAccount,
     addTokenToBlacklist,
-    isTokenBlacklisted
+    isTokenBlacklisted,
+    updateUserName,
+    updateUserEmail,
+    updateUserPhone,
+    updateUserPassword,
+    updateUserAddress,
+    updateUserCity,
 }

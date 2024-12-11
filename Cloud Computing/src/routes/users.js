@@ -28,7 +28,13 @@ router.patch('/user/:userId', userController.updateUserById);
 router.delete('/user/:userId', userController.deletedUser);
 
 //Update Account by User
-router.put('/user/update', userMiddleware.ensureAuthenticated, userController.updateUserAccount);
+router.put('/user/update-name', userMiddleware.ensureAuthenticated, userController.updateUserName);
+router.put('/user/update-email', userMiddleware.ensureAuthenticated, userController.updateUserEmail);
+router.put('/user/update-phone', userMiddleware.ensureAuthenticated, userController.updateUserPhone);
+router.put('/user/update-password', userMiddleware.ensureAuthenticated, userController.updateUserPassword);
+router.put('/user/update-address', userMiddleware.ensureAuthenticated, userController.updateUserAddress);
+router.put('/user/update-city', userMiddleware.ensureAuthenticated, userController.updateUserCity);
 
+//Logout Account by User
 router.post('/auth/logout', userMiddleware.ensureAuthenticated, userController.logoutUser);
 module.exports = router;

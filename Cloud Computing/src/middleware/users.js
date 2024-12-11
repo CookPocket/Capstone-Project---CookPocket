@@ -1,35 +1,37 @@
 const jwt = require('jsonwebtoken');
+const modelTableUser = require('../models/tableUser');
 
 /*untuk menggunakan ini pada setiap protected route,
 harus disertakan ensureAuthenticated pada route*/
 
 const ensureAuthenticated = async (req, res, next) => {
     try {
-        // Mengambil token dari header Authorization
         const authorizationHeader = req.headers.authorization;
-        if (!authorizationHeader) {
-            return res.status(401).json({ message: 'Access token not found' });
+        if (!authorizationHeader || !authorizationHeader.startsWith('Bearer ')) {
+            return res.status(401).json({ message: 'Access token not found or expired' });
         }
 
-        const accessToken = authorizationHeader.split(' ')[1]; // Mengambil token setelah 'Bearer'
+        const accessToken = authorizationHeader.split(' ')[1];
         if (!accessToken) {
-            return res.status(401).json({ message: 'Access token not found' });
+            return res.status(401).json({ message: 'Access token not found or expired' });
         }
 
-        // Verifikasi token
-        const decodedAccessToken = jwt.verify(accessToken, process.env.ACCESS_TOKEN_SECRET);
+        const isBlacklisted = await modelTableUser.isTokenBlacklisted(accessToken);
+        if (isBlacklisted) {
+            return res.status(401).json({ message: 'You have logged out' });
+        }
 
-        // Menyimpan ID pengguna yang terverifikasi di req.user
-        req.user = { id_user: decodedAccessToken.userId }; // Pastikan sesuai dengan struktur token Anda
+        const decodedAccessToken = jwt.verify(accessToken, process.env.ACCESS_TOKEN_SECRET);
+        req.user = { id_user: decodedAccessToken.userId };
 
         next();
     } catch (error) {
-        // Menangani error token
-        const isExpired = error.name === 'TokenExpiredError';
-        const errorMessage = isExpired
-            ? 'Access token expired'
-            : 'Access token invalid or malformed';
-        return res.status(401).json({ message: errorMessage });
+        console.error('Authentication error:', error.message);
+        return res.status(401).json({
+            message: error.name === 'TokenExpiredError'
+                ? 'Access token expired'
+                : 'Access token invalid or malformed',
+        });
     }
 };
 

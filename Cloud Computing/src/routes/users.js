@@ -30,4 +30,5 @@ router.delete('/user/:userId', userController.deletedUser);
 //Update Account by User
 router.put('/user/update', userMiddleware.ensureAuthenticated, userController.updateUserAccount);
 
+router.post('/auth/logout', userMiddleware.ensureAuthenticated, userController.logoutUser);
 module.exports = router;

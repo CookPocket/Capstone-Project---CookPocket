@@ -95,6 +95,16 @@ const updateUserAccount = async (userId, updateData) => {
     return result;
 };
 
+const addTokenToBlacklist = async (token) => {
+    const query = 'INSERT INTO token_blacklist (token) VALUES (?)';
+    await configDB.execute(query, [token]);
+};
+
+const isTokenBlacklisted = async (token) => {
+    const query = 'SELECT COUNT(*) AS count FROM token_blacklist WHERE token = ?';
+    const [rows] = await configDB.execute(query, [token]);
+    return rows[0].count > 0;
+};
 
 module.exports = { 
     getAllUser, 
@@ -104,4 +114,6 @@ module.exports = {
     createUser,
     findUserByEmail,
     updateUserAccount,
+    addTokenToBlacklist,
+    isTokenBlacklisted
 }

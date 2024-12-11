@@ -276,6 +276,49 @@ const updateUserAccount = async (req, res) => {
     }
 };
 
+const logoutUser = async (req, res) => {
+    const authorization = req.headers.authorization;
+
+    try {
+        if (!authorization || !authorization.startsWith('Bearer ')) {
+            return res.status(400).json({ 
+                error: true,
+                message: 'Invalid or missing Authorization header'
+            });
+        }
+
+        const accessToken = authorization.split(' ')[1];
+        if (!accessToken) {
+            return res.status(400).json({ 
+                error: true,
+                message: 'Access token not found'
+            });
+        }
+
+        // Cek blacklist
+        const isBlacklisted = await modelTableUser.isTokenBlacklisted(accessToken);
+        if (isBlacklisted) {
+            return res.status(400).json({ 
+                error: true,
+                message: 'You have logged out' 
+            });
+        }
+
+        // Tambahkan ke blacklist
+        await modelTableUser.addTokenToBlacklist(accessToken);
+
+        return res.status(200).json({
+            error: false,
+            message: 'Logout successful',
+        });
+    } catch (error) {
+        console.error('Error during logout:', error.message);
+        return res.status(500).json({
+            error: true,
+            message: 'Internal server error',
+        });
+    }
+};
 
 module.exports = {
     getAllUser,
@@ -285,5 +328,6 @@ module.exports = {
     registerUsers,
     loginUser,
     getCurrentUser,
-    updateUserAccount
+    updateUserAccount,
+    logoutUser
 }

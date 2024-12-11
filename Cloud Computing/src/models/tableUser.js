@@ -125,7 +125,6 @@ module.exports = {
     deleteUser,
     createUser,
     findUserByEmail,
-    updateUserAccount,
     addTokenToBlacklist,
     isTokenBlacklisted,
     updateUserName,

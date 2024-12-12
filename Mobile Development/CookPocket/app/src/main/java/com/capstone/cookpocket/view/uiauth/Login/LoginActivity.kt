@@ -74,7 +74,7 @@ class LoginActivity : AppCompatActivity() {
                     // Menyembunyikan ProgressBar setelah login selesai
                     showProgressBar(false)
 
-                    if (!it.error!!) {
+                    if (!it.error) {
                         Toast.makeText(this@LoginActivity, "Login berhasil: ${it.loginResult.name}", Toast.LENGTH_SHORT).show()
 
                         val token = it.loginResult.token

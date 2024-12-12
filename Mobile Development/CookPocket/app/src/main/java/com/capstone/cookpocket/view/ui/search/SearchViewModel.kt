@@ -43,4 +43,5 @@ class SearchViewModel (private val storyRepository: HomeRepository) : ViewModel(
             _isLoading.value = false
         }
     }
+
 }

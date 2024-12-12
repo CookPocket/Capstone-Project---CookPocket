@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
@@ -17,7 +18,7 @@ import com.capstone.cookpocket.databinding.FragmentHomeBinding
 import com.capstone.cookpocket.view.ui.adapter.AdapterActivity
 import com.capstone.cookpocket.view.ui.home.cart.CartActivity
 import com.capstone.cookpocket.view.ui.home.notif.NotificationActivity
-import com.capstone.cookpocket.view.ui.search.SearchFragment
+import com.capstone.cookpocket.view.ui.search.MenuSearchActivity
 import com.capstone.cookpocket.view.ui.search.detail_search.DetailSearchActivity
 import com.capstone.cookpocket.view.uiauth.Login.LoginActivity
 import kotlinx.coroutines.flow.firstOrNull
@@ -35,7 +36,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         ).get(HomeViewModel::class.java)
     }
 
-    private val cookPocketHomeAdapter by lazy {
+    private val CookPocketPagingAdapter by lazy {
         AdapterActivity { storyItem, imageView, textView ->
             val intent = Intent(requireContext(), DetailSearchActivity::class.java).apply {
                 putExtra("STORY_NAME", storyItem.name)
@@ -78,12 +79,34 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
             val intent = Intent(requireContext(), NotificationActivity::class.java)
             startActivity(intent)
         }
-        binding.searchBarHome.setOnClickListener {
-            val searchFragment = SearchFragment()
-            requireActivity().supportFragmentManager.beginTransaction()
-                .replace(R.id.searchView, searchFragment) // Ganti fragment_container dengan ID container di layout utama
-                .addToBackStack(null) // Menambahkan ke backstack untuk navigasi kembali
-                .commit()
+        binding.searchBarHome.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                query?.let {
+                    // Pindah ke MenuSearchActivity dengan query
+                    val intent = Intent(requireContext(), MenuSearchActivity::class.java)
+                    intent.putExtra("SEARCH_QUERY", it) // Kirim query ke activity
+                    startActivity(intent)
+                }
+                return true
+            }
+
+            override fun onQueryTextChange(newText: String?): Boolean {
+                // Anda bisa menangani perubahan teks di sini jika perlu
+                return false
+            }
+        })
+
+        binding.cvBtnMakananBerat.setOnClickListener {
+            val intent = Intent(requireContext(), MenuSearchActivity::class.java)
+            startActivity(intent)
+        }
+        binding.cvBtnMakananTradisional.setOnClickListener {
+            val intent = Intent(requireContext(), MenuSearchActivity::class.java)
+            startActivity(intent)
+        }
+        binding.cvBtnMakananSehat.setOnClickListener {
+            val intent = Intent(requireContext(), MenuSearchActivity::class.java)
+            startActivity(intent)
         }
 
     }
@@ -110,35 +133,19 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
     private fun setupRecyclerView() {
         binding.favoriteRecyclerView.apply {
             layoutManager = LinearLayoutManager(requireContext())
-            adapter = cookPocketHomeAdapter
+            adapter = CookPocketPagingAdapter
         }
     }
 
     private fun observeViewModel() {
         homeViewModel.stories.observe(viewLifecycleOwner) { stories ->
             if (stories != null) {
-                cookPocketHomeAdapter.submitList(stories)
+                CookPocketPagingAdapter.submitList(stories)
             }
         }
 
         homeViewModel.errorMessage.observe(viewLifecycleOwner) { errorMessage ->
             errorMessage?.let { showToast(it) }
-        }
-    }
-
-    private fun logout() {
-        lifecycleScope.launch {
-            val userPreferences = UserPreferences.getInstance(requireContext())
-            userPreferences.clearToken()
-            userPreferences.clearUserName()
-            Log.d("HomeFragment", "Token dan nama pengguna berhasil dihapus")
-
-            Toast.makeText(requireContext(), "Logout berhasil", Toast.LENGTH_SHORT).show()
-
-            // Setelah logout, arahkan ke LoginActivity
-            val intent = Intent(requireContext(), LoginActivity::class.java)
-            startActivity(intent)
-            requireActivity().finish() // Menutup aktivitas saat ini
         }
     }
 

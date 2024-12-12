@@ -8,7 +8,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
@@ -23,7 +22,7 @@ import com.capstone.cookpocket.view.ui.account.change.ChangeEmailActivity
 import com.capstone.cookpocket.view.ui.account.change.ChangeNoTelpActivity
 import com.capstone.cookpocket.view.ui.account.change.ChangePasswordActivity
 import com.capstone.cookpocket.view.ui.account.change.ChangeUsernameActivity
-import com.capstone.cookpocket.view.ui.store.StoreActivity
+import com.capstone.cookpocket.view.ui.store.HomeStore.StoreActivity
 import com.capstone.cookpocket.view.uiauth.Login.LoginActivity
 import kotlinx.coroutines.launch
 

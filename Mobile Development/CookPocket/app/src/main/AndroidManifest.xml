@@ -15,7 +15,10 @@
         android:theme="@style/Theme.CookPocket"
         tools:targetApi="31">
         <activity
-            android:name=".view.ui.adapter.AdapterAddProductActivity"
+            android:name=".view.ui.search.MenuSearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.ui.adapter.AdapterCartActivity"
             android:exported="false" />
         <activity
             android:name=".view.ui.main.SplashActivity"
@@ -36,14 +39,13 @@
             android:name=".view.ui.adapter.AdapterNotifActivity"
             android:exported="false" />
         <activity
-            android:name=".view.ui.store.AddProductActivity"
+            android:name=".view.ui.store.AddProduct.AddProductActivity"
             android:exported="false" />
         <activity
-            android:name=".view.ui.store.StoreActivity"
-            android:exported="false" />
-        <activity
-            android:name=".view.ui.adapter.AdapterCartActivity"
-            android:exported="false" />
+            android:name=".view.ui.store.HomeStore.StoreActivity"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".view.ui.adapter.AdapterCartActivity" -->
+        <!-- android:exported="false" /> -->
         <activity
             android:name=".view.ui.account.change.ChangeAddresActivity"
             android:exported="false" />

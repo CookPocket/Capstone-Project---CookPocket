@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
+import com.capstone.cookpocket.R
 import com.capstone.cookpocket.databinding.ActivityOrderAntarBinding
 import com.capstone.cookpocket.view.ui.search.detail_search.DetailSearchActivity
 
@@ -47,18 +48,29 @@ class OrderAntarActivity : AppCompatActivity() {
             supportActionBar?.title = name
 
             // Tampilkan data
-            tvNamaMakanan.text = name
-            tvUsernameUser.text = name
+            // Data dummy
+            val harga = 100000
+            val biayaPengirimanPersen = 0.10 // 10%
+
+// Menghitung biaya pengiriman
+            val biayaPengiriman = harga * biayaPengirimanPersen
+
+// Menghitung total pesanan
+            val totalPesanan = harga + biayaPengiriman
+
+// Menampilkan data di tampilan
+            tvNamaMakanan.text = "Nasi Goreng Special"
+            tvUsernameUser.text = "John Doe" // Data pengguna dummy
             tvNoTelpUser.text = "081212000637"
-            tvAlamatUser.text = description
+            tvAlamatUser.text = "Jl. Contoh Alamat No. 123"
 
+            tvTotalPesanan.text = "Rp. ${totalPesanan.toInt()}"
 
-
-
+// Menampilkan gambar menggunakan Glide dengan placeholder
             Glide.with(this@OrderAntarActivity)
-                .load(photoUrl)
-                .centerCrop() // Ganti dengan placeholder yang sesuai
-                .into(imgFood) // ImageView untuk foto cerita
+                .load("https://example.com/photo_url.jpg")
+                .centerCrop()
+                .into(imgFood) // ImageView untuk foto makanan
         }
     }
 }

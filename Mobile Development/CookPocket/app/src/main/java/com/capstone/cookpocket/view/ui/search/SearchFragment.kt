@@ -6,16 +6,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.capstone.cookpocket.R
 import com.capstone.cookpocket.databinding.FragmentSearchBinding
 import com.capstone.cookpocket.view.ui.adapter.AdapterActivity
 import com.capstone.cookpocket.view.ui.search.detail_search.DetailSearchActivity
-import kotlinx.coroutines.flow.firstOrNull
-import kotlinx.coroutines.launch
+
 class SearchFragment : Fragment(R.layout.fragment_search) {
 
     private var _binding: FragmentSearchBinding? = null
@@ -25,7 +25,7 @@ class SearchFragment : Fragment(R.layout.fragment_search) {
         ViewModelProvider(this, SearchViewModelFactory(requireContext())).get(SearchViewModel::class.java)
     }
 
-    private val adapter by lazy {
+    private val CookPocketPagingAdapter by lazy {
         AdapterActivity { storyItem, imageView, textView ->
             val intent = Intent(requireContext(), DetailSearchActivity::class.java).apply {
                 putExtra("STORY_NAME", storyItem.name)
@@ -55,17 +55,35 @@ class SearchFragment : Fragment(R.layout.fragment_search) {
 
         // Ambil data cerita dari ViewModel
         searchViewModel.fetchStories()
+
+        binding.searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                query?.let {
+                    // Pindah ke MenuSearchActivity dengan query
+                    val intent = Intent(requireContext(), MenuSearchActivity::class.java)
+                    intent.putExtra("SEARCH_QUERY", it) // Kirim query ke activity
+                    startActivity(intent)
+                }
+                return true
+            }
+
+            override fun onQueryTextChange(newText: String?): Boolean {
+                // Anda bisa menangani perubahan teks di sini jika perlu
+                return false
+            }
+        })
     }
 
     private fun setupRecyclerView() {
         binding.rvSearchSiapPesan.apply {
             layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
-            adapter = this@SearchFragment.adapter
+            adapter = this@SearchFragment.CookPocketPagingAdapter
 
         }
         binding.rvSearchBacaResep.apply {
-            layoutManager = LinearLayoutManager(requireContext())
-            adapter = this@SearchFragment.adapter
+            // Ganti dengan GridLayoutManager dan tentukan jumlah kolom
+            layoutManager = GridLayoutManager(requireContext(), 2)
+            adapter = CookPocketPagingAdapter
         }
     }
 
@@ -73,7 +91,7 @@ class SearchFragment : Fragment(R.layout.fragment_search) {
         // Observasi data dari ViewModel
         searchViewModel.stories.observe(viewLifecycleOwner) { stories ->
             stories?.let {
-                adapter.submitList(it)
+                CookPocketPagingAdapter.submitList(it)
             }
         }
 
@@ -89,6 +107,6 @@ class SearchFragment : Fragment(R.layout.fragment_search) {
 
     override fun onDestroyView() {
         super.onDestroyView()
-        _binding = null  // Menghindari memory leak dengan null binding
+        _binding = null  // Menghindari memory leak dengan null binding
         }
 }

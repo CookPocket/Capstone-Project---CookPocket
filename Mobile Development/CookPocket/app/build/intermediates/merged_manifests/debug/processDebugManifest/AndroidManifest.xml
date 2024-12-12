@@ -30,7 +30,10 @@
         android:testOnly="true"
         android:theme="@style/Theme.CookPocket" >
         <activity
-            android:name="com.capstone.cookpocket.view.ui.adapter.AdapterAddProductActivity"
+            android:name="com.capstone.cookpocket.view.ui.search.MenuSearchActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.capstone.cookpocket.view.ui.adapter.AdapterCartActivity"
             android:exported="false" />
         <activity
             android:name="com.capstone.cookpocket.view.ui.main.SplashActivity"
@@ -51,14 +54,13 @@
             android:name="com.capstone.cookpocket.view.ui.adapter.AdapterNotifActivity"
             android:exported="false" />
         <activity
-            android:name="com.capstone.cookpocket.view.ui.store.AddProductActivity"
+            android:name="com.capstone.cookpocket.view.ui.store.AddProduct.AddProductActivity"
             android:exported="false" />
         <activity
-            android:name="com.capstone.cookpocket.view.ui.store.StoreActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.capstone.cookpocket.view.ui.adapter.AdapterCartActivity"
-            android:exported="false" />
+            android:name="com.capstone.cookpocket.view.ui.store.HomeStore.StoreActivity"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".view.ui.adapter.AdapterCartActivity" -->
+        <!-- android:exported="false" /> -->
         <activity
             android:name="com.capstone.cookpocket.view.ui.account.change.ChangeAddresActivity"
             android:exported="false" />

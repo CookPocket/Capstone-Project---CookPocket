@@ -9,7 +9,6 @@ import com.capstone.cookpocket.Network.Response.StoryResponse
 
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
-import retrofit2.Call
 import retrofit2.http.Field
 import retrofit2.http.FormUrlEncoded
 import retrofit2.http.GET
@@ -22,22 +21,27 @@ import retrofit2.http.Query
 interface ApiService {
 
     @FormUrlEncoded
-    @POST("register")
+    @POST("auth/register")
     suspend fun register(
         @Field("name") name: String,
         @Field("email") email: String,
-        @Field("password") password: String
+        @Field("password") password: String,
+        @Field("noTelp") noTelp: String
     ): RegisterResponse
 
     @FormUrlEncoded
-    @POST("login")
+    @POST("auth/login")
     suspend fun login(
         @Field("email") email: String,
         @Field("password") password: String
     ): LoginResponse
 
     @GET("stories")
-    suspend fun getAllStories(): StoryResponse
+    suspend fun getAllStories(
+        @Query("page") page: Int = 1,
+        @Query("size") size: Int = 100
+    ): StoryResponse
+
 
     @GET("stories/{id}")
     suspend fun getStoryDetail(

@@ -32,6 +32,7 @@ class SignupActivity : AppCompatActivity() {
             val name = binding.edUsername.text.toString().trim()
             val email = binding.edEmail.text.toString().trim()
             val password = binding.edPassword.text.toString().trim()
+            val noTelp = binding.edNohp.text.toString().trim()
             val confirmPassword = binding.edConfirmPassword.text.toString().trim()
 
             // Validasi form
@@ -42,7 +43,7 @@ class SignupActivity : AppCompatActivity() {
             } else {
                 // Mulai proses registrasi dan tampilkan ProgressBar
                 showProgressBar(true)
-                registerViewModel.register(name, email, password)
+                registerViewModel.register(name, email, password, noTelp)
             }
         }
 
@@ -56,7 +57,7 @@ class SignupActivity : AppCompatActivity() {
                 showProgressBar(false)
 
                 response?.let {
-                    if (!it.error!!) {
+                    if (!it.error) {
                         Toast.makeText(this@SignupActivity, "Register berhasil: ${it.message}", Toast.LENGTH_SHORT).show()
                         // Tutup aktivitas SignUp dan kembali ke Login
                         finish()

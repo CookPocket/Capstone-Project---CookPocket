@@ -13,13 +13,13 @@ class SignupViewModel(private val authRepository: AuthRepository): ViewModel() {
     private val _registerState = MutableStateFlow<RegisterResponse?>(null)
     val registerState: StateFlow<RegisterResponse?> = _registerState
 
-    fun register(name: String, email: String, password: String) {
+    fun register(name: String, email: String, password: String, noTelp: String) {
         viewModelScope.launch {
             try {
-                val response = authRepository.register(name, email, password)
+                val response = authRepository.register(name, email, password, noTelp)
                 _registerState.value = response
             } catch (e: Exception) {
-                _registerState.value = RegisterResponse(error = true, message = e.message)
+                _registerState.value = RegisterResponse(error = true, message = e.message?: "", status = "", data = null)
             }
         }
     }

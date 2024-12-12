@@ -3063,7 +3063,6 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
-drawable ayam_goren
 drawable background_card
 drawable background_login_signup
 drawable background_search
@@ -3206,7 +3205,6 @@ drawable notify_panel_notification_icon_bg
 drawable place_holder_foto_profil
 drawable placeholder_foto_makanan
 drawable pop_up
-drawable rendang
 drawable rounded_image_background
 drawable test_level_drawable
 drawable tooltip_frame_dark
@@ -3898,6 +3896,7 @@ id tv_header_siap_pesan
 id tv_judul
 id tv_judul_store
 id tv_nama_makanan
+id tv_no_results
 id tv_no_telp_user
 id tv_notfikasi
 id tv_order_antar
@@ -4064,6 +4063,7 @@ layout activity_detail_product
 layout activity_detail_search
 layout activity_login
 layout activity_main
+layout activity_menu_search
 layout activity_notification
 layout activity_oder_finish
 layout activity_order_ambil_sendiri

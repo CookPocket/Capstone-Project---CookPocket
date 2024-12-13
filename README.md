@@ -2,7 +2,7 @@ Capstone Project Bangkit Academy CookPocket (C242-PS383)
 ==
 Overview
 --
-![image alt](https://github.com/CookPocket/Capstone-Project---CookPocket/blob/3cd46c1ebe9f3f6ec071ff98e60c4556769cea95/logoCookPocket.png)
+![image alt](https://github.com/CookPocket/Capstone-Project---CookPocket/blob/81a15f0347ad9e06fbb30a312e22d5a5c016f826/logoCookPocket.png)
 <p align="justify">"CookPocket" is a machine learning-based mobile application designed to provide a smart solution in finding Indonesian recipes. The application aims to help users explore various traditional and modern dishes that suit the ingredients they have or their preferences. With the support of an artificial intelligence-based recommendation system, "CookPocket" is able to connect users with relevant recipes, provide a more personalized cooking experience, and encourage the preservation of the distinctive taste of Indonesian cuisine.</p>
 
 Team Members

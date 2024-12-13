@@ -1,0 +1,1292 @@
+{
+	"info": {
+		"_postman_id": "1b05c0c1-f435-4840-b596-2c2d05afe7ad",
+		"name": "cookpocket",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24572732",
+		"_collection_link": "https://symbionic-tech-88.postman.co/workspace/Testing-%26-Develop-API~13c44b2d-d2e9-4503-bb53-b9d40c9d9d9e/collection/24572732-1b05c0c1-f435-4840-b596-2c2d05afe7ad?action=share&source=collection_link&creator=24572732"
+	},
+	"item": [
+		{
+			"name": "Auth (Login, Register, Logout)",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"John Doe2\",\r\n    \"email\":\"jd2@domain.com\",\r\n    \"password\":\"123456\",\r\n    \"noTelp\": \"081xxxxxxxxx\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4000/api/auth/register",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Authentication",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE5LCJpYXQiOjE3MzM4MzQ2OTQsImV4cCI6MTczMzgzODI5NH0.OVsPyVgU9HIWGiPjKdDK0Jf8SxXB8Wwo_OMrClyD84c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/api/auth",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"auth"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"if (pm.response.code === 200) {\r",
+									"    const responseJson = pm.response.json();\r",
+									"    pm.environment.set(\"access_token\", responseJson.loginResult.token);\r",
+									"}"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"jd@domain.com\",\r\n    \"password\":\"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4000/api/auth/login",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Account",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"John Doe\",\r\n    \"email\": \"jd2@domain.com\",\r\n    \"noTelp\": \"081234567890\",\r\n    \"password\": \"newpassword123\",\r\n    \"address\": \"123 Main St\",\r\n    \"city\": \"Cityville\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4000/api/user/update",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"user",
+								"update"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Documentation API Endpoint Login & Register"
+		},
+		{
+			"name": "Feature chat",
+			"item": [
+				{
+					"name": "Mendapatkan data pesan antara 2 pengguna",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/chat/1/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"chat",
+								"1",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Mendapatkan data pesan antara 2 pengguna",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/chat/1/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"chat",
+										"1",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1514"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"5ea-haBzPohsOytsgNLOJrRQb3bfnzk\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 06 Dec 2024 21:11:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id_chat\": 1,\n        \"sender_id\": 1,\n        \"receiver_id\": 2,\n        \"message\": \"halo\",\n        \"created_at\": \"2024-12-06T09:17:35.000Z\"\n    },\n    {\n        \"id_chat\": 2,\n        \"sender_id\": 1,\n        \"receiver_id\": 2,\n        \"message\": \"halo\",\n        \"created_at\": \"2024-12-06T09:17:39.000Z\"\n    },\n    {\n        \"id_chat\": 3,\n        \"sender_id\": 1,\n        \"receiver_id\": 2,\n        \"message\": \"Halo, apakabar?\",\n        \"created_at\": \"2024-12-06T09:22:34.000Z\"\n    },\n    {\n        \"id_chat\": 4,\n        \"sender_id\": 1,\n        \"receiver_id\": 2,\n        \"message\": \"baik, kamu gimna?\",\n        \"created_at\": \"2024-12-06T09:22:57.000Z\"\n    },\n    {\n        \"id_chat\": 5,\n        \"sender_id\": 1,\n        \"receiver_id\": 2,\n        \"message\": \"URRAAAA\",\n        \"created_at\": \"2024-12-06T09:28:42.000Z\"\n    },\n    {\n        \"id_chat\": 6,\n        \"sender_id\": 1,\n        \"receiver_id\": 2,\n        \"message\": \"URRRAAARAAARAAAA!\",\n        \"created_at\": \"2024-12-06T09:28:53.000Z\"\n    },\n    {\n        \"id_chat\": 7,\n        \"sender_id\": 1,\n        \"receiver_id\": 2,\n        \"message\": \"CAPE EUY NGODING WAE\",\n        \"created_at\": \"2024-12-06T09:30:10.000Z\"\n    },\n    {\n        \"id_chat\": 8,\n        \"sender_id\": 1,\n        \"receiver_id\": 2,\n        \"message\": \"ARRRRGGGGGHHH!!!\",\n        \"created_at\": \"2024-12-06T09:30:25.000Z\"\n    },\n    {\n        \"id_chat\": 9,\n        \"sender_id\": 1,\n        \"receiver_id\": 2,\n        \"message\": \"URRRRAAAAARAAAURAAA!\",\n        \"created_at\": \"2024-12-06T10:41:35.000Z\"\n    },\n    {\n        \"id_chat\": 10,\n        \"sender_id\": 1,\n        \"receiver_id\": 2,\n        \"message\": \"Apa kabar?\",\n        \"created_at\": \"2024-12-06T10:42:37.000Z\"\n    },\n    {\n        \"id_chat\": 11,\n        \"sender_id\": 1,\n        \"receiver_id\": 2,\n        \"message\": \"Baik\",\n        \"created_at\": \"2024-12-06T10:42:41.000Z\"\n    },\n    {\n        \"id_chat\": 12,\n        \"sender_id\": 1,\n        \"receiver_id\": 2,\n        \"message\": \"Hello!\",\n        \"created_at\": \"2024-12-06T11:03:20.000Z\"\n    },\n    {\n        \"id_chat\": 13,\n        \"sender_id\": 1,\n        \"receiver_id\": 2,\n        \"message\": \"apa?\",\n        \"created_at\": \"2024-12-06T14:35:53.000Z\"\n    },\n    {\n        \"id_chat\": 14,\n        \"sender_id\": 1,\n        \"receiver_id\": 2,\n        \"message\": \"siapa?\",\n        \"created_at\": \"2024-12-06T14:35:57.000Z\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Mengirim pesan baru antar pengguna",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"senderId\": 1,\r\n  \"receiverId\": 2,\r\n  \"message\": \"GUA CAPE BEGINI MULUUUUUU!\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/chat/message",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"chat",
+								"message"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Mengirim pesan baru antar pengguna",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"senderId\": 1,\r\n  \"receiverId\": 2,\r\n  \"message\": \"Arigatouuuu!\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/chat/message",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"chat",
+										"message"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "69"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"45-nehX9QzeSYXTqglt5mZx3GLtDRw\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 06 Dec 2024 21:12:34 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Message sent successfully\",\n    \"messageId\": 15\n}"
+						},
+						{
+							"name": "Mengirim pesan baru antar pengguna",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"senderId\": 1,\r\n  \"receiverId\": 2,\r\n  \"message\": \"GUA CAPE BEGINI MULUUUUUU!\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/chat/message",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"chat",
+										"message"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "69"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"45-a1QpGaX/UgZbruajB04R4WRSQvE\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 10 Dec 2024 21:05:04 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Message sent successfully\",\n    \"messageId\": 21\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Scope user",
+			"item": [
+				{
+					"name": "Mengambil semua data user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Mengambil semua data user",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/user",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"user"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1808"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"710-TmwbzZAblvQ8yGjlvqDg5VnghuM\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 06 Dec 2024 21:03:31 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"GET all users succes\",\n    \"data\": [\n        {\n            \"id_user\": 1,\n            \"name\": \"Asep\",\n            \"email\": \"asep@gmail.com\",\n            \"password\": \"qwerty123\",\n            \"gender\": \"Laki-Laki\",\n            \"address\": \"Jl. Ambon\",\n            \"city\": \"Bandung\",\n            \"postal_code\": 40115\n        },\n        {\n            \"id_user\": 2,\n            \"name\": \"Jajang\",\n            \"email\": \"jajang@gmail.com\",\n            \"password\": \"ytrewq321\",\n            \"gender\": \"Laki-Laki\",\n            \"address\": \"Jl. Riau\",\n            \"city\": \"Bandung\",\n            \"postal_code\": 40115\n        },\n        {\n            \"id_user\": 3,\n            \"name\": \"Dewi\",\n            \"email\": \"dewi@gmail.com\",\n            \"password\": \"dewi123\",\n            \"gender\": \"Perempuan\",\n            \"address\": \"Jl. Lengkong\",\n            \"city\": \"Bandung\",\n            \"postal_code\": 40255\n        },\n        {\n            \"id_user\": 4,\n            \"name\": \"Putri Malu\",\n            \"email\": \"putri@gmail.com\",\n            \"password\": \"putri123\",\n            \"gender\": \"Perempuan\",\n            \"address\": \"Jl. Kliningan\",\n            \"city\": \"Bandung\",\n            \"postal_code\": 40255\n        },\n        {\n            \"id_user\": 6,\n            \"name\": \"Mr. Agus\",\n            \"email\": \"agussedih@gmail.com\",\n            \"password\": \"agussedih@gmail.com\",\n            \"gender\": \"Laki-Laki\",\n            \"address\": \"Jl. Namex timur\",\n            \"city\": \"Planet Namex\",\n            \"postal_code\": 9877\n        },\n        {\n            \"id_user\": 8,\n            \"name\": \"Mr. Agus Novanto\",\n            \"email\": \"agussedihdeh@gmail.com\",\n            \"password\": \"agussedihsekali\",\n            \"gender\": \"Laki-Laki\",\n            \"address\": \"Planet namex\",\n            \"city\": \"Jl. names timur\",\n            \"postal_code\": 9874\n        },\n        {\n            \"id_user\": 9,\n            \"name\": \"Cahyo Nugroho\",\n            \"email\": \"cahyo@gmail.com\",\n            \"password\": \"cahyoguantengabizz\",\n            \"gender\": \"Laki-Laki\",\n            \"address\": \"Jl. Mawar\",\n            \"city\": \"Semarang\",\n            \"postal_code\": 9877\n        },\n        {\n            \"id_user\": 10,\n            \"name\": \"Cahyo Nugroho Anugrah\",\n            \"email\": \"cahyonugroho@gmail.com\",\n            \"password\": \"cahyo_anak_bapak_mukhlis\",\n            \"gender\": null,\n            \"address\": null,\n            \"city\": null,\n            \"postal_code\": null\n        },\n        {\n            \"id_user\": 11,\n            \"name\": \"Dwi Nugroho Anugrah\",\n            \"email\": \"dwinugroho@gmail.com\",\n            \"password\": \"dwi_anak_bapak_mukhlis\",\n            \"gender\": \"Laki-Laki\",\n            \"address\": \"Jl. Melati\",\n            \"city\": \"Bandung\",\n            \"postal_code\": 3472\n        },\n        {\n            \"id_user\": 12,\n            \"name\": \"Dwi Nurcahyo\",\n            \"email\": \"dwianurcahyo@gmail.com\",\n            \"password\": \"<generated token>\",\n            \"gender\": \"Laki-Laki\",\n            \"address\": \"Jl. Karasak timur\",\n            \"city\": \"Bandung\",\n            \"postal_code\": 3472\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Mengambil data user berdasarkan {Id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/user/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"user",
+								"6"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Mengambil data user berdasarkan {Id}",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/user/6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"user",
+										"6"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "236"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ec-d5avlnNRwC7TFr42PBKnI9Y6rf0\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 06 Dec 2024 21:04:49 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"User found.\",\n    \"data\": {\n        \"id_user\": 6,\n        \"name\": \"Mr. Agus\",\n        \"email\": \"agussedih@gmail.com\",\n        \"password\": \"agussedih@gmail.com\",\n        \"gender\": \"Laki-Laki\",\n        \"address\": \"Jl. Namex timur\",\n        \"city\": \"Planet Namex\",\n        \"postal_code\": 9877\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Mengupdate Data User Berdasarkan {Id}",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Dwi Nurcahyo\",\r\n    \"email\": \"dwianurcahyo@gmail.com\",\r\n    \"password\": \"<generated token>\",\r\n    \"gender\": \"Laki-Laki\",\r\n    \"address\": \"Jl. Karasak timur\",\r\n    \"city\": \"Bandung\",\r\n    \"postal_code\": 3472\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/user/12",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"user",
+								"12"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Mengupdate Data User Berdasarkan {Id}",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Dwi Nurcahyo\",\r\n    \"email\": \"dwianurcahyo@gmail.com\",\r\n    \"password\": \"<generated token>\",\r\n    \"gender\": \"Laki-Laki\",\r\n    \"address\": \"Jl. Karasak timur\",\r\n    \"city\": \"Bandung\",\r\n    \"postal_code\": 3472\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/user/12",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"user",
+										"12"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "239"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ef-JeuXYCzPHNoU26vfD3lrasxMFvQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 06 Dec 2024 21:23:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"Success\",\n    \"message\": \"UPDATE Success\",\n    \"data\": {\n        \"id\": \"12\",\n        \"name\": \"Dwi Nurcahyo\",\n        \"email\": \"dwianurcahyo@gmail.com\",\n        \"password\": \"<generated token>\",\n        \"gender\": \"Laki-Laki\",\n        \"address\": \"Jl. Karasak timur\",\n        \"city\": \"Bandung\",\n        \"postal_code\": 3472\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Menghapus User Berdasarkan {Id}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/user/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"user",
+								"8"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Menghapus User Berdasarkan {Id}",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/user/8",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"user",
+										"8"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "57"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"39-reglQTBZLcFSqef8DMIUxbToROo\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 06 Dec 2024 21:26:28 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"DELETE Success\",\n    \"data\": []\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Functionality feature search",
+			"item": [
+				{
+					"name": "Mencari produk berdasarkan Keyword",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/products/search?search=ayam",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"products",
+								"search"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "ayam"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Mencari produk berdasarkan Keyword",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/products/search?search=ayam",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"products",
+										"search"
+									],
+									"query": [
+										{
+											"key": "search",
+											"value": "ayam"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "5132"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"140c-k+JRVVJMGNVvDwzjXjCaoVOMmgE\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 10 Dec 2024 21:22:44 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Products found\",\n    \"data\": [\n        {\n            \"id_product\": 7,\n            \"name\": \"Sup Ayam Sehat\",\n            \"description\": \"Sup ayam dengan sayuran segar.\",\n            \"ingredient\": \"Ayam, wortel, kentang, daun seledri, bawang putih\",\n            \"steps\": \"1. Rebus ayam hingga matang; 2. Tambahkan sayuran dan masak hingga empuk.\",\n            \"cooking_time\": \"30 menit\",\n            \"servings\": 2,\n            \"id_category\": 3,\n            \"image_url\": \"http://example.com/sup-ayam.jpg\",\n            \"price\": 20000,\n            \"created_at\": \"2024-12-09T04:34:35.000Z\",\n            \"updated_at\": \"2024-12-10T03:57:15.000Z\"\n        },\n        {\n            \"id_product\": 10,\n            \"name\": \"Ayam Panggang Madu\",\n            \"description\": \"Ayam panggang dengan olesan madu yang manis dan gurih.\",\n            \"ingredient\": \"Ayam, madu, kecap asin, bawang putih, merica, minyak zaitun.\",\n            \"steps\": \"1. Campur madu, kecap asin, bawang putih, dan merica untuk marinasi.\\n2. Lumuri ayam dengan bumbu marinasi, diamkan selama 30 menit.\\n3. Panggang ayam dalam oven hingga matang.\",\n            \"cooking_time\": \"1 jam\",\n            \"servings\": 2,\n            \"id_category\": 3,\n            \"image_url\": \"https://example.com/ayam-panggang-madu.jpg\",\n            \"price\": 40000,\n            \"created_at\": \"2024-12-09T22:31:03.000Z\",\n            \"updated_at\": \"2024-12-09T22:31:03.000Z\"\n        },\n        {\n            \"id_product\": 1,\n            \"name\": \"Ayam kari\",\n            \"description\": \"salah satu hidangan tradisional Nusantara yang menggugah selera. Hidangan ini dikenal dengan kuahnya yang kental, berbumbu kaya, dan cita rasanya yang lezat, menggabungkan gurihnya santan dengan beragam rempah-rempah khas Indonesia\",\n            \"ingredient\": \"Bahan Utama:\\r \\r 1. Daging ayam (biasanya ayam kampung untuk rasa lebih gurih).\\r 2. Santan kental dan cair sebagai bahan utama kuah.\\r 3. Kentang atau sayuran lain (seperti wortel) sering ditambahkan sebagai pelengkap.\\n\\nBumbu Rempah:\\n\\n1. Bumbu halus: bawang merah, bawang putih, jahe, kunyit, kemiri, ketumbar, dan cabai merah.\\n\\n2. Rempah utuh: serai, daun salam, daun jeruk, dan kayu manis.\\n\\n3. Tambahan gula merah dan garam untuk keseimbangan rasa.\\n\\n\\n\",\n            \"steps\": \"1. Tumis bumbu halus bersama rempah utuh hingga harum.\\n2. Masukkan ayam, aduk hingga meresap dengan bumbu.\\n3. Tambahkan santan cair dan biarkan mendidih.\\n4. Masukkan kentang dan santan kental, masak hingga ayam empuk dan kuah mengental.\\n\",\n            \"cooking_time\": \"45 menit \",\n            \"servings\": 5,\n            \"id_category\": 2,\n            \"image_url\": \"https://th.bing.com/th/id/OIP.cGAODcyOfLxubIt_got44wAAAA?rs=1&pid=ImgDetMain\",\n            \"price\": 30000,\n            \"created_at\": \"2024-12-07T06:50:17.000Z\",\n            \"updated_at\": \"2024-12-10T03:57:14.000Z\"\n        },\n        {\n            \"id_product\": 9,\n            \"name\": \"Soto Ayam\",\n            \"description\": \"Soto ayam hangat dengan kuah bening dan kaya rempah.\",\n            \"ingredient\": \"Ayam, serai, daun salam, daun jeruk, kunyit, bawang merah, bawang putih, tauge, soun, telur rebus, jeruk nipis.\",\n            \"steps\": \"1. Rebus ayam dengan bumbu hingga matang, lalu suwir dagingnya.\\n2. Tumis bumbu halus hingga harum, tambahkan ke kuah rebusan ayam.\\n3. Sajikan dengan soun, tauge, dan telur rebus.\",\n            \"cooking_time\": \"40 menit\",\n            \"servings\": 3,\n            \"id_category\": 2,\n            \"image_url\": \"https://example.com/soto-ayam.jpg\",\n            \"price\": 25000,\n            \"created_at\": \"2024-12-09T22:31:03.000Z\",\n            \"updated_at\": \"2024-12-09T22:31:03.000Z\"\n        },\n        {\n            \"id_product\": 12,\n            \"name\": \"Opor Ayam\",\n            \"description\": \"Opor ayam dengan kuah santan yang lezat dan gurih.\",\n            \"ingredient\": \"Ayam, santan, serai, daun salam, kunyit, bawang merah, bawang putih, kemiri.\",\n            \"steps\": \"1. Tumis bumbu halus hingga harum, tambahkan serai dan daun salam.\\n2. Masukkan ayam, aduk hingga tercampur rata.\\n3. Tambahkan santan, masak hingga ayam empuk.\",\n            \"cooking_time\": \"45 menit\",\n            \"servings\": 4,\n            \"id_category\": 2,\n            \"image_url\": \"https://example.com/opor-ayam.jpg\",\n            \"price\": 35000,\n            \"created_at\": \"2024-12-09T22:31:03.000Z\",\n            \"updated_at\": \"2024-12-09T22:31:03.000Z\"\n        },\n        {\n            \"id_product\": 3,\n            \"name\": \"Ayam Penyet\",\n            \"description\": \"Ayam goreng dengan sambal khas Indonesia.\",\n            \"ingredient\": \"Ayam, sambal, lalapan, minyak goreng\",\n            \"steps\": \"1. Goreng ayam hingga matang; 2. Tumbuk ayam dengan sambal; 3. Sajikan dengan lalapan.\",\n            \"cooking_time\": \"25 menit \",\n            \"servings\": 1,\n            \"id_category\": 1,\n            \"image_url\": \"http://example.com/ayam-penyet.jpg\",\n            \"price\": 25000,\n            \"created_at\": \"2024-12-09T04:34:35.000Z\",\n            \"updated_at\": \"2024-12-10T03:57:15.000Z\"\n        },\n        {\n            \"id_product\": 8,\n            \"name\": \"Ayam Goreng Kremes\",\n            \"description\": \"Ayam goreng kremes yang renyah dan gurih, cocok untuk lauk sehari-hari.\",\n            \"ingredient\": \"Ayam, tepung tapioka, bawang putih, ketumbar, garam, air, minyak goreng.\",\n            \"steps\": \"1. Rebus ayam dengan bumbu hingga empuk.\\n2. Siapkan adonan kremes dari tepung tapioka dan air rebusan ayam.\\n3. Goreng ayam hingga kecokelatan, kemudian tuangkan adonan kremes ke dalam minyak panas.\",\n            \"cooking_time\": \"30 menit\",\n            \"servings\": 4,\n            \"id_category\": 1,\n            \"image_url\": \"https://example.com/ayam-goreng-kremes.jpg\",\n            \"price\": 30000,\n            \"created_at\": \"2024-12-09T22:31:03.000Z\",\n            \"updated_at\": \"2024-12-09T22:31:03.000Z\"\n        },\n        {\n            \"id_product\": 11,\n            \"name\": \"Ayam Geprek\",\n            \"description\": \"Ayam goreng crispy yang diulek dengan sambal pedas.\",\n            \"ingredient\": \"Ayam, tepung terigu, bawang putih, cabai rawit, garam, minyak goreng.\",\n            \"steps\": \"1. Goreng ayam yang telah dilapisi tepung hingga crispy.\\n2. Ulek cabai rawit, bawang putih, dan garam.\\n3. Geprek ayam di atas sambal.\",\n            \"cooking_time\": \"20 menit\",\n            \"servings\": 1,\n            \"id_category\": 1,\n            \"image_url\": \"https://example.com/ayam-geprek.jpg\",\n            \"price\": 20000,\n            \"created_at\": \"2024-12-09T22:31:03.000Z\",\n            \"updated_at\": \"2024-12-09T22:31:03.000Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Mencari Produk/Recipe Berdasarkan Makanan Berat",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/products/category/makanan-berat?id_category=1&order=ASC",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"products",
+								"category",
+								"makanan-berat"
+							],
+							"query": [
+								{
+									"key": "id_category",
+									"value": "1"
+								},
+								{
+									"key": "order",
+									"value": "ASC"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Mencari Produk/Recipe Berdasarkan Makanan Berat",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/products/category/makanan-berat?id_category=1&order=ASC",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"products",
+										"category",
+										"makanan-berat"
+									],
+									"query": [
+										{
+											"key": "id_category",
+											"value": "1"
+										},
+										{
+											"key": "order",
+											"value": "ASC"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2180"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"884-uaSu6T6+vY8bBQZoAuaVRDAHKAU\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 10 Dec 2024 21:27:00 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Product found\",\n    \"data\": [\n        {\n            \"id_product\": 2,\n            \"name\": \"Nasi Goreng Spesial\",\n            \"description\": \"Nasi goreng dengan telur, ayam, dan sosis.\",\n            \"ingredient\": \"Nasi, telur, ayam, sosis, bawang putih, kecap\",\n            \"steps\": \"1. Tumis bawang putih; 2. Masukkan nasi, ayam, dan sosis; 3. Tambahkan kecap dan aduk rata.\",\n            \"cooking_time\": \" 15 menit \",\n            \"servings\": 2,\n            \"id_category\": 1,\n            \"image_url\": \"http://example.com/nasi-goreng.jpg\",\n            \"price\": 20000,\n            \"created_at\": \"2024-12-09T04:34:35.000Z\",\n            \"updated_at\": \"2024-12-10T03:57:15.000Z\"\n        },\n        {\n            \"id_product\": 11,\n            \"name\": \"Ayam Geprek\",\n            \"description\": \"Ayam goreng crispy yang diulek dengan sambal pedas.\",\n            \"ingredient\": \"Ayam, tepung terigu, bawang putih, cabai rawit, garam, minyak goreng.\",\n            \"steps\": \"1. Goreng ayam yang telah dilapisi tepung hingga crispy.\\n2. Ulek cabai rawit, bawang putih, dan garam.\\n3. Geprek ayam di atas sambal.\",\n            \"cooking_time\": \"20 menit\",\n            \"servings\": 1,\n            \"id_category\": 1,\n            \"image_url\": \"https://example.com/ayam-geprek.jpg\",\n            \"price\": 20000,\n            \"created_at\": \"2024-12-09T22:31:03.000Z\",\n            \"updated_at\": \"2024-12-09T22:31:03.000Z\"\n        },\n        {\n            \"id_product\": 3,\n            \"name\": \"Ayam Penyet\",\n            \"description\": \"Ayam goreng dengan sambal khas Indonesia.\",\n            \"ingredient\": \"Ayam, sambal, lalapan, minyak goreng\",\n            \"steps\": \"1. Goreng ayam hingga matang; 2. Tumbuk ayam dengan sambal; 3. Sajikan dengan lalapan.\",\n            \"cooking_time\": \"25 menit \",\n            \"servings\": 1,\n            \"id_category\": 1,\n            \"image_url\": \"http://example.com/ayam-penyet.jpg\",\n            \"price\": 25000,\n            \"created_at\": \"2024-12-09T04:34:35.000Z\",\n            \"updated_at\": \"2024-12-10T03:57:15.000Z\"\n        },\n        {\n            \"id_product\": 8,\n            \"name\": \"Ayam Goreng Kremes\",\n            \"description\": \"Ayam goreng kremes yang renyah dan gurih, cocok untuk lauk sehari-hari.\",\n            \"ingredient\": \"Ayam, tepung tapioka, bawang putih, ketumbar, garam, air, minyak goreng.\",\n            \"steps\": \"1. Rebus ayam dengan bumbu hingga empuk.\\n2. Siapkan adonan kremes dari tepung tapioka dan air rebusan ayam.\\n3. Goreng ayam hingga kecokelatan, kemudian tuangkan adonan kremes ke dalam minyak panas.\",\n            \"cooking_time\": \"30 menit\",\n            \"servings\": 4,\n            \"id_category\": 1,\n            \"image_url\": \"https://example.com/ayam-goreng-kremes.jpg\",\n            \"price\": 30000,\n            \"created_at\": \"2024-12-09T22:31:03.000Z\",\n            \"updated_at\": \"2024-12-09T22:31:03.000Z\"\n        }\n    ],\n    \"meta\": {\n        \"total\": 4,\n        \"page\": 1,\n        \"limit\": 10\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Mencari Produk/Recipe Berdasarkan Makanan Tradisional",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/products/category/makanan-tradisional?id_category=2&order=ASC",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"products",
+								"category",
+								"makanan-tradisional"
+							],
+							"query": [
+								{
+									"key": "id_category",
+									"value": "2"
+								},
+								{
+									"key": "order",
+									"value": "ASC"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Mencari Produk/Recipe Berdasarkan Makanan Tradisional",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/products/category/makanan-tradisional?id_category=2&order=ASC",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"products",
+										"category",
+										"makanan-tradisional"
+									],
+									"query": [
+										{
+											"key": "id_category",
+											"value": "2"
+										},
+										{
+											"key": "order",
+											"value": "ASC"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "3411"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"d53-P/WRhbETtWwzoXyxnLyog8WRHVU\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 10 Dec 2024 21:28:01 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Product found\",\n    \"data\": [\n        {\n            \"id_product\": 9,\n            \"name\": \"Soto Ayam\",\n            \"description\": \"Soto ayam hangat dengan kuah bening dan kaya rempah.\",\n            \"ingredient\": \"Ayam, serai, daun salam, daun jeruk, kunyit, bawang merah, bawang putih, tauge, soun, telur rebus, jeruk nipis.\",\n            \"steps\": \"1. Rebus ayam dengan bumbu hingga matang, lalu suwir dagingnya.\\n2. Tumis bumbu halus hingga harum, tambahkan ke kuah rebusan ayam.\\n3. Sajikan dengan soun, tauge, dan telur rebus.\",\n            \"cooking_time\": \"40 menit\",\n            \"servings\": 3,\n            \"id_category\": 2,\n            \"image_url\": \"https://example.com/soto-ayam.jpg\",\n            \"price\": 25000,\n            \"created_at\": \"2024-12-09T22:31:03.000Z\",\n            \"updated_at\": \"2024-12-09T22:31:03.000Z\"\n        },\n        {\n            \"id_product\": 1,\n            \"name\": \"Ayam kari\",\n            \"description\": \"salah satu hidangan tradisional Nusantara yang menggugah selera. Hidangan ini dikenal dengan kuahnya yang kental, berbumbu kaya, dan cita rasanya yang lezat, menggabungkan gurihnya santan dengan beragam rempah-rempah khas Indonesia\",\n            \"ingredient\": \"Bahan Utama:\\r \\r 1. Daging ayam (biasanya ayam kampung untuk rasa lebih gurih).\\r 2. Santan kental dan cair sebagai bahan utama kuah.\\r 3. Kentang atau sayuran lain (seperti wortel) sering ditambahkan sebagai pelengkap.\\n\\nBumbu Rempah:\\n\\n1. Bumbu halus: bawang merah, bawang putih, jahe, kunyit, kemiri, ketumbar, dan cabai merah.\\n\\n2. Rempah utuh: serai, daun salam, daun jeruk, dan kayu manis.\\n\\n3. Tambahan gula merah dan garam untuk keseimbangan rasa.\\n\\n\\n\",\n            \"steps\": \"1. Tumis bumbu halus bersama rempah utuh hingga harum.\\n2. Masukkan ayam, aduk hingga meresap dengan bumbu.\\n3. Tambahkan santan cair dan biarkan mendidih.\\n4. Masukkan kentang dan santan kental, masak hingga ayam empuk dan kuah mengental.\\n\",\n            \"cooking_time\": \"45 menit \",\n            \"servings\": 5,\n            \"id_category\": 2,\n            \"image_url\": \"https://th.bing.com/th/id/OIP.cGAODcyOfLxubIt_got44wAAAA?rs=1&pid=ImgDetMain\",\n            \"price\": 30000,\n            \"created_at\": \"2024-12-07T06:50:17.000Z\",\n            \"updated_at\": \"2024-12-10T03:57:14.000Z\"\n        },\n        {\n            \"id_product\": 5,\n            \"name\": \"Gudeg\",\n            \"description\": \"Makanan khas Yogyakarta berbahan dasar nangka muda.\",\n            \"ingredient\": \"Nangka muda, santan, gula jawa, daun salam\",\n            \"steps\": \"1. Masak nangka dengan santan dan bumbu; 2. Rebus hingga empuk.\",\n            \"cooking_time\": \"90 menit\",\n            \"servings\": 3,\n            \"id_category\": 2,\n            \"image_url\": \"http://example.com/gudeg.jpg\",\n            \"price\": 30000,\n            \"created_at\": \"2024-12-09T04:34:35.000Z\",\n            \"updated_at\": \"2024-12-10T03:57:15.000Z\"\n        },\n        {\n            \"id_product\": 12,\n            \"name\": \"Opor Ayam\",\n            \"description\": \"Opor ayam dengan kuah santan yang lezat dan gurih.\",\n            \"ingredient\": \"Ayam, santan, serai, daun salam, kunyit, bawang merah, bawang putih, kemiri.\",\n            \"steps\": \"1. Tumis bumbu halus hingga harum, tambahkan serai dan daun salam.\\n2. Masukkan ayam, aduk hingga tercampur rata.\\n3. Tambahkan santan, masak hingga ayam empuk.\",\n            \"cooking_time\": \"45 menit\",\n            \"servings\": 4,\n            \"id_category\": 2,\n            \"image_url\": \"https://example.com/opor-ayam.jpg\",\n            \"price\": 35000,\n            \"created_at\": \"2024-12-09T22:31:03.000Z\",\n            \"updated_at\": \"2024-12-09T22:31:03.000Z\"\n        },\n        {\n            \"id_product\": 4,\n            \"name\": \"Rendang\",\n            \"description\": \"Daging sapi dengan bumbu rendang khas Minangkabau.\",\n            \"ingredient\": \"Daging sapi, santan, bumbu rendang\",\n            \"steps\": \"1. Rebus daging dengan santan dan bumbu; 2. Masak hingga santan mengering dan bumbu meresap.\",\n            \"cooking_time\": \"120 menit \",\n            \"servings\": 4,\n            \"id_category\": 2,\n            \"image_url\": \"http://example.com/rendang.jpg\",\n            \"price\": 50000,\n            \"created_at\": \"2024-12-09T04:34:35.000Z\",\n            \"updated_at\": \"2024-12-10T03:57:15.000Z\"\n        }\n    ],\n    \"meta\": {\n        \"total\": 5,\n        \"page\": 1,\n        \"limit\": 10\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Mencari Produk/Recipe Berdasarkan Makanan Sehat",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/products/category/makanan-sehat?id_category=3&order=ASC",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"products",
+								"category",
+								"makanan-sehat"
+							],
+							"query": [
+								{
+									"key": "id_category",
+									"value": "3"
+								},
+								{
+									"key": "order",
+									"value": "ASC"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Mencari Produk/Recipe Berdasarkan Makanan Sehat",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/products/category/makanan-sehat?id_category=3&order=ASC",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"products",
+										"category",
+										"makanan-sehat"
+									],
+									"query": [
+										{
+											"key": "id_category",
+											"value": "3"
+										},
+										{
+											"key": "order",
+											"value": "ASC"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1516"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"5ec-RLyabmwcnY+zNZdEE4BeBQ48I+4\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 10 Dec 2024 21:28:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Product found\",\n    \"data\": [\n        {\n            \"id_product\": 6,\n            \"name\": \"Salad Buah\",\n            \"description\": \"Campuran buah segar dengan yogurt.\",\n            \"ingredient\": \"Apel, anggur, semangka, yogurt\",\n            \"steps\": \"1. Potong semua buah; 2. Campur dengan yogurt; 3. Sajikan dingin.\",\n            \"cooking_time\": \"10 menit\",\n            \"servings\": 2,\n            \"id_category\": 3,\n            \"image_url\": \"http://example.com/salad-buah.jpg\",\n            \"price\": 15000,\n            \"created_at\": \"2024-12-09T04:34:35.000Z\",\n            \"updated_at\": \"2024-12-10T03:57:15.000Z\"\n        },\n        {\n            \"id_product\": 7,\n            \"name\": \"Sup Ayam Sehat\",\n            \"description\": \"Sup ayam dengan sayuran segar.\",\n            \"ingredient\": \"Ayam, wortel, kentang, daun seledri, bawang putih\",\n            \"steps\": \"1. Rebus ayam hingga matang; 2. Tambahkan sayuran dan masak hingga empuk.\",\n            \"cooking_time\": \"30 menit\",\n            \"servings\": 2,\n            \"id_category\": 3,\n            \"image_url\": \"http://example.com/sup-ayam.jpg\",\n            \"price\": 20000,\n            \"created_at\": \"2024-12-09T04:34:35.000Z\",\n            \"updated_at\": \"2024-12-10T03:57:15.000Z\"\n        },\n        {\n            \"id_product\": 10,\n            \"name\": \"Ayam Panggang Madu\",\n            \"description\": \"Ayam panggang dengan olesan madu yang manis dan gurih.\",\n            \"ingredient\": \"Ayam, madu, kecap asin, bawang putih, merica, minyak zaitun.\",\n            \"steps\": \"1. Campur madu, kecap asin, bawang putih, dan merica untuk marinasi.\\n2. Lumuri ayam dengan bumbu marinasi, diamkan selama 30 menit.\\n3. Panggang ayam dalam oven hingga matang.\",\n            \"cooking_time\": \"1 jam\",\n            \"servings\": 2,\n            \"id_category\": 3,\n            \"image_url\": \"https://example.com/ayam-panggang-madu.jpg\",\n            \"price\": 40000,\n            \"created_at\": \"2024-12-09T22:31:03.000Z\",\n            \"updated_at\": \"2024-12-09T22:31:03.000Z\"\n        }\n    ],\n    \"meta\": {\n        \"total\": 3,\n        \"page\": 1,\n        \"limit\": 10\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Add Recipe",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Resep Test\",\r\n    \"ingredient\": \"Bahan A, Bahan B\",\r\n    \"steps\": \"Langkah 1, Langkah 2\",\r\n    \"image_url\": \"http://example.com/image.jpg\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4000/api/products/add-recipe",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"products",
+								"add-recipe"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Fitur checkout",
+			"item": [
+				{
+					"name": "Fitur Pesan/checkout",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_id\": 17,\r\n    \"cart_items\": [\r\n        {\"product_id\": 4, \"quantity\": 1},\r\n        {\"product_id\": 5, \"quantity\": 2}\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/order/checkout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"order",
+								"checkout"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:5000/order/checkout",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"user_id\": 17,\r\n    \"cart_items\": [\r\n        {\"product_id\": 4, \"quantity\": 1},\r\n        {\"product_id\": 5, \"quantity\": 2}\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/order/checkout",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"order",
+										"checkout"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "86"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"56-akFd/f49/peZWVX065tASCwEM+8\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 11 Dec 2024 19:05:15 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"Success\",\n    \"message\": \"Checkout successful\",\n    \"order_id\": 4,\n    \"total_price\": 110000\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

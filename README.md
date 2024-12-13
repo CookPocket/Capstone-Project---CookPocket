@@ -53,7 +53,7 @@ npm install bcryptjs dotenv express jsonwebtoken socket.io mysql2 nodemon
 To create the database, follow these steps:
 
 1. Download the [db_cookpocket.sql](https://github.com/CookPocket/Capstone-Project---CookPocket/blob/main/Cloud%20Computing/db_cookpocket.sql) file from the Cloud Computing directory.
-2. Execute the SQL commands in the downloaded `database.sql` file to set up the necessary database structure.
+2. Execute the SQL commands in the downloaded `db_cookpocket.sql` file to set up the necessary database structure.
 
 #### Step 4: Configure the .env file
 

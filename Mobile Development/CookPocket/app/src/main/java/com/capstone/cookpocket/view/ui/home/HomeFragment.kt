@@ -36,16 +36,17 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         ).get(HomeViewModel::class.java)
     }
 
-    private val CookPocketPagingAdapter by lazy {
+    private val cookPocketPagingAdapter by lazy {
         AdapterActivity { storyItem, imageView, textView ->
             val intent = Intent(requireContext(), DetailSearchActivity::class.java).apply {
-                putExtra("STORY_NAME", storyItem.name)
-                putExtra("STORY_DESCRIPTION", storyItem.description)
-                putExtra("STORY_PHOTO", storyItem.photoUrl)
+                putExtra("PRODUCT", storyItem)
             }
             startActivity(intent)
         }
     }
+
+
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -67,8 +68,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         // Observasi data dari ViewModel
         observeViewModel()
 
-        // Ambil data cerita dari ViewModel
-        homeViewModel.fetchStories()
+        homeViewModel.fetchMakananTradisional() // Jika ingin memuat data awal (opsional)
 
         binding.ivKeranjang.setOnClickListener {
             val intent = Intent(requireContext(), CartActivity::class.java)
@@ -79,6 +79,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
             val intent = Intent(requireContext(), NotificationActivity::class.java)
             startActivity(intent)
         }
+
         binding.searchBarHome.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean {
                 query?.let {
@@ -96,19 +97,16 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
             }
         })
 
+        // Tombol kategori makanan berat, tradisional, dan sehat
         binding.cvBtnMakananBerat.setOnClickListener {
-            val intent = Intent(requireContext(), MenuSearchActivity::class.java)
-            startActivity(intent)
+            navigateToMenuSearchActivity("makanan-berat")
         }
         binding.cvBtnMakananTradisional.setOnClickListener {
-            val intent = Intent(requireContext(), MenuSearchActivity::class.java)
-            startActivity(intent)
+            navigateToMenuSearchActivity("makanan-tradisional")
         }
         binding.cvBtnMakananSehat.setOnClickListener {
-            val intent = Intent(requireContext(), MenuSearchActivity::class.java)
-            startActivity(intent)
+            navigateToMenuSearchActivity("makanan-sehat")
         }
-
     }
 
     private fun checkTokenAndNavigate() {
@@ -133,14 +131,14 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
     private fun setupRecyclerView() {
         binding.favoriteRecyclerView.apply {
             layoutManager = LinearLayoutManager(requireContext())
-            adapter = CookPocketPagingAdapter
+            adapter = cookPocketPagingAdapter
         }
     }
 
     private fun observeViewModel() {
         homeViewModel.stories.observe(viewLifecycleOwner) { stories ->
             if (stories != null) {
-                CookPocketPagingAdapter.submitList(stories)
+                cookPocketPagingAdapter.submitList(stories)
             }
         }
 
@@ -149,8 +147,17 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         }
     }
 
+    // Fungsi untuk menampilkan toast
     private fun showToast(message: String) {
         Toast.makeText(requireContext(), message, Toast.LENGTH_SHORT).show()
+    }
+
+    // Fungsi untuk menavigasi ke MenuSearchActivity dengan kategori yang dipilih
+    private fun navigateToMenuSearchActivity(category: String) {
+        val intent = Intent(requireContext(), MenuSearchActivity::class.java).apply {
+            putExtra("CATEGORY", category) // Mengirim kategori ke MenuSearchActivity
+        }
+        startActivity(intent)
     }
 
     override fun onDestroyView() {

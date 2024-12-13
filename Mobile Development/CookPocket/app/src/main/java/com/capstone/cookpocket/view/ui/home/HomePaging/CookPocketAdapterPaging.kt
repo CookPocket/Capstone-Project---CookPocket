@@ -1,21 +1,17 @@
 package com.capstone.cookpocket.view.ui.home.HomePaging
 
-import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.TextView
 import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.capstone.cookpocket.Network.Response.ListStoryItem
+import com.capstone.cookpocket.Network.Response.Product
 import com.capstone.cookpocket.databinding.ActivityAdapterBinding
-import com.capstone.cookpocket.view.ui.adapter.AdapterActivity
 
 class CookPocketPagingAdapter(
-    private val onItemClick: (ListStoryItem) -> Unit // Listener onItemClick untuk menangani klik item
-) : PagingDataAdapter<ListStoryItem, CookPocketPagingAdapter.CookPocketViewHolder>(DIFF_CALLBACK) {
+    private val onItemClick: (Product) -> Unit // Listener onItemClick untuk menangani klik item
+) : PagingDataAdapter<Product, CookPocketPagingAdapter.CookPocketViewHolder>(DIFF_CALLBACK) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CookPocketViewHolder {
         val binding = ActivityAdapterBinding.inflate(LayoutInflater.from(parent.context), parent, false)
@@ -31,32 +27,32 @@ class CookPocketPagingAdapter(
 
     class CookPocketViewHolder(
         private val binding: ActivityAdapterBinding,
-        private val onItemClick: (ListStoryItem) -> Unit
+        private val onItemClick: (Product) -> Unit
     ) : RecyclerView.ViewHolder(binding.root) {
 
-        fun bind(story: ListStoryItem) {
-            binding.foodName.text = story.name
-            binding.foodDescription.text = story.description
+        fun bind(product: Product) {
+            binding.foodName.text = product.name
+            binding.foodDescription.text = product.description
 
             // Memuat gambar menggunakan Glide
             Glide.with(binding.img.context)
-                .load(story.photoUrl)
+                .load(product.imageUrl)
                 .into(binding.img)
 
             // Menambahkan klik listener
             binding.root.setOnClickListener {
-                onItemClick(story)
+                onItemClick(product)
             }
         }
     }
 
     companion object {
-        val DIFF_CALLBACK = object : DiffUtil.ItemCallback<ListStoryItem>() {
-            override fun areItemsTheSame(oldItem: ListStoryItem, newItem: ListStoryItem): Boolean {
-                return oldItem.id == newItem.id
+        val DIFF_CALLBACK = object : DiffUtil.ItemCallback<Product>() {
+            override fun areItemsTheSame(oldItem: Product, newItem: Product): Boolean {
+                return oldItem.idProduct == newItem.idProduct
             }
 
-            override fun areContentsTheSame(oldItem: ListStoryItem, newItem: ListStoryItem): Boolean {
+            override fun areContentsTheSame(oldItem: Product, newItem: Product): Boolean {
                 return oldItem == newItem
             }
         }

@@ -13,7 +13,7 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <string name="Keranjang">Keranjang</string>
     <string name="Username">Username</string>
-    <string name="_0">0</string>
+    <string name="_0">1</string>
     <string name="account">Account</string>
     <string name="add_my_cart">add my cart</string>
     <string name="alamat">Alamat</string>
@@ -37,6 +37,7 @@
     <string name="daftar">Daftar</string>
     <string name="desc_login">Login Akun Kamu Yuk!</string>
     <string name="desc_title_login">Belum Punya Akun?</string>
+    <string name="deskripsi">Deskripsi</string>
     <string name="deskripsi_alamat">Alamat Lengkap</string>
     <string name="deskripsi_makanan">Deskripsi makanan</string>
     <string name="deskripsi_makanan_yang_menarik_dan_informatif">Deskripsi makanan yang menarik dan informatif.</string>

@@ -23,7 +23,7 @@ class LoginViewModel (private val authRepository: AuthRepository): ViewModel() {
                 _loginState.value = LoginResponse(
                     error = true,
                     message = e.message ?: "Terjadi Kesalahan",
-                    loginResult = User(0, "", "")
+                    loginResult = User(0, "", "", "")
                 )
             }
         }

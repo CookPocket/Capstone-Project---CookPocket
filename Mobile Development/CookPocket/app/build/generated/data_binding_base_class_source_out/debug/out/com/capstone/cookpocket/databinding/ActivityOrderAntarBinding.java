@@ -4,6 +4,7 @@ package com.capstone.cookpocket.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
@@ -22,6 +23,9 @@ import java.lang.String;
 public final class ActivityOrderAntarBinding implements ViewBinding {
   @NonNull
   private final ConstraintLayout rootView;
+
+  @NonNull
+  public final Button btnBuatPesanan;
 
   @NonNull
   public final ImageView btnMinus;
@@ -113,9 +117,10 @@ public final class ActivityOrderAntarBinding implements ViewBinding {
   @NonNull
   public final TextView tvUsernameUser;
 
-  private ActivityOrderAntarBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView btnMinus,
-      @NonNull ImageView btnPlus, @NonNull CardView cvBtnAmbilSendiri,
-      @NonNull CardView cvTambahKurang, @NonNull ImageView imgFood, @NonNull ImageView ivBackAntar,
+  private ActivityOrderAntarBinding(@NonNull ConstraintLayout rootView,
+      @NonNull Button btnBuatPesanan, @NonNull ImageView btnMinus, @NonNull ImageView btnPlus,
+      @NonNull CardView cvBtnAmbilSendiri, @NonNull CardView cvTambahKurang,
+      @NonNull ImageView imgFood, @NonNull ImageView ivBackAntar,
       @NonNull LinearLayout linearLayout3, @NonNull LinearLayout llAlamatPengiriman,
       @NonNull LinearLayout llBiayaPengiriman, @NonNull LinearLayout llBtnOrderAntar,
       @NonNull LinearLayout llDeskripsiAlamat, @NonNull LinearLayout llTokoMitra,
@@ -129,6 +134,7 @@ public final class ActivityOrderAntarBinding implements ViewBinding {
       @NonNull TextView tvTotalPesanan, @NonNull TextView tvTotalSemua,
       @NonNull TextView tvUsernameUser) {
     this.rootView = rootView;
+    this.btnBuatPesanan = btnBuatPesanan;
     this.btnMinus = btnMinus;
     this.btnPlus = btnPlus;
     this.cvBtnAmbilSendiri = cvBtnAmbilSendiri;
@@ -188,6 +194,12 @@ public final class ActivityOrderAntarBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btn_buat_pesanan;
+      Button btnBuatPesanan = ViewBindings.findChildViewById(rootView, id);
+      if (btnBuatPesanan == null) {
+        break missingId;
+      }
+
       id = R.id.btn_minus;
       ImageView btnMinus = ViewBindings.findChildViewById(rootView, id);
       if (btnMinus == null) {
@@ -364,8 +376,8 @@ public final class ActivityOrderAntarBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityOrderAntarBinding((ConstraintLayout) rootView, btnMinus, btnPlus,
-          cvBtnAmbilSendiri, cvTambahKurang, imgFood, ivBackAntar, linearLayout3,
+      return new ActivityOrderAntarBinding((ConstraintLayout) rootView, btnBuatPesanan, btnMinus,
+          btnPlus, cvBtnAmbilSendiri, cvTambahKurang, imgFood, ivBackAntar, linearLayout3,
           llAlamatPengiriman, llBiayaPengiriman, llBtnOrderAntar, llDeskripsiAlamat, llTokoMitra,
           llTotalPesanan, llTotalSemua, main, progresbarAntar, totalBiayaPengiriman, totalPesanan,
           totalSemua, tvAlamatUser, tvBiayaPengiriman, tvHargaMakanan, tvNamaMakanan, tvNoTelpUser,

@@ -7,22 +7,21 @@ import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.PagingData
 import com.capstone.cookpocket.Network.Api.ApiService
-import com.capstone.cookpocket.Network.Response.FileUploadResponse
-import com.capstone.cookpocket.Network.Response.ListStoryItem
+import com.capstone.cookpocket.Network.Response.Product
+import com.capstone.cookpocket.Network.Response.User
 import com.capstone.cookpocket.Network.UserPreferences
-import com.capstone.cookpocket.view.ui.home.HomePaging.CookPocketPaging
+import com.ichang.mystory.ui.Home.Paging.MakananSehatPagingSource
+import com.ichang.mystory.ui.Home.Paging.ProductSearchPagingSource
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.firstOrNull
-import okhttp3.MultipartBody
-import okhttp3.RequestBody
 
 class HomeRepository(
     private val api: ApiService,
     private val userPreferences: UserPreferences
 ) {
-    private val _allStories = MutableLiveData<List<ListStoryItem>>() // Semua data
-    private val _filteredStories = MutableLiveData<List<ListStoryItem>>() // Data hasil pencarian
-    val filteredStories: LiveData<List<ListStoryItem>> = _filteredStories
+    private val _allStories = MutableLiveData<List<Product>>() // Semua data
+    private val _filteredStories = MutableLiveData<List<Product>>() // Data hasil pencarian
+    val filteredStories: LiveData<List<Product>> = _filteredStories
 
     companion object {
         @Volatile
@@ -37,7 +36,8 @@ class HomeRepository(
         }
     }
 
-    suspend fun getStories(): Result<List<ListStoryItem>> {
+    // Fungsi untuk mengambil data Makanan Sehat
+    suspend fun RepMakananSehat(): Result<List<Product>> {
         return try {
             val token = userPreferences.token.firstOrNull()
             Log.d("StoryRepository", "Menggunakan token: $token")
@@ -46,11 +46,11 @@ class HomeRepository(
                 return Result.failure(Exception("Token tidak ditemukan"))
             }
 
-            val response = api.getAllStories()
+            val response = api.getMakananSehat()
             Log.d("StoryRepository", "Respons server: ${response.message}")
-            if (response.listStory.isNotEmpty()) {
-                Log.d("StoryRepository", "Berhasil mendapatkan cerita: ${response.listStory.size}")
-                Result.success(response.listStory)
+            if (response.data.isNotEmpty()) {
+                Log.d("StoryRepository", "Berhasil mendapatkan cerita: ${response.data.size}")
+                Result.success(response.data)
             } else {
                 Log.d("StoryRepository", "Daftar cerita kosong")
                 Result.failure(Exception("Daftar Kosong"))
@@ -61,45 +61,86 @@ class HomeRepository(
         }
     }
 
-    suspend fun uploadStory(photo: MultipartBody.Part, description: RequestBody): Result<FileUploadResponse> {
+    // Fungsi untuk mengambil data Makanan Tradisional
+    suspend fun RepMakananTradisional(): Result<List<Product>> {
         return try {
             val token = userPreferences.token.firstOrNull()
-                ?: return Result.failure(Exception("Token tidak ditemukan"))
+            Log.d("StoryRepository", "Menggunakan token: $token")
+            if (token.isNullOrEmpty()) {
+                Log.e("StoryRepository", "Token tidak ditemukan")
+                return Result.failure(Exception("Token tidak ditemukan"))
+            }
 
-            Log.d("Token", "Token: $token") // Debug token
-
-            val response = api.uploadStory(photo, description)
-            if (response.error) {
-                Result.failure(Exception(response.message))
+            val response = api.getMakananTradisional()
+            Log.d("StoryRepository", "Respons server: ${response.message}")
+            if (response.data.isNotEmpty()) {
+                Log.d("StoryRepository", "Berhasil mendapatkan cerita: ${response.data.size}")
+                Result.success(response.data)
             } else {
-                Result.success(response)
+                Log.d("StoryRepository", "Daftar cerita kosong")
+                Result.failure(Exception("Daftar Kosong"))
             }
         } catch (e: Exception) {
-            Log.e("UploadStoryError", "Error: ${e.localizedMessage}") // Debug error
-            Result.failure(Exception("Gagal mengunggah: ${e.localizedMessage}", e))
+            Log.e("StoryRepository", "getStrories() - Error: ${e.message}")
+            Result.failure(Exception("Gagal mengunggah cerita. Penyebab: ${e.message ?: "Kesalahan tidak diketahui"}", e))
         }
     }
 
-    suspend fun clearToken() {
-        userPreferences.clearToken()
-    }
+    // Fungsi untuk mengambil data Makanan Berat
+    suspend fun RepMakananBerat(): Result<List<Product>> {
+        return try {
+            val token = userPreferences.token.firstOrNull()
+            Log.d("StoryRepository", "Menggunakan token: $token")
+            if (token.isNullOrEmpty()) {
+                Log.e("StoryRepository", "Token tidak ditemukan")
+                return Result.failure(Exception("Token tidak ditemukan"))
+            }
 
-    fun searchStories(query: String) {
-        // Filter berdasarkan nama atau deskripsi
-        val stories = _allStories.value ?: emptyList()
-        _filteredStories.value = stories.filter { story ->
-            (story.name?.contains(query, ignoreCase = true) ?: false) ||
-                    (story.description?.contains(query, ignoreCase = true) ?: false)
+            val response = api.getMakananBerat()
+            Log.d("StoryRepository", "Respons server: ${response.message}")
+            if (response.data.isNotEmpty()) {
+                Log.d("StoryRepository", "Berhasil mendapatkan cerita: ${response.data.size}")
+                Result.success(response.data)
+            } else {
+                Log.d("StoryRepository", "Daftar cerita kosong")
+                Result.failure(Exception("Daftar Kosong"))
+            }
+        } catch (e: Exception) {
+            Log.e("StoryRepository", "getStrories() - Error: ${e.message}")
+            Result.failure(Exception("Gagal mengunggah cerita. Penyebab: ${e.message ?: "Kesalahan tidak diketahui"}", e))
         }
     }
-    fun getPagedStories(query: String? = null): Flow<PagingData<ListStoryItem>> {
+
+    // Fungsi untuk mengambil data berdasarkan query dengan paging
+    fun getPagedSearchResults(query: String): Flow<PagingData<Product>> {
         return Pager(
             config = PagingConfig(
                 pageSize = 20,
-                enablePlaceholders = false // Tidak menampilkan placeholder
+                enablePlaceholders = false
             ),
-            pagingSourceFactory = { CookPocketPaging(api, query) }
+            pagingSourceFactory = { ProductSearchPagingSource(api, query) }
         ).flow
     }
 
+    // Fungsi untuk mengambil data dengan paging tanpa filter
+    fun getPagedStories(): Flow<PagingData<Product>> {
+        return Pager(
+            config = PagingConfig(
+                pageSize = 20,
+                enablePlaceholders = false
+            ),
+            pagingSourceFactory = { MakananSehatPagingSource(api) }
+        ).flow
+    }
+
+    // Fungsi untuk mencari produk dengan query tanpa paging
+    suspend fun searchProducts(query: String): List<Product> {
+        return try {
+            val response = api.searchProducts(query)  // Fungsi yang dipanggil dari ApiService
+            response.data // Mengembalikan data produk
+        } catch (e: Exception) {
+            Log.e("HomeRepository", "searchProducts - Error: ${e.message}")
+            emptyList() // Mengembalikan list kosong jika terjadi kesalahan
+        }
+    }
 }

@@ -5,13 +5,16 @@ import com.google.gson.annotations.SerializedName
 // User Data Class untuk Login dan Register
 data class User(
     @field:SerializedName("userId")
-    val userId: Int, // Mengubah menjadi non-nullable karena seharusnya tidak null
+    val userId: Int,
 
     @field:SerializedName("name")
     val name: String,
 
+    @field:SerializedName("noTelp")
+    val noTelp: String,
+
     @field:SerializedName("token")
-    val token: String // Tidak nullable karena token diharapkan ada pada login
+    val token: String
 )
 
 // Login Response Data Class
@@ -20,22 +23,23 @@ data class LoginResponse(
     val error: Boolean,
 
     @field:SerializedName("message")
-    val message: String, // Menggunakan String non-nullable
+    val message: String,
 
     @field:SerializedName("loginResult")
-    val loginResult: User // Tidak nullable, karena loginResult seharusnya selalu ada jika login berhasil
+    val loginResult: User
 )
+
 
 // Register Response Data Class
 data class RegisterResponse(
     @field:SerializedName("error")
-    val error: Boolean, // Menggunakan Boolean non-nullable
+    val error: Boolean,
 
     @field:SerializedName("status")
-    val status: String, // Menggunakan String non-nullable
+    val status: String,
 
     @field:SerializedName("message")
-    val message: String, // Menggunakan String non-nullable
+    val message: String,
 
     @field:SerializedName("data")
     val data: UserRegistrationData?

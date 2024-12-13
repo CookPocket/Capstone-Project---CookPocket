@@ -160,12 +160,20 @@
         "source": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-6:\\layout\\activity_oder_finish.xml"
     },
     {
+        "merged": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-debug-4:\\layout_activity_order_finish.xml.flat",
+        "source": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-6:\\layout\\activity_order_finish.xml"
+    },
+    {
         "merged": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-debug-4:\\mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
         "source": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-6:\\mipmap-xxxhdpi\\ic_launcher_foreground.webp"
     },
     {
         "merged": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-debug-4:\\drawable_ic_launcher_background.xml.flat",
         "source": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-6:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.capstone.cookpocket.app-debug-4:/layout_activity_order_ambil_sendiri.xml.flat",
+        "source": "com.capstone.cookpocket.app-main-6:/layout/activity_order_ambil_sendiri.xml"
     },
     {
         "merged": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-debug-4:\\layout_activity_adapter.xml.flat",
@@ -198,10 +206,6 @@
     {
         "merged": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-debug-4:\\drawable_background_splash.xml.flat",
         "source": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-6:\\drawable\\background_splash.xml"
-    },
-    {
-        "merged": "com.capstone.cookpocket.app-debug-4:/layout_activity_menu_search.xml.flat",
-        "source": "com.capstone.cookpocket.app-main-6:/layout/activity_menu_search.xml"
     },
     {
         "merged": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-debug-4:\\mipmap-mdpi_ic_launcher.webp.flat",

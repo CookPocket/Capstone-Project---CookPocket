@@ -83,8 +83,8 @@
 49-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:34:13-37
 50        <activity
 50-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:35:9-37:40
-51            android:name="com.capstone.cookpocket.view.ui.search.order.OderFinishActivity"
-51-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:36:13-68
+51            android:name="com.capstone.cookpocket.view.ui.search.order.OrderFinishActivity"
+51-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:36:13-69
 52            android:exported="false" />
 52-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:37:13-37
 53        <activity
@@ -93,12 +93,9 @@
 54-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:39:13-65
 55            android:exported="false" />
 55-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:40:13-37
-56        <activity
-56-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:41:9-43:40
-57            android:name="com.capstone.cookpocket.view.ui.store.AddProduct.AddProductActivity"
-57-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:42:13-72
-58            android:exported="false" />
-58-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:43:13-37
+56        <!-- <activity -->
+57        <!-- android:name=".view.ui.store.DetailProductActivity" -->
+58        <!-- android:exported="false" /> -->
 59        <activity
 59-->C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:44:9-46:40
 60            android:name="com.capstone.cookpocket.view.ui.store.HomeStore.StoreActivity"

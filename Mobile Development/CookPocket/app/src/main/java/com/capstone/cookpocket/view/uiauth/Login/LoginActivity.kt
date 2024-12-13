@@ -5,11 +5,8 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
 import com.capstone.cookpocket.Network.Api.ApiConfig
 import com.capstone.cookpocket.Network.UserPreferences
@@ -44,7 +41,6 @@ class LoginActivity : AppCompatActivity() {
         }
 
         binding.tvBtnSignup.setOnClickListener {
-            // Navigasi ke halaman SignUp jika tombol Daftar ditekan
             val intent = Intent(this, SignupActivity::class.java)
             startActivity(intent)
         }
@@ -58,7 +54,6 @@ class LoginActivity : AppCompatActivity() {
             } else if (!android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
                 Toast.makeText(this, "Format email tidak valid", Toast.LENGTH_SHORT).show()
             } else {
-                // Menampilkan ProgressBar sebelum login dimulai
                 showProgressBar(true)
                 loginViewModel.login(email, password)
             }
@@ -78,17 +73,18 @@ class LoginActivity : AppCompatActivity() {
                         Toast.makeText(this@LoginActivity, "Login berhasil: ${it.loginResult.name}", Toast.LENGTH_SHORT).show()
 
                         val token = it.loginResult.token
-                        Log.d("LoginActivity", "Token dari API: $token")
-                        // Simpan token dan username ke UserPreferences
+                        val userId = it.loginResult.userId
+                        Log.d("LoginActivity", "Token dari API: $token, User ID: $userId")  // Menampilkan userId di Log
+
+                        // Simpan token, userId, dan username ke UserPreferences
                         if (!token.isNullOrEmpty()) {
                             userPreferences.saveToken(token)
+                            userPreferences.saveUserId(userId)
                             userPreferences.saveUserName(it.loginResult.name)
-                            Log.d("LoginActivity", "Token berhasil disimpan: $token")
+                            Log.d("LoginActivity", "Token dan User ID berhasil disimpan")
                         } else {
-                            Log.e("LoginActivity", "Token kosong atau null.")
+                            Log.e("LoginActivity", "Token atau User ID kosong.")
                         }
-
-                        // Navigasi ke Home setelah login berhasil
                         navigateToHome()
                     } else {
                         Toast.makeText(this@LoginActivity, "Login gagal: ${it.message}", Toast.LENGTH_SHORT).show()

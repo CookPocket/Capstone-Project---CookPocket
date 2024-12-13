@@ -3322,6 +3322,7 @@ id bounceEnd
 id bounceStart
 id btnNo
 id btnYes
+id btn_buat_pesanan
 id btn_login
 id btn_logout
 id btn_minus
@@ -3569,6 +3570,7 @@ id jumpToEnd
 id jumpToStart
 id label_bahan
 id label_bahan_store
+id label_deskripsi
 id label_pembuatan
 id label_pembuatan_store
 id labeled
@@ -3882,6 +3884,7 @@ id tv_btn_signup
 id tv_cart
 id tv_change_email
 id tv_change_notelp
+id tv_deskripsi
 id tv_deskripsi_bahan
 id tv_deskripsi_bahan_store
 id tv_deskripsi_pembuatan
@@ -4065,9 +4068,9 @@ layout activity_login
 layout activity_main
 layout activity_menu_search
 layout activity_notification
-layout activity_oder_finish
 layout activity_order_ambil_sendiri
 layout activity_order_antar
+layout activity_order_finish
 layout activity_signup
 layout activity_splash
 layout activity_store
@@ -4242,6 +4245,7 @@ string cook_pocket
 string daftar
 string desc_login
 string desc_title_login
+string deskripsi
 string deskripsi_alamat
 string deskripsi_makanan
 string deskripsi_makanan_yang_menarik_dan_informatif

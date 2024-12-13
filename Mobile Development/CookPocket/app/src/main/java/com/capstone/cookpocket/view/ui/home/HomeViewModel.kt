@@ -5,21 +5,14 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData
 import androidx.lifecycle.viewModelScope
-import com.capstone.cookpocket.Network.Response.FileUploadResponse
-import com.capstone.cookpocket.Network.Response.ListStoryItem
+import com.capstone.cookpocket.Network.Response.Product
 import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
-import okhttp3.MultipartBody
-import okhttp3.RequestBody
 
-class HomeViewModel(private val storyRepository: HomeRepository) : ViewModel() {
+class HomeViewModel(private val homeRepository: HomeRepository) : ViewModel() {
 
-    private val _stories = MutableStateFlow<List<ListStoryItem>>(emptyList())
-    val stories: LiveData<List<ListStoryItem>> get() = _stories.asLiveData()
-
-    private val _uploadResult = MutableStateFlow<FileUploadResponse?>(null)
-    val uploadResult: LiveData<FileUploadResponse?> get() = _uploadResult.asLiveData()
+    private val _stories = MutableStateFlow<List<Product>>(emptyList())
+    val stories: LiveData<List<Product>> get() = _stories.asLiveData()
 
     private val _isLoading = MutableStateFlow(false)
     val isLoading: LiveData<Boolean> get() = _isLoading.asLiveData()
@@ -28,12 +21,12 @@ class HomeViewModel(private val storyRepository: HomeRepository) : ViewModel() {
     val errorMessage: LiveData<String?> get() = _errorMessage.asLiveData()
 
     // Fungsi untuk memuat cerita dari repository
-    fun fetchStories() {
+    fun fetchMakananSehat() {
         viewModelScope.launch {
             _isLoading.value = true
             _errorMessage.value = null
             try {
-                val result = storyRepository.getStories()
+                val result = homeRepository.RepMakananSehat()
                 if (result.isSuccess) {
                     _stories.value = result.getOrDefault(emptyList())
                     Log.d("HomeViewModel", "Berhasil mengambil cerita: ${_stories.value.size}")
@@ -48,22 +41,41 @@ class HomeViewModel(private val storyRepository: HomeRepository) : ViewModel() {
             }
         }
     }
-
-    // Fungsi untuk mengunggah cerita
-    fun uploadStory(photo: MultipartBody.Part, description: RequestBody) {
+    fun fetchMakananTradisional() {
         viewModelScope.launch {
             _isLoading.value = true
+            _errorMessage.value = null
             try {
-                val result = storyRepository.uploadStory(photo, description)
+                val result = homeRepository.RepMakananTradisional()
                 if (result.isSuccess) {
-                    _uploadResult.value = result.getOrNull()
-                    Log.d("HomeViewModel", "Upload berhasil")
+                    _stories.value = result.getOrDefault(emptyList())
+                    Log.d("HomeViewModel", "Berhasil mengambil cerita: ${_stories.value.size}")
                 } else {
-                    _errorMessage.value = result.exceptionOrNull()?.message ?: "Gagal mengunggah cerita"
+                    _errorMessage.value = result.exceptionOrNull()?.message ?: "Terjadi kesalahan"
                 }
             } catch (e: Exception) {
-                _errorMessage.value = e.message ?: "Terjadi kesalahan saat mengunggah cerita"
-                Log.e("HomeViewModel", "Upload Error: ${e.message}")
+                _errorMessage.value = e.message ?: "Terjadi kesalahan saat mengambil cerita"
+                Log.e("HomeViewModel", "Error: ${e.message}")
+            } finally {
+                _isLoading.value = false
+            }
+        }
+    }
+    fun fetchMakananBerat() {
+        viewModelScope.launch {
+            _isLoading.value = true
+            _errorMessage.value = null
+            try {
+                val result = homeRepository.RepMakananBerat()
+                if (result.isSuccess) {
+                    _stories.value = result.getOrDefault(emptyList())
+                    Log.d("HomeViewModel", "Berhasil mengambil cerita: ${_stories.value.size}")
+                } else {
+                    _errorMessage.value = result.exceptionOrNull()?.message ?: "Terjadi kesalahan"
+                }
+            } catch (e: Exception) {
+                _errorMessage.value = e.message ?: "Terjadi kesalahan saat mengambil cerita"
+                Log.e("HomeViewModel", "Error: ${e.message}")
             } finally {
                 _isLoading.value = false
             }

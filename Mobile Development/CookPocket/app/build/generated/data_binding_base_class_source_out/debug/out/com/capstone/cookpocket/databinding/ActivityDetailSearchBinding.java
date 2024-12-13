@@ -42,6 +42,9 @@ public final class ActivityDetailSearchBinding implements ViewBinding {
   public final TextView labelBahan;
 
   @NonNull
+  public final TextView labelDeskripsi;
+
+  @NonNull
   public final TextView labelPembuatan;
 
   @NonNull
@@ -49,6 +52,9 @@ public final class ActivityDetailSearchBinding implements ViewBinding {
 
   @NonNull
   public final ProgressBar progresbarDetailSearch;
+
+  @NonNull
+  public final TextView tvDeskripsi;
 
   @NonNull
   public final TextView tvDeskripsiBahan;
@@ -66,8 +72,9 @@ public final class ActivityDetailSearchBinding implements ViewBinding {
       @NonNull Button buttonPesan, @NonNull ImageView imageViewCart,
       @NonNull ImageView ivBackDetailSearch, @NonNull ImageView ivFavorite,
       @NonNull ImageView ivMainImage, @NonNull TextView labelBahan,
-      @NonNull TextView labelPembuatan, @NonNull LinearLayout linearLayout,
-      @NonNull ProgressBar progresbarDetailSearch, @NonNull TextView tvDeskripsiBahan,
+      @NonNull TextView labelDeskripsi, @NonNull TextView labelPembuatan,
+      @NonNull LinearLayout linearLayout, @NonNull ProgressBar progresbarDetailSearch,
+      @NonNull TextView tvDeskripsi, @NonNull TextView tvDeskripsiBahan,
       @NonNull TextView tvDeskripsiPembuatan, @NonNull TextView tvHargaDetailSearch,
       @NonNull TextView tvJudul) {
     this.rootView = rootView;
@@ -77,9 +84,11 @@ public final class ActivityDetailSearchBinding implements ViewBinding {
     this.ivFavorite = ivFavorite;
     this.ivMainImage = ivMainImage;
     this.labelBahan = labelBahan;
+    this.labelDeskripsi = labelDeskripsi;
     this.labelPembuatan = labelPembuatan;
     this.linearLayout = linearLayout;
     this.progresbarDetailSearch = progresbarDetailSearch;
+    this.tvDeskripsi = tvDeskripsi;
     this.tvDeskripsiBahan = tvDeskripsiBahan;
     this.tvDeskripsiPembuatan = tvDeskripsiPembuatan;
     this.tvHargaDetailSearch = tvHargaDetailSearch;
@@ -149,6 +158,12 @@ public final class ActivityDetailSearchBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.label_deskripsi;
+      TextView labelDeskripsi = ViewBindings.findChildViewById(rootView, id);
+      if (labelDeskripsi == null) {
+        break missingId;
+      }
+
       id = R.id.label_pembuatan;
       TextView labelPembuatan = ViewBindings.findChildViewById(rootView, id);
       if (labelPembuatan == null) {
@@ -164,6 +179,12 @@ public final class ActivityDetailSearchBinding implements ViewBinding {
       id = R.id.progresbar_detail_search;
       ProgressBar progresbarDetailSearch = ViewBindings.findChildViewById(rootView, id);
       if (progresbarDetailSearch == null) {
+        break missingId;
+      }
+
+      id = R.id.tv_deskripsi;
+      TextView tvDeskripsi = ViewBindings.findChildViewById(rootView, id);
+      if (tvDeskripsi == null) {
         break missingId;
       }
 
@@ -192,9 +213,9 @@ public final class ActivityDetailSearchBinding implements ViewBinding {
       }
 
       return new ActivityDetailSearchBinding((ConstraintLayout) rootView, buttonPesan,
-          imageViewCart, ivBackDetailSearch, ivFavorite, ivMainImage, labelBahan, labelPembuatan,
-          linearLayout, progresbarDetailSearch, tvDeskripsiBahan, tvDeskripsiPembuatan,
-          tvHargaDetailSearch, tvJudul);
+          imageViewCart, ivBackDetailSearch, ivFavorite, ivMainImage, labelBahan, labelDeskripsi,
+          labelPembuatan, linearLayout, progresbarDetailSearch, tvDeskripsi, tvDeskripsiBahan,
+          tvDeskripsiPembuatan, tvHargaDetailSearch, tvJudul);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

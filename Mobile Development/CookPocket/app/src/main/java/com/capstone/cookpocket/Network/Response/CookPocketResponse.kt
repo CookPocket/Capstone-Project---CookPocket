@@ -1,57 +1,62 @@
 package com.capstone.cookpocket.Network.Response
 
-
+import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
+import kotlinx.parcelize.Parcelize
 
-data class StoryResponse(
+@Parcelize
+data class CookPocketResponse(
 
-    @field:SerializedName("listStory")
-    val listStory: List<ListStoryItem> = emptyList(),
-
-    @field:SerializedName("error")
-    val error: Boolean? = null,
-
-    @field:SerializedName("message")
-    val message: String? = null
-)
-
-data class StoryDetailResponse(
-    @field:SerializedName("error")
-    val error: Boolean? = null,
+    @field:SerializedName("status")
+    val status: String? = null,
 
     @field:SerializedName("message")
     val message: String? = null,
 
-    @field:SerializedName("story")
-    val story: ListStoryItem? = null
-)
+    @field:SerializedName("data")
+    val data: List<Product> = emptyList()
+): Parcelable
 
-data class ListStoryItem(
-    @SerializedName("id")
-    val id: String? = null,
+@Parcelize
+data class Product(
 
-    @SerializedName("name")
+    @field:SerializedName("id_product")
+    val idProduct: Int? = null,
+
+    @field:SerializedName("name")
     val name: String? = null,
 
-    @SerializedName("description")
+    @field:SerializedName("description")
     val description: String? = null,
 
-    @SerializedName("photoUrl")
-    val photoUrl: String? = null,
+    @field:SerializedName("ingredient")
+    val ingredient: String? = null,
 
-    @SerializedName("createdAt")
+    @field:SerializedName("steps")
+    val steps: String? = null,
+
+    @field:SerializedName("cooking_time")
+    val cookingTime: String? = null,
+
+    @field:SerializedName("servings")
+    val servings: Int? = null,
+
+    @field:SerializedName("id_category")
+    val idCategory: Int? = null,
+
+    @field:SerializedName("image_url")
+    val imageUrl: String? = null,
+
+    @field:SerializedName("price")
+    val price: Int? = null,
+
+    @field:SerializedName("created_at")
     val createdAt: String? = null,
 
-    @SerializedName("lat")
-    val lat: Double? = null,
+    @field:SerializedName("updated_at")
+    val updatedAt: String? = null
+) :Parcelable
 
-    @SerializedName("lon")
-    val lon: Double? = null
-)
-
-data class FileUploadResponse(
-    @field:SerializedName("error")
-    val error: Boolean,
-    @field:SerializedName("message")
-    val message: String
+data class ProductsData(
+    val products: List<Product> // List of Product objects
 )

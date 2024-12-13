@@ -64,12 +64,12 @@
         "source": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-6:\\layout\\activity_change_no_telp.xml"
     },
     {
-        "merged": "com.capstone.cookpocket.app-mergeDebugResources-3:/layout/activity_menu_search.xml",
-        "source": "com.capstone.cookpocket.app-main-6:/layout/activity_menu_search.xml"
-    },
-    {
         "merged": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-3:\\layout\\activity_adapter_add_product.xml",
         "source": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-6:\\layout\\activity_adapter_add_product.xml"
+    },
+    {
+        "merged": "com.capstone.cookpocket.app-mergeDebugResources-3:/layout/activity_order_ambil_sendiri.xml",
+        "source": "com.capstone.cookpocket.app-main-6:/layout/activity_order_ambil_sendiri.xml"
     },
     {
         "merged": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-3:\\layout\\activity_add_product.xml",
@@ -96,12 +96,16 @@
         "source": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-6:\\layout\\activity_change_addres.xml"
     },
     {
+        "merged": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-3:\\layout\\activity_detail_search.xml",
+        "source": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-6:\\layout\\activity_detail_search.xml"
+    },
+    {
         "merged": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-3:\\layout\\activity_order_antar.xml",
         "source": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-6:\\layout\\activity_order_antar.xml"
     },
     {
-        "merged": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-3:\\layout\\activity_detail_search.xml",
-        "source": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-6:\\layout\\activity_detail_search.xml"
+        "merged": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-3:\\layout\\activity_order_finish.xml",
+        "source": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-main-6:\\layout\\activity_order_finish.xml"
     },
     {
         "merged": "C:\\Users\\iccan\\.jdks\\daemon\\8.11.1\\com.capstone.cookpocket.app-mergeDebugResources-3:\\layout\\activity_main.xml",

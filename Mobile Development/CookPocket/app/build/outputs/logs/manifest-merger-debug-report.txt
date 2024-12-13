@@ -173,24 +173,18 @@ ADDED from C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\sr
 		ADDED from C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:34:13-37
 	android:name
 		ADDED from C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:33:13-64
-activity#com.capstone.cookpocket.view.ui.search.order.OderFinishActivity
+activity#com.capstone.cookpocket.view.ui.search.order.OrderFinishActivity
 ADDED from C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:35:9-37:40
 	android:exported
 		ADDED from C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:37:13-37
 	android:name
-		ADDED from C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:36:13-68
+		ADDED from C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:36:13-69
 activity#com.capstone.cookpocket.view.ui.adapter.AdapterNotifActivity
 ADDED from C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:38:9-40:40
 	android:exported
 		ADDED from C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:40:13-37
 	android:name
 		ADDED from C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:39:13-65
-activity#com.capstone.cookpocket.view.ui.store.AddProduct.AddProductActivity
-ADDED from C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:41:9-43:40
-	android:exported
-		ADDED from C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:43:13-37
-	android:name
-		ADDED from C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:42:13-72
 activity#com.capstone.cookpocket.view.ui.store.HomeStore.StoreActivity
 ADDED from C:\Capstone-Project---CookPocket\Mobile Development\CookPocket\app\src\main\AndroidManifest.xml:44:9-46:40
 	android:exported

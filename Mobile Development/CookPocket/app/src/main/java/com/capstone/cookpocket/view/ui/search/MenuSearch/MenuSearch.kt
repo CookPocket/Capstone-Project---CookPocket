@@ -2,87 +2,95 @@ package com.capstone.cookpocket.view.ui.search
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.SearchView
-import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.lifecycleScope
-import androidx.paging.PagingData
+import androidx.core.content.ContentProviderCompat.requireContext
+import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.capstone.cookpocket.R
-import com.capstone.cookpocket.view.ui.home.HomeRepository
-import com.capstone.cookpocket.Network.Api.ApiConfig
-import com.capstone.cookpocket.Network.UserPreferences
-import com.capstone.cookpocket.view.ui.home.HomePaging.CookPocketPagingAdapter
-import com.capstone.cookpocket.Network.Response.ListStoryItem
-import com.capstone.cookpocket.view.ui.search.MenuSearch.MenuSearchViewModel
-import com.capstone.cookpocket.view.ui.search.MenuSearch.MenuSearchViewModelFactory
+import com.capstone.cookpocket.databinding.ActivityMenuSearchBinding
+import com.capstone.cookpocket.view.ui.adapter.AdapterActivity
+import com.capstone.cookpocket.view.ui.home.HomeViewModel
+import com.capstone.cookpocket.view.ui.home.HomeViewModelFactory
 import com.capstone.cookpocket.view.ui.search.detail_search.DetailSearchActivity
-import kotlinx.coroutines.flow.collectLatest
-import kotlinx.coroutines.launch
 
 class MenuSearchActivity : AppCompatActivity() {
-    private lateinit var viewModel: MenuSearchViewModel
-    private lateinit var adapter: CookPocketPagingAdapter
+
+    private lateinit var binding: ActivityMenuSearchBinding
+    private val homeViewModel: HomeViewModel by viewModels {
+        HomeViewModelFactory(applicationContext)
+    }
+
+    private val cookPocketPagingAdapter by lazy {
+        AdapterActivity { storyItem, imageView, textView ->
+            val intent = Intent(this, DetailSearchActivity::class.java).apply {
+                putExtra("PRODUCT", storyItem)
+            }
+            startActivity(intent)
+        }
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_menu_search)
+        binding = ActivityMenuSearchBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        // Tangkap query dari Intent
-        val query = intent.getStringExtra("SEARCH_QUERY")
+        // Set up RecyclerView
+        setupRecyclerView()
 
-        // Inisialisasi Repository dan ViewModel
-        val repository = HomeRepository(ApiConfig.getApiService(), UserPreferences.getInstance(this))
-        val factory = MenuSearchViewModelFactory(repository)
-        viewModel = ViewModelProvider(this, factory)[MenuSearchViewModel::class.java]
+        // Ambil kategori dari intent
+        val category = intent.getStringExtra("CATEGORY")
 
-        // Inisialisasi RecyclerView
-        val recyclerView: RecyclerView = findViewById(R.id.rv_search_baca_resep)
-        adapter = CookPocketPagingAdapter { story ->
-            val intent = Intent(this, DetailSearchActivity::class.java)
-            intent.putExtra("story_id", story.id)
-            startActivity(intent)
-        }
-        recyclerView.layoutManager = LinearLayoutManager(this)
-        recyclerView.adapter = adapter
-
-        // Mulai filter jika query tersedia
-        query?.let {
-            setupSearchView() // Kirim query awal ke SearchView dan mulai pencarian
+        if (category != null) {
+            // Memanggil fungsi fetch berdasarkan kategori
+            fetchDataBasedOnCategory(category)
         }
 
         // Observasi data dari ViewModel
-        observePagedStories()
+        observeViewModel()
     }
 
-
-    // Observasi data dari ViewModel
-    private fun observePagedStories() {
-        lifecycleScope.launch {
-            viewModel.pagedStories.collectLatest { pagingData ->
-                adapter.submitData(pagingData) // Kirim data ke PagingDataAdapter
-            }
+    private fun setupRecyclerView() {
+        binding.rvSearchBacaResep.apply {
+            layoutManager = LinearLayoutManager(this@MenuSearchActivity)
+            adapter = cookPocketPagingAdapter
         }
     }
 
-    // Konfigurasi SearchView
-    private fun setupSearchView() {
-        val searchView: SearchView = findViewById(R.id.searchView)
-        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
-            override fun onQueryTextSubmit(query: String?): Boolean {
-                query?.let {
-                    viewModel.searchStories(it) // Filter data berdasarkan query
-                }
-                return true
+    private fun fetchDataBasedOnCategory(category: String) {
+        // Panggil fungsi ViewModel untuk mengambil data berdasarkan kategori
+        when (category) {
+            "makanan-berat" -> {
+                homeViewModel.fetchMakananBerat()
             }
+            "makanan-sehat" -> {
+                homeViewModel.fetchMakananSehat()
+            }
+            "makanan-tradisional" -> {
+                homeViewModel.fetchMakananTradisional()
+            }
+            else -> showToast("Kategori tidak dikenali")
+        }
+    }
 
-            override fun onQueryTextChange(newText: String?): Boolean {
-                newText?.let {
-                    viewModel.searchStories(it) // Filter data secara realtime
-                }
-                return true
+    private fun observeViewModel() {
+        homeViewModel.stories.observe(this, Observer { stories ->
+            stories?.let {
+                cookPocketPagingAdapter.submitList(it)
             }
         })
+
+        homeViewModel.errorMessage.observe(this, Observer { errorMessage ->
+            errorMessage?.let {
+                showToast(it)
+            }
+        })
+
+
+    }
+
+    private fun showToast(message: String) {
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
 }

@@ -33,14 +33,14 @@
             android:name=".view.ui.store.DetailProductActivity"
             android:exported="false" />
         <activity
-            android:name=".view.ui.search.order.OderFinishActivity"
+            android:name=".view.ui.search.order.OrderFinishActivity"
             android:exported="false" />
         <activity
             android:name=".view.ui.adapter.AdapterNotifActivity"
             android:exported="false" />
-        <activity
-            android:name=".view.ui.store.AddProduct.AddProductActivity"
-            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".view.ui.store.DetailProductActivity"-->
+<!--            android:exported="false" />-->
         <activity
             android:name=".view.ui.store.HomeStore.StoreActivity"
             android:exported="false" /> <!-- <activity -->

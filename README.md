@@ -2,7 +2,7 @@ Capstone Project Bangkit Academy CookPocket (C242-PS383)
 ==
 Overview
 --
-![image alt]()
+![image alt](https://github.com/CookPocket/Capstone-Project---CookPocket/blob/c7dfd8d42c53ad16967dab42cb205a8401cc17dd/logoCookPocket1.3.png)
 <p align="justify">"CookPocket" is a machine learning-based mobile application designed to provide a smart solution in finding Indonesian recipes. The application aims to help users explore various traditional and modern dishes that suit the ingredients they have or their preferences. With the support of an artificial intelligence-based recommendation system, "CookPocket" is able to connect users with relevant recipes, provide a more personalized cooking experience, and encourage the preservation of the distinctive taste of Indonesian cuisine.</p>
 
 Team Members
@@ -20,7 +20,7 @@ Team Members
 Hi everyone! We are from C242-PS383. We consist of 7 members including:
 | Bangkit ID | Name     | Learning Path | University  |LinkedIn |
 | ---        | ---      | ---           | ---         | ---       |
-| C803B4KY3361 | Nico Ramdani | Cloud Computing | Universitas Indonesia Membangun | [![text](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)]() |
+| C803B4KY3361 | Nico Ramdani | Cloud Computing | Universitas Indonesia Membangun | [![text](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nico-ramdani-4184a1232?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app) |
 | C117B4KY2996 | Muhammad Rafi Yasir | Cloud Computing | Intitut Teknologi Nasional Bandung | [![text](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/rafi-yasir-ba0b17251) |
 | A272B4KY0817 | Baso Ummul Ikshan | Mobile Development | Universitas Muslim Indonesia | [![text](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/baso-ummul-ikshan-380177281) |
 | A272B4KY3129 | Muhammad Zaqly Luluang  | Mobile Development | Universitas Muslim Indonesia | [![text](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/muhammad-zaqly-luluang-468a61327/) |
